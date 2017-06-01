@@ -1,0 +1,35 @@
+// Navbar
+
+.bg-faded {
+	background-color: $gray-lightest;
+}
+
+.navbar {
+	font-size: 20px;
+}
+
+// todo refactoring
+.navbar-nav {
+	.nav-link {
+		padding-right: 1rem !important;
+		padding-left: 1rem !important;
+	}
+}
+
+// Language Switcher
+.navbar--language-switcher > .nav-item {
+	font-size: $small-font-size;
+
+	.nav-link {
+		padding-top: 0.75em;
+		padding-bottom: 0.75em;
+		// todo refactoring
+		padding-right: .5rem !important;
+		padding-left: .5rem !important;
+	}
+
+	&.active > .nav-link {
+		font-weight: 700;
+	}
+}
+

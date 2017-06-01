@@ -1,0 +1,91 @@
+.logo--box {
+	height: calc(100% * #{$golden-ratio});
+	width: 100%;
+
+	background: $brand-primary;
+	display: inline-block;
+
+	border-radius: 0 0 $alv-box-radius;
+
+	color: $white;
+	font-weight: 700;
+	font-size: 28px;
+
+	padding: $alv-box-padding;
+}
+
+.logo--container {
+	height: 100%;
+	width: 100%;
+
+	background: $brand-primary;
+	display: inline-block;
+
+	border-radius: 0 0 $alv-box-radius;
+
+	color: $white;
+	font-weight: 700;
+	font-size: 28px;
+
+	padding: $alv-box-padding;
+}
+
+.logo {
+	// todo: navbar height * 30px!!
+	height: $logo-height;
+	width: calc(#{$logo-height} * #{$phi});
+
+	background: $amber;
+	color: $black;
+	display: inline-block;
+
+	border-radius: 0 0 $alv-box-radius;
+
+	padding: $alv-box-padding;
+}
+
+.logo__title {
+	font-size: $font-size-h2;
+	letter-spacing: $text-h2-spacing;
+
+	.title__plus-ch,
+	.title__plus-ch:before {
+		color: $gray;
+	}
+}
+
+.logo__title-small {
+	color: $black;
+	font-size: $font-size-h4;
+	letter-spacing: $text-h4-spacing;
+
+	margin-bottom: 0.5rem;
+
+	.title__plus-ch,
+	.title__plus-ch:before {
+		color: $gray;
+	}
+}
+
+.title__plus-ch:before {
+	content: '+';
+	font-weight: 700;
+	font-size: 0.75em;
+
+	vertical-align: -0.5em;
+	margin-left: -0.1em;
+	margin-right: -0.2em;
+}
+
+
+.logo--inverse {
+	background: $brand-primary;
+	color: $white;
+
+	.logo__title,
+	.logo__title-small,
+	.title__plus-ch,
+	.title__plus-ch:before {
+		color: $white;
+	}
+}

@@ -1,0 +1,49 @@
+/* ==========================================================
+ * alv-ch-variables.scss
+ * ((text))
+ *
+ *
+ * Author: Thomas D'Ascoli, thomas@dasco.li
+ * Date:   2017-05-25 21:22
+ *
+ * Copyright 2017 ((Federal Chancellery of Switzerland))
+ * Licensed under MIT
+ =========================================================== */
+
+/**
+ * CONTENTS
+ * Logo.................(()).
+ *
+ */
+
+// Font
+/*
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+*/
+$text-base-spacing: 0; // Assumes the browser default, typically `16px`
+
+$text-h1-spacing: -3.6px;
+$text-h2-spacing: -0.8px;
+$text-h3-spacing: $text-base-spacing;
+$text-h4-spacing: $text-base-spacing;
+
+// Logo
+
+$logo-height: 90px;
+
+//* vars.golden-ratio */
+$phi: 1.61803398875;
+$golden-ratio: 0.61803398875;
+$golden-ratio-tall: percentage($golden-ratio);
+$golden-ratio-small: 100 - percentage($golden-ratio);
+
+// ALV-Box
+$alv-box-radius: 24px; // ($logo-height * (1 - $golden-ratio)) / 2 ~30px
+$alv-box-padding: $alv-box-radius/2; // ~5px
+
+
+
+
+

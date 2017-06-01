@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  #ALERT
+\*------------------------------------*/
+
+.alert {
+	@include alv-border-radius($alv-box-radius);
+
+	border: none;
+
+	padding: $alv-box-radius;
+
+	strong {
+		display: block;
+	}
+}

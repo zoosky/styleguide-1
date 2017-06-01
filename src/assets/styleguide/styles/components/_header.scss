@@ -1,0 +1,67 @@
+/**
+ * CONTENTS
+ *
+ * HEADER...............(()).
+ *
+ * ALV-HEADER
+ * alv-header...........(()).
+ * alv-brand............(()).
+ * alv-themes...........(()).
+ *
+ */
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header.fixed-top ~ .container {
+	padding-top: 115px; // 30px for logo, Xpx for alv-header, Xpx for navbar
+}
+
+/*------------------------------------*\
+  #ALV-HEADER
+\*------------------------------------*/
+
+.alv-header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	// todo: vars
+	padding: 0 10px;
+}
+
+/**
+ * Used for brand, project, or site names.
+ */
+
+.alv-header__brand {
+	display: inline-block;
+	padding-top: .25rem;
+	padding-bottom: .25rem;
+	margin-right: $navbar-padding-x;
+	font-size: $small-font-size;
+	line-height: inherit;
+	white-space: nowrap;
+}
+
+/**
+ * Themes
+ * Styles for switching between alvs with light or dark background.
+ *
+ * Dark links against a light background
+ */
+
+.alv-header--light {
+	.alv-header__brand {
+		color: $navbar-light-active-color;
+	}
+}
+
+/**
+ * White links against a dark background
+ */
+.alv-header--inverse {
+	.alv-header__brand {
+		color: $gray-light;
+	}
+}

@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+h1 {
+	letter-spacing: $text-h1-spacing;
+	font-weight: 700;
+}
+
+h2 {
+	letter-spacing: $text-h2-spacing;
+	font-weight: 400;
+}
+
+h3 {
+	letter-spacing: $text-h3-spacing;
+	font-weight: 400;
+}
+
+h4 {
+	letter-spacing: $text-h4-spacing;
+	font-weight: 700;
+}
+
+.light,
+.text--light {
+	font-weight: 300;
+}
+
+.text--super {
+	vertical-align: super;
+}
+.text--sub {
+	vertical-align: sub;
+}

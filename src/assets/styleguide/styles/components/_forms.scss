@@ -1,0 +1,120 @@
+/**
+ * CONTENTS
+ *
+ * FORMS
+ * radio- & checkbox
+ * alv-themes...........(()).
+ *
+ */
+
+/*------------------------------------*\
+  #RADIO- & CHECKBOX
+\*------------------------------------*/
+
+.checkbox > label,
+.radio > label{
+	display: block;
+	position: relative;
+	padding-left: round($form-box-size);
+	margin-bottom: $form-check-margin-bottom;
+	cursor: pointer;
+}
+//* CHECKBOX */
+.checkbox > label {
+	&::before{
+		content: '';
+		position: absolute;
+		top: -($input-btn-border-width);
+		left: 0;
+
+		height: $form-box-size;
+		width: $form-box-size;
+
+		border: $input-btn-border-width solid $input-border-color;
+
+		background: white;
+	}
+}
+
+.checkbox > input:checked ~ label:after {
+	content: '';
+	position: absolute;
+	left: $form-box-check-left;
+	top: $form-box-check-top;
+
+	border: solid $black;
+
+	width: $form-box-check-width;
+	height: $form-box-check-height;
+
+	border-width: 0 $form-box-check-border $form-box-check-border 0;
+	transform: rotate(45deg);
+}
+
+//* similar */
+
+.checkbox > input:not([disabled]):focus ~ label,
+.radio > input:not([disabled]):focus ~ label{
+	&::before{
+		-webkit-box-shadow: 0 0 0 2px rgba(231,166,26,1);
+		-moz-box-shadow: 0 0 0 2px rgba(231,166,26,1);
+		box-shadow: 0 0 0 2px rgba(231,166,26,1);
+	}
+}
+.checkbox > input,
+.radio > input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.checkbox > input:disabled ~ label:before,
+.checkbox > input:disabled ~ label:after,
+.radio > input:disabled ~ label:before{
+	background: #e6e6e6;
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.radio > input:disabled ~ label:after {
+	opacity: 0.6;
+}
+
+.checkbox > input:not([disabled]) ~ label,
+.radio > input:not([disabled]) ~ label {
+	&:hover {
+		&::before{
+			-webkit-box-shadow: 0 0 0 2px rgba(231,166,26,1);
+			-moz-box-shadow: 0 0 0 2px rgba(231,166,26,1);
+			box-shadow: 0 0 0 2px rgba(231,166,26,1);
+		}
+	}
+}
+
+//* RADIO */
+.radio > label {
+	&::before{
+		content: '';
+		position: absolute;
+		top: -($input-btn-border-width);
+		left: 0;
+
+		height: $form-box-size;
+		width: $form-box-size;
+
+		border-radius: 50%;
+
+		border: $input-btn-border-width solid $input-border-color;
+	}
+}
+
+.radio > input:checked ~ label:after {
+	content: '';
+	position: absolute;
+	left: $form-box-radio-left;
+	top: $form-box-radio-top;
+	height: $form-box-radio-size;
+	width: $form-box-radio-size;
+	border-radius: 50%;
+	background:  $black;
+}
