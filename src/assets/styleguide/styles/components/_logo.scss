@@ -14,7 +14,7 @@
 	padding: $alv-box-padding;
 }
 
-.logo--container {
+.logo-box {
 	height: 100%;
 	width: 100%;
 
@@ -28,6 +28,14 @@
 	font-size: 28px;
 
 	padding: $alv-box-padding;
+
+	&.flex-height {
+		height: calc(100% * #{$phi});
+	}
+
+	&.flex-width {
+		width: calc(100% * #{$golden-ratio});
+	}
 }
 
 .logo {

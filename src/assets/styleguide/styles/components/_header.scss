@@ -13,9 +13,13 @@
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
-
+/*
 .header.fixed-top ~ .container {
 	padding-top: 115px; // 30px for logo, Xpx for alv-header, Xpx for navbar
+}
+*/
+body {
+	padding-top: 96px;
 }
 
 /*------------------------------------*\
@@ -64,4 +68,18 @@
 	.alv-header__brand {
 		color: $gray-light;
 	}
+}
+
+
+/*------------------------------------*\
+  #FILTER
+\*------------------------------------*/
+
+.filter {
+	background-color: rgba($gray-lightest, .75);
+	border-bottom: 1px solid $gray-lighter;
+
+	margin-bottom: $margin-bottom-filter;
+
+	//height: 100px;
 }

@@ -43,6 +43,14 @@ $golden-ratio-small: 100 - percentage($golden-ratio);
 $alv-box-radius: 24px; // ($logo-height * (1 - $golden-ratio)) / 2 ~30px
 $alv-box-padding: $alv-box-radius/2; // ~5px
 
+// Filter
+$margin-bottom-filter: 1.5rem;
+
+$filter-toolbar-padding-y: 2rem;
+$filter-toolbar-padding-x: 0;
+
+// Toolbar
+
 
 
 
