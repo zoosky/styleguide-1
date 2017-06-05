@@ -22,6 +22,10 @@ h4, h5, h6 {
 	font-weight: 700;
 }
 
+/*------------------------------------*\
+  #PARAGRAPH
+\*------------------------------------*/
+
 .light,
 .text--light {
 	font-weight: 300;
@@ -32,4 +36,14 @@ h4, h5, h6 {
 }
 .text--sub {
 	vertical-align: sub;
+}
+
+.text--primary-color {
+	color: $brand-primary;
+}
+.text--inverse-color {
+	color: $brand-inverse;
+}
+.text--white-color {
+	color: $white;
 }

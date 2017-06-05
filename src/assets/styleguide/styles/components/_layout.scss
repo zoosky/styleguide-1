@@ -13,8 +13,8 @@
 \*------------------------------------*/
 
 /**
- * Common page Layout:	| subnavigation:1/5 | content:3/5 | related:1/5 | OR
- 						| subnavigation:1/5 | content-wide:4/5 |
+ * Common page Layout:	| subnavbar:1/5 | content:3/5 | related:1/5 | OR
+ 						| subnavbar:1/5 | content-wide:4/5 |
  */
 
 .base {
@@ -22,7 +22,7 @@
 
 	// todo: margin-bottom?!
 
-	.base__subnavigation,
+	.base__subnavbar,
 	.base__content,
 	.base__content--wide,
 	.base__related	{
@@ -33,7 +33,7 @@
 		@include make-gutters($grid-gutter-widths);
 	}
 
-	.base__subnavigation,
+	.base__subnavbar,
 	.base__related {
 		@include make-col(1, 5);
 	}
@@ -75,7 +75,7 @@
 
 	.landing-page--container {
 		@include alv-border-radius($alv-box-radius);
-		background: $gray-lighter;
+		background: $gray-lightest;
 		padding: $alv-box-radius;
 	}
 }

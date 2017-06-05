@@ -8,7 +8,7 @@
 	background: $brand-primary;
 	display: inline-block;
 
-	border-radius: 0 0 $alv-box-radius;
+	@include alv-border-radius($alv-box-radius);
 
 	color: $white;
 	font-weight: 700;
@@ -29,7 +29,7 @@
 
 // bootstrap class: borders!!
 .rounded-logo {
-	border-radius: 0 0 $alv-box-radius;
+	@include alv-border-radius($alv-box-radius);
 }
 
 .logo {
@@ -37,11 +37,11 @@
 	height: $logo-height;
 	width: calc(#{$logo-height} * #{$phi});
 
-	background: $amber;
+	background: $additional-accent-amber;
 	color: $black;
 	display: inline-block;
 
-	border-radius: 0 0 $alv-box-radius;
+	@include alv-border-radius($alv-box-radius);
 
 	padding: $alv-box-padding;
 }

@@ -43,23 +43,23 @@
 
 
 // Start with assigning color names to specific hex values.
-$red:    #F7001D;
-$orange: #ffb120;
-$yellow: #ffc500;
-$green:  #64b500;
-$blue:   #007AB1;
-
-$amber:	 $yellow;
+$red:    $other-colors-red;
+$orange: $additional-accent-amber;
+$yellow: $additional-accent-yellow;
+$green:  $additional-accent-green;
+$blue:   $main-accent-color;
 
 // Create grayscale
-$gray:                      #808080;
-$gray-light:                #C9C9C9;
+$gray-dark:                 $main-color-black;
+$gray:                      $main-color-gray;
+$gray-light:                $main-color-black-400;
+$gray-lighter:              $main-color-black-100;
+$gray-lightest:             $main-color-black-50;
 
-$gray-lightest:             #f9f9f9;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue;
-$brand-inverse:             $black;
+$brand-primary:             $main-accent-color;
+$brand-inverse:             $main-color-black;
 
 // Options
 //
@@ -72,9 +72,9 @@ $enable-shadows:            true;
 //
 // Settings for the `<body>` element.
 
-$body-color:    $black;
-$inverse-bg:    $black;
-$inverse-color: $gray-light;
+$body-color:    $main-color-black;
+$inverse-bg:    $main-color-black;
+$inverse-color: $main-color-black-400;
 
 
 // Links
@@ -82,7 +82,7 @@ $inverse-color: $gray-light;
 // Style anchor elements.
 
 $link-color:            $brand-primary;
-$link-hover-color:      $amber;
+$link-hover-color:      $additional-accent-amber;
 
 // Grid breakpoints
 //
@@ -119,7 +119,7 @@ $container-max-widths: (
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 $font-family-base:       $font-family-sans-serif;
 
-$font-size-base: 1.125rem; // Assumes the browser default, typically `16px`
+$font-size-base: $text-base-size; // Assumes the browser default, typically `16px`
 
 $font-size-h1: 3rem;
 $font-size-h2: 1.75rem;
@@ -132,9 +132,12 @@ $small-font-size: 80%;
 
 // Navbar
 
-$navbar-light-color:                 $black;
-$navbar-light-hover-color:           $amber;
-$navbar-light-active-color:          $black;
+$navbar-light-color:                 $main-color-black;
+$navbar-light-hover-color:           $additional-accent-amber;
+$navbar-light-active-color:          $main-color-black;
+
+// Navs
+$nav-link-padding:              $nav-link-padding-y $nav-link-padding-x;
 
 
 // ALV-CH
