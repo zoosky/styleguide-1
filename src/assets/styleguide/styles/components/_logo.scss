@@ -1,19 +1,4 @@
-.logo--box {
-	height: calc(100% * #{$golden-ratio});
-	width: 100%;
-
-	background: $brand-primary;
-	display: inline-block;
-
-	border-radius: 0 0 $alv-box-radius;
-
-	color: $white;
-	font-weight: 700;
-	font-size: 28px;
-
-	padding: $alv-box-padding;
-}
-
+// todo shadow > material design whiteframe: https://material.angularjs.org/latest/demo/whiteframe!
 .logo-box {
 	height: 100%;
 	width: 100%;
