@@ -1,3 +1,5 @@
+// todo refactor whole "_logo" file and style: dont name it "logo" better alv or work or whatever
+//
 // todo shadow > material design whiteframe: https://material.angularjs.org/latest/demo/whiteframe!
 .logo-box {
 	height: 100%;
@@ -10,7 +12,9 @@
 
 	color: $white;
 	font-weight: 700;
-	font-size: 28px;
+
+	font-size: $font-size-h2;
+	letter-spacing: $text-h2-spacing;
 
 	padding: $alv-box-padding;
 
@@ -21,6 +25,11 @@
 	&.flex-width {
 		width: calc(100% * #{$golden-ratio});
 	}
+}
+
+// bootstrap class: borders!!
+.rounded-logo {
+	border-radius: 0 0 $alv-box-radius;
 }
 
 .logo {
@@ -52,12 +61,12 @@
 	font-size: $font-size-h4;
 	letter-spacing: $text-h4-spacing;
 
-	margin-bottom: 0.5rem;
-
 	.title__plus-ch,
 	.title__plus-ch:before {
 		color: $gray;
 	}
+
+	//margin-bottom: 0.25rem;
 }
 
 .title__plus-ch:before {
@@ -73,7 +82,7 @@
 
 .logo--inverse {
 	background: $brand-primary;
-	color: $white;
+	color: $white !important;
 
 	.logo__title,
 	.logo__title-small,

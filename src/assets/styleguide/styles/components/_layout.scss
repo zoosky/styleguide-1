@@ -13,16 +13,18 @@
 \*------------------------------------*/
 
 /**
- * Common page Layout: | subnavigation:1/4 | content:2/4 | related:1/4 |
+ * Common page Layout:	| subnavigation:1/5 | content:3/5 | related:1/5 | OR
+ 						| subnavigation:1/5 | content-wide:4/5 |
  */
 
 .base {
 	@include make-row();
 
-	// todo: mrgin-bottom?!
+	// todo: margin-bottom?!
 
 	.base__subnavigation,
 	.base__content,
+	.base__content--wide,
 	.base__related	{
 		position: relative;
 		width: 100%;
@@ -33,11 +35,14 @@
 
 	.base__subnavigation,
 	.base__related {
-		@include make-col(1, 4);
+		@include make-col(1, 5);
 	}
 
 	.base__content {
-		@include make-col(2, 4);
+		@include make-col(3, 5);
+	}
+	.base__content--wide {
+		@include make-col(4, 5);
 	}
 }
 
@@ -55,6 +60,7 @@
 		position: relative;
 		width: 100%;
 		min-height: 1px; // Prevent columns from collapsing when empty
+		margin-bottom: $margin-bottom-general;
 
 		@include make-gutters($grid-gutter-widths);
 	}

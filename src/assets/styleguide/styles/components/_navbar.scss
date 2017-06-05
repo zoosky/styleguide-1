@@ -8,6 +8,7 @@
 }
 
 .navbar {
+	// todo??!!
 	font-size: 20px;
 }
 
@@ -27,13 +28,14 @@
 }
 
 // Language Switcher
+// todo refactoring
 .navbar--language-switcher > .nav-item {
 	font-size: $small-font-size;
 
 	.nav-link {
 		padding-top: 0.75em;
 		padding-bottom: 0.75em;
-		// todo refactoring
+
 		padding-right: .5rem !important;
 		padding-left: .5rem !important;
 	}
@@ -50,7 +52,6 @@
 
 .toolbar {
 	position: relative;
-	padding: $filter-toolbar-padding-y $filter-toolbar-padding-x;
 
 	&.inverse {
 		background: rgba($gray-lightest, 0.25);
@@ -59,32 +60,112 @@
 
 .toolbar-nav {
 	display: flex;
-	flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+	flex-direction: row;
+	justify-content: space-between;
+
 	padding-left: 0;
 	margin-bottom: 0;
 	list-style: none;
 
-	.nav-link {
-		padding-right: 0;
-		padding-left: 0;
+	&.center {
+		justify-content: center;
 	}
-}
 
-.toolbar {
-	.toolbar-nav {
-		&.center {
-			justify-content: center;
+	.nav-title {
+		padding: $filter-toolbar-title-padding 0;
+	}
+
+	.nav-item {
+		font-size: $font-size-h4;
+		cursor: pointer;
+
+		&:hover {
+			background: $gray-lightest;
 		}
-		flex-direction: row;
-		justify-content: space-between;
 
-		.nav-item {
-			font-size: $font-size-h4;
-			padding: 0.25rem 2rem;
+		&.active > .nav-link {
+			font-weight: 700;
+			color: $brand-inverse;
 		}
 
 		.nav-link {
+			// todo check bootstrap?!
+			padding: $filter-toolbar-title-padding;
 
+			&:hover {
+				color: $brand-primary;
+			}
+
+			&.active {
+				font-weight: 700;
+				color: $brand-inverse;
+			}
+		}
+	}
+}
+
+.toolbar-nav--has-icon {
+	.nav-item {
+		.nav-link {
+			// todo check bootstrap?!
+			padding: $filter-toolbar-padding-y $filter-toolbar-padding-x;
+
+			&:hover {
+				color: $brand-primary;
+			}
+
+			&.active {
+				font-weight: 700;
+				color: $brand-inverse;
+			}
+		}
+	}
+}
+
+// Icons
+.nav-link {
+	.nav-link__icon {
+		border: 2px solid $brand-primary;
+		display: inline-block;
+		border-radius: 50%;
+		padding: 2px;
+
+		.icon__stack {
+			border-radius: 50%;
+			height: 2.5em;
+			width: 2.5em;
+			display: inline-block;
+			line-height: 2.5em;
+			text-align: center;
+			background-color: transparent;
+
+			font-size: 1.25em;
+			color: inherit;
+		}
+	}
+}
+
+.nav-link.active,
+.active > .nav-link,
+.nav-item:hover,
+.nav-link:hover {
+	.nav-link__icon {
+		border: 2px solid $brand-primary;
+		display: inline-block;
+		border-radius: 50%;
+		padding: 2px;
+
+		.icon__stack {
+			border-radius: 50%;
+			height: 2.5em;
+			width: 2.5em;
+			display: inline-block;
+			line-height: 2.5em;
+			text-align: center;
+			background-color: $brand-primary;
+
+			font-size: 1.25em;
+			color: white;
 		}
 	}
 }
