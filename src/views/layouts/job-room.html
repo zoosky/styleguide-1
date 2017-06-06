@@ -32,11 +32,11 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<a class="navbar-brand logo" href="/index.html">
+				<a class="navbar-brand logo logo--inverse" href="/job-room.html">
 					<div class="logo__title-small">
 						<strong>alv</strong><span class="title__plus-ch">ch</span>
 					</div>
-					styleguide
+					Job-Room
 				</a>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -48,7 +48,7 @@
 							<a class="nav-link" href="#"><i class="fa fa-bars" aria-hidden="true"></i> Menü</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Job-Room</a>
+							<a class="nav-link active" href="#">Job-Room</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Amstat</a>
@@ -78,57 +78,54 @@
 		</nav>
 	</div>
 
-	<div class="filter">
-		<div class="toolbar">
-			<div class="container">
-				<div class="toolbar-collapse">
-					<ul class="toolbar-nav toolbar-nav--has-icon">
-						<li class="nav-title">
-							<h2 class="light">Unsere Leistungen für</h2>
-						</li>
-						<li class="nav-item active">
-							<a href="#" class="nav-link">
+	<div class="jumbotron jumbotron-fluid jumbotron--has-filter" style="background: url('{{baseurl}}/assets/styleguide/images/bg-jobroom.jpg');">
+
+		<div class="filter">
+			<div class="toolbar">
+				<div class="container">
+					<div class="toolbar-collapse">
+						<ul class="toolbar-nav center toolbar-nav--has-icon">
+							<li class="nav-title">
+								<h2 class="light">Job-Room bietet Leisungen für</h2>
+							</li>
+							<li class="nav-item active">
+								<a href="#" class="nav-link">
 								<span class="nav-link__icon">
 									<span class="icon__stack">
 										<i class="fa fa-binoculars" aria-hidden="true"></i>
 									</span>
 								</span>
-								Stellensuchende
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">
+									Stellensuchende
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
 								<span class="nav-link__icon">
 									<span class="icon__stack">
 										<i class="fa fa-building" aria-hidden="true"></i>
 									</span>
 								</span>
-								Unternehmen
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">
+									Unternehmen
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
 								<span class="nav-link__icon">
 									<span class="icon__stack">
 										<i class="fa fa-eye" aria-hidden="true"></i>
 									</span>
 								</span>
-								Arbeitsvermittler
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link">
-								<span class="nav-link__icon">
-									<span class="icon__stack">
-										<i class="fa fa-university" aria-hidden="true"></i>
-									</span>
-								</span>
-								Institutionen
-							</a>
-						</li>
-					</ul>
+									Arbeitsvermittler
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="container">
+			{{> landingpage}}
 		</div>
 	</div>
 
@@ -182,6 +179,16 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- Bootstrap-slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/bootstrap-slider.min.js"></script>
+<script>
+	// Without JQuery
+	var slider = new Slider('#ex1', {
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}
+	});
+</script>
 <!-- core ALV-CH -->
 <script src="{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>
 <!-- WebFontLoader -->

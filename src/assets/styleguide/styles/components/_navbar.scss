@@ -24,6 +24,10 @@
 	.nav-link {
 		padding-right: 1rem !important;
 		padding-left: 1rem !important;
+
+		&.active {
+			background: $body-bg;
+		}
 	}
 }
 
@@ -101,6 +105,12 @@
 				color: $brand-inverse;
 			}
 		}
+	}
+}
+
+.jumbotron .toolbar-nav {
+	.nav-item:hover {
+		background: $white;
 	}
 }
 

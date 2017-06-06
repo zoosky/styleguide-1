@@ -35,9 +35,11 @@
 @import 'alv-ch_variables';
 
 @import 'bootstrap';
+@import 'bootstrap_slider';
 @import "../../../../node_modules/font-awesome/scss/font-awesome";
 
 // components
+// todo reihenfolge!
 @import 'components/layout';
 @import 'components/logo';
 @import 'components/typography';
@@ -45,6 +47,8 @@
 @import 'components/footer';
 @import 'components/navbar';
 @import 'components/subnavbar';
-@import 'components/forms';
+@import 'components/form';
 @import 'components/alert';
 @import 'components/whiteframe';
+@import 'components/jumbotron';
+@import 'components/tool';

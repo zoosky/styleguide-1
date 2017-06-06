@@ -47,3 +47,7 @@ h4, h5, h6 {
 .text--white-color {
 	color: $white;
 }
+
+.text--no-letterspacing {
+	letter-spacing: 0;
+}
