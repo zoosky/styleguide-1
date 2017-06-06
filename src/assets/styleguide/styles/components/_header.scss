@@ -39,6 +39,7 @@ body {
  */
 
 .alv-header__brand {
+	// todo vars
 	display: inline-block;
 	padding-top: .25rem;
 	padding-bottom: .25rem;
@@ -57,7 +58,7 @@ body {
 
 .alv-header--light {
 	.alv-header__brand {
-		color: $navbar-light-active-color;
+		color: $body-color;
 	}
 }
 
@@ -66,7 +67,7 @@ body {
  */
 .alv-header--inverse {
 	.alv-header__brand {
-		color: $gray-light;
+		color: $inverse-color;
 	}
 }
 

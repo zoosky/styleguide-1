@@ -50,7 +50,7 @@ $green:  $additional-accent-green;
 $blue:   $main-accent-color;
 
 // Create grayscale
-$gray-dark:                 $main-color-black;
+$gray-dark:                 darken($main-color-gray, 13%);
 $gray:                      $main-color-gray;
 $gray-light:                $main-color-black-400;
 $gray-lighter:              $main-color-black-100;
@@ -74,7 +74,7 @@ $enable-shadows:            true;
 
 $body-color:    $main-color-black;
 $inverse-bg:    $main-color-black;
-$inverse-color: $main-color-black-400;
+$inverse-color: $white; //$main-color-black-400
 
 
 // Links
