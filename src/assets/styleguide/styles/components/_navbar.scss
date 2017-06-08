@@ -5,6 +5,10 @@
 
 	border: none;
 	border-bottom: 1px solid $gray-lighter;
+
+	&.bg-faded {
+		background-color: rgba($gray-lighter, .5);
+	}
 }
 
 .navbar-brand {

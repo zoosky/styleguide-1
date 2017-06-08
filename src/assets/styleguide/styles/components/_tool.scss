@@ -13,6 +13,7 @@ h1.tool__heading {
 	cursor: pointer;
 
 	padding: $alv-box-radius;
+	margin-bottom: $margin-bottom-narrow;
 
 	&:hover {
 		background: $main-accent-color-50;

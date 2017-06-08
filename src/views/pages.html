@@ -1,15 +1,18 @@
 ---
+layout: portal
 fabricator: true
 ---
 
-<h1 data-f-toggle="labels">Pages</h1>
+{{> landingpages}}
 
-<ul>
-{{#each views.pages.items}}
+<div class="landing-page">
 
-	<li>
-		<a href="pages/{{@key}}.html" class="f-item-heading">{{name}}</a>
-	</li>
+	{{#each views.pages.items}}
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<a class="nav-link" href="/pages/{{@key}}.html">{{name}}</a>
+		</div>
+	</div>
+	{{/each}}
 
-{{/each}}
-</ul>
+</div>

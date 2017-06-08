@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>{{title}}</title>
+
+	{{#if fabricator}}<link rel="stylesheet" href="{{baseurl}}/assets/fabricator/styles/f.css">{{/if}}
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="{{baseurl}}/assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+<div class="header sticky-top">
+	<!-- ALV-HEADER -->
+	<div class="alv-header alv-header--inverse bg-inverse">
+			<span class="alv-header__brand mb-0">
+				<img src="{{baseurl}}/assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+				Arbeitslosenversicherung ALV
+			</span>
+	</div>
+
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		<div class="container">
+			<!-- todo: CUSTOM TOGGLER -->
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<a class="navbar-brand logo" href="/index.html">
+				<div class="logo__title">
+					<strong>alv</strong><span class="title__plus-ch">ch</span>
+				</div>
+			</a>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-bars" aria-hidden="true"></i> Menü</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Job-Room</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Amstat</a>
+					</li>
+					<li class="nav-item">
+						<button class="btn btn-primary">Login</button>
+					</li>
+					<li class="nav-item">
+						<ul class="navbar-nav navbar--language-switcher" id="languageSwitcher">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">DE</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">FR</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">IT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">EN</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<div class="filter">
+	<div class="toolbar">
+		<div class="container">
+			<div class="toolbar-collapse">
+				<ul class="toolbar-nav toolbar-nav--has-icon">
+					<li class="nav-title">
+						<h2 class="light">Unsere Leistungen für</h2>
+					</li>
+					<li class="nav-item active">
+						<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-binoculars" aria-hidden="true"></i>
+									</span>
+								</span>
+							Stellensuchende
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-building" aria-hidden="true"></i>
+									</span>
+								</span>
+							Unternehmen
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-eye" aria-hidden="true"></i>
+									</span>
+								</span>
+							Arbeitsvermittler
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-university" aria-hidden="true"></i>
+									</span>
+								</span>
+							Institutionen
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- content -->
+<div class="container">
+	{% body %}
+</div>
+<!-- /content -->
+
+<footer>
+	<div class="container">
+		<h2 class="light">In Zusammenarbeit</h2>
+		<div class="footer--logos">
+			<div class="footer--logos__logo"><img class="cd-bund" src="{{baseurl}}/assets/styleguide/images/seco-de-neg.png" /></div>
+			<div class="footer--logos__logo"><img src="{{baseurl}}/assets/styleguide/images/alv.png" /></div>
+			<div class="footer--logos__logo"><img src="{{baseurl}}/assets/styleguide/images/rav.png" /></div>
+			<div class="footer--logos__logo"><img src="{{baseurl}}/assets/styleguide/images/eures.png" /></div>
+		</div>
+	</div>
+</footer>
+<div class="footer--seco">
+	<a href="#">Staatssekretariat für Wirtschaft SECO</a>
+	<a href="#">Rechtliche Grundlagen</a>
+</div>
+<!-- /footer -->
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+{{#if fabricator}}
+<script src="{{baseurl}}/assets/fabricator/scripts/f.js"></script>
+{{/if}}
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- core ALV-CH -->
+<script src="{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+	WebFont.load({
+		google: {
+			families: ['Open+Sans:300,400,700:latin']
+		}
+	});
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>

@@ -1,7 +1,31 @@
-<h1>Hello, World!</h1>
+---
+layout: portal
+fabricator: true
+---
+<div class="base">
+	<div class="base__subnavbar">
+		<!-- subnavbar -->
+		<ul class="nav subnavbar-nav md-whiteframe-1dp">
+			<li class="nav-title">
+				Portal
+			</li>
+			{{#each views.pages.items}}
+			<li class="nav-item">
+				<a class="nav-link" href="/pages/{{@key}}.html">{{name}}</a>
+			</li>
+			{{/each}}
+		</ul>
 
-{{> paragraph}}
+		<!-- /subnavbar -->
+	</div>
 
-<div>
-	{{> form}}
+	<div class="base__content">
+		<h1>Hello, World!</h1>
+
+		{{> paragraph}}
+
+		<div>
+			{{> form}}
+		</div>
+	</div>
 </div>
