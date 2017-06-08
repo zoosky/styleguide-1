@@ -67,3 +67,22 @@
 		}
 	}
 }
+
+.filter-nav {
+	font-size: $small-font-size;
+	margin-bottom: $margin-bottom-general;
+
+	.nav-link {
+
+		&:hover {
+			background: $gray-lighter;
+			color: $brand-primary;
+		}
+
+		&.active {
+			font-weight: $text-weight-bold;
+
+			box-shadow: none;
+		}
+	}
+}

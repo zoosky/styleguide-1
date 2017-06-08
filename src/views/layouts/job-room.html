@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<div class="header fixed-top">
+	<div class="header sticky-top">
 		<!-- ALV-HEADER -->
 		<div class="alv-header alv-header--inverse bg-inverse">
 			<span class="alv-header__brand mb-0">
@@ -76,56 +76,18 @@
 				</div>
 			</div>
 		</nav>
-	</div>
 
-	<div class="jumbotron jumbotron-fluid jumbotron--has-filter" style="background: url('{{baseurl}}/assets/styleguide/images/bg-jobroom.jpg');">
-
-		<div class="filter">
+		<div class="filter filter--inverse md-whiteframe-3dp">
 			<div class="toolbar">
 				<div class="container">
 					<div class="toolbar-collapse">
-						<ul class="toolbar-nav center toolbar-nav--has-icon">
-							<li class="nav-title">
-								<h2 class="light">Job-Room bietet Leisungen für</h2>
-							</li>
-							<li class="nav-item active">
-								<a href="#" class="nav-link">
-								<span class="nav-link__icon">
-									<span class="icon__stack">
-										<i class="fa fa-binoculars" aria-hidden="true"></i>
-									</span>
-								</span>
-									Stellensuchende
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">
-								<span class="nav-link__icon">
-									<span class="icon__stack">
-										<i class="fa fa-building" aria-hidden="true"></i>
-									</span>
-								</span>
-									Unternehmen
-								</a>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">
-								<span class="nav-link__icon">
-									<span class="icon__stack">
-										<i class="fa fa-eye" aria-hidden="true"></i>
-									</span>
-								</span>
-									Arbeitsvermittler
-								</a>
-							</li>
-						</ul>
+						<form class="form-inline toolbar-form">
+							{{> job-search}}
+							<button type="submit" class="btn btn-primary btn-lg">6 Jobs</button>
+						</form>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="container">
-			{{> landingpage}}
 		</div>
 	</div>
 
@@ -135,10 +97,13 @@
 		<div class="base">
 
 			<div class="base__subnavbar">
+
+				{{> job-filter}}
+
 				{{#if fabricator}}
 				{{> f-control-bar}}
 				{{> f-icons}}
-				{{> f-menu}}
+				{{> f-menu-slim}}
 				{{/if}}
 			</div>
 

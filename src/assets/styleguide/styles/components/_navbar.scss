@@ -1,15 +1,10 @@
 // Navbar
-
-.bg-faded {
-	background-color: rgba($gray-lighter, .5);
-
-	border: none;
-	border-bottom: 1px solid $gray-lighter;
-}
-
 .navbar {
 	// todo??!!
 	font-size: 20px;
+
+	border: none;
+	border-bottom: 1px solid $gray-lighter;
 }
 
 .navbar-brand {
@@ -128,6 +123,58 @@
 				font-weight: 700;
 				color: $brand-inverse;
 			}
+		}
+	}
+}
+
+
+.toolbar-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+
+	&.center {
+		justify-content: center;
+	}
+
+	.form-group {
+		flex-grow: 1;
+
+		// todo check bootstrap?!
+		margin: $filter-toolbar-title-padding .5rem;
+
+		&.form-group--wide {
+			flex-grow: 2;
+		}
+
+		> input {
+			width: 100%;
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	button {
+		flex-grow: 1;
+		// todo check bootstrap?!
+		margin: $filter-toolbar-title-padding .5rem;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
 		}
 	}
 }

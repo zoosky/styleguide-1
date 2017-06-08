@@ -1,12 +1,14 @@
 ---
-layout: job-room
+layout: jr-home
 fabricator: true
 ---
 
 <h1 data-f-toggle="labels">Job-Room</h1>
 
-{{#each materials.job-room.items}}
+{{#each views.job-room.items}}
 
-{{> f-item this}}
+<li>
+	<a href="job-room/{{@key}}.html" class="f-item-heading">{{name}}</a>
+</li>
 
 {{/each}}

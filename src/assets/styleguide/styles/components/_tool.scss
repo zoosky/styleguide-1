@@ -8,3 +8,13 @@ h1.tool__heading {
 	margin-top: 2em;
 	margin-bottom: .75em;
 }
+
+.result-list__item {
+	cursor: pointer;
+
+	padding: $alv-box-radius;
+
+	&:hover {
+		background: $main-accent-color-50;
+	}
+}

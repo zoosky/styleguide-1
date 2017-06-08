@@ -47,7 +47,29 @@ h4, h5, h6 {
 .text--white-color {
 	color: $white;
 }
+.text--base-color {
+	 color: $body-color;
+}
 
 .text--no-letterspacing {
 	letter-spacing: 0;
+}
+
+.text--line-height--h1{
+	line-height: $font-size-h1;
+}
+.text--line-height--h2 {
+	line-height: $font-size-h2;
+}
+.text--line-height--h3 {
+	line-height: $font-size-h3;
+}
+.text--line-height--h4 {
+	line-height: $font-size-h4;
+}
+.text--line-height--h5 {
+	line-height: $font-size-h5;
+}
+.text--line-height--h6 {
+	line-height: $font-size-h6;
 }

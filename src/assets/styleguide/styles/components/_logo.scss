@@ -5,25 +5,19 @@
 	height: 100%;
 	width: 100%;
 
-	background: $brand-primary;
+	background-color: darken($body-bg, 3%);
 	display: inline-block;
 
 	@include alv-border-radius($alv-box-radius);
 
-	color: $white;
-	font-weight: 700;
-
-	font-size: $font-size-h2;
-	letter-spacing: $text-h2-spacing;
-
 	padding: $alv-box-padding;
 
 	&.flex-height {
-		height: calc(100% * #{$phi});
+		height: auto;
 	}
 
 	&.flex-width {
-		width: calc(100% * #{$golden-ratio});
+		width: auto;
 	}
 }
 
