@@ -105,6 +105,7 @@ $text-weight-light: 300;
 
 // Logo
 $logo-height: 90px;
+$z-index-logo: 100;
 
 //* vars.golden-ratio */
 $phi: 1.61803398875;
@@ -127,6 +128,7 @@ $nav-link-padding-x: 1em;
 $margin-bottom-general: 1.5rem;
 $margin-bottom-filter: $margin-bottom-general;
 $margin-bottom-narrow: $margin-bottom-general/2;
+$margin-bottom-landingpage: $margin-bottom-general*2;
 
 $filter-toolbar-padding-y: 1.5rem;
 $filter-toolbar-padding-x: 1.5rem;

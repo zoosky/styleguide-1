@@ -19,10 +19,11 @@
 }
 */
 .header {
-	//padding-top: 96px;
-
-	&.header--has-filter {
-
+	// todo refactoring!!
+	margin-bottom: 4rem;
+	+ .toolbar,
+	+ .jumbotron {
+		margin-top: -4rem;
 	}
 }
 
@@ -73,20 +74,4 @@
 	.alv-header__brand {
 		color: $inverse-color;
 	}
-}
-
-
-/*------------------------------------*\
-  #FILTER
-\*------------------------------------*/
-
-.filter {
-	border-bottom: 1px solid $gray-lighter;
-
-	margin-bottom: $margin-bottom-filter;
-}
-
-.jumbotron > .filter,
-.filter.filter--inverse {
-	background-color: rgba($gray-lightest, .75);
 }

@@ -1,12 +1,16 @@
 // Tools > Job-Room & Amstat
 // todo: wie soll dies abgebildet werden? eigenes toolkit?!
 
-h1.tool__heading {
+.tool__heading {
 	font-weight: $text-weight-light;
 	letter-spacing: $text-base-spacing;
 
 	margin-top: 2em;
 	margin-bottom: .75em;
+}
+
+.jumbotron--landingpage .tool__heading {
+	margin-top: .75em;
 }
 
 .result-list__item {

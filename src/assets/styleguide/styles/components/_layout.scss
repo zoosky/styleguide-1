@@ -1,12 +1,30 @@
 /**
  * CONTENTS
  *
+ * CONTAINER............(()).
  * BASE.................(()).
  *
  * ALV-HEADER
  * alv-header...........(()).
  *
  */
+
+/*------------------------------------*\
+  #CONTAINER
+\*------------------------------------*/
+
+.container--landingpage {
+	padding-top: $margin-bottom-general;
+	padding-bottom: $margin-bottom-general;
+
+	&:first-child {
+		padding-top: 0;
+	}
+}
+
+.container--light {
+	background-color: rgba($gray-lightest, 1.0);
+}
 
 /*------------------------------------*\
   #BASE
@@ -53,10 +71,11 @@
 .landing-page {
 	@include make-row();
 
-	// todo: mrgin-bottom?!
+	// todo: margin-bottom?!
 
 	.landing-page__regular,
-	.landing-page__wide {
+	.landing-page__wide,
+	.landing-page__half {
 		position: relative;
 		width: 100%;
 		min-height: 1px; // Prevent columns from collapsing when empty
@@ -73,9 +92,25 @@
 		@include make-col(2, 3);
 	}
 
+	.landing-page__half {
+		@include make-col(1, 2);
+	}
+
 	.landing-page--container {
 		@include alv-border-radius($alv-box-radius);
 		background: $gray-lightest;
 		padding: $alv-box-radius;
+	}
+
+	.landing-page--content {
+		text-align: center;
+		padding: $alv-box-radius;
+
+		//todo or bootstrap?!
+		height: 250px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 }
