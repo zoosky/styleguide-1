@@ -163,7 +163,11 @@
 	}
 
 	.nav-title {
-		padding: $filter-toolbar-title-padding 0;
+		padding: $filter-toolbar-title-padding $filter-toolbar-title-padding;
+
+		&:first-child {
+			padding-left: 0;
+		}
 	}
 
 	.nav-item {

@@ -118,3 +118,14 @@
 	border-radius: 50%;
 	background:  $black;
 }
+
+// Form Icon Addon
+.form-group--icon {
+	position: relative;
+
+	.form-control--icon {
+		position: absolute;
+		top: .5em;
+		right: .5em;
+	}
+}
