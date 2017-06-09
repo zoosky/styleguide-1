@@ -31,18 +31,36 @@
 	height: $logo-height;
 	width: calc(#{$logo-height} * #{$phi});
 
+	font-weight: 300;
+
 	background: $additional-accent-amber;
 	color: $black;
 	display: inline-block;
 
 	@include alv-border-radius($alv-box-radius);
 
-	padding: $alv-box-padding;
+	padding: ($alv-box-padding/3) $alv-box-padding;
+}
+
+.logo__brand--amstat,
+.logo__brand--job-room {
+	font-size: $logo-brand-size;
+	letter-spacing: $logo-brand-spacing;
+
+	~.logo__title-small {
+		text-align: right;
+		line-height: .5;
+	}
+}
+
+.logo__brand--amstat {
+	letter-spacing: 4.8px;
 }
 
 .logo__title {
-	font-size: $font-size-h2;
-	letter-spacing: $text-h2-spacing;
+	font-size: $logo-size;
+	font-weight: 400;
+	letter-spacing: $logo-spacing;
 
 	.title__plus-ch,
 	.title__plus-ch:before {
@@ -52,15 +70,23 @@
 
 .logo__title-small {
 	color: $black;
-	font-size: $font-size-h4;
+	font-size: 1rem;
+	font-weight: 400;
 	letter-spacing: $text-h4-spacing;
+
+	.title__plus-ch {
+		font-weight: 300;
+	}
 
 	.title__plus-ch,
 	.title__plus-ch:before {
 		color: $gray;
 	}
 
-	//margin-bottom: 0.25rem;
+	~.logo__brand {
+		font-size: $logo-brand-size;
+		font-weight: 300;
+	}
 }
 
 .title__plus-ch:before {

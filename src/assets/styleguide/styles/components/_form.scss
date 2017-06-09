@@ -15,7 +15,7 @@
 .radio > label{
 	display: block;
 	position: relative;
-	padding-left: round($form-box-size);
+	padding-left: round($form-box-size + $form-box-margin);
 	margin-bottom: $form-check-margin-bottom;
 	cursor: pointer;
 }
@@ -24,13 +24,13 @@
 	&::before{
 		content: '';
 		position: absolute;
-		top: -($input-btn-border-width);
+		top: 0;
 		left: 0;
 
 		height: $form-box-size;
 		width: $form-box-size;
 
-		border: $input-btn-border-width solid $input-border-color;
+		border: $form-box-border-width solid $input-border-color;
 
 		background: white;
 	}
@@ -96,7 +96,7 @@
 	&::before{
 		content: '';
 		position: absolute;
-		top: -($input-btn-border-width);
+		top: 0;
 		left: 0;
 
 		height: $form-box-size;
@@ -104,7 +104,7 @@
 
 		border-radius: 50%;
 
-		border: $input-btn-border-width solid $input-border-color;
+		border: $form-box-border-width solid $input-border-color;
 	}
 }
 

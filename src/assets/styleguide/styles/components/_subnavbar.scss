@@ -3,7 +3,7 @@
 .subnavbar-nav {
 	flex-direction: column;
 	padding-bottom: $alv-box-radius;
-	margin-bottom: $margin-bottom-general;
+	margin-bottom: $margin-x-general;
 
 	background: $gray-lightest;
 	@include alv-border-radius($alv-box-radius);
@@ -70,7 +70,7 @@
 
 .filter-nav {
 	font-size: $small-font-size;
-	margin-bottom: $margin-bottom-general;
+	margin-bottom: $margin-x-general;
 
 	.nav-link {
 

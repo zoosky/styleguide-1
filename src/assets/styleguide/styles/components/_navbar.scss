@@ -15,7 +15,7 @@
 	&.logo {
 		position: absolute;
 		top: -($navbar-padding-y);
-		z-index: $z-index-logo;
+		z-index: $logo-zIndex;
 	}
 }
 
@@ -134,7 +134,7 @@
 	background-color: rgba($gray-lighter, .5);
 	border-bottom: 1px solid $gray-lighter;
 
-	margin-bottom: $margin-bottom-filter;
+	margin-bottom: $margin-x-filter;
 
 	&.toolbar--light {
 		background-color: rgba($gray-lightest, 1.0);

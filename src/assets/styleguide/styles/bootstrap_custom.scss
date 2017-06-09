@@ -142,6 +142,10 @@ $nav-link-padding:              $nav-link-padding-y $nav-link-padding-x;
 // Buttons
 $btn-primary-bg:                 $brand-primary;
 
+// Breadcrumb
+$breadcrumb-bg:                 transparent;
+$breadcrumb-divider:            "\f054";
+
 // Bootstrap-slider
 $slider-line-height: 20px !default;
 $slider-border-radius: 4px !default;
@@ -153,19 +157,20 @@ $slider-vertical-height: 210px !default;
 // Forms
 
 // Radio- & Checkbox
-$form-box-size: 1.6rem;
+$form-box-size: 26px;
 $form-box-margin: 6px;
+$form-box-border-width: $input-btn-border-width*2;
 
-$form-box-check-height: $form-box-size/2;
-$form-box-check-width: $form-box-check-height/2;
+$form-box-check-height: $form-box-size/2 - $form-box-border-width/2;
+$form-box-check-width: ceil($form-box-size/4);
 
 $form-box-check-border: $form-box-check-width/2;
 
 $form-box-check-deg: 45deg;
 
-$form-box-check-top: ($form-box-check-height * cos($form-box-check-deg)) / 2;
-$form-box-check-left: decimal-ceil($form-box-size/3,1);
+$form-box-check-top: $form-box-check-height/2;
+$form-box-check-left: round($form-box-size/3);
 
-$form-box-radio-size: $form-box-size/2;
-$form-box-radio-top: calc(#{$form-box-size/4} - #{$input-btn-border-width});
-$form-box-radio-left: $form-box-size/4;
+$form-box-radio-size: $form-box-size/2 - $form-box-border-width/2;
+$form-box-radio-top: round($form-box-size/4);
+$form-box-radio-left: ceil($form-box-size/4);

@@ -1,5 +1,5 @@
 ---
-layout: portal
+layout: standard
 fabricator: true
 ---
 <div class="base">
@@ -28,9 +28,8 @@ fabricator: true
 			{{> form}}
 		</div>
 	</div>
-</div>
 
-<script>
-	var filter = document.getElementById('toolbar');
-	filter.style.display = 'none';
-</script>
+	<div class="base__related">
+		{{> lists.related}}
+	</div>
+</div>
