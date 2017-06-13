@@ -67,3 +67,12 @@ Idea:
   * https://cdn.jsdelivr.net/gh/alv-ch/job-desk@1.0.0-SNAPSHOT-201705021359/src/main/assets/styles/jobdesk.min.css
 * https://www.maxcdn.com/open-source/
 
+## NPM
+
+Publish a new npm package for an orgnization:
+* npm init --scope=<org_scope>
+* By default all scoped packages are published privately.
+* To publish a scoped package publicly, pass the access flag with the value public
+* npm publish --access public
+* see: https://www.npmjs.com/docs/orgs/publishing-an-org-scoped-package.html
+

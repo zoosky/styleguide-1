@@ -1,5 +1,5 @@
 {
-  "name": "alv-styleguide",
+  "name": "@alv-ch/alv-styleguide",
   "version": "0.0.1",
   "description": "alv-ch styleguide",
   "main": "README.md",
@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alv-ch/styleguide.git"
+    "url": "git+https://github.com/alv-ch/styleguide.git"
   },
   "engines": {
     "node": ">=0.10.0",
@@ -44,8 +44,13 @@
     "run-sequence": "^1.0.2",
     "script-loader": "^0.6.1",
     "webpack": "^1.8.11",
-    "bootstrap":"4.0.0-alpha.6",
-    "font-awesome":"4.7.0",
-    "bootstrap-slider":"9.8.0"
-  }
+    "bootstrap": "4.0.0-alpha.6",
+    "font-awesome": "4.7.0",
+    "bootstrap-slider": "9.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/alv-ch/styleguide/issues"
+  },
+  "homepage": "https://github.com/alv-ch/styleguide#readme",
+  "dependencies": {}
 }
