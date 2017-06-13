@@ -36,6 +36,8 @@
  */
 
 .base {
+	margin-bottom: $margin-x-general;
+
 	@include make-row();
 
 	// todo: margin-bottom?!
@@ -100,6 +102,8 @@
 		@include alv-border-radius($alv-box-radius);
 		background: $gray-lightest;
 		padding: $alv-box-radius;
+
+		min-height: $landingpages-min-height;
 	}
 
 	.landing-page--content {

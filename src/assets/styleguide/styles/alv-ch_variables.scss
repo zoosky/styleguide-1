@@ -24,8 +24,8 @@ $main-color-white: #fffff;
 
 $main-accent-color: #007AB1;
 
-$additional-accent-amber: #ffb120;
-$additional-accent-yellow: #ffc500;
+$additional-accent-amber: #ffc500;
+$additional-accent-yellow: #ffb120;
 $additional-accent-green: #64b500;
 
 $other-colors-red:    #F7001D;
@@ -93,7 +93,7 @@ $additional-accent-green-400: #8bc742;
 $text-base-spacing: 0;
 $text-base-size: 1.125rem;
 
-$text-h1-spacing: -3.6px;
+$text-h1-spacing: -0.8px; //-3.6px;
 $text-h2-spacing: -0.8px;
 $text-h3-spacing: $text-base-spacing;
 $text-h4-spacing: $text-base-spacing;
@@ -112,6 +112,9 @@ $logo-brand-size: $logo-size;
 $logo-brand-spacing: $logo-spacing;
 
 $logo-zIndex: 1100;
+
+// Landingpages
+$landingpages-min-height: 280px;
 
 //* vars.golden-ratio */
 $phi: 1.61803398875;

@@ -40,6 +40,10 @@
 	@include alv-border-radius($alv-box-radius);
 
 	padding: ($alv-box-padding/3) $alv-box-padding;
+
+	-webkit-box-shadow: 10px 5px 20px 10px rgba(0,0,0,0.05);
+	-moz-box-shadow: 10px 5px 20px 10px rgba(0,0,0,0.05);
+	box-shadow: 10px 5px 20px 10px rgba(0,0,0,0.05);
 }
 
 .logo__brand--amstat,

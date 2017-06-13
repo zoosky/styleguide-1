@@ -42,6 +42,19 @@ strong {
 	vertical-align: sub;
 }
 
+.text--center-align {
+	text-align: center;
+}
+.text--right-align {
+	text-align: right;
+}
+.text--left-align {
+	text-align: left;
+}
+.text--justify-align {
+	text-align: justify;
+}
+
 .text--primary-color {
 	color: $brand-primary;
 }
