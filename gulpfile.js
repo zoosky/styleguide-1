@@ -34,14 +34,14 @@ var config = {
 		fonts: 'src/assets/styleguide/fonts/**/*',
 		views: 'src/styleguide/views/*.html'
 	},
-	dest: 'dist'
+	dest: 'dist',
+	build: 'build'
 };
 
 
 // webpack
 var webpackConfig = require('./webpack.config')(config);
 var webpackCompiler = webpack(webpackConfig);
-
 
 // clean
 gulp.task('clean', function (cb) {
@@ -72,7 +72,6 @@ gulp.task('styles:styleguide', function () {
 		.pipe(gulp.dest(config.dest + '/assets/styleguide/styles'))
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
-
 
 gulp.task('styles', ['styles:fabricator', 'styles:styleguide']);
 
@@ -118,6 +117,34 @@ gulp.task('assemble', function (done) {
 		logErrors: config.dev
 	});
 	done();
+});
+
+
+// clean:build
+gulp.task('clean:build', function (cb) {
+	del([config.build], cb);
+});
+// build
+gulp.task('styles:build', function () {
+	gulp.src(config.src.styles.styleguide)
+		.pipe(sourcemaps.init())
+		.pipe(sass().on('error', sass.logError))
+		.pipe(prefix('last 1 version'))
+		.pipe(gulpif(!config.dev, csso()))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest(config.build + '/css'))
+		.pipe(gulpif(config.dev, reload({stream:true})));
+});
+// images:build
+gulp.task('images:build', function () {
+	return gulp.src(config.src.images)
+		.pipe(imagemin())
+		.pipe(gulp.dest(config.build + '/images'));
+});
+// fonts:build
+gulp.task('fonts:build', function () {
+	return gulp.src(config.src.fonts)
+		.pipe(gulp.dest(config.build + '/fonts'));
 });
 
 
@@ -168,6 +195,24 @@ gulp.task('serve', function () {
 
 });
 
+// default build task
+gulp.task('build', ['clean:build'], function () {
+
+	// define build tasks
+	var tasks = [
+		'styles:build',
+		'images:build',
+		'fonts:build'
+	];
+
+	// run build
+	runSequence(tasks, function () {
+		if (config.dev) {
+			gulp.start('serve');
+		}
+	});
+});
+
 
 // default build task
 gulp.task('default', ['clean'], function () {
@@ -177,6 +222,7 @@ gulp.task('default', ['clean'], function () {
 		'styles',
 		'scripts',
 		'images',
+		'fonts',
 		'assemble'
 	];
 
