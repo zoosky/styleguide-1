@@ -52,9 +52,9 @@ $blue:   $main-accent-color;
 // Create grayscale
 $gray-dark:                 darken($main-color-gray, 13%);
 $gray:                      $main-color-gray;
-$gray-light:                $main-color-black-400;
-$gray-lighter:              $main-color-black-100;
-$gray-lightest:             $main-color-black-50;
+$gray-light:                $main-color-gray-400;
+$gray-lighter:              $main-color-gray-100;
+$gray-lightest:             $main-color-gray-50;
 
 
 // Reassign color vars to semantic color scheme
@@ -147,8 +147,9 @@ $breadcrumb-bg:                 transparent;
 $breadcrumb-divider:            "\f054";
 
 // Bootstrap-slider
-$slider-line-height: 20px !default;
-$slider-border-radius: 4px !default;
+$slider-line-height: 2rem;
+$slider-track-height: 6px;
+$slider-border-radius: 0;
 $slider-horizontal-width: 210px !default;
 $slider-vertical-height: 210px !default;
 

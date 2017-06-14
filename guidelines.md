@@ -66,6 +66,7 @@ Idea:
   * add “.min” to any JS/CSS file to get a minified version - if one doesn't exists, we’ll generate it for you
   * https://cdn.jsdelivr.net/gh/alv-ch/job-desk@1.0.0-SNAPSHOT-201705021359/src/main/assets/styles/jobdesk.min.css
 * https://www.maxcdn.com/open-source/
+* https://www.keycdn.com/blog/web-font-performance/
 
 ## NPM
 
@@ -75,4 +76,13 @@ Publish a new npm package for an orgnization:
 * To publish a scoped package publicly, pass the access flag with the value public
 * npm publish --access public
 * see: https://www.npmjs.com/docs/orgs/publishing-an-org-scoped-package.html
+
+## Code Guidelines
+
+* https://cssguidelin.es/
+* http://codeguide.co/
+
+* http://ianfeather.co.uk/a-maintainable-style-guide/
+* https://gdstechnology.blog.gov.uk/2014/12/11/govuk-living-style-guide/
+* https://standards.usa.gov/page-templates/#documentation-page
 
