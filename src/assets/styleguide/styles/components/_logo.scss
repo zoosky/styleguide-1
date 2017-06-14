@@ -11,6 +11,7 @@
 	@include alv-border-radius($alv-box-radius);
 
 	padding: $alv-box-padding;
+	margin-bottom: $margin-x-general;
 
 	&.flex-height {
 		height: auto;

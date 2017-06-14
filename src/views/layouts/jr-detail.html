@@ -38,18 +38,18 @@
 			<div class="base__subnavbar" style="font-size: 80%;">
 
 				<div class="logo-box flex-height md-whiteframe-1dp">
-					<address>
-						<strong>Adato AG</strong><br />
-						Lagerhausstrasse 10<br />
-						8400 Winterthur<br />
-					</address>
+					<div class="job-detail__content">
+						<address>
+							<strong>Adato AG</strong><br />
+							Lagerhausstrasse 10<br />
+							8400 Winterthur<br />
+						</address>
 
-					<div>
 						Telefon 052 269 23 23<br />
 						www.adato.ch
 					</div>
 
-					<div style="margin-top: 1rem;">
+					<div class="job-detail__content">
 						<strong>Ihre Kontaktperson</strong><br />
 						Reto Keller<br />
 						Personalberater<br />
@@ -58,6 +58,25 @@
 						+41 52 269 23 26<br />
 					</div>
 				</div>
+
+				<p></p>
+				<div id="map" class="job-detail__map"></div>
+				<script>
+					function initMap() {
+						var bern = {lat: 46.946953, lng: 7.424150};
+						var map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 12,
+							center: bern
+						});
+						var marker = new google.maps.Marker({
+							position: bern,
+							map: map
+						});
+					}
+				</script>
+				<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3DRbPhGw-Q2RRK7EkcYqDsSFd0TSn00I&callback=initMap">
+				</script>
 
 				{{#if fabricator}}
 				{{> f-control-bar}}
