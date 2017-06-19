@@ -2,8 +2,8 @@
  * CONTENTS
  *
  * FORMS
- * radio- & checkbox
- * alv-themes...........(()).
+ * radio- & checkbox....(()).
+ * select
  *
  */
 
@@ -125,7 +125,51 @@
 
 	.form-control--icon {
 		position: absolute;
-		top: .5em;
-		right: .5em;
+		top: .25em;
+		right: .25em;
+		font-size: .95em;
 	}
+
+	.form-control-lg {
+		~ .form-control--icon {
+			top: .5em;
+			right: .5em;
+			font-size: 1em;
+		}
+	}
+}
+
+/*------------------------------------*\
+  #CUSTOM-SELECT
+\*------------------------------------*/
+.custom-select {
+	width: 100%;
+	border-color: $input-border-color;
+
+	@if $enable-rounded {
+		// Manually use the if/else instead of the mixin to account for iOS override
+		border-radius: $input-border-radius;
+	} @else {
+		// Otherwise undo the iOS default
+		border-radius: 0;
+	}
+}
+
+
+/*------------------------------------*\
+  #CUSTOM
+\*------------------------------------*/
+
+.form-control {
+	font-family: $font-family-base;
+}
+
+.form-group--break {
+	margin-bottom: (2 * $margin-y-general);
+}
+
+.form-group--optional label:before {
+	/*content: 'optional';
+	font-size: $small-font-size;
+	vertical-align: super;*/
 }

@@ -76,6 +76,8 @@ $body-color:    $main-color-black;
 $inverse-bg:    $main-color-black;
 $inverse-color: $white; //$main-color-black-400
 
+// Forms
+$input-border-color:             $main-color-gray-400;
 
 // Links
 //
@@ -145,6 +147,11 @@ $btn-primary-bg:                 $brand-primary;
 // Breadcrumb
 $breadcrumb-bg:                 transparent;
 $breadcrumb-divider:            "\f054";
+
+// Modal
+$modal-xl:                    980px;
+$modal-xxl:                   1220px;
+$modal-xxxl:                  1380px;
 
 // Bootstrap-slider
 $slider-line-height: 2rem;

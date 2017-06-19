@@ -29,8 +29,8 @@
 .nav-item.megamenu.show {
 	background: $white;
 
-	border-right: 1px solid $main-color-gray-400;
-	border-left: 1px solid $main-color-gray-400;
+	border-right: 1px solid $input-border-color;
+	border-left: 1px solid $input-border-color;
 
 	.nav-link {
 		margin-right: calc(.5rem - 1px);

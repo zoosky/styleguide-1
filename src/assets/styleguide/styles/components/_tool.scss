@@ -10,6 +10,10 @@
 	margin-bottom: .75em;
 }
 
+.jumbotron--job-room {
+	background-repeat: no-repeat !important;
+	background: $gray-lighter;
+}
 .jumbotron--landingpage .tool__heading {
 	margin-top: .75em;
 }
@@ -81,4 +85,88 @@
 			margin-left: 0;
 		}
 	}
+}
+
+// Candidate
+.candidate-search {
+	// todo media breakpoints!
+	width: calc(100% - #{$margin-y-general * 2});
+
+	margin: ($margin-x-general * 2) $margin-y-general;
+	display: inline-block;
+
+	legend {
+		width: calc(75% - #{$margin-y-general});
+		border-bottom: $input-btn-border-width solid $input-border-color;
+		margin-bottom: (2 * $margin-x-general); // todo form-group--break!!
+		font-size: $font-size-h4;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: row;
+
+		label {
+			flex-grow: 0;
+			width: calc(33% - #{$margin-y-general});
+			text-align: right;
+			margin-right: $margin-y-general;
+		}
+
+		div {
+			flex-grow: 0;
+			width: calc(42% - #{$margin-y-general});
+		}
+	}
+
+	.btn {
+		margin-left: 33%;
+		width: calc(42% - #{$margin-y-general});
+	}
+}
+
+.candidate-search__radar {
+	position: absolute;
+	top: ($margin-x-general + $margin-x-narrow);
+	right: $margin-y-general;
+
+	width: calc(25% - #{$margin-y-general});
+	display: inline-block;
+
+	padding: $margin-x-narrow;
+	font-size: $small-font-size;
+	text-align: center;
+	color: $brand-primary;
+
+	&:hover {
+		background: $brand-primary;
+		color: $inverse-color;
+
+		a {
+			color: $inverse-color;
+		}
+
+		.badge-radar {
+			color: $brand-primary;
+
+			@include badge-variant($inverse-color);
+		}
+	}
+
+	a {
+		display: block;
+		font-weight: 700;
+		margin-top: $margin-x-narrow;
+		color: transparent;
+	}
+}
+
+
+.badge-radar {
+	font-size: 1em;
+	margin: $margin-x-narrow/2;
+	padding: $margin-x-narrow/2 $margin-y-general;
+	border-radius: 1em;
+
+	@include badge-variant($brand-primary);
 }
