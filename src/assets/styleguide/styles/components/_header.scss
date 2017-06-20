@@ -13,17 +13,19 @@
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
-/*
-.header.fixed-top ~ .container {
-	padding-top: 115px; // 30px for logo, Xpx for alv-header, Xpx for navbar
-}
-*/
+
 .header {
 	// todo refactoring!!
 	margin-bottom: 4rem;
+
 	+ .toolbar,
 	+ .jumbotron {
 		margin-top: -4rem;
+	}
+
+	&.has-jumbotron,
+	&.has-toolbar {
+		margin-bottom: 0;
 	}
 }
 
