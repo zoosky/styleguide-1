@@ -1,0 +1,92 @@
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+h1 {
+	letter-spacing: $text-h1-spacing;
+	font-weight: 700;
+}
+
+h2 {
+	letter-spacing: $text-h2-spacing;
+	font-weight: 400;
+}
+
+h3 {
+	letter-spacing: $text-h3-spacing;
+	font-weight: 400;
+}
+
+h4, h5, h6 {
+	letter-spacing: $text-h4-spacing;
+	font-weight: 700;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/*------------------------------------*\
+  #PARAGRAPH
+\*------------------------------------*/
+
+.light,
+.text--light {
+	font-weight: 300;
+}
+
+.text--super {
+	vertical-align: super;
+}
+.text--sub {
+	vertical-align: sub;
+}
+
+.text--center-align {
+	text-align: center;
+}
+.text--right-align {
+	text-align: right;
+}
+.text--left-align {
+	text-align: left;
+}
+.text--justify-align {
+	text-align: justify;
+}
+
+.text--primary-color {
+	color: $brand-primary;
+}
+.text--inverse-color {
+	color: $brand-inverse;
+}
+.text--white-color {
+	color: $white;
+}
+.text--base-color {
+	 color: $body-color;
+}
+
+.text--no-letterspacing {
+	letter-spacing: 0;
+}
+
+.text--line-height--h1{
+	line-height: $font-size-h1;
+}
+.text--line-height--h2 {
+	line-height: $font-size-h2;
+}
+.text--line-height--h3 {
+	line-height: $font-size-h3;
+}
+.text--line-height--h4 {
+	line-height: $font-size-h4;
+}
+.text--line-height--h5 {
+	line-height: $font-size-h5;
+}
+.text--line-height--h6 {
+	line-height: $font-size-h6;
+}

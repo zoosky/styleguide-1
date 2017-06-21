@@ -1,0 +1,187 @@
+/* ==========================================================
+ * bootstrap-variables.scss
+ * Bootstrap overrides
+ * Copy variables from `_variables.scss` to this file to override default values
+ * without modifying source files.
+ *
+ *
+ * Author: Thomas D'Ascoli, thomas@dasco.li
+ * Date:   2017-05-25 17:52
+ *
+ * Copyright 2017 ((Federal Chancellery of Switzerland))
+ * Licensed under MIT
+ =========================================================== */
+
+/**
+ * CONTENTS
+ *
+ * COLORS
+ * Main Color...........(()).
+ *
+ * OPTIONS
+ *
+ * BODY
+ *
+ * LINKS
+ *
+ * TYPOGRAPHY
+ * Font-Family
+ * Paragraph
+ * Headlines
+ *
+ * ALV-CH Specific
+ *
+ */
+
+/*------------------------------------*\
+  #COLORS
+\*------------------------------------*/
+
+/**
+ * Grayscale and brand colors for use across Bootstrap.
+ */
+
+
+// Start with assigning color names to specific hex values.
+$red:    $other-colors-red;
+$orange: $additional-accent-amber;
+$yellow: $additional-accent-yellow;
+$green:  $additional-accent-green;
+$blue:   $main-accent-color;
+
+// Create grayscale
+$gray-dark:                 darken($main-color-gray, 13%);
+$gray:                      $main-color-gray;
+$gray-light:                $main-color-gray-400;
+$gray-lighter:              $main-color-gray-100;
+$gray-lightest:             $main-color-gray-50;
+
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $main-accent-color;
+$brand-inverse:             $main-color-black;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded:            false;
+$enable-shadows:            true;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color:    $main-color-black;
+$inverse-bg:    $main-color-black;
+$inverse-color: $white; //$main-color-black-400
+
+// Forms
+$input-border-color:             $main-color-gray-400;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $brand-primary;
+$link-hover-color:      $additional-accent-amber;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px,
+	xxxl: 1600px
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1380px,
+	xxxl: 1540px
+);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+$font-family-base:       $font-family-sans-serif;
+
+$font-size-base: $text-base-size; // Assumes the browser default, typically `16px`
+
+$font-size-h1: 3rem;
+$font-size-h2: 1.75rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.25rem;
+$font-size-h5: 1.125rem;
+$font-size-h6: 1.125rem;
+
+$small-font-size: 80%;
+
+// Navbar
+
+$navbar-light-color:                 $main-color-black;
+$navbar-light-hover-color:           $additional-accent-amber;
+$navbar-light-active-color:          $main-color-black;
+
+// Navs
+$nav-link-padding:              $nav-link-padding-y $nav-link-padding-x;
+
+// Buttons
+$btn-primary-bg:                 $brand-primary;
+
+// Breadcrumb
+$breadcrumb-bg:                 transparent;
+$breadcrumb-divider:            "\f054";
+
+// Modal
+$modal-xl:                    980px;
+$modal-xxl:                   1220px;
+$modal-xxxl:                  1380px;
+
+// Bootstrap-slider
+$slider-line-height: 2rem;
+$slider-track-height: 6px;
+$slider-border-radius: 0;
+$slider-horizontal-width: 210px !default;
+$slider-vertical-height: 210px !default;
+
+// ALV-CH
+
+// Forms
+
+$input-padding-x-sm:             $input-padding-y-sm;
+$input-padding-x-lg:             $input-padding-y-lg;
+
+// Radio- & Checkbox
+$form-box-size: 26px;
+$form-box-margin: 6px;
+$form-box-border-width: $input-btn-border-width*2;
+
+$form-box-check-height: $form-box-size/2 - $form-box-border-width/2;
+$form-box-check-width: ceil($form-box-size/4);
+
+$form-box-check-border: $form-box-check-width/2;
+
+$form-box-check-deg: 45deg;
+
+$form-box-check-top: $form-box-check-height/2;
+$form-box-check-left: round($form-box-size/3);
+
+$form-box-radio-size: $form-box-size/2 - $form-box-border-width/2;
+$form-box-radio-top: round($form-box-size/4);
+$form-box-radio-left: ceil($form-box-size/4);

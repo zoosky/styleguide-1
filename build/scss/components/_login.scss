@@ -1,0 +1,30 @@
+// Login Form
+.login {
+	// todo media breakpoints!
+	width: calc(100% - #{$margin-y-general * 2});
+
+	margin: ($margin-x-general * 2) $margin-y-general;
+	display: inline-block;
+
+	.form-group {
+		display: flex;
+		flex-direction: row;
+
+		label {
+			flex-grow: 0;
+			width: calc(25% - #{$margin-y-general});
+			text-align: right;
+			margin-right: $margin-y-general;
+		}
+
+		div {
+			flex-grow: 0;
+			width: calc(50% - #{$margin-y-general});
+		}
+	}
+
+	.btn {
+		margin-left: 25%;
+		width: calc(25% - #{$margin-y-general});
+	}
+}

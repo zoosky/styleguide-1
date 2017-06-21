@@ -17,6 +17,15 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack');
 
+var tildeImporter = require('node-sass-tilde-importer');
+var findup = require('findup-sync');
+const node_modules = findup('node_modules');
+var options = {
+	importer: tildeImporter,
+	includePaths: [node_modules] // this will find any node_modules above the current working directory
+};
+
+console.log(options);
 
 // configuration
 var config = {
@@ -30,6 +39,7 @@ var config = {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
 			styleguide: 'src/assets/styleguide/styles/alv-ch.scss'
 		},
+		sass: 'src/assets/styleguide/styles/**/*',
 		images: 'src/assets/styleguide/images/**/*',
 		fonts: 'src/assets/styleguide/fonts/**/*',
 		views: 'src/styleguide/views/*.html'
@@ -65,7 +75,7 @@ gulp.task('styles:fabricator', function () {
 gulp.task('styles:styleguide', function () {
 	gulp.src(config.src.styles.styleguide)
 		.pipe(sourcemaps.init())
-		.pipe(sass().on('error', sass.logError))
+		.pipe(sass(options).on('error', sass.logError))
 		.pipe(prefix('last 1 version'))
 		.pipe(gulpif(!config.dev, csso()))
 		.pipe(sourcemaps.write())
@@ -128,7 +138,7 @@ gulp.task('clean:build', function (cb) {
 gulp.task('styles:build', function () {
 	gulp.src(config.src.styles.styleguide)
 		.pipe(sourcemaps.init())
-		.pipe(sass().on('error', sass.logError))
+		.pipe(sass(options).on('error', sass.logError))
 		.pipe(prefix('last 1 version'))
 		.pipe(gulpif(!config.dev, csso()))
 		.pipe(sourcemaps.write())
@@ -145,6 +155,13 @@ gulp.task('images:build', function () {
 gulp.task('fonts:build', function () {
 	return gulp.src(config.src.fonts)
 		.pipe(gulp.dest(config.build + '/fonts'));
+});
+/**
+ * Copy images to build
+ */
+gulp.task('sass-files:build', function() {
+	return gulp.src(config.src.sass)
+		.pipe(gulp.dest(config.build + '/scss'));
 });
 
 
@@ -202,7 +219,8 @@ gulp.task('build', ['clean:build'], function () {
 	var tasks = [
 		'styles:build',
 		'images:build',
-		'fonts:build'
+		'fonts:build',
+		'sass-files:build'
 	];
 
 	// run build
@@ -212,7 +230,6 @@ gulp.task('build', ['clean:build'], function () {
 		}
 	});
 });
-
 
 // default build task
 gulp.task('default', ['clean'], function () {

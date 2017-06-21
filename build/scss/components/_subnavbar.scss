@@ -1,0 +1,89 @@
+// Subnavbar
+
+.subnavbar-nav {
+	flex-direction: column;
+	padding-bottom: $alv-box-radius;
+	margin-bottom: $margin-x-general;
+
+	background: $gray-lightest;
+	@include alv-border-radius($alv-box-radius);
+
+	.nav-title {
+		display: block;
+		padding: $nav-link-padding;
+		margin-bottom: $margin-x-narrow;
+
+		font-weight: $text-weight-light;
+
+		border-bottom: 1px solid $gray-lighter;
+
+		.nav-link--faq {
+			color: $nav-disabled-link-color;
+			font-size: 1rem;
+			display: inline-block;
+			padding: 0.125em;
+
+			float: right;
+
+			&:hover {
+				text-decoration: none;
+				background: $gray-lighter;
+				color: $body-color;
+			}
+		}
+	}
+
+
+	.nav-link {
+		color: $body-color;
+
+		&:hover {
+			background: $gray-lighter;
+			color: $body-color;
+		}
+
+		&.disabled {
+			color: $nav-disabled-link-color;
+		}
+
+		&.active {
+			font-weight: $text-weight-bold;
+
+			box-shadow: inset $subnav-link-active-border 0 0 0 $brand-primary;
+		}
+	}
+
+	.nav {
+		font-size: 1rem;
+
+		.nav-link {
+			//color: $main-color-gray-300;
+			color: $gray-light;
+
+			padding: $nav-link-padding-y calc(#{$nav-link-padding-x} + 0.5rem);
+
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+	}
+}
+
+.filter-nav {
+	font-size: $small-font-size;
+	margin-bottom: $margin-x-narrow;
+
+	.nav-link {
+
+		&:hover {
+			background: $gray-lighter;
+			color: $brand-primary;
+		}
+
+		&.active {
+			font-weight: $text-weight-bold;
+
+			box-shadow: none;
+		}
+	}
+}
