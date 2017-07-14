@@ -21,6 +21,7 @@ $( document ).ready(function() {
 
 	var header = $('header').detach();
 
-	$(header).appendTo('body');
-	$($.parseHTML(alvHeader)).appendTo('body');
+
+	$('.container.container-main').before($(alvHeader));
+	$('.container.container-main').before(header);
 });
