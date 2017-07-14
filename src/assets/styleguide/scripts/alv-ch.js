@@ -22,6 +22,6 @@ $( document ).ready(function() {
 	var header = $('header').detach();
 
 
-	$('.container.container-main').before($(alvHeader));
+	$('.container.container-main').before(alvHeader);
 	$('.container.container-main').before(header);
 });
