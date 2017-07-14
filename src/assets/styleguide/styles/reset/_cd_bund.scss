@@ -3,7 +3,7 @@
  */
 
 .access-keys,
-.nav-servicen,
+.nav-service,
 .nav-services h2,
 .nav-mobile,
 .mod-logo img {
@@ -32,8 +32,9 @@
 
 .mod-logo h2 {
 	font-size: $logo-size;
-	font-weight: 400;
+	font-weight: 700;
 	letter-spacing: $logo-spacing;
+	color: black;
 
 	.title__plus-ch,
 	.title__plus-ch:before {
