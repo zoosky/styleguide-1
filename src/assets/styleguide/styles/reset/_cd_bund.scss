@@ -1,0 +1,18 @@
+/**
+ * Resets for CD Bund PoC
+ */
+
+.access-keys,
+.mod-languageselect h2 {
+	display: none;
+}
+
+.nav-lang ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: inline-block;
+	}
+}
