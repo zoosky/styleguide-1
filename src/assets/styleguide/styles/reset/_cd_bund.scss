@@ -3,10 +3,31 @@
  */
 
 .access-keys,
-.mod-servicenav,
-.mod-languageselect h2,
+.nav-servicen,
+.nav-services h2,
+.nav-mobile,
 .mod-logo img {
 	display: none !important;
+}
+
+.mod-logo {
+	// todo: navbar height * 30px!!
+	height: $logo-height;
+	width: calc(#{$logo-height} * #{$phi});
+
+	font-weight: 300;
+
+	background: $additional-accent-amber;
+	color: $black;
+	display: inline-block;
+
+	@include alv-border-radius($alv-box-radius);
+
+	padding: ($alv-box-padding/3) $alv-box-padding;
+
+	-webkit-box-shadow: 10px 5px 20px 10px rgba(0,0,0,0.05);
+	-moz-box-shadow: 10px 5px 20px 10px rgba(0,0,0,0.05);
+	box-shadow: 10px 5px 20px 10px rgba(0,0,0,0.05);
 }
 
 .mod-logo h2 {
