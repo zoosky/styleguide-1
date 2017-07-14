@@ -3,8 +3,25 @@
  */
 
 .access-keys,
-.mod-languageselect h2 {
-	display: none;
+.mod-servicenav,
+.mod-languageselect h2,
+.mod-logo img {
+	display: none !important;
+}
+
+.mod-logo h2 {
+	font-size: $logo-size;
+	font-weight: 400;
+	letter-spacing: $logo-spacing;
+
+	.title__plus-ch,
+	.title__plus-ch:before {
+		color: $gray;
+	}
+}
+
+header {
+	background-color: rgba($gray-lighter, .75);
 }
 
 .nav-lang ul {
