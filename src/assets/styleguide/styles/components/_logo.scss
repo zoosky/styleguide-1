@@ -51,6 +51,8 @@
 .logo__brand--job-room {
 	font-size: $logo-brand-size;
 	letter-spacing: $logo-brand-spacing;
+	display: block;
+	text-align: right;
 
 	~.logo__title-small {
 		text-align: right;
@@ -59,7 +61,8 @@
 }
 
 .logo__brand--amstat {
-	letter-spacing: 4.8px;
+	letter-spacing: initial;
+	font-weight: 400;
 }
 
 .logo__title {
@@ -107,6 +110,18 @@
 
 .logo--inverse {
 	background: $brand-primary;
+	color: $white !important;
+
+	.logo__title,
+	.logo__title-small,
+	.title__plus-ch,
+	.title__plus-ch:before {
+		color: $white;
+	}
+}
+
+.logo--dark {
+	background: $gray-dark;
 	color: $white !important;
 
 	.logo__title,
