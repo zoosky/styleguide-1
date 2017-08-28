@@ -126,12 +126,11 @@
 <script>
 	// Without JQuery
 	var slider = new Slider('#ex1', {
-		formatter: function (value) {
+		formatter: function(value) {
 			return 'Current value: ' + value;
-		}
-	});
+		}});
 
-	$('#jobs').hide();
+	$('#candidates').hide();
 	$('.show-candidates').click(function () {
 		$('#jobs').hide();
 		$('.show-jobs').removeClass('active');
@@ -145,6 +144,13 @@
 
 		$('#candidates').hide();
 		$('.show-candidates').removeClass('active');
+	});
+	$('.show-publication').click(function () {
+		$('#jobs').hide();
+		$('.show-jobs').removeClass('active');
+
+		$('#candidates').show();
+		$('.show-candidates').addClass('active');
 	});
 </script>
 <!-- core ALV-CH -->

@@ -37,7 +37,7 @@
 
 			<div class="base__subnavbar" style="font-size: 80%;">
 
-				<div class="logo-box flex-height md-whiteframe-1dp">
+				<div class="alv-logo-box flex-height md-whiteframe-1dp">
 					<div class="job-detail__content">
 						<address>
 							<strong>Adato AG</strong><br />
@@ -148,8 +148,15 @@
 	var slider = new Slider('#ex1', {
 		formatter: function(value) {
 			return 'Current value: ' + value;
-		}
-	});
+		}});
+	var slider2 = new Slider('#ex2', {
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}});
+	var slider3 = new Slider('#ex3', {
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}});
 </script>
 <!-- core ALV-CH -->
 <script src="{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>

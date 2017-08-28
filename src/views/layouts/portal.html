@@ -83,11 +83,19 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/bootstrap-slider.min.js"></script>
 <script>
 	// Without JQuery
+	// Without JQuery
 	var slider = new Slider('#ex1', {
 		formatter: function(value) {
 			return 'Current value: ' + value;
-		}
-	});
+		}});
+	var slider2 = new Slider('#ex2', {
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}});
+	var slider3 = new Slider('#ex3', {
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}});
 </script>
 <!-- core ALV-CH -->
 <script src="{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>
