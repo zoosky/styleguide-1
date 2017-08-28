@@ -1,4 +1,5 @@
-.form-group--slider {
+.form-group--slider,
+.form-group--slider-w-label {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -10,6 +11,28 @@
 	.slider-helptext {
 		margin-left: ($slider-line-height / 2);
 		text-align: right;
+	}
+}
+
+.form-group--slider-w-label {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.slider-helptext:first-child {
+			margin-right: ($slider-line-height / 2);
+			text-align: left;
+		}
+
+		.slider-helptext:last-child {
+			margin-left: ($slider-line-height / 2);
+			text-align: right;
+		}
 	}
 }
 

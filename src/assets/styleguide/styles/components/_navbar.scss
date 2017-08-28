@@ -5,6 +5,14 @@
 
 	border: none;
 	border-bottom: 1px solid $gray-lighter;
+
+	@media screen and (max-width: 479px){
+		justify-content: space-between;
+
+		>.container {
+			width: 100%;
+		}
+	}
 }
 
 .navbar-alv {
@@ -21,10 +29,12 @@
 }
 
 .navbar-brand {
-	&.logo {
-		position: absolute;
-		top: 0;
-		z-index: $logo-zIndex;
+	@media screen and (min-width: 480px){
+		&.alv-logo {
+			position: absolute;
+			top: 0;
+			z-index: $logo-zIndex;
+		}
 	}
 }
 
@@ -62,6 +72,27 @@
 			background: rgba($brand-primary, .8);
 			color: $inverse-color !important;
 		}
+
+		.nav-link--login__icon {
+		 	display: none;
+		}
+
+		@media screen and (max-width: 479px){
+			.nav-link--login__icon {
+				display: inline-block;
+			}
+
+			.nav-link--login__label {
+				display: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 479px){
+		&.navbar-nav--alv {
+			display: inline-flex;
+			flex-direction: row;
+		}
 	}
 }
 
@@ -88,7 +119,7 @@
 	}
 }
 
-.nav-link.active,
+.active,
 .active > .nav-link,
 .nav-item:hover,
 .nav-link:hover {
@@ -138,6 +169,32 @@
 }
 
 
+// NAVBAR-TOGGLER
+.navbar-toggler {
+	border: none;
+	padding: 0;
+	margin: $navbar-toggler-padding-y $navbar-toggler-padding-x $navbar-toggler-padding-y 0;
+}
+
+// language-switcher
+
+.language-switcher {
+
+	.dropwdown--language-switcher {
+		display: none;
+	}
+
+	@media screen and (max-width: 479px){
+		.navbar--language-switcher {
+			display: none;
+		}
+
+		.dropwdown--language-switcher {
+			display: inline-block;
+		}
+	}
+}
+
 /*------------------------------------*\
   #TOOLBAR
 \*------------------------------------*/
@@ -148,6 +205,14 @@
 	border-bottom: 1px solid $gray-lighter;
 
 	margin-bottom: $margin-x-filter;
+
+	@media screen and (max-width: 479px){
+		margin-bottom: .25rem;
+
+		.container {
+			padding: 0;
+		}
+	}
 
 	&.toolbar--light {
 		background-color: rgba($gray-lightest, 1.0);
@@ -161,6 +226,7 @@
 	&.toolbar--inverse {
 		background: rgba($gray-lightest, .25);
 	}
+
 }
 
 .toolbar-nav {
@@ -177,16 +243,13 @@
 	}
 
 	.nav-title {
-		padding: $filter-toolbar-title-padding $filter-toolbar-title-padding;
-
-		&:first-child {
-			padding-left: 0;
-		}
+		padding: $filter-toolbar-title-padding 0;
 	}
 
 	.nav-item {
 		font-size: $font-size-h4;
 		cursor: pointer;
+		text-align: center;
 
 		&:hover {
 			background: $gray-lightest;
@@ -223,6 +286,13 @@
 	.nav-item {
 		.nav-link {
 			// todo check bootstrap?!
+			/*
+						@each $breakpoint, $width in $grid-breakpoints {
+				@media (min-width: $width) {
+					padding: map-get($filter-toolbar-title-paddings, $breakpoint);
+				}
+			}
+			 */
 			padding: $filter-toolbar-padding-y $filter-toolbar-padding-x;
 
 			&:hover {
@@ -236,7 +306,6 @@
 		}
 	}
 }
-
 
 .toolbar-form {
 	display: flex;
@@ -285,6 +354,53 @@
 
 		&:last-child {
 			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 479px){
+	.toolbar-collapse .toolbar-nav {
+		flex-direction: column;
+
+		background-color: rgba($gray-lighter, .75);
+		margin-top: .25rem;
+		padding: .5rem;
+
+		.nav-title {
+			padding: 0;
+			text-align: center;
+
+			h2 {
+				font-size: .85rem;
+				letter-spacing: inherit;
+				font-weight: 400;
+			}
+
+			:after {
+				display: inline-block;
+				width: 0;
+				height: 0;
+				margin-left: .255em;
+				vertical-align: .255em;
+				content: "";
+				border-top: .3em solid;
+				border-right: .3em solid transparent;
+				border-left: .3em solid transparent;
+			}
+		}
+
+		.nav-item,
+		.nav-item.active {
+			a {
+				padding: 0;
+				font-weight: 300;
+			}
+		}
+
+		&.toolbar-nav--has-icon {
+			.nav-link__icon {
+				display: none;
+			}
 		}
 	}
 }

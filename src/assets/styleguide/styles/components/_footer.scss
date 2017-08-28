@@ -15,6 +15,10 @@ footer,
 	color: $inverse-color;
 
 	padding: 2rem 0;
+
+	@media screen and (max-width: 479px){
+		display: none;
+	}
 }
 
 // todo vars!
