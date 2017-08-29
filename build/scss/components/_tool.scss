@@ -6,8 +6,17 @@
 	font-weight: $text-weight-light;
 	letter-spacing: $text-base-spacing;
 
-	margin-top: 2em;
-	margin-bottom: .75em;
+	@media screen and (min-width: 480px){
+		margin-top: 2em;
+		margin-bottom: .75em;
+	}
+
+	@media screen and (max-width: 479px){
+		font-weight: 400;
+		font-size: $font-size-h4;
+		text-align: center;
+		margin: 1rem;
+	}
 }
 
 .jumbotron--job-room {
@@ -173,12 +182,25 @@
 
 // Process
 
+@media screen and (max-width: 479px) {
+	.landing-page--container.process-container {
+		padding: $alv-box-radius;
+
+		.process-container__text {
+			display: none;
+		}
+	}
+}
 .process {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-
 	height: 50%;
+
+	@media screen and (max-width: 479px){
+		flex-direction: column;
+		height: 100%;
+	}
 
 	.process__item {
 		flex-grow: 1;
@@ -186,34 +208,36 @@
 		background: $white;
 		height: 100%;
 
-		margin-right: $margin-y-landingpage;
+		margin-right: 2rem;
 		padding: $margin-x-narrow $margin-y-narrow;
 		position: relative;
 
 		text-align: center;
 		cursor: pointer;
 
-		&:after {
-			left: 100%;
-			top: 50%;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-			border-style: solid;
-			border-color: transparent;
-			border-left-color: rgba($white, 0.5);
-			border-width: $margin-y-general;
-			margin-top: -($margin-y-general);
-		}
-
-		&:last-child {
-			margin-right: 0;
-
+		@media screen and (min-width: 480px){
 			&:after {
-				border-width: 0;
-				margin-top: 0;
+				left: 100%;
+				top: 50%;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-style: solid;
+				border-color: transparent;
+				border-left-color: rgba($white, 0.5);
+				border-width: $margin-y-general;
+				margin-top: -($margin-y-general);
+			}
+
+			&:last-child {
+				margin-right: 0;
+
+				&:after {
+					border-width: 0;
+					margin-top: 0;
+				}
 			}
 		}
 
@@ -228,6 +252,16 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%)
+		}
+
+
+		@media screen and (max-width: 479px){
+			margin: .25rem 0;
+
+			p {
+				position: static;
+				transform: none;
+			}
 		}
 	}
 }
