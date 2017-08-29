@@ -1,7 +1,7 @@
 // todo refactor whole "_logo" file and style: dont name it "logo" better alv or work or whatever
 //
 // todo shadow > material design whiteframe: https://material.angularjs.org/latest/demo/whiteframe!
-.alv-logo-box {
+.logo-box {
 	height: 100%;
 	width: 100%;
 
@@ -27,7 +27,7 @@
 	@include alv-border-radius($alv-box-radius);
 }
 
-.alv-logo {
+.logo {
 	@media screen and (min-width: 480px){
 		// todo: navbar height * 30px!!
 		height: $logo-height;
@@ -49,15 +49,15 @@
 	}
 }
 
-.alv-logo__brand--amstat,
-.alv-logo__brand--job-room {
+.logo__brand--amstat,
+.logo__brand--job-room {
 	font-size: $logo-brand-size;
 	letter-spacing: $logo-brand-spacing;
 	// todo: check!!
 	// display: block;
 	text-align: right;
 
-	~.alv-logo__title-small {
+	~.logo__title-small {
 		text-align: right;
 		line-height: .5;
 	}
@@ -66,7 +66,7 @@
 		color: $brand-primary;
 		letter-spacing: initial;
 
-		~.alv-logo__title-small {
+		~.logo__title-small {
 			font-size: $logo-brand-size;
 			float: right;
 			line-height: inherit;
@@ -78,7 +78,7 @@
 	}
 }
 
-.alv-logo__brand--amstat {
+.logo__brand--amstat {
 	letter-spacing: initial;
 
 	@media screen and (max-width: 479px){
@@ -86,7 +86,7 @@
 	}
 }
 
-.alv-logo__title {
+.logo__title {
 	font-size: $logo-size;
 	font-weight: 400;
 	letter-spacing: $logo-spacing;
@@ -101,7 +101,7 @@
 	}
 }
 
-.alv-logo__title-small {
+.logo__title-small {
 	color: $black;
 	font-size: 1rem;
 	font-weight: 400;
@@ -116,7 +116,7 @@
 		color: $gray;
 	}
 
-	~.alv-logo__brand {
+	~.logo__brand {
 		font-size: $logo-brand-size;
 		font-weight: 300;
 	}
@@ -133,13 +133,13 @@
 }
 
 
-.alv-logo--inverse {
+.logo--inverse {
 	@media screen and (min-width: 480px){
 		background: $brand-primary;
 		color: $white !important;
 
-		.alv-logo__title,
-		.alv-logo__title-small,
+		.logo__title,
+		.logo__title-small,
 		.title__plus-ch,
 		.title__plus-ch:before {
 			color: $white;
@@ -147,20 +147,16 @@
 	}
 }
 
-.alv-logo--dark {
+.logo--dark {
 	@media screen and (min-width: 480px){
 		background: $gray-dark;
 		color: $white !important;
 
-		.alv-logo__title,
-		.alv-logo__title-small,
+		.logo__title,
+		.logo__title-small,
 		.title__plus-ch,
 		.title__plus-ch:before {
 			color: $white;
 		}
 	}
 }
-
-
-// CD-BUND AEM
-

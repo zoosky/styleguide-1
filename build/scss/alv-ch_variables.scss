@@ -93,6 +93,16 @@ $additional-accent-green-400: #8bc742;
 $text-base-spacing: 0;
 $text-base-size: 1.125rem;
 
+$text-base-sizes:(
+		xs: 0.85rem,
+		sm: 1.0rem,
+		md: 1.0rem,
+		lg: 1.0rem,
+		xl: 1.125rem,
+		xxl: 1.125rem,
+		xxxl: 1.125rem
+);
+
 $text-h1-spacing: -0.8px; //-3.6px;
 $text-h2-spacing: -0.8px;
 $text-h3-spacing: $text-base-spacing;
@@ -147,6 +157,15 @@ $filter-toolbar-padding-y: 1.5rem;
 $filter-toolbar-padding-x: 1.5rem;
 
 $filter-toolbar-title-padding: 2.5rem;
+$filter-toolbar-title-paddings:(
+	xs: .85rem,
+	sm: 1.0rem,
+	md: 1.0rem,
+	lg: 1.0rem,
+	xl: 2.5rem,
+	xxl: 2.5rem,
+	xxxl: 2.5rem
+);
 
 // Whiteframes
 
