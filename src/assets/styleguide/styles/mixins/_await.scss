@@ -1,0 +1,60 @@
+@mixin await-keyframe($name, $main-color, $color-300) {
+
+	@-webkit-keyframes #{$name} {
+		0% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			border-top-color: $color-300;
+			border-right-color: $color-300;
+		}
+		50% {
+			border-top-color: $main-color;
+			border-right-color: $main-color;
+		}
+		100% {
+			-webkit-transform: rotate(720deg);
+			transform: rotate(720deg);
+			border-top-color: $color-300;
+			border-right-color: $color-300;
+		}
+	}
+
+	@keyframes #{$name} {
+		0% {
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			border-top-color: $color-300;
+			border-right-color: $color-300;
+		}
+		50% {
+			border-top-color: $main-color;
+			border-right-color: $main-color;
+		}
+		100% {
+			-webkit-transform: rotate(720deg);
+			transform: rotate(720deg);
+			border-top-color: $color-300;
+			border-right-color: $color-300;
+		}
+	}
+
+}
+
+@mixin await-spinner($name, $main-color, $color-300) {
+
+	.#{$name},
+	.btn-#{$name}:after {
+		border-top-color: $main-color;
+		border-right-color: $main-color;
+		-webkit-animation: $name 3s infinite linear;
+		animation: $name 3s infinite linear;
+	}
+
+	.btn-#{$name}:after {
+		content:'';
+		display: block;
+		float: left;
+	}
+
+	@include await-keyframe($name,$main-color,$color-300);
+}
