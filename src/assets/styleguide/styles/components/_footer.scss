@@ -9,6 +9,19 @@
   #FOOTER
 \*------------------------------------*/
 
+html, body, jhi-main {
+	height: 100%;
+}
+
+jhi-main {
+	display: flex;
+	flex-direction: column;
+}
+
+jr2-job-detail {
+	flex: 1 0 auto;
+}
+
 footer,
 .footer {
 	background: $gray-dark;
