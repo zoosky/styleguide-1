@@ -40,24 +40,24 @@
 }
 
 // Job-Room-result - Badges!
-.badge-location,
-.badge-experience,
-.badge-contract,
-.badge-diploma {
+.badge-yellow,
+.badge-green,
+.badge-blue,
+.badge-gray {
 	color: $body-color;
 	font-weight: 400;
 }
 
-.badge-location {
+.badge-blue {
 	@include badge-variant($main-accent-color-100);
 }
-.badge-experience {
+.badge-gray {
 	@include badge-variant($main-color-gray-100);
 }
-.badge-contract {
+.badge-green {
 	@include badge-variant($additional-accent-green-100);
 }
-.badge-diploma {
+.badge-yellow {
 	@include badge-variant($additional-accent-amber-100);
 }
 
