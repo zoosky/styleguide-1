@@ -23,20 +23,26 @@
 		<!-- navbar -->
 		{{> job-room-navbar}}
 		<!-- /navbar -->
+	</div>
 
-		<div class="toolbar toolbar--light md-whiteframe-3dp">
-			<div class="container">
-				<div class="toolbar-collapse">
-					<form class="form-inline toolbar-form">
-						{{> job-search}}
-						<button type="submit" class="btn btn-primary btn-lg">6 Jobs</button>
-					</form>
+	<!-- content -->
+	<div class="toolbar toolbar--light md-whiteframe-3dp sticked--top">
+		<div class="container">
+			<form class="form-inline toolbar-form job-search__form">
+				{{> job-search}}
+				<button type="submit" class="btn btn-primary btn-lg">6 Jobs</button>
+			</form>
+
+			<div class="toolbar-form hidden-sm-up">
+				<div class="job-search__filter collapse" id="filter">
+					{{> job-filter_filter}}
 				</div>
+
+				<div class="job-search__filter--toggler" data-toggle="collapse" data-target="#filter">Suchkriterien</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- content -->
 	<div class="container">
 
 		<div class="base">

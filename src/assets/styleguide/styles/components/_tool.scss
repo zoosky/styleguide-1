@@ -27,6 +27,61 @@
 	margin-top: .75em;
 }
 
+// Job-Room job-search
+.job-search__form {
+
+	@media screen and (max-width: 479px) {
+		.form-control-lg {
+			padding: $input-padding-y $input-padding-x;
+			font-size: $font-size-base;
+			line-height: $input-line-height;
+		}
+
+		.btn-lg {
+			font-weight: $btn-font-weight;
+			line-height: $btn-line-height;
+			@include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius);
+		}
+	}
+}
+
+.job-search__filter {
+	@media screen and (max-width: 479px) {
+		background-color: rgba($gray-lightest, 1.0);
+	}
+}
+
+
+.job-search__filter--toggler {
+	font-size: 0.85rem;
+	color: $main-accent-color;
+	text-align: center;
+	margin-bottom: 1rem;
+
+	&:before {
+		display: inline-block;
+		margin-right: .5em;
+		vertical-align: -0.05em;
+
+		font-family: FontAwesome;
+		font-size: 1.125em;
+		content: '\f13a';
+
+		-webkit-transition: transform 0.25s ease; /* Safari */
+		transition: transform 0.25s ease;
+	}
+}
+
+.show + .job-search__filter--toggler:before {
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+
+	-webkit-transition: transform 0.25s ease; /* Safari */
+	transition: transform 0.25s ease;
+}
+
 // Job-Room-result
 .result-list__item {
 	cursor: pointer;
