@@ -1,62 +1,11 @@
 <!-- filter -->
-<p class="text--line-height--h3">Suchergebnisse filtern</p>
-
-<div class="form-group">
-	<label for="sort" class="sr-only">Sortierung</label>
-	<select class="form-control form-control-sm custom-select" id="sort">
-		<option selected>Sortiere nach Datum</option>
-		<option value="1">One</option>
-		<option value="2">Two</option>
-		<option value="3">Three</option>
-	</select>
+<div class="job-search__filter hidden-sm-down">
+	{{> job-filter_filter}}
 </div>
 
-<div class="form-group">
-	<label for="unternehmen" class="small">Name des Unternehmen</label>
-	<input type="text" class="form-control form-control-sm" id="unternehmen" placeholder="Name des Unternehmen">
-</div>
+{{> job-filter_actions}}
 
-<div class="form-group">
-	<label for="Anstellungsdauer" class="small">Anstellungsdauer</label>
-	<select class="form-control form-control-sm custom-select" id="Anstellungsdauer">
-		<option selected>egal</option>
-		<option value="1">unbefristet</option>
-		<option value="2">befristet</option>
-	</select>
-</div>
-
-<div class="form-group form-group--slider-w-label">
-	<label for="ex2" class="small">Arbeitspensum</label>
-	<div>
-		<span class="slider-helptext text-muted small">0%</span>
-		<input id="ex2" type="text" data-slider-min="10" data-slider-max="100" data-slider-step="0" data-slider-value="[10,100]"/>
-		<span class="slider-helptext text-muted small">100%</span>
-	</div>
-</div>
-
-<div class="form-group form-group--slider-w-label">
-	<label for="ex3" class="small">Online Seit</label>
-	<div>
-		<input id="ex3" data-slider-id='ex3Slider' type="text" aria-describedby="infoDays" data-slider-min="1" data-slider-max="60" data-slider-step="1" data-slider-value="20"/>
-		<span id="infoDays" class="slider-helptext text-muted small">
-			Tagen
-		</span>
-	</div>
-</div>
-
-<ul class="nav filter-nav flex-column">
-	<li class="nav-item">
-		<a class="nav-link" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Job-Alert erstellen</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Suche speichern</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i> Gemerkte Jobs anzeigen</a>
-	</li>
-</ul>
-
-<ul class="nav subnavbar-nav filter-nav md-whiteframe-1dp">
+<ul class="nav subnavbar-nav filter-nav md-whiteframe-1dp hidden-sm-down">
 	<li class="nav-title">
 		Job-Alternativen
 	</li>
@@ -71,7 +20,7 @@
 	</li>
 </ul>
 
-<ul class="nav subnavbar-nav filter-nav md-whiteframe-1dp">
+<ul class="nav subnavbar-nav filter-nav md-whiteframe-1dp hidden-sm-down">
 	<li class="nav-title">
 		Erweitern Sie den Suchradius
 	</li>
