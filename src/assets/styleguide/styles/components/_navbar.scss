@@ -4,12 +4,14 @@
 	//font-size: 20px;
 
 	border: none;
-	border-bottom: 1px solid $gray-lighter;
+	border-bottom: 1px solid $gray-200;
 
 	@media screen and (max-width: 479px){
-		justify-content: space-between;
+		justify-content: flex-start;
 
 		>.container {
+			display: flex;
+			justify-content: flex-start;
 			width: 100%;
 		}
 	}
@@ -25,7 +27,7 @@
 }
 
 .navbar-light.bg-faded {
-	background-color: rgba($gray-lighter, .75);
+	background-color: rgba($gray-200, .75);
 }
 
 .navbar-brand {
@@ -65,12 +67,12 @@
 		padding-left: 1.75em !important;
 
 		background: $brand-primary;
-		color: $inverse-color;
+		color: theme-color('light');
 
 		&:hover,
 		&.active {
 			background: rgba($brand-primary, .8);
-			color: $inverse-color !important;
+			color: theme-color('light') !important;
 		}
 
 		.nav-link--login__icon {
@@ -201,13 +203,13 @@
 
 .toolbar {
 	position: relative;
-	background-color: rgba($gray-lighter, .75);
-	border-bottom: 1px solid $gray-lighter;
+	background-color: rgba($gray-200, .75);
+	border-bottom: 1px solid $gray-200;
 
 	margin-bottom: $margin-x-filter;
 
 	&.toolbar--light {
-		background-color: rgba($gray-lightest, 1.0);
+		background-color: rgba($gray-100, 1.0);
 	}
 
 	&.toolbar--white {
@@ -216,7 +218,7 @@
 	}
 
 	&.toolbar--inverse {
-		background: rgba($gray-lightest, .25);
+		background: rgba($gray-100, .25);
 	}
 
 }
@@ -239,12 +241,12 @@
 	}
 
 	.nav-item {
-		font-size: $font-size-h4;
+		font-size: $h4-font-size;
 		cursor: pointer;
 		text-align: center;
 
 		&:hover {
-			background: $gray-lightest;
+			background: $gray-100;
 		}
 
 		&.active > .nav-link {
@@ -277,14 +279,6 @@
 .toolbar-nav--has-icon {
 	.nav-item {
 		.nav-link {
-			// todo check bootstrap?!
-			/*
-						@each $breakpoint, $width in $grid-breakpoints {
-				@media (min-width: $width) {
-					padding: map-get($filter-toolbar-title-paddings, $breakpoint);
-				}
-			}
-			 */
 			padding: $filter-toolbar-padding-y $filter-toolbar-padding-x;
 
 			&:hover {
@@ -373,29 +367,29 @@
 	.toolbar-collapse .toolbar-nav {
 		flex-direction: column;
 
-		background-color: rgba($gray-lighter, .75);
+		background-color: rgba($gray-200, .75);
 		margin-top: .25rem;
 		padding: .5rem;
 
 		.nav-title {
 			padding: 0;
 			text-align: center;
+			cursor: pointer;
 
 			h2 {
 				font-size: .85rem;
 				letter-spacing: inherit;
 				font-weight: 400;
-			}
 
-			:before {
-				display: inline-block;
-				margin-right: .5em;
-				vertical-align: -0.05em;
+				&:before {
+					display: inline-block;
+					margin-right: .5em;
+					vertical-align: -0.05em;
 
-				font-family: FontAwesome;
-				font-size: 1.125em;
-				content: '\f13a';
-
+					font-family: FontAwesome;
+					font-size: 1.125em;
+					content: '\f13a';
+				}
 			}
 		}
 

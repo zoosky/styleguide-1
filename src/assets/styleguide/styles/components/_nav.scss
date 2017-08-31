@@ -13,7 +13,7 @@
 
 		text-align: center;
         font-weight: 300;
-		font-size: $font-size-h3;
+		font-size: $h3-font-size;
 	}
 
 	.nav-link {
@@ -47,7 +47,7 @@
 		width: 25%;
 
 		text-align: center;
-		font-size: $font-size-h4;
+		font-size: $h4-font-size;
 
 		&:first-child {
 			border-right: $input-btn-border-width solid $input-border-color;

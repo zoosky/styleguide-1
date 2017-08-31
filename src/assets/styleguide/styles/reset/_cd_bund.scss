@@ -62,7 +62,7 @@ header {
 				letter-spacing: $logo-spacing;
 
 				&:after {
-					color: $gray;
+					color: $gray-500;
 					content: '+';
 					font-weight: 700;
 					font-size: 0.75em;
@@ -72,7 +72,7 @@ header {
 				}
 
 				&:before {
-					color: $gray;
+					color: $gray-500;
 					font-weight: 400;
 					content: 'ch';
 					right: -1.2em;
@@ -207,7 +207,7 @@ header {
 				color: $additional-accent-amber;
 
 				&:after {
-					color: $gray;
+					color: $gray-500;
 					content: '+';
 					font-weight: 700;
 					font-size: 0.75em;
@@ -217,7 +217,7 @@ header {
 				}
 
 				&:before {
-					color: $gray;
+					color: $gray-500;
 					font-weight: 400;
 					content: 'ch';
 					right: -1.2em;

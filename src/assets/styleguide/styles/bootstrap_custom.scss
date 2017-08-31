@@ -8,58 +8,69 @@
  * Author: Thomas D'Ascoli, thomas@dasco.li
  * Date:   2017-05-25 17:52
  *
- * Copyright 2017 ((Federal Chancellery of Switzerland))
+ * Copyright 2017 alv-ch
  * Licensed under MIT
  =========================================================== */
 
 /**
  * CONTENTS
  *
- * COLORS
- * Main Color...........(()).
+ * Color system          (())
+ * Options               (())
+ * Body                  (())
+ * Links                 (())
+ * Paragraphs            (())
+ * Grid breakpoints      (())
+ * Grid containers       (())
+ * Fonts                 (())
+ * Buttons               (())
+ * Forms                 (())
+ * Navs                  (())
+ * Navbar                (())
+ * Modals                (())
+ * Breadcrumbs           (())
  *
- * OPTIONS
- *
- * BODY
- *
- * LINKS
- *
- * TYPOGRAPHY
- * Font-Family
- * Paragraph
- * Headlines
- *
- * ALV-CH Specific
- *
+ * ALV-CH                ALV-CH Specific
+ * Bootstrap-slider
+ * Radio & Checkboxes
  */
 
 /*------------------------------------*\
-  #COLORS
+  #Color system
 \*------------------------------------*/
 
 /**
  * Grayscale and brand colors for use across Bootstrap.
  */
 
+// Reassign color vars to semantic color scheme
+$brand-primary:             $main-accent-color;
+$brand-inverse:             $main-color-black;
 
-// Start with assigning color names to specific hex values.
+$gray-100: $main-color-gray-50;
+$gray-200: $main-color-gray-100;
+$gray-300: $main-color-gray-200;
+$gray-400: $main-color-gray-300;
+$gray-500: $main-color-gray-400;
+$gray-600: $main-color-black-300;
+$gray-700: $main-color-black-400;
+
 $red:    $other-colors-red;
 $orange: $additional-accent-amber;
 $yellow: $additional-accent-yellow;
 $green:  $additional-accent-green;
 $blue:   $main-accent-color;
 
-// Create grayscale
-$gray-dark:                 darken($main-color-gray, 13%);
-$gray:                      $main-color-gray;
-$gray-light:                $main-color-gray-400;
-$gray-lighter:              $main-color-gray-100;
-$gray-lightest:             $main-color-gray-50;
-
-
-// Reassign color vars to semantic color scheme
-$brand-primary:             $main-accent-color;
-$brand-inverse:             $main-color-black;
+$theme-colors: (
+	primary: $blue,
+	secondary: $gray-600,
+	success: $green,
+	info: $cyan,
+	warning: $yellow,
+	danger: $red,
+	light: $gray-200,
+	dark: $gray-800
+);
 
 // Options
 //
@@ -73,11 +84,6 @@ $enable-shadows:            true;
 // Settings for the `<body>` element.
 
 $body-color:    $main-color-black;
-$inverse-bg:    $main-color-black;
-$inverse-color: $white; //$main-color-black-400
-
-// Forms
-$input-border-color:             $main-color-gray-400;
 
 // Links
 //
@@ -123,14 +129,21 @@ $font-family-base:       $font-family-sans-serif;
 
 $font-size-base: $text-base-size; // Assumes the browser default, typically `16px`
 
-$font-size-h1: 3rem;
-$font-size-h2: 1.75rem;
-$font-size-h3: 1.5rem;
-$font-size-h4: 1.25rem;
-$font-size-h5: 1.125rem;
-$font-size-h6: 1.125rem;
+$h1-font-size: 3rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1.125rem;
+$h6-font-size: 1.125rem;
 
-$small-font-size: 80%;
+// Forms
+// todo in bootstrap4-beta missing but used!
+$input-padding-y-sm:             .25rem;
+$input-padding-x-sm:             $input-padding-y-sm;
+$input-padding-y-lg:             .75rem;
+$input-padding-x-lg:             $input-padding-y-lg;
+
+$input-border-color:             $main-color-gray-400;
 
 // Navbar
 
@@ -138,20 +151,21 @@ $navbar-light-color:                 $main-color-black;
 $navbar-light-hover-color:           $additional-accent-amber;
 $navbar-light-active-color:          $main-color-black;
 
+$navbar-brand-height: 55px;
+
 // Navs
 $nav-link-padding:              $nav-link-padding-y $nav-link-padding-x;
-
-// Buttons
-$btn-primary-bg:                 $brand-primary;
-
-// Breadcrumb
-$breadcrumb-bg:                 transparent;
-$breadcrumb-divider:            "\f054";
 
 // Modal
 $modal-xl:                    980px;
 $modal-xxl:                   1220px;
 $modal-xxxl:                  1380px;
+
+// Breadcrumb
+$breadcrumb-bg:                 transparent;
+$breadcrumb-divider:            "\f054";
+
+// ALV-CH
 
 // Bootstrap-slider
 $slider-line-height: 2rem;
@@ -159,13 +173,6 @@ $slider-track-height: 6px;
 $slider-border-radius: 0;
 $slider-horizontal-width: 210px !default;
 $slider-vertical-height: 210px !default;
-
-// ALV-CH
-
-// Forms
-
-$input-padding-x-sm:             $input-padding-y-sm;
-$input-padding-x-lg:             $input-padding-y-lg;
 
 // Radio- & Checkbox
 $form-box-size: 26px;

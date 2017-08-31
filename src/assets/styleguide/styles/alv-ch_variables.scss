@@ -85,11 +85,6 @@ $additional-accent-green-400: #8bc742;
 
 
 // Font
-/*
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
-*/
 $text-base-spacing: 0;
 $text-base-size: 1.125rem;
 
@@ -140,9 +135,10 @@ $alv-box-padding: $alv-box-radius * .75; // ~5px
 $subnav-link-active-border: 4px;
 
 // Navs
+/*
 $nav-link-padding-y: .5em;
 $nav-link-padding-x: 1em;
-
+*/
 // Filter
 $margin-x-general: 1.5rem;
 $margin-x-filter: $margin-x-general;

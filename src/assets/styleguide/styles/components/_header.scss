@@ -65,6 +65,8 @@
  */
 
 .alv-header--light {
+	background: theme-color('light');
+
 	.alv-header__brand {
 		color: $body-color;
 	}
@@ -74,7 +76,9 @@
  * White links against a dark background
  */
 .alv-header--inverse {
+	background: $black;
+
 	.alv-header__brand {
-		color: $inverse-color;
+		color: $white;
 	}
 }

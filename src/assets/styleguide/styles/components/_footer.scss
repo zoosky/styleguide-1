@@ -24,8 +24,8 @@ jr2-job-detail {
 
 footer,
 .footer {
-	background: $gray-dark;
-	color: $inverse-color;
+	background: $gray-700;
+	color: theme-color('light');
 
 	padding: 2rem 0;
 
@@ -62,12 +62,12 @@ footer,
 
 	padding: $margin-x-narrow 0;
 
-	background: $inverse-bg;
-	color: $inverse-color;
+	background: $brand-inverse;
+	color: theme-color('light');
 
 	a,
 	span {
-		color: $inverse-color;
+		color: theme-color('light');
 		display: inline-block;
 
 		padding: $nav-link-padding-y;
@@ -80,9 +80,9 @@ footer,
 
 	a {
 		&:hover {
-			color: $inverse-color;
+			color: theme-color('light');
 			text-decoration: none;
-			background: $gray-dark;
+			background: $gray-700;
 		}
 	}
 }

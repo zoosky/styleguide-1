@@ -5,7 +5,7 @@
 .bg--main-accent,
 .bg--additional-green,
 .bg--other-red {
-	color: $inverse-color !important;
+	color: theme-color('light') !important;
 }
 
 .bg--main-gray-light,

@@ -13,7 +13,7 @@
 
 	@media screen and (max-width: 479px){
 		font-weight: 400;
-		font-size: $font-size-h4;
+		font-size: $h4-font-size;
 		text-align: center;
 		margin: 1rem;
 	}
@@ -21,7 +21,7 @@
 
 .jumbotron--job-room {
 	background-repeat: no-repeat !important;
-	background: $gray-lighter;
+	background: $gray-200;
 }
 .jumbotron--landingpage .tool__heading {
 	margin-top: .75em;
@@ -32,22 +32,22 @@
 
 	@media screen and (max-width: 479px) {
 		.form-control-lg {
-			padding: $input-padding-y $input-padding-x;
+			padding: $input-btn-padding-y $input-btn-padding-x;
 			font-size: $font-size-base;
-			line-height: $input-line-height;
+			line-height: $input-height-inner;
 		}
 
 		.btn-lg {
 			font-weight: $btn-font-weight;
-			line-height: $btn-line-height;
-			@include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-border-radius);
+			line-height: $input-btn-line-height;
+			@include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
 		}
 	}
 }
 
 .job-search__filter {
 	@media screen and (max-width: 479px) {
-		background-color: rgba($gray-lightest, 1.0);
+		background-color: rgba($gray-100, 1.0);
 	}
 }
 
@@ -163,7 +163,7 @@
 		width: calc(75% - #{$margin-y-general});
 		border-bottom: $input-btn-border-width solid $input-border-color;
 		margin-bottom: (2 * $margin-x-general); // todo form-group--break!!
-		font-size: $font-size-h4;
+		font-size: $h4-font-size;
 	}
 
 	.form-group {
@@ -204,16 +204,16 @@
 
 	&:hover {
 		background: $brand-primary;
-		color: $inverse-color;
+		color: theme-color('light');
 
 		a {
-			color: $inverse-color;
+			color: theme-color('light');
 		}
 
 		.badge-radar {
 			color: $brand-primary;
 
-			@include badge-variant($inverse-color);
+			@include badge-variant(theme-color('light'));
 		}
 	}
 
@@ -298,7 +298,7 @@
 
 		&:hover {
 			background: $brand-primary;
-			color: $inverse-color;
+			color: theme-color('light');
 		}
 
 		p {
