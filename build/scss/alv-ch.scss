@@ -42,6 +42,7 @@
 
 // components
 // todo reihenfolge!
+@import 'components/await';
 @import 'components/layout';
 @import 'components/logo';
 @import 'components/typography';
@@ -63,6 +64,7 @@
 @import 'components/modal';
 @import 'components/button';
 @import 'components/search';
+@import 'components/sticky';
 
 // cd_bund reset for cms
 @import 'reset/cd_bund';

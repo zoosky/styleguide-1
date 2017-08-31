@@ -87,3 +87,11 @@
 		}
 	}
 }
+
+.subnavbar__back {
+	padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+	margin-bottom: $spacer-y;
+
+	font-size: $small-font-size;
+	@include clearfix;
+}

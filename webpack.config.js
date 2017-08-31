@@ -8,7 +8,8 @@ module.exports = function(fabricatorConfig) {
 	var config = {
 		entry: {
 			'fabricator/scripts/f': fabricatorConfig.src.scripts.fabricator,
-			'styleguide/scripts/alv-ch': fabricatorConfig.src.scripts.styleguide
+			'styleguide/scripts/alv-ch': fabricatorConfig.src.scripts.styleguide,
+			'styleguide/scripts/alv-ch_reset': fabricatorConfig.src.scripts.reset
 		},
 		output: {
 			path: path.resolve(__dirname, fabricatorConfig.dest, 'assets'),
@@ -31,6 +32,14 @@ module.exports = function(fabricatorConfig) {
 		config.plugins.push(
 			new webpack.optimize.UglifyJsPlugin()
 		);
+	}
+
+	if (fabricatorConfig.dest==='build') {
+		config.entry = {
+				'scripts/alv-ch': fabricatorConfig.src.scripts.styleguide,
+				'scripts/alv-ch_reset': fabricatorConfig.src.scripts.reset
+		};
+		config.output.path = path.resolve(__dirname, fabricatorConfig.dest);
 	}
 
 	return config;

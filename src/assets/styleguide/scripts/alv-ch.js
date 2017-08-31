@@ -16,8 +16,6 @@ $( document ).ready(function() {
 	var md = new MobileDetect(window.navigator.userAgent);
 
 	if (md.mobile()){
-		console.log('mobile true');
-
 		$('.toolbar-nav > .nav-title').click(function(){
 			$(this).parent().toggleClass('show');
 		});

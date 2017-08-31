@@ -78,6 +78,10 @@ body {
 		.base__content--wide {
 			@include make-col(4, 5);
 		}
+
+		.base--margin-top {
+			margin-top: (2*$breadcrumb-padding-x + $spacer-y);
+		}
 	}
 }
 
