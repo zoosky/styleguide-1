@@ -9,6 +9,19 @@
   #FOOTER
 \*------------------------------------*/
 
+html, body, jhi-main {
+	height: 100%;
+}
+
+jhi-main {
+	display: flex;
+	flex-direction: column;
+}
+
+jr2-job-detail {
+	flex: 1 0 auto;
+}
+
 footer,
 .footer {
 	background: $gray-dark;
@@ -51,25 +64,37 @@ footer,
 
 	background: $inverse-bg;
 	color: $inverse-color;
-	font-size: $small-font-size;
 
-	a {
+	a,
+	span {
 		color: $inverse-color;
 		display: inline-block;
-
-		font-size: $small-font-size;
 
 		padding: $nav-link-padding-y;
 		margin: 0 $margin-x-narrow;
 
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	a {
 		&:hover {
 			color: $inverse-color;
 			text-decoration: none;
 			background: $gray-dark;
 		}
+	}
+}
 
-		&:first-child {
-			margin-left: 0;
+@media screen and (max-width: 479px){
+	.footer--seco {
+		justify-content: space-between;
+
+		a,
+		span {
+			flex-grow: 1;
+			margin: 0;
 		}
 	}
 }

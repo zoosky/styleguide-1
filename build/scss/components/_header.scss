@@ -20,13 +20,6 @@
 		margin-bottom: 4rem;
 	}
 
-	+ .toolbar,
-	+ .jumbotron {
-		@media screen and (min-width: 480px){
-			margin-top: -4rem;
-		}
-	}
-
 	&.has-jumbotron,
 	&.has-toolbar {
 		margin-bottom: 0;

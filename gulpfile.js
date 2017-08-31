@@ -33,7 +33,8 @@ var config = {
 	src: {
 		scripts: {
 			fabricator: './src/assets/fabricator/scripts/fabricator.js',
-			styleguide: './src/assets/styleguide/scripts/alv-ch.js'
+			styleguide: './src/assets/styleguide/scripts/alv-ch.js',
+			reset: './src/assets/styleguide/scripts/alv-ch_reset.js'
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
@@ -52,6 +53,12 @@ var config = {
 // webpack
 var webpackConfig = require('./webpack.config')(config);
 var webpackCompiler = webpack(webpackConfig);
+
+// build
+var buildConfig = config;
+buildConfig.dest='build';
+var webpackConfigBuild = require('./webpack.config')(buildConfig);
+var webpackCompilerBuild = webpack(webpackConfigBuild);
 
 // clean
 gulp.task('clean', function (cb) {
@@ -163,6 +170,21 @@ gulp.task('sass-files:build', function() {
 	return gulp.src(config.src.sass)
 		.pipe(gulp.dest(config.build + '/scss'));
 });
+// scripts:build
+gulp.task('scripts:build', function (done) {
+	webpackCompilerBuild.run(function (error, result) {
+		if (error) {
+			gutil.log(gutil.colors.red(error));
+		}
+		result = result.toJson();
+		if (result.errors.length) {
+			result.errors.forEach(function (error) {
+				gutil.log(gutil.colors.red(error));
+			});
+		}
+		done();
+	});
+});
 
 
 // server
@@ -218,6 +240,7 @@ gulp.task('build', ['clean:build'], function () {
 	// define build tasks
 	var tasks = [
 		'styles:build',
+		'scripts:build',
 		'images:build',
 		'fonts:build',
 		'sass-files:build'
