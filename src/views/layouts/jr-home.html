@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<div class="header sticky-top">
+<div class="header sticky-top has-jumbotron">
 	<!-- ALV-HEADER -->
 	{{> header}}
 
@@ -126,12 +126,11 @@
 <script>
 	// Without JQuery
 	var slider = new Slider('#ex1', {
-		formatter: function (value) {
+		formatter: function(value) {
 			return 'Current value: ' + value;
-		}
-	});
+		}});
 
-	$('#jobs').hide();
+	$('#candidates').hide();
 	$('.show-candidates').click(function () {
 		$('#jobs').hide();
 		$('.show-jobs').removeClass('active');
@@ -146,7 +145,16 @@
 		$('#candidates').hide();
 		$('.show-candidates').removeClass('active');
 	});
+	$('.show-publication').click(function () {
+		$('#jobs').hide();
+		$('.show-jobs').removeClass('active');
+
+		$('#candidates').show();
+		$('.show-candidates').addClass('active');
+	});
 </script>
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
 <!-- core ALV-CH -->
 <script src="{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>
 <!-- WebFontLoader -->

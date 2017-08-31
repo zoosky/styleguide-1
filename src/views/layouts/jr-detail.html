@@ -28,16 +28,13 @@
 	<!-- content -->
 	<div class="container">
 
-		<!-- todo tool-nav!! -->
-		<div class="breadcrumb">
-			<a href="job-result-list.html">Zurück zu den Suchergebnissen</a>
-		</div>
-
 		<div class="base">
 
 			<div class="base__subnavbar" style="font-size: 80%;">
 
-				<div class="logo-box flex-height md-whiteframe-1dp">
+				<a href="job-result-list.html" class="subnavbar__back">Zurück zu den Suchergebnissen</a>
+
+				<div class="alv-logo-box flex-height md-whiteframe-1dp">
 					<div class="job-detail__content">
 						<address>
 							<strong>Adato AG</strong><br />
@@ -89,10 +86,12 @@
 				{% body %}
 			</div>
 
-			<div class="base__related">
+			<div class="base__related base--margin-top">
 				<div style="position: relative;">
 					<div>
 						<button class="btn btn-primary btn-block btn-sm">Jetzt Bewerben</button>
+
+						<button class="btn btn-default btn-block btn-sm">Zum Stelleninserat</button>
 
 						<p></p>
 
@@ -148,10 +147,19 @@
 	var slider = new Slider('#ex1', {
 		formatter: function(value) {
 			return 'Current value: ' + value;
-		}
-	});
+		}});
+	var slider2 = new Slider('#ex2', {
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}});
+	var slider3 = new Slider('#ex3', {
+		formatter: function(value) {
+			return 'Current value: ' + value;
+		}});
 </script>
-<!-- core ALV-CH -->
+	<!-- mobile -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+	<!-- core ALV-CH -->
 <script src="{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>
 <!-- WebFontLoader -->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
