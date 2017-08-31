@@ -55,10 +55,12 @@ var webpackConfig = require('./webpack.config')(config);
 var webpackCompiler = webpack(webpackConfig);
 
 // build
+/*
 var buildConfig = config;
 buildConfig.dest='build';
 var webpackConfigBuild = require('./webpack.config')(buildConfig);
 var webpackCompilerBuild = webpack(webpackConfigBuild);
+*/
 
 // clean
 gulp.task('clean', function (cb) {
