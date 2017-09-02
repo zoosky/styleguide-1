@@ -21,7 +21,7 @@
 
 .jumbotron--job-room {
 	background-repeat: no-repeat !important;
-	background: $gray-200;
+	background: $main-color-gray-100;
 }
 .jumbotron--landingpage .tool__heading {
 	margin-top: .75em;
@@ -47,7 +47,7 @@
 
 .job-search__filter {
 	@media screen and (max-width: 479px) {
-		background-color: rgba($gray-100, 1.0);
+		background-color: rgba($main-color-gray-50, 1.0);
 	}
 }
 

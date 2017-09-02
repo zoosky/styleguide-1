@@ -40,7 +40,7 @@
 	height: $slider-track-height !important;
 	margin-top: -($slider-track-height/2) !important;
 
-	background-color: $gray-300;
+	background-color: $main-color-gray-400;
 	background-image: none;
 }
 
@@ -57,12 +57,12 @@
 
 .slider-disabled {
 	.slider-handle {
-		background-color: $gray-500 !important;
+		background-color: $main-color-gray !important;
 		background-image: none !important;
 		box-shadow: none !important;
 	}
 	.slider-track {
-		background-color: $gray-300 !important;
+		background-color: $main-color-gray-400 !important;
 		background-image: none !important;
 		box-shadow: none;
 		border: none;

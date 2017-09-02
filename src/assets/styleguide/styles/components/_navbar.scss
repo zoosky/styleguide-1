@@ -4,7 +4,7 @@
 	//font-size: 20px;
 
 	border: none;
-	border-bottom: 1px solid $gray-200;
+	border-bottom: 1px solid $main-color-gray-100;
 
 	@media screen and (max-width: 479px){
 		justify-content: flex-start;
@@ -27,7 +27,7 @@
 }
 
 .navbar-light.bg-faded {
-	background-color: rgba($gray-200, .75);
+	background-color: rgba($main-color-gray-100, .75);
 }
 
 .navbar-brand {
@@ -209,7 +209,7 @@
 	margin-bottom: $margin-x-filter;
 
 	&.toolbar--light {
-		background-color: rgba($gray-100, 1.0);
+		background-color: rgba($main-color-gray-50, 1.0);
 	}
 
 	&.toolbar--white {
@@ -218,7 +218,7 @@
 	}
 
 	&.toolbar--inverse {
-		background: rgba($gray-100, .25);
+		background: rgba($main-color-gray-50, .25);
 	}
 
 }
@@ -246,7 +246,7 @@
 		text-align: center;
 
 		&:hover {
-			background: $gray-100;
+			background: $main-color-gray-50;
 		}
 
 		&.active > .nav-link {
@@ -367,7 +367,7 @@
 	.toolbar-collapse .toolbar-nav {
 		flex-direction: column;
 
-		background-color: rgba($gray-200, .75);
+		background-color: rgba($main-color-gray-100, .75);
 		margin-top: .25rem;
 		padding: .5rem;
 

@@ -32,6 +32,7 @@ $( document ).ready(function() {
 		 */
 		$('.sticked--top').each(function(){
 			$(this).after('<div class="sticked--container" style="height: '+$(this).outerHeight(true)+'px"></div>');
+			$(this).addClass('sticked-item');
 			$(this).css('top',$(this).offset().top);
 		});
 	}

@@ -24,7 +24,7 @@ jr2-job-detail {
 
 footer,
 .footer {
-	background: $gray-700;
+	background: darken($main-color-gray, 13%);
 	color: theme-color('light');
 
 	padding: 2rem 0;
@@ -82,7 +82,7 @@ footer,
 		&:hover {
 			color: theme-color('light');
 			text-decoration: none;
-			background: $gray-700;
+			background:  darken($main-color-gray, 13%);;
 		}
 	}
 }

@@ -5,7 +5,7 @@
 	padding-bottom: $alv-box-radius;
 	margin-bottom: $margin-x-general;
 
-	background: $gray-100;
+	background: $main-color-gray-50;
 	@include alv-border-radius($alv-box-radius);
 
 	.nav-title {
@@ -15,7 +15,7 @@
 
 		font-weight: $text-weight-light;
 
-		border-bottom: 1px solid $gray-200;
+		border-bottom: 1px solid $main-color-gray-100;
 
 		.nav-link--faq {
 			color: $nav-link-disabled-color;
@@ -38,7 +38,7 @@
 		color: $body-color;
 
 		&:hover {
-			background: $gray-200;
+			background: $main-color-gray-100;
 			color: $body-color;
 		}
 
@@ -58,7 +58,7 @@
 
 		.nav-link {
 			//color: $main-color-gray-300;
-			color: $gray-300;
+			color: $main-color-gray-400;
 
 			padding: $nav-link-padding-y calc(#{$nav-link-padding-x} + 0.5rem);
 
@@ -76,7 +76,7 @@
 	.nav-link {
 
 		&:hover {
-			background: $gray-200;
+			background: $main-color-gray-100;
 			color: $brand-primary;
 		}
 

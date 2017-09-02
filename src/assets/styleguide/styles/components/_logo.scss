@@ -83,7 +83,7 @@
 	letter-spacing: initial;
 
 	@media screen and (max-width: 479px){
-		color: $gray-700;
+		color: darken($main-color-gray, 13%);
 	}
 }
 
@@ -94,7 +94,7 @@
 
 	.title__plus-ch,
 	.title__plus-ch:before {
-		color: $gray-500;
+		color: $main-color-gray;
 	}
 
 	@media screen and (max-width: 479px){
@@ -114,7 +114,7 @@
 
 	.title__plus-ch,
 	.title__plus-ch:before {
-		color: $gray-500;
+		color: $main-color-gray;
 	}
 
 	~.alv-logo__brand {
@@ -150,7 +150,7 @@
 
 .alv-logo--dark {
 	@media screen and (min-width: 480px){
-		background: $gray-700;
+		background: darken($main-color-gray, 13%);
 		color: $white !important;
 
 		.alv-logo__title,
