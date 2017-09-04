@@ -351,6 +351,16 @@
 			margin-right: 0 !important;
 			margin-left: 0 !important;
 		}
+
+		&.mobile-nav {
+			flex-direction: row;
+
+			.navbar--language-switcher {
+				.nav-item:not(.active) {
+					display: none;
+				}
+			}
+		}
 	}
 
 	.navbar-alv {
