@@ -67,3 +67,17 @@
 		}
 	}
 }
+
+@media screen and (max-width: 479px) {
+	.drawer .navbar-nav {
+		font-size: $font-size-base;
+
+		.nav-item {
+
+		}
+
+		.nav-link {
+			color: $link-color;
+		}
+	}
+}

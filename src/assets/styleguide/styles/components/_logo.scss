@@ -81,9 +81,11 @@
 
 .alv-logo__brand--amstat {
 	letter-spacing: initial;
+	display: block;
 
 	@media screen and (max-width: 479px){
-		color: darken($main-color-gray, 13%);
+		color: $main-color-gray-dark;
+		display: inline;
 	}
 }
 
@@ -150,7 +152,7 @@
 
 .alv-logo--dark {
 	@media screen and (min-width: 480px){
-		background: darken($main-color-gray, 13%);
+		background: $main-color-gray-dark;
 		color: $white !important;
 
 		.alv-logo__title,

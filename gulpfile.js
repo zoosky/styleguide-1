@@ -31,7 +31,8 @@ var config = {
 	src: {
 		scripts: {
 			fabricator: './src/assets/fabricator/scripts/fabricator.js',
-			styleguide: './src/assets/styleguide/scripts/alv-ch.js'
+			styleguide: './src/assets/styleguide/scripts/alv-ch.js',
+			drawer: './src/assets/styleguide/scripts/drawer.js'
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',

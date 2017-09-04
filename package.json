@@ -46,14 +46,16 @@
     "script-loader": "^0.6.1",
     "findup-sync":"1.0.0",
     "webpack": "^1.8.11",
-    "bootstrap": "4.0.0-beta",
-    "jquery":"^3.0.0",
-    "font-awesome": "4.7.0",
     "bootstrap-slider": "9.8.0"
   },
   "bugs": {
     "url": "https://github.com/alv-ch/styleguide/issues"
   },
   "homepage": "https://github.com/alv-ch/styleguide#readme",
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "bootstrap-drawer":"1.0.6",
+    "font-awesome": "4.7.0",
+    "jquery":"^3.0.0"
+  }
 }

@@ -12,7 +12,8 @@ module.exports = function(fabricatorConfig,build) {
 	var config = {
 		entry: {
 			'fabricator/scripts/f': fabricatorConfig.src.scripts.fabricator,
-			'styleguide/scripts/alv-ch': fabricatorConfig.src.scripts.styleguide
+			'styleguide/scripts/alv-ch': fabricatorConfig.src.scripts.styleguide,
+			'styleguide/scripts/drawer': fabricatorConfig.src.scripts.drawer
 		},
 		output: {
 			path: path.resolve(__dirname, dest, 'assets'),

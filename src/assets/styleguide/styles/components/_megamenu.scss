@@ -63,3 +63,38 @@
 		color: $brand-primary;
 	}
 }
+
+
+@media screen and (max-width: 479px) {
+	.drawer .megamenu {
+
+		.dropdown-toggle {
+			display: none;
+		}
+
+		> .dropdown-menu {
+			display: block;
+			width: 100%;
+
+			box-shadow: none;
+			border: none;
+			border-top: $dropdown-border-width solid $dropdown-border-color;
+
+			padding-top: 0;
+			margin-top: $margin-x-general;
+		}
+
+		.megamenu-menu {
+			flex-direction: column;
+
+			.dropdown-title {
+				font-size: $h3-font-size;
+				margin-top: $margin-x-general;
+			}
+
+			.dropdown-item {
+				font-size: $font-size-base;
+			}
+		}
+	}
+}
