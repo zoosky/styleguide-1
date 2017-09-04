@@ -47,15 +47,6 @@ $main-color-gray-200: #d6d6d6; // lighten 33.7%
 $main-color-gray-300: #c2c2c2; // lighten 26%
 $main-color-gray-400: #a1a1a1; // lighten 13%
 
-// grayscales bootstrap4-alpha.6 and before
-/*
- gray-dark     main-color-gray-dark
- gray          main-color-gray
- gray-light    main-color-gray-400
- gray-lighter  main-color-gray-100
- gray-lightest main-color-gray-50
- */
-
 // Gray-Light
 $main-color-gray-light-50:  #fcfcfc; // lighten 20%
 $main-color-gray-light-100: #f7f7f7; // lighten 18%
@@ -92,7 +83,6 @@ $additional-accent-green-100: #e8f5d9;
 $additional-accent-green-200: #cce7ad;
 $additional-accent-green-300: #b5dc85;
 $additional-accent-green-400: #8bc742;
-
 
 // Font
 $text-base-spacing: 0;
@@ -172,3 +162,15 @@ $filter-toolbar-title-paddings:(
 	xxl: 2.5rem,
 	xxxl: 2.5rem
 );
+
+// Job-Room
+// Job search typeaheads
+$typeahead-color-classification: 	$main-accent-color-400;
+$typeahead-color-occupation: 		$additional-accent-green;
+$typeahead-color-free-text:			$additional-accent-amber;
+
+$typeahead-color-canton:			$main-accent-color-400;
+$typeahead-color-locality:			$additional-accent-green;
+
+$typeahead-item-padding:			.5rem;
+$typeahead-label-padding:			$typeahead-item-padding/2;
