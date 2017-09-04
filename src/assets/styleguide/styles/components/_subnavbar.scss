@@ -32,6 +32,10 @@
 		}
 	}
 
+	.nav-item {
+		font-size: $small-font-size;
+	}
+
 
 	.nav-link {
 		color: $body-color;
@@ -47,8 +51,8 @@
 	}
 
 	.nav-item.active > .nav-link {
-			font-weight: $text-weight-bold;
-			box-shadow: inset $subnav-link-active-border 0 0 0 $brand-primary;
+		font-weight: $text-weight-bold;
+		box-shadow: inset $subnav-link-active-border 0 0 0 $brand-primary;
 	}
 
 	.nav {

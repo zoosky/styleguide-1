@@ -8,10 +8,12 @@ $( document ).ready(function() {
 
 	// MEGAMENU
 	// todo refactor!
-	var positionLeft = $('.nav-item.megamenu').offset().left;
-	var marginMegamenu = ($(document).width() - 1540)/2;
-	var diff = -(positionLeft - marginMegamenu);
-	$('.nav-item.megamenu .dropdown-menu').css('left',diff);
+	if ($('.megamenu').length) {
+		var positionLeft = $('.nav-item.megamenu').offset().left;
+		var marginMegamenu = ($(document).width() - 1540) / 2;
+		var diff = -(positionLeft - marginMegamenu);
+		$('.nav-item.megamenu .dropdown-menu').css('left', diff);
+	}
 
 	var md = new MobileDetect(window.navigator.userAgent);
 
@@ -26,7 +28,6 @@ $( document ).ready(function() {
 		});
 
 		// toggler subnavigation
-		//$('.subnavbar').attr('data-title',$('.breadcrumb-item.active').text());
 		if (!$('.subnavbar__toggler').length) {
 			var subnavTitle = 'UNTERNAVIGATION';
 			if ($('.breadcrumb-item.active').text()){
