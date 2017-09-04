@@ -10,3 +10,10 @@
 		font-size: $small-font-size;
 	}
 }
+
+
+@media screen and (max-width: 479px){
+	.breadcrumb {
+		display: none;
+	}
+}

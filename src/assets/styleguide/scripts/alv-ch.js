@@ -16,11 +16,30 @@ $( document ).ready(function() {
 	var md = new MobileDetect(window.navigator.userAgent);
 
 	if (md.mobile()){
+		// toggler toolbars
 		$('.toolbar-nav > .nav-title').click(function(){
 			$(this).parent().toggleClass('show');
 		});
 
 		$('.toolbar-nav > .nav-item').click(function(){
+			$(this).parent().removeClass('show');
+		});
+
+		// toggler subnavigation
+		//$('.subnavbar').attr('data-title',$('.breadcrumb-item.active').text());
+		if (!$('.subnavbar__toggler').length) {
+			var subnavTitle = 'UNTERNAVIGATION';
+			if ($('.breadcrumb-item.active').text()){
+				subnavTitle=$('.breadcrumb-item.active').text();
+			}
+			$('.subnavbar').prepend('<div class="subnavbar__toggler">' + subnavTitle + '</div>');
+		}
+
+		$('.subnavbar').click(function(){
+			$(this).toggleClass('show');
+		});
+
+		$('.subnavbar-nav > .nav-item').click(function(){
 			$(this).parent().removeClass('show');
 		});
 	}
