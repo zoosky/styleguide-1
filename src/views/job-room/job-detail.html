@@ -19,10 +19,10 @@ fabricator: true
 <p></p>
 
 <div class="job-detail__content">
-	<span class="badge badge-yellow">Location</span>
-	<span class="badge badge-gray">Experience</span>
-	<span class="badge badge-blue">Contract</span>
-	<span class="badge badge-green">Diploma</span>
+	<span class="badge badge-blue">Location</span>
+	<span class="badge badge-gray">Workflow</span>
+	<span class="badge badge-green">Contract</span>
+	<span class="badge badge-yellow">ab Sofort</span>
 </div>
 
 <!-- job description -->
@@ -33,16 +33,71 @@ fabricator: true
 </div>
 <!-- /job description -->
 
-<div class="job-detail__features">
-	<div class="logo-box flex-height md-whiteframe-1dp">
-		<h4>Company Name</h4>
-		<h4 class="text--light">Location</h4>
-		<a href="#">14 Jobs anzeigen</a>
+<!-- languages -->
+<div class="job-detail__content">
+	<h4 class="job-detail__content__title">Sprachkenntnisse</h4>
+	<div class="content__item">
+		<strong>Deutsch</strong>
+		<span>mündlich: sehr gut, schriftlich: sehr gut</span>
 	</div>
-
-	<div class="logo-box flex-height md-whiteframe-1dp">
-		<h4>Jobname</h4>
-		<h4 class="text--light">Pensum, Location</h4>
-		<a href="#">124 ähnliche Jobs anzeigen</a>
+	<div class="content__item">
+		<strong>Englisch</strong>
+		<span>mündlich: gut, schriftlich: Grundkenntnisse</span>
 	</div>
 </div>
+
+<!-- additional information -->
+<div class="job-detail__content">
+	<h4 class="job-detail__content__title">Bewerbungsformen</h4>
+	<div class="content__item">
+		<strong>Per Post</strong>
+		<span>siehe Adresse des Unternehmens</span>
+	</div>
+	<div class="content__item">
+		<strong>Per E-Mail</strong>
+		<span><a href="#">email@bewerbung</a></span>
+	</div>
+	<div class="content__item">
+		<strong>Telefonisch</strong>
+		<span>+41 33 300 01 01</span>
+	</div>
+	<div class="content__item">
+		<strong>Ergänzende Angaben</strong>
+		<span>Bewerbungen gerne per Mail oder per Telefon oder per Post oder per Online Formular.</span>
+	</div>
+</div>
+
+<div class="job-detail__features">
+	<div id="map" class="job-detail__map flex-height md-whiteframe-1dp"></div>
+
+	<div class="features">
+		<div class="logo-box md-whiteframe-1dp">
+			<h4>Company Name</h4>
+			<h4 class="text--light">Location</h4>
+			<a href="#">14 Jobs anzeigen</a>
+		</div>
+
+		<div class="logo-box md-whiteframe-1dp">
+			<h4>Jobname</h4>
+			<h4 class="text--light">Pensum, Location</h4>
+			<a href="#">124 ähnliche Jobs anzeigen</a>
+		</div>
+	</div>
+</div>
+
+<script>
+	function initMap() {
+		var bern = {lat: 46.946953, lng: 7.424150};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 12,
+			center: bern
+		});
+		var marker = new google.maps.Marker({
+			position: bern,
+			map: map
+		});
+	}
+</script>
+<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3DRbPhGw-Q2RRK7EkcYqDsSFd0TSn00I&callback=initMap">
+</script>

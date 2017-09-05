@@ -32,52 +32,51 @@
 
 			<div class="base__subnavbar">
 
-				<ul class="pagination pagination--block pagination-alv">
-					<li class="page-item">
-						<a class="page-link" href="job-result-list.html">Zurück zu den Suchergebnissen</a>
-					</li>
-				</ul>
+				<div class="sticked--top sticked--width">
 
-				<div class="alv-logo-box flex-height md-whiteframe-1dp">
-					<div class="job-detail__content">
-						<address>
-							<strong>Adato AG</strong><br />
-							Lagerhausstrasse 10<br />
-							8400 Winterthur<br />
-						</address>
+					<ul class="pagination pagination--block pagination-alv">
+						<li class="page-item">
+							<a class="page-link" href="job-result-list.html">Zurück zu den Suchergebnissen</a>
+						</li>
+					</ul>
 
-						Telefon 052 269 23 23<br />
-						www.adato.ch
+					<div class="alv-logo-box flex-height md-whiteframe-1dp">
+						<div class="job-detail__content">
+							<address>
+								<strong>Adato AG</strong><br />
+								Lagerhausstrasse 10<br />
+								8400 Winterthur<br />
+							</address>
+
+							Telefon 052 269 23 23<br />
+							www.adato.ch
+						</div>
+
+						<div class="job-detail__content">
+							<strong>Ihre Kontaktperson</strong><br />
+							Reto Keller<br />
+							Personalberater<br />
+							Gewerbe & Handwerk<br />
+							r.keller@adato.ch<br />
+							+41 52 269 23 26<br />
+						</div>
 					</div>
 
-					<div class="job-detail__content">
-						<strong>Ihre Kontaktperson</strong><br />
-						Reto Keller<br />
-						Personalberater<br />
-						Gewerbe & Handwerk<br />
-						r.keller@adato.ch<br />
-						+41 52 269 23 26<br />
+					<div class="alv-logo-box flex-height md-whiteframe-1dp">
+						<div class="job-detail__content">
+							<p>
+								<strong>Zuständiges RAV</strong><br />
+								RAV Frauenfeld, Frauenfeld Kant. Verwaltung<br />
+								Telefon +41 58 345 55 20<br />
+							</p>
+
+							<strong>Stellennummer:</strong><br />
+							AVAM: 00000717982<br />
+							Job-Room: 230194084
+						</div>
 					</div>
+
 				</div>
-
-				<p></p>
-				<div id="map" class="job-detail__map"></div>
-				<script>
-					function initMap() {
-						var bern = {lat: 46.946953, lng: 7.424150};
-						var map = new google.maps.Map(document.getElementById('map'), {
-							zoom: 12,
-							center: bern
-						});
-						var marker = new google.maps.Marker({
-							position: bern,
-							map: map
-						});
-					}
-				</script>
-				<script async defer
-						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3DRbPhGw-Q2RRK7EkcYqDsSFd0TSn00I&callback=initMap">
-				</script>
 
 				{{#if fabricator}}
 				{{> f-control-bar}}
@@ -91,40 +90,43 @@
 			</div>
 
 			<div class="base__related">
-				<ul class="pagination pagination--block pagination-alv">
-					<li class="page-item">
-						<a class="page-link" href="#" tabindex="-1"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
-					</li>
-					<li class="page-item">
-						<a class="page-link" href="#">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-					</li>
-				</ul>
 
-				<div style="position: relative;">
-					<div>
-						<button class="btn btn-primary btn-block btn-sm">Jetzt Bewerben</button>
+				<div class="sticked--top sticked--width">
+					<ul class="pagination pagination--block pagination-alv">
+						<li class="page-item">
+							<a class="page-link" href="#" tabindex="-1"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</li>
+					</ul>
 
-						<button class="btn btn-default btn-block btn-sm">Zum Stelleninserat</button>
+					<div style="position: relative;">
+						<div>
+							<button class="btn btn-primary btn-block btn-sm">Jetzt Bewerben</button>
 
-						<p></p>
+							<button class="btn btn-default btn-block btn-sm">Zum Stelleninserat</button>
 
-						<ul class="nav filter-nav flex-column">
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Stellenangebot speichern</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-share" aria-hidden="true"></i> Link kopieren</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Per E-Mail versenden</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-print" aria-hidden="true"></i> Drucken</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Als PDF speichern</a>
-							</li>
-						</ul>
+							<p></p>
+
+							<ul class="nav filter-nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Stellenangebot speichern</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#"><i class="fa fa-share" aria-hidden="true"></i> Link kopieren</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Per E-Mail versenden</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#"><i class="fa fa-print" aria-hidden="true"></i> Drucken</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Als PDF speichern</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

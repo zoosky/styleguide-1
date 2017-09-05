@@ -23,6 +23,10 @@
 	}
 }
 
+.base__subnavbar .alv-logo-box {
+	font-size: $small-font-size;
+}
+
 // bootstrap class: borders!!
 .rounded-logo {
 	@include alv-border-radius($alv-box-radius);
