@@ -100,6 +100,9 @@
 
 	.subnavbar {
 
+		margin-right: ($grid-gutter-width / -2);
+		margin-left:  ($grid-gutter-width / -2);
+
 		margin-bottom: $margin-x-narrow;
 
 		transition: all 1s ease;
