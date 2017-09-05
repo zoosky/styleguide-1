@@ -123,6 +123,11 @@
 }
 
 .job-detail__title {
+	h2 {
+		height: 2rem;
+		margin-bottom: 1rem;
+	}
+
 	.job-detail__date {
 		margin-left: $margin-y-general;
 	}

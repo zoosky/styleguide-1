@@ -90,14 +90,6 @@
 	}
 }
 
-.subnavbar__back {
-	padding: $breadcrumb-padding-y $breadcrumb-padding-x;
-	margin-bottom: $spacer;
-
-	font-size: $small-font-size;
-	@include clearfix;
-}
-
 @media screen and (min-width: 480px){
 	.subnavbar__toggler {
 		display: none;

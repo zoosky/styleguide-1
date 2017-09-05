@@ -1,0 +1,46 @@
+.pagination-alv {
+
+	height: 2rem;
+	margin-bottom: 1rem;
+
+	&.pagination--block {
+		width: 100%;
+
+		> .page-item {
+			flex-grow: 1;
+		}
+	}
+
+	.page-item {
+		text-align: center;
+
+		&:last-child {
+			text-align: right;
+		}
+
+		&:first-of-type,
+		&:only-of-type {
+			text-align: left;
+		}
+	}
+
+	.page-link {
+		font-size: $small-font-size;
+
+		padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+		margin-bottom: $spacer;
+		color: $link-color;
+		border: none;
+	}
+}
+
+
+.subnavbar__back {
+	padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+	margin-bottom: $spacer;
+
+	font-size: $small-font-size;
+	@include clearfix;
+}
+
+
