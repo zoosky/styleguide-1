@@ -335,6 +335,47 @@
 	@include badge-variant($brand-primary);
 }
 
+@media screen and (max-width: 479px) {
+	.candidate-search {
+		// todo media breakpoints!
+		width: calc(100% - #{$margin-y-narrow * 2});
+
+		margin: $margin-x-narrow $margin-y-narrow;
+
+		legend {
+			width: 100%;
+		}
+
+		.form-group {
+			display: flex;
+			flex-direction: column;
+
+			label {
+				flex-grow: 1;
+				width: 100%;
+				text-align: left;
+				margin-right: 0;
+			}
+
+			div {
+				flex-grow: 1;
+				width: 100%;
+			}
+		}
+
+		.btn {
+			margin-left: 0;
+			width: 100%;
+
+			&.btn-lg {
+				font-weight: $btn-font-weight;
+				line-height: $input-btn-line-height;
+				@include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
+			}
+		}
+	}
+}
+
 // Process
 
 @media screen and (max-width: 479px) {
