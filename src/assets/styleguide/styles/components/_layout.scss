@@ -84,6 +84,12 @@ body {
 			margin-top: (2*$breadcrumb-padding-x + $spacer);
 		}
 	}
+
+
+	@media screen and (max-width: 479px) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 /**

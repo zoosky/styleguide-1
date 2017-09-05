@@ -166,12 +166,13 @@
 	flex-direction: row;
 	justify-content: space-between;
 
-	div {
+	.job-detail__map {
 		width: 50%;
 	}
 
 	.features {
 		margin-left: $margin-y-general;
+		width: 50%;
 
 		display: flex;
 		flex-direction: column;
@@ -183,6 +184,69 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.job-detail__references {
+		order: 1;
+	}
+	.job-detail__body {
+		order: 0;
+	}
+	.job-detail__actions {
+		order: 2;
+	}
+
+	.job-detail__company,
+	.job-detail__pes {
+		&.alv-logo-box {
+			border-radius: 0 !important;
+			padding: 0;
+			background: transparent;
+			font-size: inherit;
+		}
+
+		&.md-whiteframe-1dp {
+			box-shadow: none;
+		}
+	}
+
+	.job-detail__content {
+		.content__item {
+			display: flex;
+			flex-direction: column;
+
+			strong {
+				width: 100%;
+				text-align: left;
+			}
+
+			span {
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
+	.job-detail__features {
+		flex-direction: column;
+
+		.job-detail__map,
+		.features {
+			width: 100%;
+			margin-bottom: .5rem;
+			margin-left: 0;
+
+			.logo-box,
+			.logo-box:last-child {
+				margin-bottom: .5rem;
+			}
+		}
+
+		.md-whiteframe-1dp {
+			border-radius: 0 !important;
+			box-shadow: none;
 		}
 	}
 }
