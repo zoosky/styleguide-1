@@ -82,6 +82,8 @@
 	transition: transform 0.25s ease;
 }
 
+
+
 // Job-Room-result
 .result-list__item {
 	cursor: pointer;
@@ -91,6 +93,10 @@
 
 	&:hover {
 		background: $main-accent-color-50;
+	}
+
+	em {
+		@include highlight-tag();
 	}
 }
 
