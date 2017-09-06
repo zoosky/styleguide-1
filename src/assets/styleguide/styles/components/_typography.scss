@@ -94,3 +94,10 @@ strong {
 .text--line-height--h6 {
 	line-height: $h6-font-size;
 }
+
+/*------------------------------------*\
+  #LINKS
+\*------------------------------------*/
+a:not([href]):not([tabindex]) {
+	color: $link-color;
+}
