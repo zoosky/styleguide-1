@@ -307,6 +307,7 @@
 
 	.form-group {
 		max-width: 30%;
+		flex-grow: 1;
 
 		margin: $filter-toolbar-title-padding .5rem;
 
@@ -316,6 +317,7 @@
 
 		&.form-group--slider {
 			width: auto;
+			flex-grow: 0;
 		}
 
 		&:first-child {
