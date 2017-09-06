@@ -296,7 +296,6 @@
 .toolbar-form {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 
 	padding-left: 0;
 	margin-bottom: 0;
@@ -307,17 +306,16 @@
 	}
 
 	.form-group {
-		flex-grow: 1;
+		max-width: 30%;
 
-		// todo check bootstrap?!
 		margin: $filter-toolbar-title-padding .5rem;
-
-		&.form-group--wide {
-			flex-grow: 2;
-		}
 
 		> input {
 			width: 100%;
+		}
+
+		&.form-group--slider {
+			width: auto;
 		}
 
 		&:first-child {
@@ -330,18 +328,21 @@
 	}
 
 	button {
-		flex-grow: 1;
-		// todo check bootstrap?!
 		margin: $filter-toolbar-title-padding .5rem;
+		width: 200px;
+	}
+}
 
-		&:first-child {
-			margin-left: 0;
-		}
+jr2-job-search-toolbar {
 
-		&:last-child {
-			margin-right: 0;
+	jr2-typeahead-multiselect {
+		width: 100%;
+
+		input {
+			width: 100%;
 		}
 	}
+
 }
 
 @media screen and (max-width: 479px){
@@ -447,16 +448,24 @@
 		flex-direction: column;
 		justify-content: flex-start;
 
-		margin: 0 2rem 1rem 2rem;
+		margin: 1rem 2rem;
 
 		.form-group,
-		.btn {
+		button {
 			margin: .5rem 0;
 			width: 100%;
+			max-width: 100%;
 		}
 	}
 
-	.navbar--language-switcher {
+	jr2-job-search-toolbar {
+
+		jr2-typeahead-multiselect {
+
+			.typeahead-multiselect {
+				width: 100%;
+			}
+		}
 
 	}
 }

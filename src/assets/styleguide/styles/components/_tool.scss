@@ -56,7 +56,6 @@
 	font-size: 0.85rem;
 	color: $main-accent-color;
 	text-align: center;
-	margin-bottom: 1rem;
 
 	&:before {
 		display: inline-block;
@@ -97,6 +96,29 @@
 
 	em {
 		@include highlight-tag();
+	}
+
+
+	.result-list__item__content {
+		>.w-100 {
+			width: auto !important;
+		}
+	}
+
+	.result-list__item__date {
+		vertical-align: text-top;
+	}
+
+	.result-list__item__star {
+		padding: 0 10px;
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.result-list__item {
+		padding: $margin-x-narrow;
+		margin-bottom: $margin-x-narrow;
 	}
 }
 
@@ -195,6 +217,7 @@
 }
 
 @media screen and (max-width: 479px) {
+
 	.job-detail__references {
 		order: 1;
 	}
