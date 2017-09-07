@@ -1,0 +1,3 @@
+@mixin alv-border-radius($radius: $border-radius) {
+	border-radius: 0 0 $radius !important;
+}

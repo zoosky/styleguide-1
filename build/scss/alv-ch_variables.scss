@@ -1,0 +1,176 @@
+/* ==========================================================
+ * alv-ch-variables.scss
+ * ((text))
+ *
+ *
+ * Author: Thomas D'Ascoli, thomas@dasco.li
+ * Date:   2017-05-25 21:22
+ *
+ * Copyright 2017 alv-ch
+ * Licensed under MIT
+ =========================================================== */
+
+/**
+ * CONTENTS
+ * Logo.................(()).
+ *
+ */
+
+// Colors
+$main-color-black: #323232;
+$main-color-gray: #808080;
+$main-color-gray-dark: darken($main-color-gray, 13%);
+$main-color-gray-light: #C9C9C9;
+$main-color-white: #fffff;
+
+$main-accent-color: #007AB1;
+
+$additional-accent-amber: #ffc500;
+$additional-accent-yellow: #ffb120;
+$additional-accent-green: #64b500;
+
+$other-colors-red:    #F7001D;
+
+// Main Color Swatches
+//
+// Black
+$main-color-black-50:  #f5f5f5;
+$main-color-black-100: #e1e1e1;
+$main-color-black-200: #bdbdbd;
+$main-color-black-300: #9d9d9d;
+$main-color-black-400: #676767;
+
+// Gray
+$main-color-gray-50:  #f8f8f8; // lighten 46.1%
+$main-color-gray-100: #ececec; // lighten 42.5%
+$main-color-gray-200: #d6d6d6; // lighten 33.7%
+$main-color-gray-300: #c2c2c2; // lighten 26%
+$main-color-gray-400: #a1a1a1; // lighten 13%
+
+// Gray-Light
+$main-color-gray-light-50:  #fcfcfc; // lighten 20%
+$main-color-gray-light-100: #f7f7f7; // lighten 18%
+$main-color-gray-light-200: #ededed; // lighten 14%
+$main-color-gray-light-300: #e5e5e5; // lighten 11%
+$main-color-gray-light-400: #d7d7d7; // lighten 5.5%
+
+// Main Accent Color Swatches
+$main-accent-color-50:  #f2f8fb;
+$main-accent-color-100: #d9ebf5;
+$main-accent-color-200: #add4e6;
+$main-accent-color-300: #85bfda;
+$main-accent-color-400: #439cc5;
+
+// Additional Accent Color Swatches
+//
+// Amber
+$additional-accent-amber-50:  #fffbf5;
+$additional-accent-amber-100: #fff4de;
+$additional-accent-amber-200: #ffe6b7;
+$additional-accent-amber-300: #ffda94;
+$additional-accent-amber-400: #ffc55a;
+
+// Yellow
+$additional-accent-yellow-50:  #fffcf2;
+$additional-accent-yellow-100: #fff7d8;
+$additional-accent-yellow-200: #ffecad;
+$additional-accent-yellow-300: #ffe485;
+$additional-accent-yellow-400: #ffd342;
+
+// Green
+$additional-accent-green-50:  #f7fbf2;
+$additional-accent-green-100: #e8f5d9;
+$additional-accent-green-200: #cce7ad;
+$additional-accent-green-300: #b5dc85;
+$additional-accent-green-400: #8bc742;
+
+// Font
+$text-base-spacing: 0;
+$text-base-size: 1.125rem;
+
+$text-base-sizes:(
+		xs: 0.85rem,
+		sm: 1.0rem,
+		md: 1.0rem,
+		lg: 1.0rem,
+		xl: 1.125rem,
+		xxl: 1.125rem,
+		xxxl: 1.125rem
+);
+
+$text-h1-spacing: -0.8px; //-3.6px;
+$text-h2-spacing: -0.8px;
+$text-h3-spacing: $text-base-spacing;
+$text-h4-spacing: $text-base-spacing;
+
+$text-weight-bold: 700;
+$text-weight-regular: 400;
+$text-weight-light: 300;
+
+
+// Logo
+$logo-height: 90px;
+$logo-size: 1.5rem;
+$logo-spacing: $text-h2-spacing;
+
+$logo-brand-size: $logo-size;
+$logo-brand-spacing: $logo-spacing;
+
+$logo-zIndex: 1100;
+
+// Landingpages
+$landingpages-min-height: 280px;
+
+//* vars.golden-ratio */
+$phi: 1.61803398875;
+$golden-ratio: 0.61803398875;
+$golden-ratio-tall: percentage($golden-ratio);
+$golden-ratio-small: 100 - percentage($golden-ratio);
+
+// ALV-Box
+$alv-box-radius: 24px; // ($logo-height * (1 - $golden-ratio)) / 2 ~30px
+$alv-box-padding: $alv-box-radius * .75; // ~5px
+
+// Subnavbar
+$subnav-link-active-border: 4px;
+
+// Navs
+/*
+$nav-link-padding-y: .5em;
+$nav-link-padding-x: 1em;
+*/
+// Filter
+$margin-x-general: 1.5rem;
+$margin-x-filter: $margin-x-general;
+$margin-x-narrow: $margin-x-general/2;
+$margin-x-landingpage: $margin-x-general*2;
+
+$margin-y-general: $margin-x-general;
+$margin-y-narrow: $margin-y-general/2;
+$margin-y-landingpage: $margin-y-general*2;
+
+$filter-toolbar-padding-y: 1.5rem;
+$filter-toolbar-padding-x: 1.5rem;
+
+$filter-toolbar-title-padding: 2.5rem;
+$filter-toolbar-title-paddings:(
+	xs: .85rem,
+	sm: 1.0rem,
+	md: 1.0rem,
+	lg: 1.0rem,
+	xl: 2.5rem,
+	xxl: 2.5rem,
+	xxxl: 2.5rem
+);
+
+// Job-Room
+// Job search typeaheads
+$typeahead-color-classification: 	$main-accent-color-400;
+$typeahead-color-occupation: 		$additional-accent-green;
+$typeahead-color-free-text:			$additional-accent-amber;
+
+$typeahead-color-canton:			$main-accent-color-400;
+$typeahead-color-locality:			$additional-accent-green;
+
+$typeahead-item-padding:			.5rem;
+$typeahead-label-padding:			$typeahead-item-padding/2;

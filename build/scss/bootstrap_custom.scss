@@ -1,0 +1,194 @@
+/* ==========================================================
+ * bootstrap-variables.scss
+ * Bootstrap overrides
+ * Copy variables from `_variables.scss` to this file to override default values
+ * without modifying source files.
+ *
+ *
+ * Author: Thomas D'Ascoli, thomas@dasco.li
+ * Date:   2017-05-25 17:52
+ *
+ * Copyright 2017 alv-ch
+ * Licensed under MIT
+ =========================================================== */
+
+/**
+ * CONTENTS
+ *
+ * Color system          (())
+ * Options               (())
+ * Body                  (())
+ * Links                 (())
+ * Paragraphs            (())
+ * Grid breakpoints      (())
+ * Grid containers       (())
+ * Fonts                 (())
+ * Buttons               (())
+ * Forms                 (())
+ * Navs                  (())
+ * Navbar                (())
+ * Modals                (())
+ * Breadcrumbs           (())
+ *
+ * ALV-CH                ALV-CH Specific
+ * Bootstrap-slider
+ * Radio & Checkboxes
+ */
+
+/*------------------------------------*\
+  #Color system
+\*------------------------------------*/
+
+/**
+ * Grayscale and brand colors for use across Bootstrap.
+ */
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $main-accent-color;
+$brand-inverse:             $main-color-black;
+
+$gray-100: $main-color-gray-50;
+$gray-200: $main-color-gray-100;
+$gray-300: $main-color-gray-200;
+$gray-400: $main-color-gray-300;
+$gray-500: $main-color-gray-400;
+$gray-600: $main-color-black-300;
+$gray-700: $main-color-black-400;
+
+$red:    $other-colors-red;
+$orange: $additional-accent-amber;
+$yellow: $additional-accent-yellow;
+$green:  $additional-accent-green;
+$blue:   $main-accent-color;
+
+$theme-colors: (
+	primary: $blue,
+	secondary: $gray-600,
+	success: $green,
+	info: $cyan,
+	warning: $yellow,
+	danger: $red,
+	light: $gray-200,
+	dark: $gray-800
+);
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded:            false;
+$enable-shadows:            true;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color:    $main-color-black;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $brand-primary;
+$link-hover-color:      $additional-accent-amber;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px,
+	xxxl: 1600px
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1380px,
+	xxxl: 1540px
+);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+$font-family-base:       $font-family-sans-serif;
+
+$font-size-base: $text-base-size; // Assumes the browser default, typically `16px`
+
+$h1-font-size: 3rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1.125rem;
+$h6-font-size: 1.125rem;
+
+// Forms
+// todo in bootstrap4-beta missing but used!
+$input-padding-y-sm:             .25rem;
+$input-padding-x-sm:             $input-padding-y-sm;
+$input-padding-y-lg:             .75rem;
+$input-padding-x-lg:             $input-padding-y-lg;
+
+$input-border-color:             $main-color-gray-400;
+
+// Navbar
+
+$navbar-light-color:                 $main-color-black;
+$navbar-light-hover-color:           $additional-accent-amber;
+$navbar-light-active-color:          $main-color-black;
+
+$navbar-brand-height: 55px;
+
+// Navs
+$nav-link-padding:              $nav-link-padding-y $nav-link-padding-x;
+
+// Modal
+$modal-xl:                    980px;
+$modal-xxl:                   1220px;
+$modal-xxxl:                  1380px;
+
+// Breadcrumb
+$breadcrumb-bg:                 transparent;
+$breadcrumb-divider:            "\f054";
+
+// ALV-CH
+
+// Bootstrap-slider
+$slider-line-height: 2rem;
+$slider-track-height: 6px;
+$slider-border-radius: 0;
+$slider-horizontal-width: 210px !default;
+$slider-vertical-height: 210px !default;
+
+// Radio- & Checkbox
+$form-box-size: 26px;
+$form-box-margin: 6px;
+$form-box-border-width: $input-btn-border-width*2;
+
+$form-box-check-height: $form-box-size/2 - $form-box-border-width/2;
+$form-box-check-width: ceil($form-box-size/4);
+
+$form-box-check-border: $form-box-check-width/2;
+
+$form-box-check-deg: 45deg;
+
+$form-box-check-top: $form-box-check-height/2;
+$form-box-check-left: round($form-box-size/3);
+
+$form-box-radio-size: $form-box-size/2 - $form-box-border-width/2;
+$form-box-radio-top: round($form-box-size/4);
+$form-box-radio-left: ceil($form-box-size/4);

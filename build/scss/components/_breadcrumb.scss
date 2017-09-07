@@ -1,0 +1,19 @@
+// Breadcrumb
+.breadcrumb {
+	font-size: $small-font-size;
+	//padding-left: 0;
+}
+
+.breadcrumb-item {
+	+ .breadcrumb-item::before {
+		font-family: 'FontAwesome';
+		font-size: $small-font-size;
+	}
+}
+
+
+@media screen and (max-width: 479px){
+	.breadcrumb {
+		display: none;
+	}
+}

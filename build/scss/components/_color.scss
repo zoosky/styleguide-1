@@ -1,0 +1,44 @@
+// Colors
+
+.bg--main-black,
+.bg--main-gray,
+.bg--main-accent,
+.bg--additional-green,
+.bg--other-red {
+	color: theme-color('light') !important;
+}
+
+.bg--main-gray-light,
+.bg--main-white,
+.bg--additional-amber,
+.bg--additional-yellow {
+	color: $body-color !important;
+}
+
+.bg--main-black {
+	background: $main-color-black !important;
+}
+.bg--main-gray {
+	background: $main-color-gray !important;
+}
+.bg--main-gray-light {
+	background: $main-color-gray-light !important;
+}
+.bg--main-white {
+	background: $main-color-white !important;
+}
+.bg--main-accent {
+	background: $main-accent-color !important;
+}
+.bg--additional-amber {
+	background: $additional-accent-amber !important;
+}
+.bg--additional-yellow {
+	background: $additional-accent-yellow !important;
+}
+.bg--additional-green {
+	background: $additional-accent-green !important;
+}
+.bg--other-red {
+	color: $other-colors-red !important;
+}

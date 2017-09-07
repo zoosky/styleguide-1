@@ -1,0 +1,89 @@
+/**
+ * CONTENTS
+ *
+ * FOOTER...............(()).
+ *
+ */
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+footer,
+.footer {
+	background: $main-color-gray-dark;
+	color: theme-color('light');
+
+	padding: 2rem 0;
+
+	@media screen and (max-width: 479px){
+		display: none;
+	}
+}
+
+// todo vars!
+.footer--logos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	.footer--logos__logo {
+		margin: 0 2rem;
+		width: 25%;
+
+		text-align: center;
+
+		img {
+			max-height: 60px;
+
+			&.cd-bund {
+				max-height: 100px;
+			}
+		}
+	}
+}
+
+.footer--seco {
+	display: flex;
+	flex-direction: row;
+
+	padding: $margin-x-narrow 0;
+
+	background: $brand-inverse;
+	color: theme-color('light');
+
+	a,
+	span {
+		color: theme-color('light');
+		display: inline-block;
+
+		padding: $nav-link-padding-y;
+		margin: 0 $margin-x-narrow;
+
+		font-size: $small-font-size;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	a {
+		&:hover {
+			color: theme-color('light');
+			text-decoration: none;
+			background:  $main-color-gray-dark;
+		}
+	}
+}
+
+@media screen and (max-width: 479px){
+	.footer--seco {
+		justify-content: space-between;
+
+		a,
+		span {
+			flex-grow: 1;
+			margin: 0;
+		}
+	}
+}
