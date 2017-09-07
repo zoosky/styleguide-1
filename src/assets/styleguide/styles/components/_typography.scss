@@ -100,4 +100,9 @@ strong {
 \*------------------------------------*/
 a:not([href]):not([tabindex]) {
 	color: $link-color;
+	cursor: pointer;
+
+	&:hover {
+		color: $link-color;
+	}
 }
