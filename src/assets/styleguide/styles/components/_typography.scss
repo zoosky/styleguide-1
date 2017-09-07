@@ -35,6 +35,10 @@ strong {
 	font-weight: 300;
 }
 
+.text--regular {
+	font-weight: 400;
+}
+
 .text--super {
 	vertical-align: super;
 }
@@ -73,20 +77,32 @@ strong {
 }
 
 .text--line-height--h1{
-	line-height: $font-size-h1;
+	line-height: $h1-font-size;
 }
 .text--line-height--h2 {
-	line-height: $font-size-h2;
+	line-height: $h2-font-size;
 }
 .text--line-height--h3 {
-	line-height: $font-size-h3;
+	line-height: $h3-font-size;
 }
 .text--line-height--h4 {
-	line-height: $font-size-h4;
+	line-height: $h4-font-size;
 }
 .text--line-height--h5 {
-	line-height: $font-size-h5;
+	line-height: $h5-font-size;
 }
 .text--line-height--h6 {
-	line-height: $font-size-h6;
+	line-height: $h6-font-size;
+}
+
+/*------------------------------------*\
+  #LINKS
+\*------------------------------------*/
+a:not([href]):not([tabindex]) {
+	color: $link-color;
+	cursor: pointer;
+
+	&:hover {
+		color: $link-color;
+	}
 }

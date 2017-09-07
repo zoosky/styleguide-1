@@ -25,8 +25,6 @@ var options = {
 	includePaths: [node_modules] // this will find any node_modules above the current working directory
 };
 
-console.log(options);
-
 // configuration
 var config = {
 	dev: gutil.env.dev,
@@ -34,13 +32,14 @@ var config = {
 		scripts: {
 			fabricator: './src/assets/fabricator/scripts/fabricator.js',
 			styleguide: './src/assets/styleguide/scripts/alv-ch.js',
-			reset: './src/assets/styleguide/scripts/alv-ch_reset.js'
+			drawer: './src/assets/styleguide/scripts/drawer.js'
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
 			styleguide: 'src/assets/styleguide/styles/alv-ch.scss'
 		},
 		sass: 'src/assets/styleguide/styles/**/*',
+		js: 'src/assets/styleguide/scripts/**/*',
 		images: 'src/assets/styleguide/images/**/*',
 		fonts: 'src/assets/styleguide/fonts/**/*',
 		views: 'src/styleguide/views/*.html'
@@ -53,14 +52,6 @@ var config = {
 // webpack
 var webpackConfig = require('./webpack.config')(config);
 var webpackCompiler = webpack(webpackConfig);
-
-// build
-/*
-var buildConfig = config;
-buildConfig.dest='build';
-var webpackConfigBuild = require('./webpack.config')(buildConfig);
-var webpackCompilerBuild = webpack(webpackConfigBuild);
-*/
 
 // clean
 gulp.task('clean', function (cb) {
@@ -173,19 +164,9 @@ gulp.task('sass-files:build', function() {
 		.pipe(gulp.dest(config.build + '/scss'));
 });
 // scripts:build
-gulp.task('scripts:build', function (done) {
-	webpackCompilerBuild.run(function (error, result) {
-		if (error) {
-			gutil.log(gutil.colors.red(error));
-		}
-		result = result.toJson();
-		if (result.errors.length) {
-			result.errors.forEach(function (error) {
-				gutil.log(gutil.colors.red(error));
-			});
-		}
-		done();
-	});
+gulp.task('scripts:build', ['scripts'], function () {
+	return gulp.src(config.src.js)
+		.pipe(gulp.dest(config.build + '/scripts'));
 });
 
 

@@ -15,14 +15,16 @@
 \*------------------------------------*/
 
 .header {
+	margin-bottom: .5rem;
+
 	// todo refactoring!!
 	@media screen and (min-width: 480px){
 		margin-bottom: 4rem;
-	}
 
-	&.has-jumbotron,
-	&.has-toolbar {
-		margin-bottom: 0;
+		&.has-jumbotron,
+		&.has-toolbar {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -65,6 +67,8 @@
  */
 
 .alv-header--light {
+	background: theme-color('light');
+
 	.alv-header__brand {
 		color: $body-color;
 	}
@@ -74,7 +78,9 @@
  * White links against a dark background
  */
 .alv-header--inverse {
+	background: $black;
+
 	.alv-header__brand {
-		color: $inverse-color;
+		color: $white;
 	}
 }

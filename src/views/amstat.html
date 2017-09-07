@@ -1,0 +1,15 @@
+---
+layout: amstat-home
+fabricator: true
+---
+
+<h2 data-f-toggle="labels">amstat</h2>
+
+
+{{#each views.amstat.items}}
+
+<li>
+	<a href="amstat/{{@key}}.html" class="f-item-heading">{{name}}</a>
+</li>
+
+{{/each}}

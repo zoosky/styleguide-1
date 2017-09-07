@@ -1,18 +1,22 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = function(fabricatorConfig) {
+module.exports = function(fabricatorConfig,build) {
 
 	"use strict";
+	var dest = fabricatorConfig.dest;
+	if (build!==undefined){
+		dest = build;
+	}
 
 	var config = {
 		entry: {
 			'fabricator/scripts/f': fabricatorConfig.src.scripts.fabricator,
 			'styleguide/scripts/alv-ch': fabricatorConfig.src.scripts.styleguide,
-			'styleguide/scripts/alv-ch_reset': fabricatorConfig.src.scripts.reset
+			'styleguide/scripts/drawer': fabricatorConfig.src.scripts.drawer
 		},
 		output: {
-			path: path.resolve(__dirname, fabricatorConfig.dest, 'assets'),
+			path: path.resolve(__dirname, dest, 'assets'),
 			filename: '[name].js'
 		},
 		module: {
@@ -34,12 +38,12 @@ module.exports = function(fabricatorConfig) {
 		);
 	}
 
-	if (fabricatorConfig.dest==='build') {
+	if (dest!=='dist') {
 		config.entry = {
 				'scripts/alv-ch': fabricatorConfig.src.scripts.styleguide,
 				'scripts/alv-ch_reset': fabricatorConfig.src.scripts.reset
 		};
-		config.output.path = path.resolve(__dirname, fabricatorConfig.dest);
+		config.output.path = path.resolve(__dirname, dest);
 	}
 
 	return config;

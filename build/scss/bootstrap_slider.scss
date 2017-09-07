@@ -1,0 +1,25 @@
+
+/* ==========================================================
+ * bootstrap_slider.scss
+ * Bootstrap-Slider sass files import
+ * Maintainers:
+ *		Kyle Kemp
+ *			- Twitter: @seiyria
+ *			- Github:  seiyria
+ *		Rohit Kalkur
+ *			- Twitter: @Rovolutionary
+ *			- Github:  rovolution
+ *
+ * Author: Thomas D'Ascoli, thomas@dasco.li
+ * Date:   2017-05-24 18:33
+ *
+ * Copyright 2017 alv-ch
+ * Licensed under MIT
+ =========================================================== */
+
+// Core variables and mixins
+@import "~bootstrap-slider/src/sass/variables";
+@import "bootstrap_custom";
+
+@import "~bootstrap-slider/src/sass/mixins";
+@import "~bootstrap-slider/src/sass/rules";

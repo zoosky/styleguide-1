@@ -9,6 +9,7 @@
  *
  */
 
+/*
 body {
 	@each $breakpoint, $width in $grid-breakpoints {
 		@media (min-width: $width) {
@@ -16,6 +17,7 @@ body {
 		}
 	}
 }
+*/
 
 /*------------------------------------*\
   #CONTAINER
@@ -34,7 +36,7 @@ body {
 }
 
 .container--light {
-	background-color: rgba($gray-lightest, 1.0);
+	background-color: rgba($main-color-gray-50, 1.0);
 }
 
 /*------------------------------------*\
@@ -64,7 +66,8 @@ body {
 			width: 100%;
 			min-height: 1px; // Prevent columns from collapsing when empty
 
-			@include make-gutters($grid-gutter-widths);
+			padding-right: ($grid-gutter-width / 2);
+			padding-left:  ($grid-gutter-width / 2);
 		}
 
 		.base__subnavbar,
@@ -80,8 +83,14 @@ body {
 		}
 
 		.base--margin-top {
-			margin-top: (2*$breadcrumb-padding-x + $spacer-y);
+			margin-top: (2*$breadcrumb-padding-x + $spacer);
 		}
+	}
+
+
+	@media screen and (max-width: 479px) {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -125,7 +134,8 @@ body {
 			min-height: 1px; // Prevent columns from collapsing when empty
 			margin-bottom: $margin-x-general;
 
-			@include make-gutters($grid-gutter-widths);
+			padding-right: ($grid-gutter-width / 2);
+			padding-left:  ($grid-gutter-width / 2);
 		}
 
 		.landing-page__regular {
@@ -142,7 +152,7 @@ body {
 
 		.landing-page--container {
 			@include alv-border-radius($alv-box-radius);
-			background: $gray-lightest;
+			background: $main-color-gray-50;
 
 			padding: $alv-box-radius;
 

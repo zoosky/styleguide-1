@@ -1,0 +1,200 @@
+/**
+ * CONTENTS
+ *
+ * FORMS
+ * radio- & checkbox....(()).
+ * select
+ *
+ */
+
+/*------------------------------------*\
+  #RADIO- & CHECKBOX
+\*------------------------------------*/
+
+.checkbox > label,
+.radio > label{
+	display: block;
+	position: relative;
+	padding-left: round($form-box-size + $form-box-margin);
+	margin-bottom: $form-check-margin-bottom;
+	cursor: pointer;
+}
+//* CHECKBOX */
+.checkbox > label {
+	&::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		height: $form-box-size;
+		width: $form-box-size;
+
+		border: $form-box-border-width solid $input-border-color;
+
+		background: white;
+	}
+}
+
+.checkbox > input:checked ~ label:after {
+	content: '';
+	position: absolute;
+	left: $form-box-check-left;
+	top: $form-box-check-top;
+
+	border: solid $black;
+
+	width: $form-box-check-width;
+	height: $form-box-check-height;
+
+	border-width: 0 $form-box-check-border $form-box-check-border 0;
+	transform: rotate(45deg);
+}
+
+//* similar */
+
+.checkbox > input:not([disabled]):focus ~ label,
+.radio > input:not([disabled]):focus ~ label{
+	&::before{
+		-webkit-box-shadow: 0 0 0 2px rgba(231,166,26,1);
+		-moz-box-shadow: 0 0 0 2px rgba(231,166,26,1);
+		box-shadow: 0 0 0 2px rgba(231,166,26,1);
+	}
+}
+.checkbox > input,
+.radio > input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.checkbox > input:disabled ~ label:before,
+.checkbox > input:disabled ~ label:after,
+.radio > input:disabled ~ label:before{
+	background: #e6e6e6;
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.radio > input:disabled ~ label:after {
+	opacity: 0.6;
+}
+
+.checkbox > input:not([disabled]) ~ label,
+.radio > input:not([disabled]) ~ label {
+	&:hover {
+		&::before{
+			-webkit-box-shadow: 0 0 0 2px rgba(231,166,26,1);
+			-moz-box-shadow: 0 0 0 2px rgba(231,166,26,1);
+			box-shadow: 0 0 0 2px rgba(231,166,26,1);
+		}
+	}
+}
+
+//* RADIO */
+.radio > label {
+	&::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		height: $form-box-size;
+		width: $form-box-size;
+
+		border-radius: 50%;
+
+		border: $form-box-border-width solid $input-border-color;
+	}
+}
+
+.radio > input:checked ~ label:after {
+	content: '';
+	position: absolute;
+	left: $form-box-radio-left;
+	top: $form-box-radio-top;
+	height: $form-box-radio-size;
+	width: $form-box-radio-size;
+	border-radius: 50%;
+	background:  $black;
+}
+
+// Form Icon Addon
+.form-group--icon {
+	position: relative;
+
+	.form-control {
+		padding-right: 2em;  // from font-awesome!!
+	}
+
+	.form-control--icon {
+		position: absolute;
+		top: .25em;
+		right: .25em;
+		font-size: .95em;
+	}
+
+	.form-control-lg {
+		padding-right: 2.5em;  // from font-awesome!!
+
+		~ .form-control--icon {
+			top: .5em;
+			right: .5em;
+			font-size: 1em;
+		}
+	}
+}
+
+.navbar-nav .form-control--icon {
+	right: 0;
+	color: $input-color;
+}
+
+// Form Navbar
+.form-group--navbar {
+	.form-control {
+		background: rgba($white, .33);
+		padding-right: 1.5em;  // from font-awesome!!
+
+		padding-top: 0.75rem;
+		padding-bottom: 0.7rem;
+
+		border: none;
+		box-shadow: none;
+	}
+}
+
+/*------------------------------------*\
+  #CUSTOM-SELECT
+\*------------------------------------*/
+.custom-select {
+	width: 100%;
+	border-color: $input-border-color;
+
+	@if $enable-rounded {
+		// Manually use the if/else instead of the mixin to account for iOS override
+		border-radius: $input-border-radius;
+	} @else {
+		// Otherwise undo the iOS default
+		border-radius: 0;
+	}
+}
+
+
+/*------------------------------------*\
+  #CUSTOM
+\*------------------------------------*/
+
+.form-control {
+	font-family: $font-family-base;
+}
+
+.form-group--break {
+	margin-bottom: (2 * $margin-y-general);
+}
+
+.form-group--optional label:before {
+	/*content: 'optional';
+	font-size: $small-font-size;
+	vertical-align: super;*/
+}

@@ -13,7 +13,7 @@
 
 		text-align: center;
         font-weight: 300;
-		font-size: $font-size-h3;
+		font-size: $h3-font-size;
 	}
 
 	.nav-link {
@@ -47,7 +47,7 @@
 		width: 25%;
 
 		text-align: center;
-		font-size: $font-size-h4;
+		font-size: $h4-font-size;
 
 		&:first-child {
 			border-right: $input-btn-border-width solid $input-border-color;
@@ -64,6 +64,33 @@
 		&:hover {
 			color: $link-color;
 			background: rgba($main-color-gray-light-100,1);
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.drawer .navbar-nav {
+		font-size: $font-size-base;
+
+		.nav-item {
+
+		}
+
+		.nav-link {
+			color: $link-color;
+		}
+	}
+
+	.nav--job-room {
+		width: 100%;
+		align-items: stretch;
+
+		.nav-item {
+			font-size: inherit;
+
+			.nav-link {
+				height: 100%;
+			}
 		}
 	}
 }

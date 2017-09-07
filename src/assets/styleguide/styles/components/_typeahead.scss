@@ -1,0 +1,99 @@
+.typeahead-multiselect {
+	width: 490px;
+
+	> form {
+		width: inherit;
+	}
+
+	.typeahead-multiselect__input {
+		&:focus {
+			border: none;
+			box-shadow: none;
+			outline: none;
+		}
+		padding: 0;
+		border: 0;
+		width: 385px;
+	}
+
+	.typeahead-multiselect__tag--classification {
+		@include multiselect-tag($typeahead-color-classification);
+	}
+
+	.typeahead-multiselect__tag--occupation {
+		@include multiselect-tag($typeahead-color-occupation);
+	}
+
+	.typeahead-multiselect__tag--free-text {
+		@include multiselect-tag($typeahead-color-free-text);
+	}
+
+	.typeahead-multiselect__tag--canton {
+		@include multiselect-tag($typeahead-color-canton);
+	}
+
+	.typeahead-multiselect__tag--locality {
+		@include multiselect-tag($typeahead-color-locality);
+	}
+
+	.typeahead-multiselect__tag {
+		margin: 0 0 0.2rem 0.2rem;
+		@include alv-border-radius(0.5rem);
+
+		.remove-button {
+			margin-left: 0.3rem;
+			cursor: pointer;
+		}
+	}
+}
+
+
+.typeahead-multiselect__type-label {
+	float: right;
+	font-size: $small-font-size;
+	color: $main-color-gray-light-50;
+	margin: 0 (-$typeahead-item-padding) $typeahead-item-padding 0;
+
+	&.typeahead-multiselect__type-label--occupation,
+	&.typeahead-multiselect__type-label--classification {
+		padding: 0 $typeahead-label-padding;
+		font-weight: $font-weight-base;
+	}
+
+	&.typeahead-multiselect__type-label--occupation {
+		margin-top: (-($typeahead-label-padding+$typeahead-item-padding));
+		@include multiselect-tag($typeahead-color-occupation);
+	}
+
+	&.typeahead-multiselect__type-label--classification {
+		@include multiselect-tag($typeahead-color-classification);
+	}
+}
+
+ngb-typeahead-window {
+	max-height: 420px;
+	width: 100%;
+	overflow-y: auto;
+
+	.dropdown-item {
+		margin: 0;
+		padding: $typeahead-item-padding/2 $typeahead-item-padding;
+		color: $main-color-black !important;
+		font-weight: $text-weight-light;
+		font-size: $font-size-base;
+
+		&.active {
+			background-color: $main-color-gray-100;
+			color: $main-accent-color !important;
+		}
+
+		.fist-in-group-item {
+			border-top: 1px solid $main-color-gray-light-400;
+			padding: ($typeahead-label-padding+$typeahead-item-padding) 0 0 0;
+		}
+	}
+
+	.ngb-highlight {
+		@include highlight-tag();
+	}
+}

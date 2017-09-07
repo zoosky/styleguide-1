@@ -4,12 +4,14 @@
 	//font-size: 20px;
 
 	border: none;
-	border-bottom: 1px solid $gray-lighter;
+	border-bottom: 1px solid $main-color-gray-100;
 
 	@media screen and (max-width: 479px){
-		justify-content: space-between;
+		justify-content: flex-start;
 
 		>.container {
+			display: flex;
+			justify-content: flex-start;
 			width: 100%;
 		}
 	}
@@ -25,7 +27,7 @@
 }
 
 .navbar-light.bg-faded {
-	background-color: rgba($gray-lighter, .75);
+	background-color: rgba($main-color-gray-100, .75);
 }
 
 .navbar-brand {
@@ -65,12 +67,12 @@
 		padding-left: 1.75em !important;
 
 		background: $brand-primary;
-		color: $inverse-color;
+		color: theme-color('light');
 
 		&:hover,
 		&.active {
 			background: rgba($brand-primary, .8);
-			color: $inverse-color !important;
+			color: theme-color('light') !important;
 		}
 
 		.nav-link--login__icon {
@@ -201,13 +203,13 @@
 
 .toolbar {
 	position: relative;
-	background-color: rgba($gray-lighter, .75);
-	border-bottom: 1px solid $gray-lighter;
+	background-color: rgba($gray-200, .75);
+	border-bottom: 1px solid $gray-200;
 
 	margin-bottom: $margin-x-filter;
 
 	&.toolbar--light {
-		background-color: rgba($gray-lightest, 1.0);
+		background-color: rgba($main-color-gray-50, 1.0);
 	}
 
 	&.toolbar--white {
@@ -216,7 +218,7 @@
 	}
 
 	&.toolbar--inverse {
-		background: rgba($gray-lightest, .25);
+		background: rgba($main-color-gray-50, .25);
 	}
 
 }
@@ -239,12 +241,12 @@
 	}
 
 	.nav-item {
-		font-size: $font-size-h4;
+		font-size: $h4-font-size;
 		cursor: pointer;
 		text-align: center;
 
 		&:hover {
-			background: $gray-lightest;
+			background: $main-color-gray-50;
 		}
 
 		&.active > .nav-link {
@@ -277,14 +279,6 @@
 .toolbar-nav--has-icon {
 	.nav-item {
 		.nav-link {
-			// todo check bootstrap?!
-			/*
-						@each $breakpoint, $width in $grid-breakpoints {
-				@media (min-width: $width) {
-					padding: map-get($filter-toolbar-title-paddings, $breakpoint);
-				}
-			}
-			 */
 			padding: $filter-toolbar-padding-y $filter-toolbar-padding-x;
 
 			&:hover {
@@ -302,7 +296,6 @@
 .toolbar-form {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 
 	padding-left: 0;
 	margin-bottom: 0;
@@ -313,17 +306,18 @@
 	}
 
 	.form-group {
+		max-width: 30%;
 		flex-grow: 1;
 
-		// todo check bootstrap?!
 		margin: $filter-toolbar-title-padding .5rem;
-
-		&.form-group--wide {
-			flex-grow: 2;
-		}
 
 		> input {
 			width: 100%;
+		}
+
+		&.form-group--slider {
+			width: auto;
+			flex-grow: 0;
 		}
 
 		&:first-child {
@@ -336,24 +330,53 @@
 	}
 
 	button {
-		flex-grow: 1;
-		// todo check bootstrap?!
 		margin: $filter-toolbar-title-padding .5rem;
-
-		&:first-child {
-			margin-left: 0;
-		}
-
-		&:last-child {
-			margin-right: 0;
-		}
+		width: 200px;
 	}
 }
 
+jr2-job-search-toolbar {
+
+	jr2-typeahead-multiselect {
+		width: 100%;
+
+		input {
+			width: 100%;
+		}
+	}
+
+}
+
 @media screen and (max-width: 479px){
+	.navbar-nav {
+
+		.nav-link {
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+		}
+
+		&.mobile-nav {
+			flex-direction: row;
+
+			.navbar--language-switcher {
+				.nav-item:not(.active) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.navbar-alv {
+		padding: 0 $navbar-padding-x/2;
+
+		.nav-item {
+			padding-top: $navbar-padding-y/2;
+			padding-bottom: $navbar-padding-y/2;
+		}
+	}
+
 	.toolbar {
-		margin-bottom: 0;
-		border-bottom: none;
+		margin-bottom: 0.25rem;
 
 		&.md-whiteframe-3dp {
 			box-shadow: none;
@@ -373,29 +396,29 @@
 	.toolbar-collapse .toolbar-nav {
 		flex-direction: column;
 
-		background-color: rgba($gray-lighter, .75);
+		background-color: rgba($main-color-gray-100, .75);
 		margin-top: .25rem;
 		padding: .5rem;
 
 		.nav-title {
 			padding: 0;
 			text-align: center;
+			cursor: pointer;
 
 			h2 {
 				font-size: .85rem;
 				letter-spacing: inherit;
 				font-weight: 400;
-			}
 
-			:before {
-				display: inline-block;
-				margin-right: .5em;
-				vertical-align: -0.05em;
+				&:before {
+					display: inline-block;
+					margin-right: .5em;
+					vertical-align: -0.05em;
 
-				font-family: FontAwesome;
-				font-size: 1.125em;
-				content: '\f13a';
-
+					font-family: FontAwesome;
+					font-size: 1.125em;
+					content: '\f13a';
+				}
 			}
 		}
 
@@ -427,12 +450,24 @@
 		flex-direction: column;
 		justify-content: flex-start;
 
-		margin: 0 2rem 1rem 2rem;
+		margin: 1rem 2rem;
 
 		.form-group,
-		.btn {
+		button {
 			margin: .5rem 0;
 			width: 100%;
+			max-width: 100%;
 		}
+	}
+
+	jr2-job-search-toolbar {
+
+		jr2-typeahead-multiselect {
+
+			.typeahead-multiselect {
+				width: 100%;
+			}
+		}
+
 	}
 }

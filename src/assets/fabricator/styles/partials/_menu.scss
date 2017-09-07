@@ -68,3 +68,17 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 479px){
+	// menu
+	.f-menu {
+		a {
+			display: inline;
+
+			&.f-active {
+				box-shadow: none;
+			}
+		}
+	}
+}
