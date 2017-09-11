@@ -56,7 +56,6 @@
 	font-size: 0.85rem;
 	color: $main-accent-color;
 	text-align: center;
-	margin-bottom: 1rem;
 
 	&:before {
 		display: inline-block;
@@ -82,6 +81,8 @@
 	transition: transform 0.25s ease;
 }
 
+
+
 // Job-Room-result
 .result-list__item {
 	cursor: pointer;
@@ -91,6 +92,33 @@
 
 	&:hover {
 		background: $main-accent-color-50;
+	}
+
+	em {
+		@include highlight-tag();
+	}
+
+
+	.result-list__item__content {
+		>.w-100 {
+			width: auto !important;
+		}
+	}
+
+	.result-list__item__date {
+		vertical-align: text-top;
+	}
+
+	.result-list__item__star {
+		padding: 0 10px;
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.result-list__item {
+		padding: $margin-x-narrow;
+		margin-bottom: $margin-x-narrow;
 	}
 }
 
@@ -189,6 +217,7 @@
 }
 
 @media screen and (max-width: 479px) {
+
 	.job-detail__references {
 		order: 1;
 	}
@@ -333,6 +362,47 @@
 	border-radius: 1em;
 
 	@include badge-variant($brand-primary);
+}
+
+@media screen and (max-width: 479px) {
+	.candidate-search {
+		// todo media breakpoints!
+		width: calc(100% - #{$margin-y-narrow * 2});
+
+		margin: $margin-x-narrow $margin-y-narrow;
+
+		legend {
+			width: 100%;
+		}
+
+		.form-group {
+			display: flex;
+			flex-direction: column;
+
+			label {
+				flex-grow: 1;
+				width: 100%;
+				text-align: left;
+				margin-right: 0;
+			}
+
+			div {
+				flex-grow: 1;
+				width: 100%;
+			}
+		}
+
+		.btn {
+			margin-left: 0;
+			width: 100%;
+
+			&.btn-lg {
+				font-weight: $btn-font-weight;
+				line-height: $input-btn-line-height;
+				@include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
+			}
+		}
+	}
 }
 
 // Process
