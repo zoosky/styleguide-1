@@ -1,0 +1,5 @@
+@mixin highlight-tag($color: #fff2ac,$darken: #ffe359) {
+	padding: 0 0.125rem;
+	background-color: $color;
+	background-image: linear-gradient(to right, $darken 0%, $color 100%);
+}

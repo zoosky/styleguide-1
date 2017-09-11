@@ -178,6 +178,8 @@
 		// Otherwise undo the iOS default
 		border-radius: 0;
 	}
+
+	@include appearance(none)
 }
 
 
