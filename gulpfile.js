@@ -41,7 +41,7 @@ var config = {
 		sass: 'src/assets/styleguide/styles/**/*',
 		js: 'src/assets/styleguide/scripts/**/*',
 		images: 'src/assets/styleguide/images/**/*',
-		fonts: 'src/assets/styleguide/fonts/**/*',
+		fonts: 'node_modules/font-awesome/fonts/**/*',
 		views: 'src/styleguide/views/*.html'
 	},
 	dest: 'dist',

@@ -42,9 +42,9 @@
     "gulp-util": "^3.0.4",
     "imports-loader": "^0.6.3",
     "run-sequence": "^1.0.2",
-    "node-sass-tilde-importer":"latest",
+    "node-sass-tilde-importer": "latest",
     "script-loader": "^0.6.1",
-    "findup-sync":"1.0.0",
+    "findup-sync": "1.0.0",
     "webpack": "^1.8.11",
     "bootstrap-slider": "9.8.0"
   },
@@ -54,9 +54,9 @@
   "homepage": "https://github.com/alv-ch/styleguide#readme",
   "dependencies": {
     "bootstrap": "4.0.0-beta",
-    "bootstrap-drawer":"1.0.6",
+    "bootstrap-drawer": "1.0.6",
     "font-awesome": "4.7.0",
-    "jquery":"^3.0.0",
-    "scrolltofixed":"1.0.6"
+    "jquery": "^3.0.0",
+    "scrolltofixed": "1.0.6"
   }
 }
