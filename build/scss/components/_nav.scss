@@ -80,4 +80,17 @@
 			color: $link-color;
 		}
 	}
+
+	.nav--job-room {
+		width: 100%;
+		align-items: stretch;
+
+		.nav-item {
+			font-size: inherit;
+
+			.nav-link {
+				height: 100%;
+			}
+		}
+	}
 }

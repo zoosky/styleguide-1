@@ -20,11 +20,11 @@
 	// todo refactoring!!
 	@media screen and (min-width: 480px){
 		margin-bottom: 4rem;
-	}
 
-	&.has-jumbotron,
-	&.has-toolbar {
-		margin-bottom: 0;
+		&.has-jumbotron,
+		&.has-toolbar {
+			margin-bottom: 0;
+		}
 	}
 }
 
