@@ -18,6 +18,8 @@ body {
 	}
 }
 */
+// displays a scrollbar, so the width of the page is not changing when the lenght of the page is changing
+html {overflow-y:scroll;}
 
 /*------------------------------------*\
   #CONTAINER
