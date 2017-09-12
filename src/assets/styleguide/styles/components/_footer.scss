@@ -9,8 +9,7 @@
   #FOOTER
 \*------------------------------------*/
 
-footer,
-.footer {
+footer {
 	background: $main-color-gray-dark;
 	color: theme-color('light');
 
@@ -19,6 +18,18 @@ footer,
 	@media screen and (max-width: 479px){
 		display: none;
 	}
+
+	&.footer {
+		+ .footer {
+			// todo refactoring!!
+		}
+	}
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 // todo vars!

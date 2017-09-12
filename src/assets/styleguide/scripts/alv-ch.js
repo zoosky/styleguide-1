@@ -9,8 +9,9 @@ $( document ).ready(function() {
 	// MEGAMENU
 	// todo refactor!
 	if ($('.megamenu').length) {
+		var containerWidth = $('body > .container').outerWidth();
 		var positionLeft = $('.nav-item.megamenu').offset().left;
-		var marginMegamenu = ($(document).width() - 1540) / 2;
+		var marginMegamenu = ($(document).width() - containerWidth) / 2;
 		var diff = -(positionLeft - marginMegamenu);
 		$('.nav-item.megamenu .dropdown-menu').css('left', diff);
 	}
