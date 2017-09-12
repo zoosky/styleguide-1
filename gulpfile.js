@@ -41,7 +41,7 @@ var config = {
 		sass: 'src/assets/styleguide/styles/**/*',
 		js: 'src/assets/styleguide/scripts/**/*',
 		images: 'src/assets/styleguide/images/**/*',
-		fonts: 'src/assets/styleguide/fonts/**/*',
+		fonts: 'node_modules/font-awesome/fonts/**/*',
 		views: 'src/styleguide/views/*.html'
 	},
 	dest: 'dist',
@@ -163,6 +163,8 @@ gulp.task('sass-files:build', function() {
 	return gulp.src(config.src.sass)
 		.pipe(gulp.dest(config.build + '/scss'));
 });
+gulp.task('sass-files', ['sass-files:build']);
+
 // scripts:build
 gulp.task('scripts:build', ['scripts'], function () {
 	return gulp.src(config.src.js)
@@ -246,6 +248,7 @@ gulp.task('default', ['clean'], function () {
 		'scripts',
 		'images',
 		'fonts',
+		'sass-files',
 		'assemble'
 	];
 
