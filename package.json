@@ -1,6 +1,6 @@
 {
   "name": "@alv-ch/alv-styleguide",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "alv-ch styleguide",
   "main": "README.md",
   "scripts": {
@@ -45,8 +45,7 @@
     "node-sass-tilde-importer": "latest",
     "script-loader": "^0.6.1",
     "findup-sync": "1.0.0",
-    "webpack": "^1.8.11",
-    "bootstrap-slider": "9.8.0"
+    "webpack": "^1.8.11"
   },
   "bugs": {
     "url": "https://github.com/alv-ch/styleguide/issues"
