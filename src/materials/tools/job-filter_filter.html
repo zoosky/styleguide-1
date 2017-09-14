@@ -24,21 +24,26 @@
 	</select>
 </div>
 
-<div class="form-group form-group--slider-w-label">
-	<label for="ex2" class="small">Arbeitspensum</label>
-	<div>
-		<span class="slider-helptext text-muted small">0%</span>
-		<input id="ex2" type="text" data-slider-min="10" data-slider-max="100" data-slider-step="0" data-slider-value="[10,100]"/>
-		<span class="slider-helptext text-muted small">100%</span>
+<div class="form-group">
+	<label for="workload-to" class="small">Arbeitspensum</label>
+	<div class="form-group__inline">
+		<select class="form-control form-control-sm custom-select" id="workload-from">
+			<option selected>0 %</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+		<select class="form-control form-control-sm custom-select" id="workload-to">
+			<option selected>100%</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
 	</div>
 </div>
 
-<div class="form-group form-group--slider-w-label">
-	<label for="ex3" class="small">Online Seit</label>
-	<div>
-		<input id="ex3" data-slider-id='ex3Slider' type="text" aria-describedby="infoDays" data-slider-min="1" data-slider-max="60" data-slider-step="1" data-slider-value="20"/>
-		<span id="infoDays" class="slider-helptext text-muted small">
-			Tagen
-		</span>
-	</div>
+<div class="form-group range-slider">
+	<label for="online_since" class="small">Online seit</label>
+	<input class="range-slider__range" min="1" max="60" step="1" value="20" type="range" id="online_since" />
+	<span class="range-slider__value range-slider__value--unit small" data-unit="Tage(n)">0</span>
 </div>

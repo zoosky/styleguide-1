@@ -177,3 +177,23 @@ $typeahead-color-locality:			$additional-accent-green;
 
 $typeahead-item-padding:			.5rem;
 $typeahead-label-padding:			$typeahead-item-padding/2;
+
+// Range slider
+// Base Colors
+$shade-10: #2c3e50 !default;
+$shade-1: #d7dcdf !default;
+$shade-0: #fff !default;
+$teal: #1abc9c !default;
+
+// Range Slider
+$range-width: 100% !default;
+
+$range-handle-color: $main-accent-color !default;
+$range-handle-color-hover: $main-accent-color-hover !default;
+$range-handle-size: 1.25rem !default;
+
+$range-track-color: $main-color-gray-light !default;
+$range-track-height: .5rem !default;
+
+$range-label-color: $shade-10 !default;
+$range-label-width: 60px !default;
