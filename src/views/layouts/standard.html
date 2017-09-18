@@ -72,6 +72,22 @@
 			families: ['Open+Sans:300,400,700:latin']
 		}
 	});
+
+	$(document).ready(function() {
+		$('#addr_ag-box').hide();
+		//$('#addr_stes-box').hide();
+		$('#address_filter').change(function () {
+			$('#addr_ag-box').hide();
+			$('#addr_stes-box').hide();
+
+			if ($(this).val()==='stes'){
+				$('#addr_stes-box').show();
+			}
+			else {
+				$('#addr_ag-box').show();
+			}
+		});
+	});
 </script>
 <!-- /JavaScript -->
 

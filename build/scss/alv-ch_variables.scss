@@ -17,19 +17,22 @@
  */
 
 // Colors
-$main-color-black: #323232;
-$main-color-gray: #808080;
-$main-color-gray-dark: darken($main-color-gray, 13%);
-$main-color-gray-light: #C9C9C9;
-$main-color-white: #fffff;
+$main-color-black: 			#333333;
+$main-color-gray-dark: 		#636363; //darken($main-color-gray, 13%);
+$main-color-gray: 			#808080;
+$main-color-gray-light: 	#CFCFCF;
+$main-color-gray-lighter: 	#F1F1F1;
+$main-color-gray-lightest: 	#F8F8F8;
+$main-color-white: 			#fffff;
 
-$main-accent-color: #007AB1;
+$main-accent-color: 		#017AB1;
+$main-accent-color-hover:	#008CBD;
 
-$additional-accent-amber: #ffc500;
-$additional-accent-yellow: #ffb120;
-$additional-accent-green: #64b500;
+$additional-accent-amber: 	#ffc501;
+$additional-accent-yellow: 	#ffb120;
+$additional-accent-green: 	#64b500;
 
-$other-colors-red:    #F7001D;
+$other-colors-red:    		#F7001D;
 
 // Main Color Swatches
 //
@@ -41,11 +44,11 @@ $main-color-black-300: #9d9d9d;
 $main-color-black-400: #676767;
 
 // Gray
-$main-color-gray-50:  #f8f8f8; // lighten 46.1%
-$main-color-gray-100: #ececec; // lighten 42.5%
-$main-color-gray-200: #d6d6d6; // lighten 33.7%
-$main-color-gray-300: #c2c2c2; // lighten 26%
-$main-color-gray-400: #a1a1a1; // lighten 13%
+$main-color-gray-50:  $main-color-gray-lightest; // lighten 46.1%
+$main-color-gray-100: $main-color-gray-lighter; // lighten 42.5%
+$main-color-gray-200: $main-color-gray-light; // lighten 33.7%
+$main-color-gray-300: $main-color-gray; // lighten 26%
+$main-color-gray-400: $main-color-gray-dark; // lighten 13%
 
 // Gray-Light
 $main-color-gray-light-50:  #fcfcfc; // lighten 20%
@@ -174,3 +177,23 @@ $typeahead-color-locality:			$additional-accent-green;
 
 $typeahead-item-padding:			.5rem;
 $typeahead-label-padding:			$typeahead-item-padding/2;
+
+// Range slider
+// Base Colors
+$shade-10: #2c3e50 !default;
+$shade-1: #d7dcdf !default;
+$shade-0: #fff !default;
+$teal: #1abc9c !default;
+
+// Range Slider
+$range-width: 100% !default;
+
+$range-handle-color: $main-accent-color !default;
+$range-handle-color-hover: $main-accent-color-hover !default;
+$range-handle-size: 1.25rem !default;
+
+$range-track-color: $main-color-gray-light !default;
+$range-track-height: .5rem !default;
+
+$range-label-color: $shade-10 !default;
+$range-label-width: 60px !default;
