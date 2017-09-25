@@ -45,7 +45,9 @@ var config = {
 		views: 'src/styleguide/views/*.html'
 	},
 	dest: 'dist',
-	build: 'build'
+	build: 'build',
+	ghPages: 'docs'
+
 };
 
 
@@ -171,6 +173,11 @@ gulp.task('scripts:build', ['scripts'], function () {
 		.pipe(gulp.dest(config.build + '/scripts'));
 });
 
+// copy dist to docs for github pages
+gulp.task('gh-pages', function() {
+	return gulp.src(['dist/**/*']).pipe(gulp.dest(config.ghPages));
+});
+
 
 // server
 gulp.task('serve', function () {
@@ -228,7 +235,8 @@ gulp.task('build', ['clean:build'], function () {
 		'scripts:build',
 		'images:build',
 		'fonts:build',
-		'sass-files:build'
+		'sass-files:build',
+		'gh-pages'
 	];
 
 	// run build

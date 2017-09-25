@@ -32,13 +32,13 @@
 
 			<div class="base__subnavbar job-detail__references">
 
-				<div class="sticked--top sticked--width">
+				<ul class="pagination pagination--block pagination-alv  d-none d-md-flex">
+					<li class="page-item">
+						<a class="page-link" href="job-result-list.html">Zurück zu den Suchergebnissen</a>
+					</li>
+				</ul>
 
-					<ul class="pagination pagination--block pagination-alv  d-none d-md-flex">
-						<li class="page-item">
-							<a class="page-link" href="job-result-list.html">Zurück zu den Suchergebnissen</a>
-						</li>
-					</ul>
+				<div class="sticked sticked--top__parent">
 
 					<div class="job-detail__company alv-logo-box flex-height md-whiteframe-1dp">
 						<div class="job-detail__content">
@@ -91,44 +91,39 @@
 			</div>
 
 			<div class="base__related job-detail__actions">
+				<ul class="pagination pagination--block pagination-alv  d-none d-md-flex">
+					<li class="page-item">
+						<a class="page-link" href="#" tabindex="-1"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</li>
+				</ul>
 
-				<div class="sticked--top sticked--width">
-					<ul class="pagination pagination--block pagination-alv  d-none d-md-flex">
-						<li class="page-item">
-							<a class="page-link" href="#" tabindex="-1"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
+				<div class="sticked sticked--top__parent">
+					<button class="btn btn-primary btn-block btn-sm">Jetzt Bewerben</button>
+
+					<button class="btn btn-default btn-block btn-sm">Zum Stelleninserat</button>
+
+					<p></p>
+
+					<ul class="nav filter-nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i> Stellenangebot speichern</a>
 						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-share" aria-hidden="true"></i> Link kopieren</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-envelope" aria-hidden="true"></i> Per E-Mail versenden</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-print" aria-hidden="true"></i> Drucken</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Als PDF speichern</a>
 						</li>
 					</ul>
-
-					<div style="position: relative;">
-						<div>
-							<button class="btn btn-primary btn-block btn-sm">Jetzt Bewerben</button>
-
-							<button class="btn btn-default btn-block btn-sm">Zum Stelleninserat</button>
-
-							<p></p>
-
-							<ul class="nav filter-nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i> Stellenangebot speichern</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link"><i class="fa fa-share" aria-hidden="true"></i> Link kopieren</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link"><i class="fa fa-envelope" aria-hidden="true"></i> Per E-Mail versenden</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link"><i class="fa fa-print" aria-hidden="true"></i> Drucken</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Als PDF speichern</a>
-								</li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 
@@ -157,23 +152,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-	<!-- Bootstrap-slider -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/bootstrap-slider.min.js"></script>
-<script>
-	// Without JQuery
-	var slider = new Slider('#ex1', {
-		formatter: function(value) {
-			return 'Current value: ' + value;
-		}});
-	var slider2 = new Slider('#ex2', {
-		formatter: function(value) {
-			return 'Current value: ' + value;
-		}});
-	var slider3 = new Slider('#ex3', {
-		formatter: function(value) {
-			return 'Current value: ' + value;
-		}});
-</script>
 <!-- mobile -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
 <!-- core ALV-CH -->

@@ -6,14 +6,40 @@
 
 $( document ).ready(function() {
 
-	// MEGAMENU
+	/*
+	 * MEGAMENU
+	 */
 	// todo refactor!
 	if ($('.megamenu').length) {
+		var containerWidth = $('body > .container').outerWidth();
 		var positionLeft = $('.nav-item.megamenu').offset().left;
-		var marginMegamenu = ($(document).width() - 1540) / 2;
+		var marginMegamenu = ($(document).width() - containerWidth) / 2;
 		var diff = -(positionLeft - marginMegamenu);
 		$('.nav-item.megamenu .dropdown-menu').css('left', diff);
 	}
+
+	/*
+	 * RANGE SLIDER
+	 */
+	var rangeSlider = function(){
+		var slider = $('.range-slider'),
+			range = $('.range-slider__range'),
+			value = $('.range-slider__value');
+
+		slider.each(function(){
+
+			value.each(function(){
+				var value = $(this).prev().attr('value');
+				$(this).html(value);
+			});
+
+			range.on('input', function(){
+				$(this).next(value).html(this.value);
+			});
+		});
+	};
+
+	rangeSlider();
 
 	var md = new MobileDetect(window.navigator.userAgent);
 
@@ -29,6 +55,7 @@ $( document ).ready(function() {
 
 		// toggler subnavigation
 		if (!$('.subnavbar__toggler').length) {
+			// todo define
 			var subnavTitle = 'UNTERNAVIGATION';
 			if ($('.breadcrumb-item.active').text()){
 				subnavTitle=$('.breadcrumb-item.active').text();
@@ -47,22 +74,16 @@ $( document ).ready(function() {
 	else {
 		/*
 		 * STICKIES:
-		 * .sticked--top = fixed dom-top
-		 * .sticked--width = fixed dom width
+		 * .sticked--top = fixed dom top
+		 * .sticked--top__parent = fixed parent-dom top
 		 *
 		 */
 		$('.sticked--top').each(function(){
-			var original = {
-				height: $(this).outerHeight(true),
-				width: $(this).outerWidth(true)
-			};
-			$(this).after('<div class="sticked--container" style="height: '+original.height+'px"></div>');
-			$(this).addClass('sticked-item');
 			$(this).css('top',$(this).offset().top);
+		});
 
-			if ($(this).hasClass('sticked--width')){
-				$(this).css('width',original.width);
-			}
+		$('.sticked--top__parent').each(function(){
+			$(this).css('top',$(this).parent().offset().top);
 		});
 	}
 

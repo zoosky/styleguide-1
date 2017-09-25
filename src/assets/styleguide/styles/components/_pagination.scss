@@ -37,6 +37,11 @@
 		margin-bottom: $spacer;
 		color: $link-color;
 		border: none;
+
+		&:hover,
+		&:active {
+			background: $main-color-gray-lighter;
+		}
 	}
 }
 

@@ -311,7 +311,7 @@
 
 		margin: $filter-toolbar-title-padding .5rem;
 
-		> input {
+		> input:not(.range-slider__range) {
 			width: 100%;
 		}
 

@@ -22,10 +22,15 @@
 		margin-bottom: 4rem;
 
 		&.has-jumbotron,
-		&.has-toolbar {
+		&.has-toolbar,
+		&.has-mainnavigation {
 			margin-bottom: 0;
 		}
 	}
+}
+
+.has-mainnavigation {
+	border-bottom: 1px solid #CFCFCF;
 }
 
 /*------------------------------------*\
@@ -78,7 +83,7 @@
  * White links against a dark background
  */
 .alv-header--inverse {
-	background: $black;
+	background: $main-color-black;
 
 	.alv-header__brand {
 		color: $white;

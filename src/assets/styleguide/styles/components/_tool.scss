@@ -85,8 +85,6 @@
 
 // Job-Room-result
 .result-list__item {
-	cursor: pointer;
-
 	padding: $alv-box-radius;
 	margin-bottom: $margin-x-narrow;
 
@@ -488,5 +486,21 @@
 				transform: none;
 			}
 		}
+	}
+}
+
+/*------------------------------------*\
+  #ADDRESS LOOKUP
+\*------------------------------------*/
+
+@media screen and (max-width: 479px){
+	.address__filter {
+		margin-right: ($grid-gutter-width / -2);
+		margin-left:  ($grid-gutter-width / -2);
+		margin-bottom: $margin-x-narrow;
+
+		padding: 1rem 2rem;
+
+		background-color: rgba($main-color-gray-50, 1.0);
 	}
 }

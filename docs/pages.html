@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title></title>
+
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="/assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+<!-- header -->
+<div class="header sticky-top">
+	<!-- alv-header -->
+	<div class="alv-header alv-header--inverse">
+		<span class="alv-header__brand mb-0">
+			<img src="/assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+			Arbeitslosenversicherung ALV
+		</span>
+	</div>	<!-- /alv-header -->
+
+	<!-- navbar -->
+	<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
+	
+			<a class="navbar-brand alv-logo" href="/index.html">
+				<div class="alv-logo__title">
+					<strong>alv</strong><span class="title__plus-ch">ch</span>
+				</div>
+			</a>
+	
+			<div class="ml-auto">
+				<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+					<div class="drawer-contents">
+						<div class="drawer-heading">
+							<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<a href="/index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> work.ch</a>
+						</div>
+	
+						<ul class="navbar-nav">
+							<li class="nav-item d-none d-sm-block">
+								<form class="form-inline">
+									<div class="collapse" id="searchForm">
+										<div class="form-group form-group--navbar">
+											<label for="search" class="sr-only">Wie können wir helfen?</label>
+											<div class="form-group--icon">
+												<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+								
+												<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+													<i class="fa fa-times fa-stack-1x"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+								</form>						</li>
+							<li class="nav-item megamenu dropdown dropdown--canvas">
+								<a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Menü</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<div class="megamenu-menu">
+										<div>
+											<span class="dropdown-title">Stellensuchende</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+										<div>
+											<span class="dropdown-title">Unternehmen</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+										<div>
+											<span class="dropdown-title">Arbeitsvermittler</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+										<div>
+											<span class="dropdown-title">Institutionen/Medien</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+										<div>
+											<span class="dropdown-title">Aktuell</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+	
+	
+											<span class="dropdown-title">Links</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/job-room.html"><span class="d-sm-none">zu</span> Job-Room</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/amstat.html"><span class="d-sm-none">zu</span> amstat</a>
+							</li>
+							<li class="nav-item d-none d-sm-block">
+								<a class="nav-link nav-link--login" href="#">
+									Login
+								</a>
+							</li>
+							<li class="nav-item d-none d-sm-block">
+								<ul class="navbar-nav navbar--language-switcher" id="languageSwitcher">
+									<li class="nav-item active">
+										<a class="nav-link" href="#">DE</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">FR</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">IT</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">EN</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+			<div class="ml-auto d-sm-none">
+				<ul class="navbar-nav mobile-nav">
+					<li class="nav-item">
+						<ul class="navbar-nav navbar--language-switcher" id="mobLanguageSwitcher">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">DE</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">FR</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">IT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">EN</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<form class="form-inline">
+							<div class="collapse" id="searchForm">
+								<div class="form-group form-group--navbar">
+									<label for="search" class="sr-only">Wie können wir helfen?</label>
+									<div class="form-group--icon">
+										<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+						
+										<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+											<i class="fa fa-times fa-stack-1x"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+						</form>				</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+							<i class="fa fa-lg fa-user" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>	<!-- /navbar -->
+</div>
+<!-- /header -->
+
+<!-- toolbar -->
+	<div class="toolbar toolbar--white" id="toolbar">
+		<div class="container">
+			<div class="toolbar-collapse">
+				<ul class="toolbar-nav toolbar-nav--has-icon">
+					<li class="nav-title">
+						<h2 class="light">Unsere Leistungen für</h2>
+					</li>
+					<li class="nav-item active">
+						<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-binoculars" aria-hidden="true"></i>
+									</span>
+								</span>
+							Stellensuchende
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-building" aria-hidden="true"></i>
+									</span>
+								</span>
+							Unternehmen
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-eye" aria-hidden="true"></i>
+									</span>
+								</span>
+							Arbeitsvermittler
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-university" aria-hidden="true"></i>
+									</span>
+								</span>
+							Institutionen
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- /toolbar -->
+
+<!-- content -->
+<div class="container container--landingpage">
+	
+<div class="landing-page">
+
+	<div class="landing-page__wide">
+		<div class="landing-page--container process-container bg--additional-amber text--center-align md-whiteframe-1dp">
+			<h2 class="text--light">Arbeitslos - was tun?</h2>
+			<p class="process-container__text">
+				Hier erhalten Sie Hilfe und Ratschläge für Ihre Situation.<br />
+				In welchem Abschnitt befinden Sie sich?
+			</p>
+			<div class="process">
+				<div class="process__item">
+					<p>Vor der Arbeitslosigkeit</p>
+				</div>
+				<div class="process__item">
+					<p>Ab Beginn der Arbeitslosigkeit</p>
+				</div>
+				<div class="process__item">
+					<p>Aussteuerung beantragen</p>
+				</div>
+				<div class="process__item">
+					<p>Arbeitslosigkeit abmelden</p>
+				</div>
+		
+			</div>
+		</div>	</div>
+
+	<div class="landing-page__regular landing-page__regular--media">
+		<div class="landing-page--container md-whiteframe-1dp">
+			REGULAR / VIDEO
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				REGULAR
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				REGULAR
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				REGULAR
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+	<div class="landing-page__half">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				HALF
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+	<div class="landing-page__half">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				HALF
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+</div>
+<div class="landing-page">
+
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<a class="nav-link" href="/pages/adresslookup.html">Adresslookup</a>
+		</div>
+	</div>
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<a class="nav-link" href="/pages/home.html">Home</a>
+		</div>
+	</div>
+
+</div>
+
+</div>
+<!-- /content -->
+
+<!-- jumbotron -->
+<div class="jumbotron jumbotron-fluid jumbotron--landingpage" style="background: url('/assets/styleguide/images/bg-jobroom-landingpage.png');">
+	<div class="container">
+		<h1 class="tool__heading">Finden Sie jetzt Ihren Traumjob!</h1>
+		
+		<div class="row">
+			<div class="col-xs-8 col-sm-5 col-xxxl-4">
+				<form class="job-search__form">
+					<div class="form-group form-group--wide">
+						<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Berufsgruppe, Fähigkeiten</label>
+						<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten" />
+					</div>
+					<div class="form-group form-group--wide form-group--icon">
+						<label for="basic-addon2" class="sr-only">Ort, Region, Kanton</label>
+						<input type="text" class="form-control form-control-lg" placeholder="Ort, Region, Kanton" id="basic-addon2" />
+						<!-- todo refine -->
+						<a href="#" class="fa-stack form-control--icon">
+						  <i class="fa fa-circle fa-stack-2x"></i>
+						  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+						</a>
+					</div>
+					
+					<div class="form-group range-slider">
+						<label for="radius" class="sr-only">Radius</label>
+						<input class="range-slider__range" min="5" max="150" step="5" value="20" type="range" id="radius" />
+						<span class="range-slider__value range-slider__value--unit" data-unit="km">0</span>
+					</div>
+					<a class="btn btn-primary btn-lg btn-block" href="job-room/job-result-list.html">Traumjob finden!</a>
+				</form>
+			</div>
+		</div>	</div>
+</div><!-- /jumbotron -->
+
+<!-- content -->
+<div class="container container--landingpage">
+	<div class="landing-page">
+	
+		<div class="landing-page__half">
+			<div class="landing-page--container md-whiteframe-1dp">
+				<h3 class="text--light">Stichwortsuche</h3>
+			</div>
+		</div>
+	
+		<div class="landing-page__half">
+			<div class="landing-page--container md-whiteframe-1dp">
+				<h3 class="text--light">FAQ / Themen</h3>
+			</div>
+		</div>
+	
+	</div></div>
+<hr />
+<div class="container container--landingpage">
+	<div class="landing-page">
+	
+		<div class="landing-page__regular">
+			<div class="landing-page--content">
+				<i class="fa fa-phone fa-2x text--primary-color" aria-hidden="true"></i>
+	
+				<p>
+					<h3 class="text--light">Kontaktieren Sie uns direkt</h3>
+					<small>Gerne helfen wir ihnen weiter</small>
+				</p>
+	
+				<button class="btn btn-primary" style="width: 50%; margin: 0 auto;">Kontakt</button>
+			</div>
+		</div>
+	
+		<div class="landing-page__regular">
+			<div class="landing-page--content">
+				<i class="fa fa-file-text fa-2x text--primary-color" aria-hidden="true"></i>
+	
+				<p>
+				<h3 class="text--light">Formulare</h3>
+				<small>Wir bieten Ihnen viele Broschüren und Formulare
+					zum Download an.</small>
+				</p>
+	
+				<button class="btn btn-primary" style="width: 50%; margin: 0 auto;">Downloads</button>
+			</div>
+		</div>
+	
+		<div class="landing-page__regular">
+			<div class="landing-page--content">
+				<i class="fa fa-info-circle fa-2x text--primary-color" aria-hidden="true"></i>
+	
+				<p>
+				<h3 class="text--light">Weiterführende Informationen</h3>
+				<small>Eine Sammlung aller Links zu unseren Partnern</small>
+				</p>
+	
+				<button class="btn btn-primary" style="width: 50%; margin: 0 auto;">Link-Center</button>
+			</div>
+		</div>
+	
+	</div></div>
+<div class="container--light container--landingpage">
+	<div class="container">
+		<div class="landing-page">
+		
+			<div class="landing-page__regular">
+				<div class="landing-page--content">
+					<p>
+						<h3 class="text--light">Über uns</h3>
+						<small>Informieren Sie sich über Ziele, Struktur, Partner
+							und die Arbeitslosenversicherung.</small>
+					</p>
+		
+					<a href="#">Mehr erfahren</a>
+				</div>
+			</div>
+		
+			<div class="landing-page__regular">
+				<div class="landing-page--content">
+					<p>
+					<h3 class="text--light">Der Arbeitsmarkt im Mai 2017</h3>
+					<small>Der Arbeitsmarkt profitier kräftig vom
+						saisonbedingten Beschäftigungswachstum.</small>
+					</p>
+		
+					<a href="#">Mehr erfahren</a>
+				</div>
+			</div>
+		
+			<div class="landing-page__regular">
+				<div class="landing-page--content">
+					<p>
+					<h3 class="text--light">Statistiken</h3>
+					<small>Unsere Statistiken und Berichte geben Ihnen
+						Aufschluss über den Arbeitsmarkt.</small>
+					</p>
+		
+					<a href="#">Mehr erfahren</a>
+				</div>
+			</div>
+		
+		</div>	</div>
+</div>
+<!-- /content -->
+
+<!-- footer -->
+<footer>
+	<div class="container">
+		<h2 class="light">In Zusammenarbeit</h2>
+		<div class="footer--logos">
+			<div class="footer--logos__logo"><img class="cd-bund"
+												  src="/assets/styleguide/images/seco-de-neg.png"/></div>
+			<div class="footer--logos__logo"><img src="/assets/styleguide/images/alv.png"/></div>
+			<div class="footer--logos__logo"><img src="/assets/styleguide/images/rav.png"/></div>
+			<div class="footer--logos__logo"><img src="/assets/styleguide/images/eures.png"/></div>
+		</div>
+	</div>
+</footer><!-- footer -->
+
+<!-- seco-footer -->
+<div class="footer--seco">
+	<div class="container">
+		<span>Arbeitslosenversicherung / Arbeitsmarkt ALV</span>
+		<a href="#">Rechtliche Hinweise</a>
+		<a href="#">Abkürzungen</a>
+	</div>
+</div><!-- /seco-footer -->
+
+<!-- modals -->
+<!-- modals -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<ul class="nav nav-tabs nav--login" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#register" role="tab">Registrieren</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content--job-room">
+					<div class="tab-content">
+						<div class="tab-pane active" id="login" role="tabpanel">
+
+							<fieldset class="login">
+								<div class="form-group">
+									<label for="username" class="col-form-label">Benutzername</label>
+									<div>
+										<input class="form-control" type="text" id="username" placeholder="E-Mail, Personennummer, Benutzername" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="password" class="col-form-label">Passwort</label>
+									<div>
+										<input class="form-control" type="password" id="password" placeholder="Passwort" />
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+								<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+							</fieldset>
+
+						</div>
+						<div class="tab-pane" id="register" role="tabpanel">
+
+							<fieldset class="login">
+								<div class="form-group form-group--break">
+									<label for="sort" class="col-form-label">Registrierung als</label>
+									<div>
+										<select class="form-control custom-select" id="sort" required>
+											<option selected>Registrierung als Stellensuchende / -er</option>
+											<option value="1">Registrierung als Unternehmen</option>
+											<option value="2">Registrierung als Arbeitsvermittler</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="name1" class="col-form-label">Nachname</label>
+									<div>
+										<input class="form-control" type="text" id="name1" placeholder="Nachname" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="name2" class="col-form-label">Vorname</label>
+									<div>
+										<input class="form-control" type="text" id="name2" placeholder="Vorname" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="birthday" class="col-form-label">Geburtsdatum</label>
+									<div>
+										<input class="form-control" type="date" id="birthday" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email" class="col-form-label">E-Mail</label>
+									<div>
+										<input class="form-control" type="text" id="email" placeholder="E-Mail" required />
+									</div>
+								</div>
+								<div class="form-group form-group--optional form-group--break">
+									<label for="personennummer" class="col-form-label">Personennummer</label>
+									<div>
+										<input class="form-control" type="text" id="personennummer" placeholder="Personennummer gemäss Brief xy" />
+									</div>
+								</div>
+
+
+								<div class="form-group">
+									<label for="password1" class="col-form-label">Passwort</label>
+									<div>
+										<input class="form-control" type="password" id="password1" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="password2" class="col-form-label">Passwort wiederholen</label>
+									<div>
+										<input class="form-control" type="password" id="password2" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Registrieren</button>
+								<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+							</fieldset>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /modals --><!-- /modals -->
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/fabricator/scripts/f.js"></script>
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="/assets/styleguide/scripts/alv-ch.js"></script>
+<script src="/assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+	WebFont.load({
+		google: {
+			families: ['Open+Sans:300,400,700:latin']
+		}
+	});
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>

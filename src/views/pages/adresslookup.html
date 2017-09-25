@@ -1,0 +1,103 @@
+---
+layout: standard-b
+fabricator: true
+---
+<div class="base">
+	<div class="base__subnavbar">
+
+		<div class="address__filter">
+			<div class="form-group">
+				<label for="address_filter">Adressen filtern</label>
+				<select class="form-control form-control-sm custom-select" id="address_filter">
+					<option value="stes" selected>Stellensuchende</option>
+					<option value="ag">Arbeitgeber</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="plz" class="sr-only">Ort, Kanton</label>
+				<input type="text" class="form-control form-control-sm" id="plz" placeholder="Ort, Kanton">
+			</div>
+
+			<div id="addr_stes-box">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="checkbox" name="check_rav" id="check_rav" value="check_rav" />
+						<span class="small">Regionale Arbeitsvermittlungszentren</span>
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="checkbox" name="check_alk" id="check_alk" value="check_alk" />
+						<span class="small">Arbeitslosenkassen</span>
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="checkbox" name="check_kast" id="check_kast" value="check_kast" />
+						<span class="small">Kantonale Arbeitsämter</span>
+					</label>
+				</div>
+			</div>
+
+			<div id="addr_ag-box">
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="radio" name="addr_ag" id="radio_rav" value="radio_rav" />
+						<span class="small">Regionale Arbeitsvermittlungszentren</span>
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="radio" name="addr_ag" id="radio_alk" value="radio_alk" />
+						<span class="small">Arbeitslosenkassen</span>
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="radio" name="addr_ag" id="radio_kast" value="radio_kast" />
+						<span class="small">Kantonale Arbeitsämter</span>
+					</label>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="base__content">
+		<!-- adress -->
+		<h3 class="text--light">17 Adressen gefunden</h3>
+
+		<div class="logo-box flex-height result-list__item md-whiteframe-1dp">
+			<h4 class="text--primary-color">ORP Bienne</h4>
+			<div class="d-flex w-100 flex-column flex-sm-row">
+				<address class="order-1 container--xxl-w33 container--w50">
+					Zentralstrasse 63<br />
+					2502 Biel/Bienne
+				</address>
+				<p class="order-2">
+					+41 31 635 35 60<br />
+					orp.bienne@vol.be.ch<br />
+					www.vol.be.ch
+				</p>
+			</div>
+		</div>
+
+		<div class="logo-box flex-height result-list__item md-whiteframe-1dp">
+			<h4 class="text--primary-color">RAV Bern Zentrum</h4>
+			<div class="d-flex w-100 flex-column flex-sm-row">
+				<address class="order-1 container--xxl-w33 container--w50">
+					Reiterstrasse 9B<br />
+					3013 Bern
+				</address>
+				<p class="order-2">
+					+41 31 636 02 62<br />
+					rav.bernzentrum@vol.be.ch<br />
+					www.vol.be.ch
+				</p>
+			</div>
+		</div>
+		<!-- /address -->
+	</div>
+
+</div>

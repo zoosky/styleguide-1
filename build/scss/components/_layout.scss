@@ -9,15 +9,6 @@
  *
  */
 
-/*
-body {
-	@each $breakpoint, $width in $grid-breakpoints {
-		@media (min-width: $width) {
-			font-size: map-get($text-base-sizes, $breakpoint);
-		}
-	}
-}
-*/
 // displays a scrollbar, so the width of the page is not changing when the lenght of the page is changing
 html {overflow-y:scroll;}
 
@@ -198,5 +189,22 @@ html {overflow-y:scroll;}
 			width: 1.3em; /* same as padding-left set on li */
 			vertical-align: center;
 		}
+	}
+}
+
+/*------------------------------------*\
+  #HELPER
+\*------------------------------------*/
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+		.container-#{$infix}-w25 	{ width:  25% !important; }
+		.container-#{$infix}-w33  	{ width:  33% !important; }
+		.container-#{$infix}-w50  	{ width:  50% !important; }
+		.container-#{$infix}-w66  	{ width:  66% !important; }
+		.container-#{$infix}-w75  	{ width:  75% !important; }
+		.container-#{$infix}-w100  	{ width: 100% !important; }
 	}
 }
