@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title></title>
+
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="/assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+	<div class="header sticky-top">
+		<!-- ALV-HEADER -->
+		<div class="alv-header alv-header--inverse">
+			<span class="alv-header__brand mb-0">
+				<img src="/assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+				Arbeitslosenversicherung ALV
+			</span>
+		</div>
+		<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+
+				<a class="navbar-brand alv-logo" href="/index.html">
+					<div class="alv-logo__title">
+						<strong>alv</strong><span class="title__plus-ch">ch</span>
+					</div>
+				</a>
+
+				<!--
+					DRAWER NAV
+				 	TODO: Replace drawerExample with correct ID
+				 -->
+				<div class="ml-auto">
+					<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+						<div class="drawer-contents">
+							<div class="drawer-heading">
+								<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<a href="/index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> work.ch</a>
+							</div>
+
+							<ul class="navbar-nav">
+								<li class="nav-item d-none d-sm-block">
+									<form class="form-inline">
+										<div class="collapse" id="searchForm">
+											<div class="form-group form-group--navbar">
+												<label for="search" class="sr-only">Wie können wir helfen?</label>
+												<div class="form-group--icon">
+													<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+									
+													<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+														<i class="fa fa-times fa-stack-1x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+									</form>								</li>
+								<li class="nav-item megamenu dropdown dropdown--canvas">
+									<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Menü</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<div class="megamenu-menu">
+											<div>
+												<span class="dropdown-title">Stellensuchende</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Unternehmen</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Arbeitsvermittler</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Institutionen/Medien</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Aktuell</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+
+
+												<span class="dropdown-title">Links</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</div>
+
+	<!-- content -->
+	<div class="container">
+
+		<div class="base">
+
+			<div class="base__subnavbar">
+				<div class="f-control-bar">
+					<div class="f-control f-menu-toggle">
+						<svg>
+							<use xlink:href="#f-icon-menu" />
+						</svg>
+					</div>
+				</div>
+				<!-- fabricator icons -->
+				<svg style="display: none;">
+					<symbol id="f-icon-code" viewBox="0 0 512 512">
+						<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+					</symbol>
+					<symbol id="f-icon-notes" viewBox="0 0 512 512">
+						<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+					</symbol>
+					<symbol id="f-icon-labels" viewBox="0 0 512 512">
+						<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+					</symbol>
+					<symbol id="f-icon-menu" viewBox="0 0 512 512">
+						<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+					</symbol>
+					<symbol id="f-icon-settings" viewBox="0 0 512 512">
+						<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+					</symbol>
+				</svg>
+				<!-- /fabricator icons -->
+				<!-- fabricator menu -->
+				<div class="f-menu subnavbar">
+					<div class="f-controls">
+						<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+							<svg>
+								<use xlink:href="#f-icon-labels" />
+							</svg>
+						</div>
+						<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+							<svg>
+								<use xlink:href="#f-icon-notes" />
+							</svg>
+						</div>
+						<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+							<svg>
+								<use xlink:href="#f-icon-code" />
+							</svg>
+						</div>
+					</div>
+					<div class="subnavbar__toggler">Subnavigation</div>
+				
+					<ul class="nav subnavbar-nav md-whiteframe-1dp">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link f-menu__heading">Overview</a>
+						</li>
+				
+						<li class="nav-item">
+							<a href="components.html" class="nav-link f-menu__heading">Components</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#alert">Alert</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#await">Await</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#breadcrumb">Breadcrumb</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#button">Button</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#checkbox">Checkbox</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#header">Header</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#job-search-toolbar">Job Search Toolbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#jumbotron">Jumbotron</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#lists">Lists</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#logo">Logo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#pagination">Pagination</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#paragraph">Paragraph</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#radio">Radio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#search">Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#search-b">Search B</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#select">Select</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#table">Table</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#text-input">Text Input</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#textarea">Textarea</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#typeahead">Typeahead</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="structures.html" class="nav-link f-menu__heading">Structures</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#amstat-navbar">Amstat Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#amstat-subnavigation">Amstat Subnavigation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#base">Base</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#basic-info">Basic Info</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#footer">Footer</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#footer-seco">Footer Seco</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#form">Form</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#job-room-navbar">Job Room Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#landingpages">Landingpages</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#login">Login</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#navbar">Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#navbar-b">Navbar B</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#news">News</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#search-and-faq">Search And Faq</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#subnavigation">Subnavigation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#toolbar">Toolbar</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="tools.html" class="nav-link f-menu__heading">Tools</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#arbeitslos-was-tun">Arbeitslos Was Tun</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-landingpage">Candidate Landingpage</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-radar">Candidate Radar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-search">Candidate Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter">Job Filter</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter_actions">Job Filter Actions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter_filter">Job Filter Filter</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-landingpage">Job Landingpage</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-publication">Job Publication</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-search">Job Search</a>
+								</li>
+							</ul>
+						</li>
+				
+						<li class="nav-item">
+							<a href="amstat.html" class="nav-link f-menu__heading">Amstat</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="amstat/amstat-landingpage.html">Amstat Landingpage</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="job-room.html" class="nav-link f-menu__heading">Job Room</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="job-room/job-detail.html">Job Detail</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="job-room/job-result-list.html">Job Result List</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="pages.html" class="nav-link f-menu__heading">Pages</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="pages/adresslookup.html">Adresslookup</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pages/home.html">Home</a>
+								</li>
+							</ul>
+						</li>
+				
+						<li class="nav-item">
+							<a href="docs.html" class="nav-link f-menu__heading">Docs</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="docs.html#javascript">Javascript</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /fabricator menu -->
+			</div>
+
+			<div class="base__content--wide">
+				
+<h1 data-f-toggle="labels">Tools</h1>
+
+
+<div class="f-item-group" id="arbeitslos-was-tun">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Arbeitslos Was Tun</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="landing-page--container process-container bg--additional-amber text--center-align md-whiteframe-1dp">
+	<h2 class="text--light">Arbeitslos - was tun?</h2>
+	<p class="process-container__text">
+		Hier erhalten Sie Hilfe und Ratschläge für Ihre Situation.<br /> In welchem Abschnitt befinden Sie sich?
+	</p>
+	<div class="process">
+		<div class="process__item">
+			<p>Vor der Arbeitslosigkeit</p>
+		</div>
+		<div class="process__item">
+			<p>Ab Beginn der Arbeitslosigkeit</p>
+		</div>
+		<div class="process__item">
+			<p>Aussteuerung beantragen</p>
+		</div>
+		<div class="process__item">
+			<p>Arbeitslosigkeit abmelden</p>
+		</div>
+
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;landing-page--container process-container bg--additional-amber text--center-align md-whiteframe-1dp&quot;&gt;
+	&lt;h2 class&#x3D;&quot;text--light&quot;&gt;Arbeitslos - was tun?&lt;/h2&gt;
+	&lt;p class&#x3D;&quot;process-container__text&quot;&gt;
+		Hier erhalten Sie Hilfe und Ratschläge für Ihre Situation.&lt;br /&gt; In welchem Abschnitt befinden Sie sich?
+	&lt;/p&gt;
+	&lt;div class&#x3D;&quot;process&quot;&gt;
+		&lt;div class&#x3D;&quot;process__item&quot;&gt;
+			&lt;p&gt;Vor der Arbeitslosigkeit&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;process__item&quot;&gt;
+			&lt;p&gt;Ab Beginn der Arbeitslosigkeit&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;process__item&quot;&gt;
+			&lt;p&gt;Aussteuerung beantragen&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;process__item&quot;&gt;
+			&lt;p&gt;Arbeitslosigkeit abmelden&lt;/p&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="candidate-landingpage">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Candidate Landingpage</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="row">
+	<div class="col-sm-8">
+
+		<ul class="nav nav-tabs nav--job-room" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#candidate-search" role="tab">Kandidaten finden</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#job-publication" role="tab">Job publizieren</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content--job-room">
+			<div class="tab-content">
+				<div class="tab-pane" id="candidate-search" role="tabpanel">
+					<fieldset class="candidate-search">
+						<div class="form-group">
+							<label for="example-text-input" class="col-form-label">Ich suche eine/n</label>
+							<div>
+								<input class="form-control" type="text" id="example-text-input" placeholder="Berufsbezeichung" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="cs-1" class="col-form-label">Kenntnisse, Fähigkeiten, Skills</label>
+							<div>
+								<input class="form-control" type="text" id="cs-1" placeholder="z.B. Tiefbau" />
+							</div>
+						</div>
+
+						<div class="form-group form-group--break">
+							<label for="sort" class="col-form-label">Berufserfahrung</label>
+							<div>
+								<select class="form-control custom-select" id="sort">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="cs-2" class="col-form-label">Arbeitsort</label>
+							<div>
+								<input class="form-control" type="text" id="cs-2" placeholder="Ort, Gemeinde, Kanton, PLZ" />
+							</div>
+						</div>
+						<div class="form-group form-group--break">
+							<label for="cs-3" class="col-form-label">Wohnort</label>
+							<div>
+								<input class="form-control" type="text" id="cs-3" placeholder="Ort, Gemeinde, Kanton, PLZ" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="cs-4" class="col-form-label">Verfügbarkeit</label>
+							<div>
+								<select class="form-control custom-select" id="cs-4">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cs-5" class="col-form-label">Arbeitspensum</label>
+							<div>
+								<select class="form-control custom-select" id="cs-5">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cs-6" class="col-form-label">Arbeitsform</label>
+							<div>
+								<select class="form-control custom-select" id="cs-6">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cs-7" class="col-form-label">Bildungsstufe</label>
+							<div>
+								<select class="form-control custom-select" id="cs-7">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cs-8" class="col-form-label">Abschluss</label>
+							<div>
+								<select class="form-control custom-select" id="cs-8">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group form-group--break">
+							<label for="cs-9" class="col-form-label">Führerausweiskategorie</label>
+							<div>
+								<select class="form-control custom-select" id="cs-9">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="cs-10" class="col-form-label">Sprachkenntnisse</label>
+							<div>
+								<select class="form-control custom-select" id="cs-10">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div> <a class="btn btn-primary btn-lg" href="#">Kandidaten anzeigen (1'644)</a>
+					</fieldset>
+
+					<div class="candidate-search__radar d-none d-md-block">
+						<!--
+						<button type="button" class="close" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						-->
+
+						Diesem Job-Profil enstprechen bereits<br />
+						<span class="badge badge-radar">1'644</span><br /> Stellensuchenden
+						<a href="#">Jetzt anzeigen!</a>
+					</div>
+				</div>
+				<div class="tab-pane active" id="job-publication" role="tabpanel">
+					<fieldset class="candidate-search">
+						<legend>Stellenbeschreibung</legend>
+
+						<div class="form-group">
+							<label for="basic-addon2">Stellenbezeichnung</label>
+							<div class="form-group--icon">
+								<input type="text" class="form-control" placeholder="z.B. Maurer" id="basic-addon2" />
+
+								<a href="#" class="fa-stack form-control--icon">
+									<i class="fa fa-search fa-stack-1x"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="cs-8" class="col-form-label">Abschluss</label>
+							<div>
+								<select class="form-control custom-select" id="cs-8">
+									<option selected>keine Auswahl</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+
+						<a class="btn btn-primary btn-lg" href="#">Job publizieren</a>
+					</fieldset>
+					<div class="candidate-search__radar d-none d-md-block">
+						<!--
+						<button type="button" class="close" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						-->
+
+						Diesem Job-Profil enstprechen bereits<br />
+						<span class="badge badge-radar">1'644</span><br /> Stellensuchenden
+						<a href="#">Jetzt anzeigen!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-sm-8&quot;&gt;
+
+		&lt;ul class&#x3D;&quot;nav nav-tabs nav--job-room&quot; role&#x3D;&quot;tablist&quot;&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; data-toggle&#x3D;&quot;tab&quot; href&#x3D;&quot;#candidate-search&quot; role&#x3D;&quot;tab&quot;&gt;Kandidaten finden&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link active&quot; data-toggle&#x3D;&quot;tab&quot; href&#x3D;&quot;#job-publication&quot; role&#x3D;&quot;tab&quot;&gt;Job publizieren&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;!-- Tab panes --&gt;
+		&lt;div class&#x3D;&quot;tab-content--job-room&quot;&gt;
+			&lt;div class&#x3D;&quot;tab-content&quot;&gt;
+				&lt;div class&#x3D;&quot;tab-pane&quot; id&#x3D;&quot;candidate-search&quot; role&#x3D;&quot;tabpanel&quot;&gt;
+					&lt;fieldset class&#x3D;&quot;candidate-search&quot;&gt;
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-form-label&quot;&gt;Ich suche eine/n&lt;/label&gt;
+							&lt;div&gt;
+								&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;example-text-input&quot; placeholder&#x3D;&quot;Berufsbezeichung&quot; /&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-1&quot; class&#x3D;&quot;col-form-label&quot;&gt;Kenntnisse, Fähigkeiten, Skills&lt;/label&gt;
+							&lt;div&gt;
+								&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;cs-1&quot; placeholder&#x3D;&quot;z.B. Tiefbau&quot; /&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class&#x3D;&quot;form-group form-group--break&quot;&gt;
+							&lt;label for&#x3D;&quot;sort&quot; class&#x3D;&quot;col-form-label&quot;&gt;Berufserfahrung&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;sort&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-2&quot; class&#x3D;&quot;col-form-label&quot;&gt;Arbeitsort&lt;/label&gt;
+							&lt;div&gt;
+								&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;cs-2&quot; placeholder&#x3D;&quot;Ort, Gemeinde, Kanton, PLZ&quot; /&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;form-group form-group--break&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-3&quot; class&#x3D;&quot;col-form-label&quot;&gt;Wohnort&lt;/label&gt;
+							&lt;div&gt;
+								&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;cs-3&quot; placeholder&#x3D;&quot;Ort, Gemeinde, Kanton, PLZ&quot; /&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-4&quot; class&#x3D;&quot;col-form-label&quot;&gt;Verfügbarkeit&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-4&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-5&quot; class&#x3D;&quot;col-form-label&quot;&gt;Arbeitspensum&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-5&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-6&quot; class&#x3D;&quot;col-form-label&quot;&gt;Arbeitsform&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-6&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-7&quot; class&#x3D;&quot;col-form-label&quot;&gt;Bildungsstufe&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-7&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-8&quot; class&#x3D;&quot;col-form-label&quot;&gt;Abschluss&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-8&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;form-group form-group--break&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-9&quot; class&#x3D;&quot;col-form-label&quot;&gt;Führerausweiskategorie&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-9&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-10&quot; class&#x3D;&quot;col-form-label&quot;&gt;Sprachkenntnisse&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-10&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt; &lt;a class&#x3D;&quot;btn btn-primary btn-lg&quot; href&#x3D;&quot;#&quot;&gt;Kandidaten anzeigen (1&#x27;644)&lt;/a&gt;
+					&lt;/fieldset&gt;
+
+					&lt;div class&#x3D;&quot;candidate-search__radar d-none d-md-block&quot;&gt;
+						&lt;!--
+						&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+							&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+						&lt;/button&gt;
+						--&gt;
+
+						Diesem Job-Profil enstprechen bereits&lt;br /&gt;
+						&lt;span class&#x3D;&quot;badge badge-radar&quot;&gt;1&#x27;644&lt;/span&gt;&lt;br /&gt; Stellensuchenden
+						&lt;a href&#x3D;&quot;#&quot;&gt;Jetzt anzeigen!&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;tab-pane active&quot; id&#x3D;&quot;job-publication&quot; role&#x3D;&quot;tabpanel&quot;&gt;
+					&lt;fieldset class&#x3D;&quot;candidate-search&quot;&gt;
+						&lt;legend&gt;Stellenbeschreibung&lt;/legend&gt;
+
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;basic-addon2&quot;&gt;Stellenbezeichnung&lt;/label&gt;
+							&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+								&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;z.B. Maurer&quot; id&#x3D;&quot;basic-addon2&quot; /&gt;
+
+								&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+									&lt;i class&#x3D;&quot;fa fa-search fa-stack-1x&quot;&gt;&lt;/i&gt;
+								&lt;/a&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;div class&#x3D;&quot;form-group&quot;&gt;
+							&lt;label for&#x3D;&quot;cs-8&quot; class&#x3D;&quot;col-form-label&quot;&gt;Abschluss&lt;/label&gt;
+							&lt;div&gt;
+								&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-8&quot;&gt;
+									&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+									&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+									&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+									&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+								&lt;/select&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+
+						&lt;a class&#x3D;&quot;btn btn-primary btn-lg&quot; href&#x3D;&quot;#&quot;&gt;Job publizieren&lt;/a&gt;
+					&lt;/fieldset&gt;
+					&lt;div class&#x3D;&quot;candidate-search__radar d-none d-md-block&quot;&gt;
+						&lt;!--
+						&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+							&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+						&lt;/button&gt;
+						--&gt;
+
+						Diesem Job-Profil enstprechen bereits&lt;br /&gt;
+						&lt;span class&#x3D;&quot;badge badge-radar&quot;&gt;1&#x27;644&lt;/span&gt;&lt;br /&gt; Stellensuchenden
+						&lt;a href&#x3D;&quot;#&quot;&gt;Jetzt anzeigen!&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="candidate-radar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Candidate Radar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="candidate-search__radar d-none d-md-block">
+	<!--
+	<button type="button" class="close" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	-->
+
+	Diesem Job-Profil enstprechen bereits<br />
+	<span class="badge badge-radar">1'644</span><br /> Stellensuchenden
+	<a href="#">Jetzt anzeigen!</a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;candidate-search__radar d-none d-md-block&quot;&gt;
+	&lt;!--
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+		&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+	&lt;/button&gt;
+	--&gt;
+
+	Diesem Job-Profil enstprechen bereits&lt;br /&gt;
+	&lt;span class&#x3D;&quot;badge badge-radar&quot;&gt;1&#x27;644&lt;/span&gt;&lt;br /&gt; Stellensuchenden
+	&lt;a href&#x3D;&quot;#&quot;&gt;Jetzt anzeigen!&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="candidate-search">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Candidate Search</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="form-group">
+	<label for="example-text-input" class="col-form-label">Ich suche eine/n</label>
+	<div>
+		<input class="form-control" type="text" id="example-text-input" placeholder="Berufsbezeichung" />
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="cs-1" class="col-form-label">Kenntnisse, Fähigkeiten, Skills</label>
+	<div>
+		<input class="form-control" type="text" id="cs-1" placeholder="z.B. Tiefbau" />
+	</div>
+</div>
+
+<div class="form-group form-group--break">
+	<label for="sort" class="col-form-label">Berufserfahrung</label>
+	<div>
+		<select class="form-control custom-select" id="sort">
+			<option selected>keine Auswahl</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="cs-2" class="col-form-label">Arbeitsort</label>
+	<div>
+		<input class="form-control" type="text" id="cs-2" placeholder="Ort, Gemeinde, Kanton, PLZ" />
+	</div>
+</div>
+<div class="form-group form-group--break">
+	<label for="cs-3" class="col-form-label">Wohnort</label>
+	<div>
+		<input class="form-control" type="text" id="cs-3" placeholder="Ort, Gemeinde, Kanton, PLZ" />
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="cs-4" class="col-form-label">Verfügbarkeit</label>
+	<div>
+		<select class="form-control custom-select" id="cs-4">
+			<option selected>keine Auswahl</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+<div class="form-group">
+	<label for="cs-5" class="col-form-label">Arbeitspensum</label>
+	<div>
+		<select class="form-control custom-select" id="cs-5">
+			<option selected>keine Auswahl</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+<div class="form-group">
+	<label for="cs-6" class="col-form-label">Arbeitsform</label>
+	<div>
+		<select class="form-control custom-select" id="cs-6">
+			<option selected>keine Auswahl</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+<div class="form-group">
+	<label for="cs-7" class="col-form-label">Bildungsstufe</label>
+	<div>
+		<select class="form-control custom-select" id="cs-7">
+			<option selected>keine Auswahl</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+<div class="form-group">
+	<label for="cs-8" class="col-form-label">Abschluss</label>
+	<div>
+		<select class="form-control custom-select" id="cs-8">
+			<option selected>keine Auswahl</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+<div class="form-group form-group--break">
+	<label for="cs-9" class="col-form-label">Führerausweiskategorie</label>
+	<div>
+		<select class="form-control custom-select" id="cs-9">
+			<option selected>keine Auswahl</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+
+<div class="form-group">
+	<label for="cs-10" class="col-form-label">Sprachkenntnisse</label>
+	<div>
+		<select class="form-control custom-select" id="cs-10">
+			<option selected>keine Auswahl</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-form-label&quot;&gt;Ich suche eine/n&lt;/label&gt;
+	&lt;div&gt;
+		&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;example-text-input&quot; placeholder&#x3D;&quot;Berufsbezeichung&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-1&quot; class&#x3D;&quot;col-form-label&quot;&gt;Kenntnisse, Fähigkeiten, Skills&lt;/label&gt;
+	&lt;div&gt;
+		&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;cs-1&quot; placeholder&#x3D;&quot;z.B. Tiefbau&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group form-group--break&quot;&gt;
+	&lt;label for&#x3D;&quot;sort&quot; class&#x3D;&quot;col-form-label&quot;&gt;Berufserfahrung&lt;/label&gt;
+	&lt;div&gt;
+		&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;sort&quot;&gt;
+			&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-2&quot; class&#x3D;&quot;col-form-label&quot;&gt;Arbeitsort&lt;/label&gt;
+	&lt;div&gt;
+		&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;cs-2&quot; placeholder&#x3D;&quot;Ort, Gemeinde, Kanton, PLZ&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-group form-group--break&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-3&quot; class&#x3D;&quot;col-form-label&quot;&gt;Wohnort&lt;/label&gt;
+	&lt;div&gt;
+		&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;cs-3&quot; placeholder&#x3D;&quot;Ort, Gemeinde, Kanton, PLZ&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-4&quot; class&#x3D;&quot;col-form-label&quot;&gt;Verfügbarkeit&lt;/label&gt;
+	&lt;div&gt;
+		&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-4&quot;&gt;
+			&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-5&quot; class&#x3D;&quot;col-form-label&quot;&gt;Arbeitspensum&lt;/label&gt;
+	&lt;div&gt;
+		&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-5&quot;&gt;
+			&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-6&quot; class&#x3D;&quot;col-form-label&quot;&gt;Arbeitsform&lt;/label&gt;
+	&lt;div&gt;
+		&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-6&quot;&gt;
+			&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-7&quot; class&#x3D;&quot;col-form-label&quot;&gt;Bildungsstufe&lt;/label&gt;
+	&lt;div&gt;
+		&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-7&quot;&gt;
+			&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-8&quot; class&#x3D;&quot;col-form-label&quot;&gt;Abschluss&lt;/label&gt;
+	&lt;div&gt;
+		&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-8&quot;&gt;
+			&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-group form-group--break&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-9&quot; class&#x3D;&quot;col-form-label&quot;&gt;Führerausweiskategorie&lt;/label&gt;
+	&lt;div&gt;
+		&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-9&quot;&gt;
+			&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;cs-10&quot; class&#x3D;&quot;col-form-label&quot;&gt;Sprachkenntnisse&lt;/label&gt;
+	&lt;div&gt;
+		&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-10&quot;&gt;
+			&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-filter">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Filter</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<!-- filter -->
+<div class="job-search__filter d-none d-md-block">
+	<p class="text--line-height--h3">Suchergebnisse filtern</p>
+
+	<div class="form-group">
+		<label for="sort" class="sr-only">Sortierung</label>
+		<select class="form-control form-control-sm custom-select" id="sort">
+			<option selected>Sortiere nach Datum</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="unternehmen" class="small">Name des Unternehmen</label>
+		<input type="text" class="form-control form-control-sm" id="unternehmen" placeholder="Name des Unternehmen">
+	</div>
+
+	<div class="form-group">
+		<label for="Anstellungsdauer" class="small">Anstellungsdauer</label>
+		<select class="form-control form-control-sm custom-select" id="Anstellungsdauer">
+			<option selected>egal</option>
+			<option value="1">unbefristet</option>
+			<option value="2">befristet</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="workload-to" class="small">Arbeitspensum</label>
+		<div class="form-group__inline">
+			<select class="form-control form-control-sm custom-select" id="workload-from">
+				<option selected>0 %</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+			<select class="form-control form-control-sm custom-select" id="workload-to">
+				<option selected>100%</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="form-group range-slider">
+		<label for="online_since" class="small">Online seit</label>
+		<input class="range-slider__range" min="1" max="60" step="1" value="20" type="range" id="online_since" />
+		<span class="range-slider__value range-slider__value--unit small" data-unit="Tage(n)">0</span>
+	</div>
+</div>
+
+<ul class="nav filter-nav flex-column d-none d-md-block">
+	<li class="nav-item">
+		<a class="nav-link" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Job-Alert erstellen</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Suche speichern</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i> Gemerkte Jobs anzeigen</a>
+	</li>
+</ul>
+<ul class="nav subnavbar-nav filter-nav md-whiteframe-1dp d-none d-md-block">
+	<li class="nav-title">
+		Job-Alternativen
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">Webdesigner m/w</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">Mediamatiker m/w</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">Interaction- / Screendesigner m/w</a>
+	</li>
+</ul>
+
+<ul class="nav subnavbar-nav filter-nav md-whiteframe-1dp  d-none d-md-block">
+	<li class="nav-title">
+		Erweitern Sie den Suchradius
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">17 Jobs + 50 km</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">33 Jobs + 100 km</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">54 Jobs + 150 km</a>
+	</li>
+</ul>
+<!-- /filter -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- filter --&gt;
+&lt;div class&#x3D;&quot;job-search__filter d-none d-md-block&quot;&gt;
+	&lt;p class&#x3D;&quot;text--line-height--h3&quot;&gt;Suchergebnisse filtern&lt;/p&gt;
+
+	&lt;div class&#x3D;&quot;form-group&quot;&gt;
+		&lt;label for&#x3D;&quot;sort&quot; class&#x3D;&quot;sr-only&quot;&gt;Sortierung&lt;/label&gt;
+		&lt;select class&#x3D;&quot;form-control form-control-sm custom-select&quot; id&#x3D;&quot;sort&quot;&gt;
+			&lt;option selected&gt;Sortiere nach Datum&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;form-group&quot;&gt;
+		&lt;label for&#x3D;&quot;unternehmen&quot; class&#x3D;&quot;small&quot;&gt;Name des Unternehmen&lt;/label&gt;
+		&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;unternehmen&quot; placeholder&#x3D;&quot;Name des Unternehmen&quot;&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;form-group&quot;&gt;
+		&lt;label for&#x3D;&quot;Anstellungsdauer&quot; class&#x3D;&quot;small&quot;&gt;Anstellungsdauer&lt;/label&gt;
+		&lt;select class&#x3D;&quot;form-control form-control-sm custom-select&quot; id&#x3D;&quot;Anstellungsdauer&quot;&gt;
+			&lt;option selected&gt;egal&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;unbefristet&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;befristet&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;form-group&quot;&gt;
+		&lt;label for&#x3D;&quot;workload-to&quot; class&#x3D;&quot;small&quot;&gt;Arbeitspensum&lt;/label&gt;
+		&lt;div class&#x3D;&quot;form-group__inline&quot;&gt;
+			&lt;select class&#x3D;&quot;form-control form-control-sm custom-select&quot; id&#x3D;&quot;workload-from&quot;&gt;
+				&lt;option selected&gt;0 %&lt;/option&gt;
+				&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+				&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+				&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+			&lt;/select&gt;
+			&lt;select class&#x3D;&quot;form-control form-control-sm custom-select&quot; id&#x3D;&quot;workload-to&quot;&gt;
+				&lt;option selected&gt;100%&lt;/option&gt;
+				&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+				&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+				&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;form-group range-slider&quot;&gt;
+		&lt;label for&#x3D;&quot;online_since&quot; class&#x3D;&quot;small&quot;&gt;Online seit&lt;/label&gt;
+		&lt;input class&#x3D;&quot;range-slider__range&quot; min&#x3D;&quot;1&quot; max&#x3D;&quot;60&quot; step&#x3D;&quot;1&quot; value&#x3D;&quot;20&quot; type&#x3D;&quot;range&quot; id&#x3D;&quot;online_since&quot; /&gt;
+		&lt;span class&#x3D;&quot;range-slider__value range-slider__value--unit small&quot; data-unit&#x3D;&quot;Tage(n)&quot;&gt;0&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul class&#x3D;&quot;nav filter-nav flex-column d-none d-md-block&quot;&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-bell-o&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Job-Alert erstellen&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-star-o&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Suche speichern&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Gemerkte Jobs anzeigen&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class&#x3D;&quot;nav subnavbar-nav filter-nav md-whiteframe-1dp d-none d-md-block&quot;&gt;
+	&lt;li class&#x3D;&quot;nav-title&quot;&gt;
+		Job-Alternativen
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Webdesigner m/w&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Mediamatiker m/w&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Interaction- / Screendesigner m/w&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class&#x3D;&quot;nav subnavbar-nav filter-nav md-whiteframe-1dp  d-none d-md-block&quot;&gt;
+	&lt;li class&#x3D;&quot;nav-title&quot;&gt;
+		Erweitern Sie den Suchradius
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;17 Jobs + 50 km&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;33 Jobs + 100 km&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;54 Jobs + 150 km&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /filter --&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-filter_actions">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Filter Actions</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<ul class="nav filter-nav flex-column d-none d-md-block">
+	<li class="nav-item">
+		<a class="nav-link" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Job-Alert erstellen</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Suche speichern</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i> Gemerkte Jobs anzeigen</a>
+	</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class&#x3D;&quot;nav filter-nav flex-column d-none d-md-block&quot;&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-bell-o&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Job-Alert erstellen&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-star-o&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Suche speichern&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+		&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Gemerkte Jobs anzeigen&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-filter_filter">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Filter Filter</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<p class="text--line-height--h3">Suchergebnisse filtern</p>
+
+<div class="form-group">
+	<label for="sort" class="sr-only">Sortierung</label>
+	<select class="form-control form-control-sm custom-select" id="sort">
+		<option selected>Sortiere nach Datum</option>
+		<option value="1">One</option>
+		<option value="2">Two</option>
+		<option value="3">Three</option>
+	</select>
+</div>
+
+<div class="form-group">
+	<label for="unternehmen" class="small">Name des Unternehmen</label>
+	<input type="text" class="form-control form-control-sm" id="unternehmen" placeholder="Name des Unternehmen">
+</div>
+
+<div class="form-group">
+	<label for="Anstellungsdauer" class="small">Anstellungsdauer</label>
+	<select class="form-control form-control-sm custom-select" id="Anstellungsdauer">
+		<option selected>egal</option>
+		<option value="1">unbefristet</option>
+		<option value="2">befristet</option>
+	</select>
+</div>
+
+<div class="form-group">
+	<label for="workload-to" class="small">Arbeitspensum</label>
+	<div class="form-group__inline">
+		<select class="form-control form-control-sm custom-select" id="workload-from">
+			<option selected>0 %</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+		<select class="form-control form-control-sm custom-select" id="workload-to">
+			<option selected>100%</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+		</select>
+	</div>
+</div>
+
+<div class="form-group range-slider">
+	<label for="online_since" class="small">Online seit</label>
+	<input class="range-slider__range" min="1" max="60" step="1" value="20" type="range" id="online_since" />
+	<span class="range-slider__value range-slider__value--unit small" data-unit="Tage(n)">0</span>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class&#x3D;&quot;text--line-height--h3&quot;&gt;Suchergebnisse filtern&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;sort&quot; class&#x3D;&quot;sr-only&quot;&gt;Sortierung&lt;/label&gt;
+	&lt;select class&#x3D;&quot;form-control form-control-sm custom-select&quot; id&#x3D;&quot;sort&quot;&gt;
+		&lt;option selected&gt;Sortiere nach Datum&lt;/option&gt;
+		&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+		&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+		&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;unternehmen&quot; class&#x3D;&quot;small&quot;&gt;Name des Unternehmen&lt;/label&gt;
+	&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-sm&quot; id&#x3D;&quot;unternehmen&quot; placeholder&#x3D;&quot;Name des Unternehmen&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;Anstellungsdauer&quot; class&#x3D;&quot;small&quot;&gt;Anstellungsdauer&lt;/label&gt;
+	&lt;select class&#x3D;&quot;form-control form-control-sm custom-select&quot; id&#x3D;&quot;Anstellungsdauer&quot;&gt;
+		&lt;option selected&gt;egal&lt;/option&gt;
+		&lt;option value&#x3D;&quot;1&quot;&gt;unbefristet&lt;/option&gt;
+		&lt;option value&#x3D;&quot;2&quot;&gt;befristet&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;workload-to&quot; class&#x3D;&quot;small&quot;&gt;Arbeitspensum&lt;/label&gt;
+	&lt;div class&#x3D;&quot;form-group__inline&quot;&gt;
+		&lt;select class&#x3D;&quot;form-control form-control-sm custom-select&quot; id&#x3D;&quot;workload-from&quot;&gt;
+			&lt;option selected&gt;0 %&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+		&lt;select class&#x3D;&quot;form-control form-control-sm custom-select&quot; id&#x3D;&quot;workload-to&quot;&gt;
+			&lt;option selected&gt;100%&lt;/option&gt;
+			&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+			&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+			&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+		&lt;/select&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group range-slider&quot;&gt;
+	&lt;label for&#x3D;&quot;online_since&quot; class&#x3D;&quot;small&quot;&gt;Online seit&lt;/label&gt;
+	&lt;input class&#x3D;&quot;range-slider__range&quot; min&#x3D;&quot;1&quot; max&#x3D;&quot;60&quot; step&#x3D;&quot;1&quot; value&#x3D;&quot;20&quot; type&#x3D;&quot;range&quot; id&#x3D;&quot;online_since&quot; /&gt;
+	&lt;span class&#x3D;&quot;range-slider__value range-slider__value--unit small&quot; data-unit&#x3D;&quot;Tage(n)&quot;&gt;0&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-landingpage">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Landingpage</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<h1 class="tool__heading">Finden Sie jetzt Ihren Traumjob!</h1>
+
+<div class="row">
+	<div class="col-xs-8 col-sm-5 col-xxxl-4">
+		<form class="job-search__form">
+			<div class="form-group form-group--wide">
+				<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Berufsgruppe, Fähigkeiten</label>
+				<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten" />
+			</div>
+			<div class="form-group form-group--wide form-group--icon">
+				<label for="basic-addon2" class="sr-only">Ort, Region, Kanton</label>
+				<input type="text" class="form-control form-control-lg" placeholder="Ort, Region, Kanton" id="basic-addon2" />
+				<!-- todo refine -->
+				<a href="#" class="fa-stack form-control--icon">
+				  <i class="fa fa-circle fa-stack-2x"></i>
+				  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+				</a>
+			</div>
+
+			<div class="form-group range-slider">
+				<label for="radius" class="sr-only">Radius</label>
+				<input class="range-slider__range" min="5" max="150" step="5" value="20" type="range" id="radius" />
+				<span class="range-slider__value range-slider__value--unit" data-unit="km">0</span>
+			</div>
+			<a class="btn btn-primary btn-lg btn-block" href="job-room/job-result-list.html">Traumjob finden!</a>
+		</form>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h1 class&#x3D;&quot;tool__heading&quot;&gt;Finden Sie jetzt Ihren Traumjob!&lt;/h1&gt;
+
+&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-xs-8 col-sm-5 col-xxxl-4&quot;&gt;
+		&lt;form class&#x3D;&quot;job-search__form&quot;&gt;
+			&lt;div class&#x3D;&quot;form-group form-group--wide&quot;&gt;
+				&lt;label for&#x3D;&quot;formGroupExampleInput&quot; class&#x3D;&quot;sr-only&quot;&gt;Berufsbezeichnung, Berufsgruppe, Fähigkeiten&lt;/label&gt;
+				&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-lg&quot; id&#x3D;&quot;formGroupExampleInput&quot; placeholder&#x3D;&quot;Berufsbezeichnung, Berufsgruppe, Fähigkeiten&quot; /&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;form-group form-group--wide form-group--icon&quot;&gt;
+				&lt;label for&#x3D;&quot;basic-addon2&quot; class&#x3D;&quot;sr-only&quot;&gt;Ort, Region, Kanton&lt;/label&gt;
+				&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-lg&quot; placeholder&#x3D;&quot;Ort, Region, Kanton&quot; id&#x3D;&quot;basic-addon2&quot; /&gt;
+				&lt;!-- todo refine --&gt;
+				&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+				  &lt;i class&#x3D;&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+				  &lt;i class&#x3D;&quot;fa fa-map-marker fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class&#x3D;&quot;form-group range-slider&quot;&gt;
+				&lt;label for&#x3D;&quot;radius&quot; class&#x3D;&quot;sr-only&quot;&gt;Radius&lt;/label&gt;
+				&lt;input class&#x3D;&quot;range-slider__range&quot; min&#x3D;&quot;5&quot; max&#x3D;&quot;150&quot; step&#x3D;&quot;5&quot; value&#x3D;&quot;20&quot; type&#x3D;&quot;range&quot; id&#x3D;&quot;radius&quot; /&gt;
+				&lt;span class&#x3D;&quot;range-slider__value range-slider__value--unit&quot; data-unit&#x3D;&quot;km&quot;&gt;0&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;a class&#x3D;&quot;btn btn-primary btn-lg btn-block&quot; href&#x3D;&quot;job-room/job-result-list.html&quot;&gt;Traumjob finden!&lt;/a&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-publication">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Publication</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<fieldset class="candidate-search">
+	<legend>Stellenbeschreibung</legend>
+
+	<div class="form-group">
+		<label for="basic-addon2">Stellenbezeichnung</label>
+		<div class="form-group--icon">
+			<input type="text" class="form-control" placeholder="z.B. Maurer" id="basic-addon2" />
+
+			<a href="#" class="fa-stack form-control--icon">
+				<i class="fa fa-search fa-stack-1x"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="cs-8" class="col-form-label">Abschluss</label>
+		<div>
+			<select class="form-control custom-select" id="cs-8">
+				<option selected>keine Auswahl</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+		</div>
+	</div>
+
+	<a class="btn btn-primary btn-lg" href="#">Job publizieren</a>
+</fieldset>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;fieldset class&#x3D;&quot;candidate-search&quot;&gt;
+	&lt;legend&gt;Stellenbeschreibung&lt;/legend&gt;
+
+	&lt;div class&#x3D;&quot;form-group&quot;&gt;
+		&lt;label for&#x3D;&quot;basic-addon2&quot;&gt;Stellenbezeichnung&lt;/label&gt;
+		&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;z.B. Maurer&quot; id&#x3D;&quot;basic-addon2&quot; /&gt;
+
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+				&lt;i class&#x3D;&quot;fa fa-search fa-stack-1x&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;form-group&quot;&gt;
+		&lt;label for&#x3D;&quot;cs-8&quot; class&#x3D;&quot;col-form-label&quot;&gt;Abschluss&lt;/label&gt;
+		&lt;div&gt;
+			&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;cs-8&quot;&gt;
+				&lt;option selected&gt;keine Auswahl&lt;/option&gt;
+				&lt;option value&#x3D;&quot;1&quot;&gt;One&lt;/option&gt;
+				&lt;option value&#x3D;&quot;2&quot;&gt;Two&lt;/option&gt;
+				&lt;option value&#x3D;&quot;3&quot;&gt;Three&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;a class&#x3D;&quot;btn btn-primary btn-lg&quot; href&#x3D;&quot;#&quot;&gt;Job publizieren&lt;/a&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-search">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Search</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="form-group form-group--wide">
+	<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Berufsgruppe, Fähigkeiten</label>
+	<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten" />
+</div>
+<div class="form-group form-group--wide form-group--icon">
+	<label for="basic-addon2" class="sr-only">Ort, Region, Kanton</label>
+	<input type="text" class="form-control form-control-lg" placeholder="Ort, Region, Kanton" id="basic-addon2" />
+	<!-- todo refine -->
+	<a href="#" class="fa-stack form-control--icon">
+	  <i class="fa fa-circle fa-stack-2x"></i>
+	  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+	</a>
+</div>
+
+<div class="form-group range-slider">
+	<label for="radius" class="sr-only">Radius</label>
+	<input class="range-slider__range" min="5" max="150" step="5" value="20" type="range" id="radius" />
+	<span class="range-slider__value range-slider__value--unit" data-unit="km">0</span>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;form-group form-group--wide&quot;&gt;
+	&lt;label for&#x3D;&quot;formGroupExampleInput&quot; class&#x3D;&quot;sr-only&quot;&gt;Berufsbezeichnung, Berufsgruppe, Fähigkeiten&lt;/label&gt;
+	&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-lg&quot; id&#x3D;&quot;formGroupExampleInput&quot; placeholder&#x3D;&quot;Berufsbezeichnung, Berufsgruppe, Fähigkeiten&quot; /&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-group form-group--wide form-group--icon&quot;&gt;
+	&lt;label for&#x3D;&quot;basic-addon2&quot; class&#x3D;&quot;sr-only&quot;&gt;Ort, Region, Kanton&lt;/label&gt;
+	&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-lg&quot; placeholder&#x3D;&quot;Ort, Region, Kanton&quot; id&#x3D;&quot;basic-addon2&quot; /&gt;
+	&lt;!-- todo refine --&gt;
+	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+	  &lt;i class&#x3D;&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+	  &lt;i class&#x3D;&quot;fa fa-map-marker fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-group range-slider&quot;&gt;
+	&lt;label for&#x3D;&quot;radius&quot; class&#x3D;&quot;sr-only&quot;&gt;Radius&lt;/label&gt;
+	&lt;input class&#x3D;&quot;range-slider__range&quot; min&#x3D;&quot;5&quot; max&#x3D;&quot;150&quot; step&#x3D;&quot;5&quot; value&#x3D;&quot;20&quot; type&#x3D;&quot;range&quot; id&#x3D;&quot;radius&quot; /&gt;
+	&lt;span class&#x3D;&quot;range-slider__value range-slider__value--unit&quot; data-unit&#x3D;&quot;km&quot;&gt;0&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /content -->
+
+	<footer>
+		<div class="container">
+			<h2 class="light">In Zusammenarbeit</h2>
+			<div class="footer--logos">
+				<div class="footer--logos__logo"><img class="cd-bund" src="/assets/styleguide/images/seco-de-neg.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/alv.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/rav.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/eures.png" /></div>
+			</div>
+		</div>
+	</footer>
+	<div class="footer--seco">
+		<a href="#">Staatssekretariat für Wirtschaft SECO</a>
+		<a href="#">Rechtliche Grundlagen</a>
+	</div>
+	<!-- /footer -->
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/fabricator/scripts/f.js"></script>
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="/assets/styleguide/scripts/alv-ch.js"></script>
+<script src="/assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:300,400,700:latin']
+    }
+  });
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>

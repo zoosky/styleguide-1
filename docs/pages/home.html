@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title></title>
+
+	<link rel="stylesheet" href="../assets/fabricator/styles/f.css">
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="../assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+<!-- header -->
+<div class="header sticky-top">
+	<!-- alv-header -->
+	<div class="alv-header alv-header--inverse">
+		<span class="alv-header__brand mb-0">
+			<img src="../assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+			Arbeitslosenversicherung ALV
+		</span>
+	</div>	<!-- /alv-header -->
+
+	<!-- navbar -->
+	<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
+	
+			<a class="navbar-brand alv-logo" href="/index.html">
+				<div class="alv-logo__title">
+					<strong>alv</strong><span class="title__plus-ch">ch</span>
+				</div>
+			</a>
+	
+			<div class="ml-auto">
+				<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+					<div class="drawer-contents">
+						<div class="drawer-heading">
+							<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<a href="/index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> work.ch</a>
+						</div>
+	
+						<ul class="navbar-nav">
+							<li class="nav-item d-none d-sm-block">
+								<form class="form-inline">
+									<div class="collapse" id="searchForm">
+										<div class="form-group form-group--navbar">
+											<label for="search" class="sr-only">Wie können wir helfen?</label>
+											<div class="form-group--icon">
+												<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+								
+												<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+													<i class="fa fa-times fa-stack-1x"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+								</form>						</li>
+							<li class="nav-item megamenu dropdown dropdown--canvas">
+								<a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Menü</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<div class="megamenu-menu">
+										<div>
+											<span class="dropdown-title">Stellensuchende</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+										<div>
+											<span class="dropdown-title">Unternehmen</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+										<div>
+											<span class="dropdown-title">Arbeitsvermittler</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+										<div>
+											<span class="dropdown-title">Institutionen/Medien</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+										<div>
+											<span class="dropdown-title">Aktuell</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+	
+	
+											<span class="dropdown-title">Links</span>
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/job-room.html"><span class="d-sm-none">zu</span> Job-Room</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/amstat.html"><span class="d-sm-none">zu</span> amstat</a>
+							</li>
+							<li class="nav-item d-none d-sm-block">
+								<a class="nav-link nav-link--login" href="#">
+									Login
+								</a>
+							</li>
+							<li class="nav-item d-none d-sm-block">
+								<ul class="navbar-nav navbar--language-switcher" id="languageSwitcher">
+									<li class="nav-item active">
+										<a class="nav-link" href="#">DE</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">FR</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">IT</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">EN</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+			<div class="ml-auto d-sm-none">
+				<ul class="navbar-nav mobile-nav">
+					<li class="nav-item">
+						<ul class="navbar-nav navbar--language-switcher" id="mobLanguageSwitcher">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">DE</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">FR</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">IT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">EN</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<form class="form-inline">
+							<div class="collapse" id="searchForm">
+								<div class="form-group form-group--navbar">
+									<label for="search" class="sr-only">Wie können wir helfen?</label>
+									<div class="form-group--icon">
+										<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+						
+										<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+											<i class="fa fa-times fa-stack-1x"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+						</form>				</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+							<i class="fa fa-lg fa-user" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>	<!-- /navbar -->
+</div>
+<!-- /header -->
+
+<!-- content -->
+<div class="container">
+	<!-- breadcrumb -->
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="#">Home</a></li>
+		<li class="breadcrumb-item active">Rechte & Pflichten</li>
+	</ol>	<!-- /breadcrumb -->
+	<div class="base">
+	<div class="base__subnavbar">
+		<div class="subnavbar">
+			<!-- subnavbar -->
+			<ul class="nav subnavbar-nav md-whiteframe-1dp">
+				<li class="nav-title">
+					Portal
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/pages/adresslookup.html">Adresslookup</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/pages/home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Test 1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Test 2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Test 3</a>
+				</li>
+			</ul>
+
+			<!-- subnavbar -->
+			<ul class="nav subnavbar-nav md-whiteframe-1dp">
+				<li class="nav-title">
+					Subnavbar Title
+					<a href="#" class="nav-link--faq">FAQ</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Active</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+			<!-- /subnavbar -->
+
+			<!-- subnavbar -->
+			<ul class="nav subnavbar-nav md-whiteframe-1dp">
+				<li class="nav-title">
+					Subnavbar Title
+					<a href="#" class="nav-link--faq">FAQ</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Active</a>
+					<!-- subnav-subnavbar -->
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sub-Subnav</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sub-Subnav</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sub-Subnav</a>
+						</li>
+					</ul>
+					<!-- /subnav-subnavbar -->
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+			<!-- /subnavbar -->
+		</div>
+		<!-- /subnavbar -->
+	</div>
+
+	<div class="base__content">
+		<h1>Hello, World!</h1>
+
+		<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+		<div>
+			<form action="">
+				<div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>		<div class="form-group">
+						<label for="exampleTextarea">Example textarea</label>
+						<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+					</div>		<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Check me out
+						</label>
+					</div>
+					
+					<div class="checkbox">
+						<input id="first" type="checkbox" checked="checked"/>
+						<label for="first">
+							First checkbox
+						</label>
+					</div>
+					
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" class="form-check-input">
+							Check me out
+						</label>
+					</div>		<fieldset class="form-group">
+						<legend>Radio buttons</legend>
+						<div class="form-check">
+							<label class="form-check-label">
+								<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+								Option one is this and that&mdash;be sure to include why it's great
+							</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+								<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+								Option two can be something else and selecting it will deselect option one
+							</label>
+						</div>
+						<div class="form-check disabled">
+							<label class="form-check-label">
+								<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+								Option three is disabled
+							</label>
+						</div>
+					</fieldset>
+					
+					<fieldset class="form-group">
+						<legend>Styled Radio buttons</legend>
+						<div class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked="checked">
+							<label for="optionsRadios4">
+								First radio
+							</label>
+						</div>
+					
+						<div class="radio">
+							<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" checked="checked">
+							<label for="optionsRadios5">
+								Second radio
+							</label>
+						</div>
+					</fieldset>		<div class="form-group">
+						<label for="exampleSelect1">Password</label>
+						<select class="form-control" name="exampleSelect1" id="exampleSelect1">
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+							<option value="4">Option 4</option>
+							<option value="5">Option 5</option>
+						</select>
+					</div>	</div>
+				<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+				<button type="button" class="btn btn-primary">Primary</button>
+				
+				<!-- Secondary, outline button -->
+				<button type="button" class="btn btn-secondary">Secondary</button>
+				
+				<!-- Indicates a successful or positive action -->
+				<button type="button" class="btn btn-success">Success</button>
+				
+				<!-- Contextual button for informational alert messages -->
+				<button type="button" class="btn btn-info">Info</button>
+				
+				<!-- Indicates caution should be taken with this action -->
+				<button type="button" class="btn btn-warning">Warning</button>
+				
+				<!-- Indicates a dangerous or potentially negative action -->
+				<button type="button" class="btn btn-danger">Danger</button>
+				
+				<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+				<button type="button" class="btn btn-link">Link</button></form>		</div>
+	</div>
+
+	<div class="base__related">
+		<!--
+		<ul class="related">
+			<li><a href="#">Antrag auf Arbeitslosenentschädigung</a></li>
+			<li><a href="#">Antrag auf Taggeld</a></li>
+			<li><a href="#">Antrag auf Insolvenzentschädigung</a></li>
+		</ul>
+		-->
+		
+		<ul class="fa-ul related-list">
+			<li><i class="fa-li fa fa-file-pdf-o"></i><a href="#">Antrag auf Arbeitslosenentschädigung</a></li>
+			<li><i class="fa-li fa fa-file-pdf-o"></i><a href="#">Antrag auf Taggeld</a></li>
+			<li><i class="fa-li fa fa-file-pdf-o"></i><a href="#">Antrag auf Insolvenzentschädigung</a></li>
+		</ul>
+		
+		<button class="btn btn-block">Formulare</button>	</div>
+</div>
+
+</div>
+<!-- /content -->
+
+<!-- footer -->
+<footer>
+	<div class="container">
+		<h2 class="light">In Zusammenarbeit</h2>
+		<div class="footer--logos">
+			<div class="footer--logos__logo"><img class="cd-bund"
+												  src="../assets/styleguide/images/seco-de-neg.png"/></div>
+			<div class="footer--logos__logo"><img src="../assets/styleguide/images/alv.png"/></div>
+			<div class="footer--logos__logo"><img src="../assets/styleguide/images/rav.png"/></div>
+			<div class="footer--logos__logo"><img src="../assets/styleguide/images/eures.png"/></div>
+		</div>
+	</div>
+</footer><!-- footer -->
+
+<!-- seco-footer -->
+<div class="footer--seco">
+	<div class="container">
+		<span>Arbeitslosenversicherung / Arbeitsmarkt ALV</span>
+		<a href="#">Rechtliche Hinweise</a>
+		<a href="#">Abkürzungen</a>
+	</div>
+</div><!-- /seco-footer -->
+
+<!-- modals -->
+<!-- modals -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<ul class="nav nav-tabs nav--login" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#register" role="tab">Registrieren</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content--job-room">
+					<div class="tab-content">
+						<div class="tab-pane active" id="login" role="tabpanel">
+
+							<fieldset class="login">
+								<div class="form-group">
+									<label for="username" class="col-form-label">Benutzername</label>
+									<div>
+										<input class="form-control" type="text" id="username" placeholder="E-Mail, Personennummer, Benutzername" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="password" class="col-form-label">Passwort</label>
+									<div>
+										<input class="form-control" type="password" id="password" placeholder="Passwort" />
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+								<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+							</fieldset>
+
+						</div>
+						<div class="tab-pane" id="register" role="tabpanel">
+
+							<fieldset class="login">
+								<div class="form-group form-group--break">
+									<label for="sort" class="col-form-label">Registrierung als</label>
+									<div>
+										<select class="form-control custom-select" id="sort" required>
+											<option selected>Registrierung als Stellensuchende / -er</option>
+											<option value="1">Registrierung als Unternehmen</option>
+											<option value="2">Registrierung als Arbeitsvermittler</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="name1" class="col-form-label">Nachname</label>
+									<div>
+										<input class="form-control" type="text" id="name1" placeholder="Nachname" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="name2" class="col-form-label">Vorname</label>
+									<div>
+										<input class="form-control" type="text" id="name2" placeholder="Vorname" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="birthday" class="col-form-label">Geburtsdatum</label>
+									<div>
+										<input class="form-control" type="date" id="birthday" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email" class="col-form-label">E-Mail</label>
+									<div>
+										<input class="form-control" type="text" id="email" placeholder="E-Mail" required />
+									</div>
+								</div>
+								<div class="form-group form-group--optional form-group--break">
+									<label for="personennummer" class="col-form-label">Personennummer</label>
+									<div>
+										<input class="form-control" type="text" id="personennummer" placeholder="Personennummer gemäss Brief xy" />
+									</div>
+								</div>
+
+
+								<div class="form-group">
+									<label for="password1" class="col-form-label">Passwort</label>
+									<div>
+										<input class="form-control" type="password" id="password1" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="password2" class="col-form-label">Passwort wiederholen</label>
+									<div>
+										<input class="form-control" type="password" id="password2" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Registrieren</button>
+								<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+							</fieldset>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /modals --><!-- /modals -->
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../assets/fabricator/scripts/f.js"></script>
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="../assets/styleguide/scripts/alv-ch.js"></script>
+<script src="../assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+	WebFont.load({
+		google: {
+			families: ['Open+Sans:300,400,700:latin']
+		}
+	});
+
+	$(document).ready(function() {
+		$('#addr_ag-box').hide();
+		//$('#addr_stes-box').hide();
+		$('#address_filter').change(function () {
+			$('#addr_ag-box').hide();
+			$('#addr_stes-box').hide();
+
+			if ($(this).val()==='stes'){
+				$('#addr_stes-box').show();
+			}
+			else {
+				$('#addr_ag-box').show();
+			}
+		});
+	});
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>

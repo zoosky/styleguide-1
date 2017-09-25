@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title></title>
+
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="/assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+	<div class="header sticky-top">
+		<!-- ALV-HEADER -->
+		<div class="alv-header alv-header--inverse">
+			<span class="alv-header__brand mb-0">
+				<img src="/assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+				Arbeitslosenversicherung ALV
+			</span>
+		</div>
+		<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+
+				<a class="navbar-brand alv-logo" href="/index.html">
+					<div class="alv-logo__title">
+						<strong>alv</strong><span class="title__plus-ch">ch</span>
+					</div>
+				</a>
+
+				<!--
+					DRAWER NAV
+				 	TODO: Replace drawerExample with correct ID
+				 -->
+				<div class="ml-auto">
+					<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+						<div class="drawer-contents">
+							<div class="drawer-heading">
+								<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<a href="/index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> work.ch</a>
+							</div>
+
+							<ul class="navbar-nav">
+								<li class="nav-item d-none d-sm-block">
+									<form class="form-inline">
+										<div class="collapse" id="searchForm">
+											<div class="form-group form-group--navbar">
+												<label for="search" class="sr-only">Wie können wir helfen?</label>
+												<div class="form-group--icon">
+													<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+									
+													<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+														<i class="fa fa-times fa-stack-1x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+									</form>								</li>
+								<li class="nav-item megamenu dropdown dropdown--canvas">
+									<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Menü</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<div class="megamenu-menu">
+											<div>
+												<span class="dropdown-title">Stellensuchende</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Unternehmen</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Arbeitsvermittler</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Institutionen/Medien</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Aktuell</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+
+
+												<span class="dropdown-title">Links</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</div>
+
+	<!-- content -->
+	<div class="container">
+
+		<div class="base">
+
+			<div class="base__subnavbar">
+				<div class="f-control-bar">
+					<div class="f-control f-menu-toggle">
+						<svg>
+							<use xlink:href="#f-icon-menu" />
+						</svg>
+					</div>
+				</div>
+				<!-- fabricator icons -->
+				<svg style="display: none;">
+					<symbol id="f-icon-code" viewBox="0 0 512 512">
+						<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+					</symbol>
+					<symbol id="f-icon-notes" viewBox="0 0 512 512">
+						<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+					</symbol>
+					<symbol id="f-icon-labels" viewBox="0 0 512 512">
+						<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+					</symbol>
+					<symbol id="f-icon-menu" viewBox="0 0 512 512">
+						<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+					</symbol>
+					<symbol id="f-icon-settings" viewBox="0 0 512 512">
+						<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+					</symbol>
+				</svg>
+				<!-- /fabricator icons -->
+				<!-- fabricator menu -->
+				<div class="f-menu subnavbar">
+					<div class="f-controls">
+						<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+							<svg>
+								<use xlink:href="#f-icon-labels" />
+							</svg>
+						</div>
+						<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+							<svg>
+								<use xlink:href="#f-icon-notes" />
+							</svg>
+						</div>
+						<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+							<svg>
+								<use xlink:href="#f-icon-code" />
+							</svg>
+						</div>
+					</div>
+					<div class="subnavbar__toggler">Subnavigation</div>
+				
+					<ul class="nav subnavbar-nav md-whiteframe-1dp">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link f-menu__heading">Overview</a>
+						</li>
+				
+						<li class="nav-item">
+							<a href="components.html" class="nav-link f-menu__heading">Components</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#alert">Alert</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#await">Await</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#breadcrumb">Breadcrumb</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#button">Button</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#checkbox">Checkbox</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#header">Header</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#job-search-toolbar">Job Search Toolbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#jumbotron">Jumbotron</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#lists">Lists</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#logo">Logo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#pagination">Pagination</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#paragraph">Paragraph</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#radio">Radio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#search">Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#search-b">Search B</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#select">Select</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#table">Table</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#text-input">Text Input</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#textarea">Textarea</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#typeahead">Typeahead</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="structures.html" class="nav-link f-menu__heading">Structures</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#amstat-navbar">Amstat Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#amstat-subnavigation">Amstat Subnavigation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#base">Base</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#basic-info">Basic Info</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#footer">Footer</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#footer-seco">Footer Seco</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#form">Form</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#job-room-navbar">Job Room Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#landingpages">Landingpages</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#login">Login</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#navbar">Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#navbar-b">Navbar B</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#news">News</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#search-and-faq">Search And Faq</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#subnavigation">Subnavigation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#toolbar">Toolbar</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="tools.html" class="nav-link f-menu__heading">Tools</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#arbeitslos-was-tun">Arbeitslos Was Tun</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-landingpage">Candidate Landingpage</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-radar">Candidate Radar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-search">Candidate Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter">Job Filter</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter_actions">Job Filter Actions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter_filter">Job Filter Filter</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-landingpage">Job Landingpage</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-publication">Job Publication</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-search">Job Search</a>
+								</li>
+							</ul>
+						</li>
+				
+						<li class="nav-item">
+							<a href="amstat.html" class="nav-link f-menu__heading">Amstat</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="amstat/amstat-landingpage.html">Amstat Landingpage</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="job-room.html" class="nav-link f-menu__heading">Job Room</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="job-room/job-detail.html">Job Detail</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="job-room/job-result-list.html">Job Result List</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="pages.html" class="nav-link f-menu__heading">Pages</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="pages/adresslookup.html">Adresslookup</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pages/home.html">Home</a>
+								</li>
+							</ul>
+						</li>
+				
+						<li class="nav-item">
+							<a href="docs.html" class="nav-link f-menu__heading">Docs</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="docs.html#javascript">Javascript</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /fabricator menu -->
+			</div>
+
+			<div class="base__content--wide">
+				
+<h1 data-f-toggle="labels">Components</h1>
+
+
+<div class="f-item-group" id="alert">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Alert</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="alert alert-success" role="alert">
+	<strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info" role="alert">
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning" role="alert">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+<div class="alert alert-danger" role="alert">
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;alert alert-success&quot; role&#x3D;&quot;alert&quot;&gt;
+	&lt;strong&gt;Well done!&lt;/strong&gt; You successfully read this important alert message.
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;alert alert-info&quot; role&#x3D;&quot;alert&quot;&gt;
+	&lt;strong&gt;Heads up!&lt;/strong&gt; This alert needs your attention, but it&#x27;s not super important.
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;alert alert-warning&quot; role&#x3D;&quot;alert&quot;&gt;
+	&lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you&#x27;re not looking too good.
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;alert alert-danger&quot; role&#x3D;&quot;alert&quot;&gt;
+	&lt;strong&gt;Oh snap!&lt;/strong&gt; Change a few things up and try submitting again.
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="await">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Await</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="await await-xl await--primary"></div>
+
+<div class="await await-xl await--light"></div>
+
+<div class="await await-lg await--primary"></div>
+
+<div class="await await-lg await--light"></div>
+
+<div class="await await--primary"></div>
+
+<div class="await await--light"></div>
+
+<div class="await await-sm await--primary"></div>
+
+<div class="await await-sm await--light"></div>
+
+<hr />
+
+<button class="btn btn-primary btn-lg">
+	<div class="await await--inverse"></div>
+</button>
+<button class="btn btn-primary btn-lg btn-await btn-await--inverse">loading</button>
+
+
+<hr />
+
+<button class="btn btn-primary">
+	<div class="await await--inverse"></div>
+</button>
+<button class="btn btn-primary btn-await btn-await--inverse">loading</button>
+
+<hr />
+
+<button class="btn btn-primary btn-sm">
+	<div class="await await--inverse"></div>
+</button>
+<button class="btn btn-primary btn-sm btn-await btn-await--inverse">loading</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;await await-xl await--primary&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;await await-xl await--light&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;await await-lg await--primary&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;await await-lg await--light&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;await await--primary&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;await await--light&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;await await-sm await--primary&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;await await-sm await--light&quot;&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;button class&#x3D;&quot;btn btn-primary btn-lg&quot;&gt;
+	&lt;div class&#x3D;&quot;await await--inverse&quot;&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;button class&#x3D;&quot;btn btn-primary btn-lg btn-await btn-await--inverse&quot;&gt;loading&lt;/button&gt;
+
+
+&lt;hr /&gt;
+
+&lt;button class&#x3D;&quot;btn btn-primary&quot;&gt;
+	&lt;div class&#x3D;&quot;await await--inverse&quot;&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;button class&#x3D;&quot;btn btn-primary btn-await btn-await--inverse&quot;&gt;loading&lt;/button&gt;
+
+&lt;hr /&gt;
+
+&lt;button class&#x3D;&quot;btn btn-primary btn-sm&quot;&gt;
+	&lt;div class&#x3D;&quot;await await--inverse&quot;&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;button class&#x3D;&quot;btn btn-primary btn-sm btn-await btn-await--inverse&quot;&gt;loading&lt;/button&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="breadcrumb">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Breadcrumb</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<ol class="breadcrumb">
+	<li class="breadcrumb-item"><a href="#">Home</a></li>
+	<li class="breadcrumb-item active">Rechte & Pflichten</li>
+</ol>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ol class&#x3D;&quot;breadcrumb&quot;&gt;
+	&lt;li class&#x3D;&quot;breadcrumb-item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+	&lt;li class&#x3D;&quot;breadcrumb-item active&quot;&gt;Rechte &amp; Pflichten&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="button">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Button</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>These are notes associated with this <code>button</code> component.</p>
+
+</div>
+<div class="f-item-preview">
+	<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Secondary, outline button -->
+<button type="button" class="btn btn-secondary">Secondary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">Link</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+
+&lt;!-- Secondary, outline button --&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+
+&lt;!-- Indicates a successful or positive action --&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+
+&lt;!-- Contextual button for informational alert messages --&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+
+&lt;!-- Indicates caution should be taken with this action --&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+
+&lt;!-- Indicates a dangerous or potentially negative action --&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+
+&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="checkbox">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Checkbox</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="form-check">
+	<label class="form-check-label">
+		<input type="checkbox" class="form-check-input">
+		Check me out
+	</label>
+</div>
+
+<div class="checkbox">
+	<input id="first" type="checkbox" checked="checked" />
+	<label for="first">
+		First checkbox
+	</label>
+</div>
+
+<div class="form-check">
+	<label class="form-check-label">
+		<input type="checkbox" class="form-check-input">
+		Check me out
+	</label>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;form-check&quot;&gt;
+	&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;form-check-input&quot;&gt;
+		Check me out
+	&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;checkbox&quot;&gt;
+	&lt;input id&#x3D;&quot;first&quot; type&#x3D;&quot;checkbox&quot; checked&#x3D;&quot;checked&quot; /&gt;
+	&lt;label for&#x3D;&quot;first&quot;&gt;
+		First checkbox
+	&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;form-check&quot;&gt;
+	&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;form-check-input&quot;&gt;
+		Check me out
+	&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="header">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Header</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="alv-header alv-header--inverse">
+	<span class="alv-header__brand mb-0">
+		<img src="/assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+		Arbeitslosenversicherung ALV
+	</span>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;alv-header alv-header--inverse&quot;&gt;
+	&lt;span class&#x3D;&quot;alv-header__brand mb-0&quot;&gt;
+		&lt;img src&#x3D;&quot;/assets/styleguide/images/swiss.svg&quot; width&#x3D;&quot;20&quot; height&#x3D;&quot;20&quot; class&#x3D;&quot;d-inline-block&quot; alt&#x3D;&quot;Swiss Confederation&quot;&gt;
+		Arbeitslosenversicherung ALV
+	&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-search-toolbar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Search Toolbar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="toolbar toolbar--light md-whiteframe-3dp">
+	<jr2-job-search-toolbar jhistickytoolbaritem="" _nghost-c2="">
+		<div _ngcontent-c2="" class="container">
+			<div _ngcontent-c2="" class="toolbar-collapse">
+				<form _ngcontent-c2="" novalidate="" class="ng-untouched ng-pristine ng-valid">
+					<div _ngcontent-c2="" class="form-inline toolbar-form">
+						<div _ngcontent-c2="" class="form-group form-group--wide">
+							<jr2-typeahead-multiselect _ngcontent-c2="" formcontrolname="baseQuery" _nghost-c3="" class="ng-untouched ng-pristine ng-valid">
+								<div _ngcontent-c3="" class="form-control form-control-lg typeahead-multiselect d-flex flex-row flex-wrap">
+									<input _ngcontent-c3="" aria-multiline="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" class="input typeahead-multiselect__input ng-untouched ng-pristine ng-valid" name="inputValue" role="combobox" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten"
+									 aria-autocomplete="list" aria-expanded="false">
+								</div>
+							</jr2-typeahead-multiselect>
+						</div>
+						<div _ngcontent-c2="" class="form-group form-group--icon">
+							<jr2-typeahead-multiselect _ngcontent-c2="" formcontrolname="localityQuery" _nghost-c3="" class="ng-untouched ng-pristine ng-valid">
+								<div _ngcontent-c3="" class="form-control form-control-lg typeahead-multiselect d-flex flex-row flex-wrap">
+									<input _ngcontent-c3="" aria-multiline="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" class="input typeahead-multiselect__input ng-untouched ng-pristine ng-valid" name="inputValue" role="combobox" placeholder="Ort, Region, Kanton"
+									 aria-autocomplete="list" aria-expanded="false">
+								</div>
+							</jr2-typeahead-multiselect>
+							<jr2-geo-location-select _ngcontent-c2="" _nghost-c4="">
+								<!---->
+							</jr2-geo-location-select>
+						</div>
+						<div style="flex-grow: 1;" class="d-none d-sm-block"></div>
+						<button _ngcontent-c2="" class="btn btn-primary btn-lg" type="submit"> <!----> <!----><span
+								_ngcontent-c2=""><span>500+ Jobs</span></span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</jr2-job-search-toolbar>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;toolbar toolbar--light md-whiteframe-3dp&quot;&gt;
+	&lt;jr2-job-search-toolbar jhistickytoolbaritem&#x3D;&quot;&quot; _nghost-c2&#x3D;&quot;&quot;&gt;
+		&lt;div _ngcontent-c2&#x3D;&quot;&quot; class&#x3D;&quot;container&quot;&gt;
+			&lt;div _ngcontent-c2&#x3D;&quot;&quot; class&#x3D;&quot;toolbar-collapse&quot;&gt;
+				&lt;form _ngcontent-c2&#x3D;&quot;&quot; novalidate&#x3D;&quot;&quot; class&#x3D;&quot;ng-untouched ng-pristine ng-valid&quot;&gt;
+					&lt;div _ngcontent-c2&#x3D;&quot;&quot; class&#x3D;&quot;form-inline toolbar-form&quot;&gt;
+						&lt;div _ngcontent-c2&#x3D;&quot;&quot; class&#x3D;&quot;form-group form-group--wide&quot;&gt;
+							&lt;jr2-typeahead-multiselect _ngcontent-c2&#x3D;&quot;&quot; formcontrolname&#x3D;&quot;baseQuery&quot; _nghost-c3&#x3D;&quot;&quot; class&#x3D;&quot;ng-untouched ng-pristine ng-valid&quot;&gt;
+								&lt;div _ngcontent-c3&#x3D;&quot;&quot; class&#x3D;&quot;form-control form-control-lg typeahead-multiselect d-flex flex-row flex-wrap&quot;&gt;
+									&lt;input _ngcontent-c3&#x3D;&quot;&quot; aria-multiline&#x3D;&quot;false&quot; autocapitalize&#x3D;&quot;off&quot; autocomplete&#x3D;&quot;off&quot; autocorrect&#x3D;&quot;off&quot; autofocus&#x3D;&quot;&quot; class&#x3D;&quot;input typeahead-multiselect__input ng-untouched ng-pristine ng-valid&quot; name&#x3D;&quot;inputValue&quot; role&#x3D;&quot;combobox&quot; placeholder&#x3D;&quot;Berufsbezeichnung, Berufsgruppe, Fähigkeiten&quot;
+									 aria-autocomplete&#x3D;&quot;list&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+								&lt;/div&gt;
+							&lt;/jr2-typeahead-multiselect&gt;
+						&lt;/div&gt;
+						&lt;div _ngcontent-c2&#x3D;&quot;&quot; class&#x3D;&quot;form-group form-group--icon&quot;&gt;
+							&lt;jr2-typeahead-multiselect _ngcontent-c2&#x3D;&quot;&quot; formcontrolname&#x3D;&quot;localityQuery&quot; _nghost-c3&#x3D;&quot;&quot; class&#x3D;&quot;ng-untouched ng-pristine ng-valid&quot;&gt;
+								&lt;div _ngcontent-c3&#x3D;&quot;&quot; class&#x3D;&quot;form-control form-control-lg typeahead-multiselect d-flex flex-row flex-wrap&quot;&gt;
+									&lt;input _ngcontent-c3&#x3D;&quot;&quot; aria-multiline&#x3D;&quot;false&quot; autocapitalize&#x3D;&quot;off&quot; autocomplete&#x3D;&quot;off&quot; autocorrect&#x3D;&quot;off&quot; autofocus&#x3D;&quot;&quot; class&#x3D;&quot;input typeahead-multiselect__input ng-untouched ng-pristine ng-valid&quot; name&#x3D;&quot;inputValue&quot; role&#x3D;&quot;combobox&quot; placeholder&#x3D;&quot;Ort, Region, Kanton&quot;
+									 aria-autocomplete&#x3D;&quot;list&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+								&lt;/div&gt;
+							&lt;/jr2-typeahead-multiselect&gt;
+							&lt;jr2-geo-location-select _ngcontent-c2&#x3D;&quot;&quot; _nghost-c4&#x3D;&quot;&quot;&gt;
+								&lt;!----&gt;
+							&lt;/jr2-geo-location-select&gt;
+						&lt;/div&gt;
+						&lt;div style&#x3D;&quot;flex-grow: 1;&quot; class&#x3D;&quot;d-none d-sm-block&quot;&gt;&lt;/div&gt;
+						&lt;button _ngcontent-c2&#x3D;&quot;&quot; class&#x3D;&quot;btn btn-primary btn-lg&quot; type&#x3D;&quot;submit&quot;&gt; &lt;!----&gt; &lt;!----&gt;&lt;span
+								_ngcontent-c2&#x3D;&quot;&quot;&gt;&lt;span&gt;500+ Jobs&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/jr2-job-search-toolbar&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="jumbotron">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Jumbotron</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="jumbotron jumbotron-fluid jumbotron--landingpage" style="background: url('/assets/styleguide/images/bg-jobroom-landingpage.png');">
+	<div class="container">
+		<h1 class="tool__heading">Finden Sie jetzt Ihren Traumjob!</h1>
+
+		<div class="row">
+			<div class="col-xs-8 col-sm-5 col-xxxl-4">
+				<form class="job-search__form">
+					<div class="form-group form-group--wide">
+						<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Berufsgruppe, Fähigkeiten</label>
+						<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten" />
+					</div>
+					<div class="form-group form-group--wide form-group--icon">
+						<label for="basic-addon2" class="sr-only">Ort, Region, Kanton</label>
+						<input type="text" class="form-control form-control-lg" placeholder="Ort, Region, Kanton" id="basic-addon2" />
+						<!-- todo refine -->
+						<a href="#" class="fa-stack form-control--icon">
+						  <i class="fa fa-circle fa-stack-2x"></i>
+						  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+						</a>
+					</div>
+
+					<div class="form-group range-slider">
+						<label for="radius" class="sr-only">Radius</label>
+						<input class="range-slider__range" min="5" max="150" step="5" value="20" type="range" id="radius" />
+						<span class="range-slider__value range-slider__value--unit" data-unit="km">0</span>
+					</div>
+					<a class="btn btn-primary btn-lg btn-block" href="job-room/job-result-list.html">Traumjob finden!</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;jumbotron jumbotron-fluid jumbotron--landingpage&quot; style&#x3D;&quot;background: url(&#x27;/assets/styleguide/images/bg-jobroom-landingpage.png&#x27;);&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;h1 class&#x3D;&quot;tool__heading&quot;&gt;Finden Sie jetzt Ihren Traumjob!&lt;/h1&gt;
+
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;col-xs-8 col-sm-5 col-xxxl-4&quot;&gt;
+				&lt;form class&#x3D;&quot;job-search__form&quot;&gt;
+					&lt;div class&#x3D;&quot;form-group form-group--wide&quot;&gt;
+						&lt;label for&#x3D;&quot;formGroupExampleInput&quot; class&#x3D;&quot;sr-only&quot;&gt;Berufsbezeichnung, Berufsgruppe, Fähigkeiten&lt;/label&gt;
+						&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-lg&quot; id&#x3D;&quot;formGroupExampleInput&quot; placeholder&#x3D;&quot;Berufsbezeichnung, Berufsgruppe, Fähigkeiten&quot; /&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;form-group form-group--wide form-group--icon&quot;&gt;
+						&lt;label for&#x3D;&quot;basic-addon2&quot; class&#x3D;&quot;sr-only&quot;&gt;Ort, Region, Kanton&lt;/label&gt;
+						&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-lg&quot; placeholder&#x3D;&quot;Ort, Region, Kanton&quot; id&#x3D;&quot;basic-addon2&quot; /&gt;
+						&lt;!-- todo refine --&gt;
+						&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+						  &lt;i class&#x3D;&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+						  &lt;i class&#x3D;&quot;fa fa-map-marker fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+
+					&lt;div class&#x3D;&quot;form-group range-slider&quot;&gt;
+						&lt;label for&#x3D;&quot;radius&quot; class&#x3D;&quot;sr-only&quot;&gt;Radius&lt;/label&gt;
+						&lt;input class&#x3D;&quot;range-slider__range&quot; min&#x3D;&quot;5&quot; max&#x3D;&quot;150&quot; step&#x3D;&quot;5&quot; value&#x3D;&quot;20&quot; type&#x3D;&quot;range&quot; id&#x3D;&quot;radius&quot; /&gt;
+						&lt;span class&#x3D;&quot;range-slider__value range-slider__value--unit&quot; data-unit&#x3D;&quot;km&quot;&gt;0&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;a class&#x3D;&quot;btn btn-primary btn-lg btn-block&quot; href&#x3D;&quot;job-room/job-result-list.html&quot;&gt;Traumjob finden!&lt;/a&gt;
+				&lt;/form&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="lists">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Lists</h2>
+	</div>
+		<div class="f-item-group" id="lists.ordered">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ordered</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<ol>
+	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	<li>Aliquam tincidunt mauris eu risus.</li>
+	<li>Vestibulum auctor dapibus neque.</li>
+</ol>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ol&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="lists.related">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Related</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<!--
+<ul class="related">
+	<li><a href="#">Antrag auf Arbeitslosenentschädigung</a></li>
+	<li><a href="#">Antrag auf Taggeld</a></li>
+	<li><a href="#">Antrag auf Insolvenzentschädigung</a></li>
+</ul>
+-->
+
+<ul class="fa-ul related-list">
+	<li><i class="fa-li fa fa-file-pdf-o"></i><a href="#">Antrag auf Arbeitslosenentschädigung</a></li>
+	<li><i class="fa-li fa fa-file-pdf-o"></i><a href="#">Antrag auf Taggeld</a></li>
+	<li><i class="fa-li fa fa-file-pdf-o"></i><a href="#">Antrag auf Insolvenzentschädigung</a></li>
+</ul>
+
+<button class="btn btn-block">Formulare</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!--
+&lt;ul class&#x3D;&quot;related&quot;&gt;
+	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Antrag auf Arbeitslosenentschädigung&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Antrag auf Taggeld&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Antrag auf Insolvenzentschädigung&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+--&gt;
+
+&lt;ul class&#x3D;&quot;fa-ul related-list&quot;&gt;
+	&lt;li&gt;&lt;i class&#x3D;&quot;fa-li fa fa-file-pdf-o&quot;&gt;&lt;/i&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Antrag auf Arbeitslosenentschädigung&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i class&#x3D;&quot;fa-li fa fa-file-pdf-o&quot;&gt;&lt;/i&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Antrag auf Taggeld&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;i class&#x3D;&quot;fa-li fa fa-file-pdf-o&quot;&gt;&lt;/i&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Antrag auf Insolvenzentschädigung&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;button class&#x3D;&quot;btn btn-block&quot;&gt;Formulare&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="lists.unordered">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Unordered</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<ul>
+	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	<li>Aliquam tincidunt mauris eu risus.</li>
+	<li>Vestibulum auctor dapibus neque.</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="logo">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Logo</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<!-- REFACTORING -> LISTS -->
+
+<div class="alv-logo">
+	<div class="alv-logo__title">
+		<strong>name</strong><span class="title__plus-ch">ch</span>
+	</div>
+</div>
+
+<p></p>
+
+<div class="alv-logo alv-logo--inverse">
+	<div class="alv-logo__title">
+		<strong>name</strong><span class="title__plus-ch">ch</span>
+	</div>
+</div>
+
+<p></p>
+
+<div class="alv-logo alv-logo--dark">
+	<div class="alv-logo__title">
+		<strong>name</strong><span class="title__plus-ch">ch</span>
+	</div>
+</div>
+
+<hr />
+
+<div class="alv-logo">
+	<div class="alv-logo__title-small">
+		<strong>name</strong><span class="title__plus-ch">ch</span>
+	</div>
+	<span class="alv-logo__brand">Brand</span>
+</div>
+
+<p></p>
+
+<div class="alv-logo alv-logo--inverse">
+	<div class="alv-logo__title-small">
+		<strong>name</strong><span class="title__plus-ch">ch</span>
+	</div>
+	<span class="alv-logo__brand">Brand</span>
+</div>
+
+<p></p>
+
+<div class="alv-logo alv-logo--dark">
+	<div class="alv-logo__title-small">
+		<strong>name</strong><span class="title__plus-ch">ch</span>
+	</div>
+	<span class="alv-logo__brand">Brand</span>
+</div>
+
+<hr />
+
+<div class="alv-logo">
+	<div class="alv-logo__title">
+		<strong>alv</strong><span class="title__plus-ch">ch</span>
+	</div>
+</div>
+
+<p></p>
+
+<div class="alv-logo alv-logo--inverse">
+	<strong class="alv-logo__brand--job-room">Job-Room</strong>
+	<div class="alv-logo__title-small">
+		<strong>alv</strong><span class="title__plus-ch">ch</span>
+	</div>
+</div>
+
+<p></p>
+
+<div class="alv-logo alv-logo--dark">
+	<strong class="alv-logo__brand--amstat">amstat</strong>
+	<div class="alv-logo__title-small">
+		<strong>alv</strong><span class="title__plus-ch">ch</span>
+	</div>
+</div>
+
+<hr />
+
+<nav class="navbar navbar-light bg-faded">
+	<div class="container">
+		<a class="navbar-brand alv-logo" href="#">
+			<div class="alv-logo__title">
+				<strong>name</strong><span class="title__plus-ch">ch</span>
+			</div>
+		</a>
+
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Item</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<hr />
+
+<div style="width: 400px; height: 200px;">
+
+	<span class="alv-logo-box">
+	 w400px * h200px
+	</span>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- REFACTORING -&gt; LISTS --&gt;
+
+&lt;div class&#x3D;&quot;alv-logo&quot;&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
+		&lt;strong&gt;name&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;alv-logo alv-logo--inverse&quot;&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
+		&lt;strong&gt;name&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;alv-logo alv-logo--dark&quot;&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
+		&lt;strong&gt;name&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class&#x3D;&quot;alv-logo&quot;&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
+		&lt;strong&gt;name&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;span class&#x3D;&quot;alv-logo__brand&quot;&gt;Brand&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;alv-logo alv-logo--inverse&quot;&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
+		&lt;strong&gt;name&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;span class&#x3D;&quot;alv-logo__brand&quot;&gt;Brand&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;alv-logo alv-logo--dark&quot;&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
+		&lt;strong&gt;name&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;span class&#x3D;&quot;alv-logo__brand&quot;&gt;Brand&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class&#x3D;&quot;alv-logo&quot;&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
+		&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;alv-logo alv-logo--inverse&quot;&gt;
+	&lt;strong class&#x3D;&quot;alv-logo__brand--job-room&quot;&gt;Job-Room&lt;/strong&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
+		&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;alv-logo alv-logo--dark&quot;&gt;
+	&lt;strong class&#x3D;&quot;alv-logo__brand--amstat&quot;&gt;amstat&lt;/strong&gt;
+	&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
+		&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;nav class&#x3D;&quot;navbar navbar-light bg-faded&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;a class&#x3D;&quot;navbar-brand alv-logo&quot; href&#x3D;&quot;#&quot;&gt;
+			&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
+				&lt;strong&gt;name&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+
+		&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Item&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;hr /&gt;
+
+&lt;div style&#x3D;&quot;width: 400px; height: 200px;&quot;&gt;
+
+	&lt;span class&#x3D;&quot;alv-logo-box&quot;&gt;
+	 w400px * h200px
+	&lt;/span&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="pagination">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Pagination</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<ul class="pagination pagination--block pagination-alv">
+	<li class="page-item">
+		<a class="page-link" href="#" tabindex="-1"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previous</a>
+	</li>
+	<li class="page-item">
+		<a class="page-link" href="#">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+	</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class&#x3D;&quot;pagination pagination--block pagination-alv&quot;&gt;
+	&lt;li class&#x3D;&quot;page-item&quot;&gt;
+		&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot; tabindex&#x3D;&quot;-1&quot;&gt;&lt;i class&#x3D;&quot;fa fa-chevron-left&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Previous&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;page-item&quot;&gt;
+		&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Next &lt;i class&#x3D;&quot;fa fa-chevron-right&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="paragraph">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Paragraph</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="radio">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Radio</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<fieldset class="form-group">
+	<legend>Radio buttons</legend>
+	<div class="form-check">
+		<label class="form-check-label">
+			<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			Option one is this and that&mdash;be sure to include why it's great
+		</label>
+	</div>
+	<div class="form-check">
+		<label class="form-check-label">
+			<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+			Option two can be something else and selecting it will deselect option one
+		</label>
+	</div>
+	<div class="form-check disabled">
+		<label class="form-check-label">
+			<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+			Option three is disabled
+		</label>
+	</div>
+</fieldset>
+
+<fieldset class="form-group">
+	<legend>Styled Radio buttons</legend>
+	<div class="radio">
+		<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked="checked">
+		<label for="optionsRadios4">
+			First radio
+		</label>
+	</div>
+
+	<div class="radio">
+		<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" checked="checked">
+		<label for="optionsRadios5">
+			Second radio
+		</label>
+	</div>
+</fieldset>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;fieldset class&#x3D;&quot;form-group&quot;&gt;
+	&lt;legend&gt;Radio buttons&lt;/legend&gt;
+	&lt;div class&#x3D;&quot;form-check&quot;&gt;
+		&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+			&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios1&quot; value&#x3D;&quot;option1&quot; checked&gt;
+			Option one is this and that&amp;mdash;be sure to include why it&#x27;s great
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;form-check&quot;&gt;
+		&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+			&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios2&quot; value&#x3D;&quot;option2&quot;&gt;
+			Option two can be something else and selecting it will deselect option one
+		&lt;/label&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;form-check disabled&quot;&gt;
+		&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+			&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios3&quot; value&#x3D;&quot;option3&quot; disabled&gt;
+			Option three is disabled
+		&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/fieldset&gt;
+
+&lt;fieldset class&#x3D;&quot;form-group&quot;&gt;
+	&lt;legend&gt;Styled Radio buttons&lt;/legend&gt;
+	&lt;div class&#x3D;&quot;radio&quot;&gt;
+		&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios4&quot; value&#x3D;&quot;option4&quot; checked&#x3D;&quot;checked&quot;&gt;
+		&lt;label for&#x3D;&quot;optionsRadios4&quot;&gt;
+			First radio
+		&lt;/label&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;radio&quot;&gt;
+		&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios5&quot; value&#x3D;&quot;option5&quot; checked&#x3D;&quot;checked&quot;&gt;
+		&lt;label for&#x3D;&quot;optionsRadios5&quot;&gt;
+			Second radio
+		&lt;/label&gt;
+	&lt;/div&gt;
+&lt;/fieldset&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="search">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Search</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<form class="form-inline">
+	<div class="collapse" id="searchForm">
+		<div class="form-group form-group--navbar">
+			<label for="search" class="sr-only">Wie können wir helfen?</label>
+			<div class="form-group--icon">
+				<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+
+				<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+					<i class="fa fa-times fa-stack-1x"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+</form>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+	&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
+		&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+			&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+			&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+				&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
+
+				&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+					&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/form&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="search-b">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Search B</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<form class="form-inline">
+	<div class="form-group form-group--navbar">
+		<label for="search" class="sr-only">Wie können wir helfen?</label>
+		<div class="form-group--icon">
+			<input type="text" class="form-control" id="search" />
+
+			<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+				<i class="fa fa-times fa-stack-1x"></i>
+			</a>
+		</div>
+	</div>
+	<a class="nav-link nav-link--search-left" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+</form>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+	&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+		&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+		&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;search&quot; /&gt;
+
+			&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+				&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/form&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="select">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Select</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="form-group">
+	<label for="exampleSelect1">Password</label>
+	<select class="form-control" name="exampleSelect1" id="exampleSelect1">
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+		<option value="3">Option 3</option>
+		<option value="4">Option 4</option>
+		<option value="5">Option 5</option>
+	</select>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;exampleSelect1&quot;&gt;Password&lt;/label&gt;
+	&lt;select class&#x3D;&quot;form-control&quot; name&#x3D;&quot;exampleSelect1&quot; id&#x3D;&quot;exampleSelect1&quot;&gt;
+		&lt;option value&#x3D;&quot;1&quot;&gt;Option 1&lt;/option&gt;
+		&lt;option value&#x3D;&quot;2&quot;&gt;Option 2&lt;/option&gt;
+		&lt;option value&#x3D;&quot;3&quot;&gt;Option 3&lt;/option&gt;
+		&lt;option value&#x3D;&quot;4&quot;&gt;Option 4&lt;/option&gt;
+		&lt;option value&#x3D;&quot;5&quot;&gt;Option 5&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="table">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Table</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<table class="table">
+	<thead>
+		<tr>
+			<th>Table Heading 1</th>
+			<th>Table Heading 2</th>
+			<th>Table Heading 3</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Table Footer 1</th>
+			<th>Table Footer 2</th>
+			<th>Table Footer 3</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>Table Cell 1</td>
+			<td>Table Cell 2</td>
+			<td>Table Cell 3</td>
+		</tr>
+		<tr>
+			<td>Table Cell 1</td>
+			<td>Table Cell 2</td>
+			<td>Table Cell 3</td>
+		</tr>
+		<tr>
+			<td>Table Cell 1</td>
+			<td>Table Cell 2</td>
+			<td>Table Cell 3</td>
+		</tr>
+		<tr>
+			<td>Table Cell 1</td>
+			<td>Table Cell 2</td>
+			<td>Table Cell 3</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;table class&#x3D;&quot;table&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Heading 1&lt;/th&gt;
+			&lt;th&gt;Table Heading 2&lt;/th&gt;
+			&lt;th&gt;Table Heading 3&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Table Footer 1&lt;/th&gt;
+			&lt;th&gt;Table Footer 2&lt;/th&gt;
+			&lt;th&gt;Table Footer 3&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table Cell 1&lt;/td&gt;
+			&lt;td&gt;Table Cell 2&lt;/td&gt;
+			&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table Cell 1&lt;/td&gt;
+			&lt;td&gt;Table Cell 2&lt;/td&gt;
+			&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table Cell 1&lt;/td&gt;
+			&lt;td&gt;Table Cell 2&lt;/td&gt;
+			&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Table Cell 1&lt;/td&gt;
+			&lt;td&gt;Table Cell 2&lt;/td&gt;
+			&lt;td&gt;Table Cell 3&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="text-input">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Text Input</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="form-group">
+	<label for="exampleInputEmail1">Email address</label>
+	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+	<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+	<label for="exampleInputPassword1">Password</label>
+	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
+	&lt;input type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleInputEmail1&quot; aria-describedby&#x3D;&quot;emailHelp&quot; placeholder&#x3D;&quot;Enter email&quot;&gt;
+	&lt;small id&#x3D;&quot;emailHelp&quot; class&#x3D;&quot;form-text text-muted&quot;&gt;We&#x27;ll never share your email with anyone else.&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+	&lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleInputPassword1&quot; placeholder&#x3D;&quot;Password&quot;&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="textarea">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Textarea</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="form-group">
+	<label for="exampleTextarea">Example textarea</label>
+	<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;form-group&quot;&gt;
+	&lt;label for&#x3D;&quot;exampleTextarea&quot;&gt;Example textarea&lt;/label&gt;
+	&lt;textarea class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleTextarea&quot; rows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="typeahead">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Typeahead</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<h3>dropdown</h3>
+
+
+<ngb-typeahead-window class="dropdown-menu" role="listbox" style="display: block; position: static;" id="ngb-typeahead-0">
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-0">
+			<div
+				class="typeahead-multiselect__type-label pull-right typeahead-multiselect__type-label--occupation"
+				ng-reflect-klass="typeahead-multiselect__type-la"
+				ng-reflect-ng-class="typeahead-multiselect__type-la"> Occupation
+			</div>
+			<div>
+				<ngb-highlight
+					ng-reflect-result="Mitarbeiter Info-Desk"
+					ng-reflect-term="info">
+					Mitarbeiter<span  class="ngb-highlight">Info</span>-Desk
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-1">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Info Broker" ng-reflect-term="info">
+					<span  class="ngb-highlight">Info</span>Broker
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-2">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Info-Broker" ng-reflect-term="info">
+					<span  class="ngb-highlight">Info</span>-Broker
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-3">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Info-Brokerin" ng-reflect-term="info">
+					<span  class="ngb-highlight">Info</span>-Brokerin
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-4">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Mitarbeiterin Info-Desk"
+					ng-reflect-term="info">Mitarbeiterin <span
+					class="ngb-highlight">Info</span>-Desk
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-5">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Info Brokerin" ng-reflect-term="info">
+					<span  class="ngb-highlight">Info</span>Brokerin
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-6">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Infografiker" ng-reflect-term="info">
+					<span  class="ngb-highlight">Info</span>grafiker
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item active" role="option" type="button" id="ngb-typeahead-0-7">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Infografikerin" ng-reflect-term="info">
+					<span  class="ngb-highlight">Info</span>grafikerin
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-8">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Infografist" ng-reflect-term="info">
+					<span  class="ngb-highlight">Info</span>grafist
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-9">
+			<div >
+				<ngb-highlight
+					ng-reflect-result="Infografistin" ng-reflect-term="info">
+					<span  class="ngb-highlight">Info</span>grafistin
+				</ngb-highlight>
+			</div>
+		</button>
+
+	<button class="dropdown-item" role="option" type="button" id="ngb-typeahead-0-10">
+			<div
+				class="typeahead-multiselect__type-label pull-right typeahead-multiselect__type-label--classification"
+				ng-reflect-klass="typeahead-multiselect__type-la"
+				ng-reflect-ng-class="typeahead-multiselect__type-la"> Classification
+			</div>
+			<div  class="fist-in-group-item"
+			>
+				<ngb-highlight
+					ng-reflect-result="Berufe der Informatik"
+					ng-reflect-term="info">Berufe der<span
+					class="ngb-highlight">Info</span>rmatik
+				</ngb-highlight>
+			</div>
+		</button>
+
+</ngb-typeahead-window>
+
+<p class="clearfix"></p>
+
+<h3>selected items</h3>
+
+<jr2-typeahead-multiselect class="ng-untouched ng-valid ng-dirty">
+	<div class="form-control form-control-lg typeahead-multiselect d-flex flex-row flex-wrap">
+
+		<span class="btn btn-primary btn-sm typeahead-multiselect__tag typeahead-multiselect__tag--free-text">
+			java <i aria-hidden="true" class="fa fa-times remove-button"></i>
+		</span>
+		<span class="btn btn-primary btn-sm typeahead-multiselect__tag typeahead-multiselect__tag--occupation">
+			Produkt-Entwicklerin (Java) <i aria-hidden="true" class="fa fa-times remove-button"></i>
+		</span>
+		<span class="btn btn-primary btn-sm typeahead-multiselect__tag typeahead-multiselect__tag--classification">
+			Berufe der Informatik <i aria-hidden="true" class="fa fa-times remove-button"></i>
+		</span>
+
+		<form autocomplete="off" novalidate="" class="ng-valid ng-touched ng-dirty">
+			<input aria-multiline="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" class="input typeahead-multiselect__input ng-valid ng-touched ng-dirty" name="inputValue" role="combobox" placeholder="" aria-autocomplete="list" aria-expanded="false"
+			/>
+		</form>
+	</div>
+</jr2-typeahead-multiselect>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h3&gt;dropdown&lt;/h3&gt;
+
+
+&lt;ngb-typeahead-window class&#x3D;&quot;dropdown-menu&quot; role&#x3D;&quot;listbox&quot; style&#x3D;&quot;display: block; position: static;&quot; id&#x3D;&quot;ngb-typeahead-0&quot;&gt;
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-0&quot;&gt;
+			&lt;div
+				class&#x3D;&quot;typeahead-multiselect__type-label pull-right typeahead-multiselect__type-label--occupation&quot;
+				ng-reflect-klass&#x3D;&quot;typeahead-multiselect__type-la&quot;
+				ng-reflect-ng-class&#x3D;&quot;typeahead-multiselect__type-la&quot;&gt; Occupation
+			&lt;/div&gt;
+			&lt;div&gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Mitarbeiter Info-Desk&quot;
+					ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					Mitarbeiter&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;-Desk
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-1&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Info Broker&quot; ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;Broker
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-2&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Info-Broker&quot; ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;-Broker
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-3&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Info-Brokerin&quot; ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;-Brokerin
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-4&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Mitarbeiterin Info-Desk&quot;
+					ng-reflect-term&#x3D;&quot;info&quot;&gt;Mitarbeiterin &lt;span
+					class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;-Desk
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-5&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Info Brokerin&quot; ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;Brokerin
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-6&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Infografiker&quot; ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;grafiker
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item active&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-7&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Infografikerin&quot; ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;grafikerin
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-8&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Infografist&quot; ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;grafist
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-9&quot;&gt;
+			&lt;div &gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Infografistin&quot; ng-reflect-term&#x3D;&quot;info&quot;&gt;
+					&lt;span  class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;grafistin
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+	&lt;button class&#x3D;&quot;dropdown-item&quot; role&#x3D;&quot;option&quot; type&#x3D;&quot;button&quot; id&#x3D;&quot;ngb-typeahead-0-10&quot;&gt;
+			&lt;div
+				class&#x3D;&quot;typeahead-multiselect__type-label pull-right typeahead-multiselect__type-label--classification&quot;
+				ng-reflect-klass&#x3D;&quot;typeahead-multiselect__type-la&quot;
+				ng-reflect-ng-class&#x3D;&quot;typeahead-multiselect__type-la&quot;&gt; Classification
+			&lt;/div&gt;
+			&lt;div  class&#x3D;&quot;fist-in-group-item&quot;
+			&gt;
+				&lt;ngb-highlight
+					ng-reflect-result&#x3D;&quot;Berufe der Informatik&quot;
+					ng-reflect-term&#x3D;&quot;info&quot;&gt;Berufe der&lt;span
+					class&#x3D;&quot;ngb-highlight&quot;&gt;Info&lt;/span&gt;rmatik
+				&lt;/ngb-highlight&gt;
+			&lt;/div&gt;
+		&lt;/button&gt;
+
+&lt;/ngb-typeahead-window&gt;
+
+&lt;p class&#x3D;&quot;clearfix&quot;&gt;&lt;/p&gt;
+
+&lt;h3&gt;selected items&lt;/h3&gt;
+
+&lt;jr2-typeahead-multiselect class&#x3D;&quot;ng-untouched ng-valid ng-dirty&quot;&gt;
+	&lt;div class&#x3D;&quot;form-control form-control-lg typeahead-multiselect d-flex flex-row flex-wrap&quot;&gt;
+
+		&lt;span class&#x3D;&quot;btn btn-primary btn-sm typeahead-multiselect__tag typeahead-multiselect__tag--free-text&quot;&gt;
+			java &lt;i aria-hidden&#x3D;&quot;true&quot; class&#x3D;&quot;fa fa-times remove-button&quot;&gt;&lt;/i&gt;
+		&lt;/span&gt;
+		&lt;span class&#x3D;&quot;btn btn-primary btn-sm typeahead-multiselect__tag typeahead-multiselect__tag--occupation&quot;&gt;
+			Produkt-Entwicklerin (Java) &lt;i aria-hidden&#x3D;&quot;true&quot; class&#x3D;&quot;fa fa-times remove-button&quot;&gt;&lt;/i&gt;
+		&lt;/span&gt;
+		&lt;span class&#x3D;&quot;btn btn-primary btn-sm typeahead-multiselect__tag typeahead-multiselect__tag--classification&quot;&gt;
+			Berufe der Informatik &lt;i aria-hidden&#x3D;&quot;true&quot; class&#x3D;&quot;fa fa-times remove-button&quot;&gt;&lt;/i&gt;
+		&lt;/span&gt;
+
+		&lt;form autocomplete&#x3D;&quot;off&quot; novalidate&#x3D;&quot;&quot; class&#x3D;&quot;ng-valid ng-touched ng-dirty&quot;&gt;
+			&lt;input aria-multiline&#x3D;&quot;false&quot; autocapitalize&#x3D;&quot;off&quot; autocomplete&#x3D;&quot;off&quot; autocorrect&#x3D;&quot;off&quot; autofocus&#x3D;&quot;&quot; class&#x3D;&quot;input typeahead-multiselect__input ng-valid ng-touched ng-dirty&quot; name&#x3D;&quot;inputValue&quot; role&#x3D;&quot;combobox&quot; placeholder&#x3D;&quot;&quot; aria-autocomplete&#x3D;&quot;list&quot; aria-expanded&#x3D;&quot;false&quot;
+			/&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+&lt;/jr2-typeahead-multiselect&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /content -->
+
+	<footer>
+		<div class="container">
+			<h2 class="light">In Zusammenarbeit</h2>
+			<div class="footer--logos">
+				<div class="footer--logos__logo"><img class="cd-bund" src="/assets/styleguide/images/seco-de-neg.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/alv.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/rav.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/eures.png" /></div>
+			</div>
+		</div>
+	</footer>
+	<div class="footer--seco">
+		<a href="#">Staatssekretariat für Wirtschaft SECO</a>
+		<a href="#">Rechtliche Grundlagen</a>
+	</div>
+	<!-- /footer -->
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/fabricator/scripts/f.js"></script>
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="/assets/styleguide/scripts/alv-ch.js"></script>
+<script src="/assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:300,400,700:latin']
+    }
+  });
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>

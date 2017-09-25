@@ -1,0 +1,2891 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title></title>
+
+	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="/assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+	<div class="header sticky-top">
+		<!-- ALV-HEADER -->
+		<div class="alv-header alv-header--inverse">
+			<span class="alv-header__brand mb-0">
+				<img src="/assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+				Arbeitslosenversicherung ALV
+			</span>
+		</div>
+		<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+
+				<a class="navbar-brand alv-logo" href="/index.html">
+					<div class="alv-logo__title">
+						<strong>alv</strong><span class="title__plus-ch">ch</span>
+					</div>
+				</a>
+
+				<!--
+					DRAWER NAV
+				 	TODO: Replace drawerExample with correct ID
+				 -->
+				<div class="ml-auto">
+					<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+						<div class="drawer-contents">
+							<div class="drawer-heading">
+								<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<a href="/index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> work.ch</a>
+							</div>
+
+							<ul class="navbar-nav">
+								<li class="nav-item d-none d-sm-block">
+									<form class="form-inline">
+										<div class="collapse" id="searchForm">
+											<div class="form-group form-group--navbar">
+												<label for="search" class="sr-only">Wie können wir helfen?</label>
+												<div class="form-group--icon">
+													<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+									
+													<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+														<i class="fa fa-times fa-stack-1x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+									</form>								</li>
+								<li class="nav-item megamenu dropdown dropdown--canvas">
+									<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Menü</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<div class="megamenu-menu">
+											<div>
+												<span class="dropdown-title">Stellensuchende</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Unternehmen</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Arbeitsvermittler</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Institutionen/Medien</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Aktuell</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+
+
+												<span class="dropdown-title">Links</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</div>
+
+	<!-- content -->
+	<div class="container">
+
+		<div class="base">
+
+			<div class="base__subnavbar">
+				<div class="f-control-bar">
+					<div class="f-control f-menu-toggle">
+						<svg>
+							<use xlink:href="#f-icon-menu" />
+						</svg>
+					</div>
+				</div>
+				<!-- fabricator icons -->
+				<svg style="display: none;">
+					<symbol id="f-icon-code" viewBox="0 0 512 512">
+						<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+					</symbol>
+					<symbol id="f-icon-notes" viewBox="0 0 512 512">
+						<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+					</symbol>
+					<symbol id="f-icon-labels" viewBox="0 0 512 512">
+						<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+					</symbol>
+					<symbol id="f-icon-menu" viewBox="0 0 512 512">
+						<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+					</symbol>
+					<symbol id="f-icon-settings" viewBox="0 0 512 512">
+						<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+					</symbol>
+				</svg>
+				<!-- /fabricator icons -->
+				<!-- fabricator menu -->
+				<div class="f-menu subnavbar">
+					<div class="f-controls">
+						<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+							<svg>
+								<use xlink:href="#f-icon-labels" />
+							</svg>
+						</div>
+						<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+							<svg>
+								<use xlink:href="#f-icon-notes" />
+							</svg>
+						</div>
+						<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+							<svg>
+								<use xlink:href="#f-icon-code" />
+							</svg>
+						</div>
+					</div>
+					<div class="subnavbar__toggler">Subnavigation</div>
+				
+					<ul class="nav subnavbar-nav md-whiteframe-1dp">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link f-menu__heading">Overview</a>
+						</li>
+				
+						<li class="nav-item">
+							<a href="components.html" class="nav-link f-menu__heading">Components</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#alert">Alert</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#await">Await</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#breadcrumb">Breadcrumb</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#button">Button</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#checkbox">Checkbox</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#header">Header</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#job-search-toolbar">Job Search Toolbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#jumbotron">Jumbotron</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#lists">Lists</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#logo">Logo</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#pagination">Pagination</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#paragraph">Paragraph</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#radio">Radio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#search">Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#search-b">Search B</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#select">Select</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#table">Table</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#text-input">Text Input</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#textarea">Textarea</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="components.html#typeahead">Typeahead</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="structures.html" class="nav-link f-menu__heading">Structures</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#amstat-navbar">Amstat Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#amstat-subnavigation">Amstat Subnavigation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#base">Base</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#basic-info">Basic Info</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#footer">Footer</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#footer-seco">Footer Seco</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#form">Form</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#job-room-navbar">Job Room Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#landingpages">Landingpages</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#login">Login</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#navbar">Navbar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#navbar-b">Navbar B</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#news">News</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#search-and-faq">Search And Faq</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#subnavigation">Subnavigation</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="structures.html#toolbar">Toolbar</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="tools.html" class="nav-link f-menu__heading">Tools</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#arbeitslos-was-tun">Arbeitslos Was Tun</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-landingpage">Candidate Landingpage</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-radar">Candidate Radar</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#candidate-search">Candidate Search</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter">Job Filter</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter_actions">Job Filter Actions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-filter_filter">Job Filter Filter</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-landingpage">Job Landingpage</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-publication">Job Publication</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="tools.html#job-search">Job Search</a>
+								</li>
+							</ul>
+						</li>
+				
+						<li class="nav-item">
+							<a href="amstat.html" class="nav-link f-menu__heading">Amstat</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="amstat/amstat-landingpage.html">Amstat Landingpage</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="job-room.html" class="nav-link f-menu__heading">Job Room</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="job-room/job-detail.html">Job Detail</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="job-room/job-result-list.html">Job Result List</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="pages.html" class="nav-link f-menu__heading">Pages</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="pages/adresslookup.html">Adresslookup</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="pages/home.html">Home</a>
+								</li>
+							</ul>
+						</li>
+				
+						<li class="nav-item">
+							<a href="docs.html" class="nav-link f-menu__heading">Docs</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="docs.html#javascript">Javascript</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /fabricator menu -->
+			</div>
+
+			<div class="base__content--wide">
+				
+<h1 data-f-toggle="labels">Structures</h1>
+
+
+<div class="f-item-group" id="amstat-navbar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Amstat Navbar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
+
+		<a class="navbar-brand alv-logo alv-logo--dark" href="/amstat.html">
+			<strong class="alv-logo__brand--amstat">amstat</strong>
+			<div class="alv-logo__title-small">
+				<strong>alv</strong><span class="title__plus-ch">ch</span>
+			</div>
+		</a>
+
+		<div class="ml-auto">
+			<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+				<div class="drawer-contents">
+					<div class="drawer-heading">
+						<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<a href="/amstat.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> amstat</a>
+					</div>
+
+					<ul class="navbar-nav">
+						<li class="nav-item d-none d-sm-block">
+							<form class="form-inline">
+								<div class="collapse" id="searchForm">
+									<div class="form-group form-group--navbar">
+										<label for="search" class="sr-only">Wie können wir helfen?</label>
+										<div class="form-group--icon">
+											<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+
+											<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+												<i class="fa fa-times fa-stack-1x"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+							</form>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<a class="nav-link active" href="/amstat.html">amstat</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html"><span class="d-sm-none">zu</span> work.ch</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/job-room.html"><span class="d-sm-none">zu</span> Job-Room</a>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<a class="nav-link nav-link--login" href="#">
+								Login
+							</a>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<ul class="navbar-nav navbar--language-switcher" id="languageSwitcher">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">DE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">FR</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">IT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">EN</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="ml-auto d-sm-none">
+			<ul class="navbar-nav mobile-nav">
+				<li class="nav-item">
+					<ul class="navbar-nav navbar--language-switcher" id="mobLanguageSwitcher">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">DE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">FR</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">IT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">EN</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<form class="form-inline">
+						<div class="collapse" id="searchForm">
+							<div class="form-group form-group--navbar">
+								<label for="search" class="sr-only">Wie können wir helfen?</label>
+								<div class="form-group--icon">
+									<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+
+									<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+										<i class="fa fa-times fa-stack-1x"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</form>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+						<i class="fa fa-lg fa-user" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-alv navbar-expand-lg navbar-light bg-faded&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
+			&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+		&lt;/button&gt;
+
+		&lt;a class&#x3D;&quot;navbar-brand alv-logo alv-logo--dark&quot; href&#x3D;&quot;/amstat.html&quot;&gt;
+			&lt;strong class&#x3D;&quot;alv-logo__brand--amstat&quot;&gt;amstat&lt;/strong&gt;
+			&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
+				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto&quot;&gt;
+			&lt;div id&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;drawer fold&quot; aria-labelledby&#x3D;&quot;drawerExample&quot;&gt;
+				&lt;div class&#x3D;&quot;drawer-contents&quot;&gt;
+					&lt;div class&#x3D;&quot;drawer-heading&quot;&gt;
+						&lt;button data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+							&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+						&lt;/button&gt;
+						&lt;a href&#x3D;&quot;/amstat.html&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lg fa-home&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; amstat&lt;/a&gt;
+					&lt;/div&gt;
+
+					&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+								&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
+									&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+										&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+										&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+											&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
+
+											&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+												&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+											&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;/form&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link active&quot; href&#x3D;&quot;/amstat.html&quot;&gt;amstat&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;/index.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; work.ch&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;/job-room.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; Job-Room&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link nav-link--login&quot; href&#x3D;&quot;#&quot;&gt;
+								Login
+							&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot; id&#x3D;&quot;languageSwitcher&quot;&gt;
+								&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto d-sm-none&quot;&gt;
+			&lt;ul class&#x3D;&quot;navbar-nav mobile-nav&quot;&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot; id&#x3D;&quot;mobLanguageSwitcher&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+						&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
+							&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+								&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+								&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+									&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
+
+									&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+										&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;/form&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#loginModal&quot;&gt;
+						&lt;i class&#x3D;&quot;fa fa-lg fa-user&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+					&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="amstat-subnavigation">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Amstat Subnavigation</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<!-- subnavbar -->
+<div class="subnavbar">
+	<div class="subnavbar__toggler">Subnavigation</div>
+
+	<ul class="nav subnavbar-nav md-whiteframe-1dp">
+		<li class="nav-title">
+			amstat
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Übersicht</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Arbeitslose</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Registrierte Stellensuchende</a>
+		</li>
+		<li class="nav-item active">
+			<a class="nav-link" href="#">Offene Stellen</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Taggeldbezüger</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Kurzarbeit</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Aussteuerungen aus der ALV</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Historie</a>
+		</li>
+	</ul>
+</div>
+<!-- /subnavbar -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- subnavbar --&gt;
+&lt;div class&#x3D;&quot;subnavbar&quot;&gt;
+	&lt;div class&#x3D;&quot;subnavbar__toggler&quot;&gt;Subnavigation&lt;/div&gt;
+
+	&lt;ul class&#x3D;&quot;nav subnavbar-nav md-whiteframe-1dp&quot;&gt;
+		&lt;li class&#x3D;&quot;nav-title&quot;&gt;
+			amstat
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+			&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Übersicht&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+			&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Arbeitslose&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+			&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Registrierte Stellensuchende&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+			&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Offene Stellen&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+			&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Taggeldbezüger&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+			&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Kurzarbeit&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+			&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Aussteuerungen aus der ALV&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+			&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Historie&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- /subnavbar --&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="base">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Base</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="base">
+
+	<div class="base__subnavbar">
+
+		<div class="bg-faded">Subnavbar Container</div>
+	</div>
+
+	<div class="base__content">
+		<div class="bg-faded">Content Container</div>
+	</div>
+
+	<div class="base__related">
+		<div class="bg-faded">Related Container</div>
+	</div>
+
+</div>
+
+<hr />
+
+<div class="base">
+
+	<div class="base__subnavbar">
+		<div class="bg-faded">Subnavbar Container</div>
+	</div>
+
+	<div class="base__content--wide">
+		<div class="bg-faded">Wide-Content Container</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;base&quot;&gt;
+
+	&lt;div class&#x3D;&quot;base__subnavbar&quot;&gt;
+
+		&lt;div class&#x3D;&quot;bg-faded&quot;&gt;Subnavbar Container&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;base__content&quot;&gt;
+		&lt;div class&#x3D;&quot;bg-faded&quot;&gt;Content Container&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;base__related&quot;&gt;
+		&lt;div class&#x3D;&quot;bg-faded&quot;&gt;Related Container&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class&#x3D;&quot;base&quot;&gt;
+
+	&lt;div class&#x3D;&quot;base__subnavbar&quot;&gt;
+		&lt;div class&#x3D;&quot;bg-faded&quot;&gt;Subnavbar Container&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;base__content--wide&quot;&gt;
+		&lt;div class&#x3D;&quot;bg-faded&quot;&gt;Wide-Content Container&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="basic-info">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Basic Info</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="landing-page">
+
+	<div class="landing-page__regular">
+		<div class="landing-page--content">
+			<i class="fa fa-phone fa-2x text--primary-color" aria-hidden="true"></i>
+
+			<p>
+				<h3 class="text--light">Kontaktieren Sie uns direkt</h3>
+				<small>Gerne helfen wir ihnen weiter</small>
+			</p>
+
+			<button class="btn btn-primary" style="width: 50%; margin: 0 auto;">Kontakt</button>
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--content">
+			<i class="fa fa-file-text fa-2x text--primary-color" aria-hidden="true"></i>
+
+			<p>
+				<h3 class="text--light">Formulare</h3>
+				<small>Wir bieten Ihnen viele Broschüren und Formulare
+				zum Download an.</small>
+			</p>
+
+			<button class="btn btn-primary" style="width: 50%; margin: 0 auto;">Downloads</button>
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--content">
+			<i class="fa fa-info-circle fa-2x text--primary-color" aria-hidden="true"></i>
+
+			<p>
+				<h3 class="text--light">Weiterführende Informationen</h3>
+				<small>Eine Sammlung aller Links zu unseren Partnern</small>
+			</p>
+
+			<button class="btn btn-primary" style="width: 50%; margin: 0 auto;">Link-Center</button>
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;landing-page&quot;&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--content&quot;&gt;
+			&lt;i class&#x3D;&quot;fa fa-phone fa-2x text--primary-color&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+
+			&lt;p&gt;
+				&lt;h3 class&#x3D;&quot;text--light&quot;&gt;Kontaktieren Sie uns direkt&lt;/h3&gt;
+				&lt;small&gt;Gerne helfen wir ihnen weiter&lt;/small&gt;
+			&lt;/p&gt;
+
+			&lt;button class&#x3D;&quot;btn btn-primary&quot; style&#x3D;&quot;width: 50%; margin: 0 auto;&quot;&gt;Kontakt&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--content&quot;&gt;
+			&lt;i class&#x3D;&quot;fa fa-file-text fa-2x text--primary-color&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+
+			&lt;p&gt;
+				&lt;h3 class&#x3D;&quot;text--light&quot;&gt;Formulare&lt;/h3&gt;
+				&lt;small&gt;Wir bieten Ihnen viele Broschüren und Formulare
+				zum Download an.&lt;/small&gt;
+			&lt;/p&gt;
+
+			&lt;button class&#x3D;&quot;btn btn-primary&quot; style&#x3D;&quot;width: 50%; margin: 0 auto;&quot;&gt;Downloads&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--content&quot;&gt;
+			&lt;i class&#x3D;&quot;fa fa-info-circle fa-2x text--primary-color&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+
+			&lt;p&gt;
+				&lt;h3 class&#x3D;&quot;text--light&quot;&gt;Weiterführende Informationen&lt;/h3&gt;
+				&lt;small&gt;Eine Sammlung aller Links zu unseren Partnern&lt;/small&gt;
+			&lt;/p&gt;
+
+			&lt;button class&#x3D;&quot;btn btn-primary&quot; style&#x3D;&quot;width: 50%; margin: 0 auto;&quot;&gt;Link-Center&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="footer">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Footer</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<footer>
+	<div class="container">
+		<h2 class="light">In Zusammenarbeit</h2>
+		<div class="footer--logos">
+			<div class="footer--logos__logo"><img class="cd-bund" src="/assets/styleguide/images/seco-de-neg.png" /></div>
+			<div class="footer--logos__logo"><img src="/assets/styleguide/images/alv.png" /></div>
+			<div class="footer--logos__logo"><img src="/assets/styleguide/images/rav.png" /></div>
+			<div class="footer--logos__logo"><img src="/assets/styleguide/images/eures.png" /></div>
+		</div>
+	</div>
+</footer>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;footer&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;h2 class&#x3D;&quot;light&quot;&gt;In Zusammenarbeit&lt;/h2&gt;
+		&lt;div class&#x3D;&quot;footer--logos&quot;&gt;
+			&lt;div class&#x3D;&quot;footer--logos__logo&quot;&gt;&lt;img class&#x3D;&quot;cd-bund&quot; src&#x3D;&quot;/assets/styleguide/images/seco-de-neg.png&quot; /&gt;&lt;/div&gt;
+			&lt;div class&#x3D;&quot;footer--logos__logo&quot;&gt;&lt;img src&#x3D;&quot;/assets/styleguide/images/alv.png&quot; /&gt;&lt;/div&gt;
+			&lt;div class&#x3D;&quot;footer--logos__logo&quot;&gt;&lt;img src&#x3D;&quot;/assets/styleguide/images/rav.png&quot; /&gt;&lt;/div&gt;
+			&lt;div class&#x3D;&quot;footer--logos__logo&quot;&gt;&lt;img src&#x3D;&quot;/assets/styleguide/images/eures.png&quot; /&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="footer-seco">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Footer Seco</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="footer--seco">
+	<div class="container">
+		<span>Arbeitslosenversicherung / Arbeitsmarkt ALV</span>
+		<a href="#">Rechtliche Hinweise</a>
+		<a href="#">Abkürzungen</a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;footer--seco&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;span&gt;Arbeitslosenversicherung / Arbeitsmarkt ALV&lt;/span&gt;
+		&lt;a href&#x3D;&quot;#&quot;&gt;Rechtliche Hinweise&lt;/a&gt;
+		&lt;a href&#x3D;&quot;#&quot;&gt;Abkürzungen&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="form">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Form</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<form action="">
+	<div>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		</div>
+		<div class="form-group">
+			<label for="exampleTextarea">Example textarea</label>
+			<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+		</div>
+		<div class="form-check">
+			<label class="form-check-label">
+				<input type="checkbox" class="form-check-input">
+				Check me out
+			</label>
+		</div>
+
+		<div class="checkbox">
+			<input id="first" type="checkbox" checked="checked" />
+			<label for="first">
+				First checkbox
+			</label>
+		</div>
+
+		<div class="form-check">
+			<label class="form-check-label">
+				<input type="checkbox" class="form-check-input">
+				Check me out
+			</label>
+		</div>
+		<fieldset class="form-group">
+			<legend>Radio buttons</legend>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					Option one is this and that&mdash;be sure to include why it's great
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+					Option two can be something else and selecting it will deselect option one
+				</label>
+			</div>
+			<div class="form-check disabled">
+				<label class="form-check-label">
+					<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+					Option three is disabled
+				</label>
+			</div>
+		</fieldset>
+
+		<fieldset class="form-group">
+			<legend>Styled Radio buttons</legend>
+			<div class="radio">
+				<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked="checked">
+				<label for="optionsRadios4">
+					First radio
+				</label>
+			</div>
+
+			<div class="radio">
+				<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" checked="checked">
+				<label for="optionsRadios5">
+					Second radio
+				</label>
+			</div>
+		</fieldset>
+		<div class="form-group">
+			<label for="exampleSelect1">Password</label>
+			<select class="form-control" name="exampleSelect1" id="exampleSelect1">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+	</div>
+	<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+	<button type="button" class="btn btn-primary">Primary</button>
+
+	<!-- Secondary, outline button -->
+	<button type="button" class="btn btn-secondary">Secondary</button>
+
+	<!-- Indicates a successful or positive action -->
+	<button type="button" class="btn btn-success">Success</button>
+
+	<!-- Contextual button for informational alert messages -->
+	<button type="button" class="btn btn-info">Info</button>
+
+	<!-- Indicates caution should be taken with this action -->
+	<button type="button" class="btn btn-warning">Warning</button>
+
+	<!-- Indicates a dangerous or potentially negative action -->
+	<button type="button" class="btn btn-danger">Danger</button>
+
+	<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+	<button type="button" class="btn btn-link">Link</button></form>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;form action&#x3D;&quot;&quot;&gt;
+	&lt;div&gt;
+		&lt;div class&#x3D;&quot;form-group&quot;&gt;
+			&lt;label for&#x3D;&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
+			&lt;input type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleInputEmail1&quot; aria-describedby&#x3D;&quot;emailHelp&quot; placeholder&#x3D;&quot;Enter email&quot;&gt;
+			&lt;small id&#x3D;&quot;emailHelp&quot; class&#x3D;&quot;form-text text-muted&quot;&gt;We&#x27;ll never share your email with anyone else.&lt;/small&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;form-group&quot;&gt;
+			&lt;label for&#x3D;&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+			&lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleInputPassword1&quot; placeholder&#x3D;&quot;Password&quot;&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;form-group&quot;&gt;
+			&lt;label for&#x3D;&quot;exampleTextarea&quot;&gt;Example textarea&lt;/label&gt;
+			&lt;textarea class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleTextarea&quot; rows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;form-check&quot;&gt;
+			&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+				&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;form-check-input&quot;&gt;
+				Check me out
+			&lt;/label&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;checkbox&quot;&gt;
+			&lt;input id&#x3D;&quot;first&quot; type&#x3D;&quot;checkbox&quot; checked&#x3D;&quot;checked&quot; /&gt;
+			&lt;label for&#x3D;&quot;first&quot;&gt;
+				First checkbox
+			&lt;/label&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;form-check&quot;&gt;
+			&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+				&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;form-check-input&quot;&gt;
+				Check me out
+			&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;fieldset class&#x3D;&quot;form-group&quot;&gt;
+			&lt;legend&gt;Radio buttons&lt;/legend&gt;
+			&lt;div class&#x3D;&quot;form-check&quot;&gt;
+				&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+					&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios1&quot; value&#x3D;&quot;option1&quot; checked&gt;
+					Option one is this and that&amp;mdash;be sure to include why it&#x27;s great
+				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;form-check&quot;&gt;
+				&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+					&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios2&quot; value&#x3D;&quot;option2&quot;&gt;
+					Option two can be something else and selecting it will deselect option one
+				&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;form-check disabled&quot;&gt;
+				&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+					&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios3&quot; value&#x3D;&quot;option3&quot; disabled&gt;
+					Option three is disabled
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/fieldset&gt;
+
+		&lt;fieldset class&#x3D;&quot;form-group&quot;&gt;
+			&lt;legend&gt;Styled Radio buttons&lt;/legend&gt;
+			&lt;div class&#x3D;&quot;radio&quot;&gt;
+				&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios4&quot; value&#x3D;&quot;option4&quot; checked&#x3D;&quot;checked&quot;&gt;
+				&lt;label for&#x3D;&quot;optionsRadios4&quot;&gt;
+					First radio
+				&lt;/label&gt;
+			&lt;/div&gt;
+
+			&lt;div class&#x3D;&quot;radio&quot;&gt;
+				&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;optionsRadios&quot; id&#x3D;&quot;optionsRadios5&quot; value&#x3D;&quot;option5&quot; checked&#x3D;&quot;checked&quot;&gt;
+				&lt;label for&#x3D;&quot;optionsRadios5&quot;&gt;
+					Second radio
+				&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/fieldset&gt;
+		&lt;div class&#x3D;&quot;form-group&quot;&gt;
+			&lt;label for&#x3D;&quot;exampleSelect1&quot;&gt;Password&lt;/label&gt;
+			&lt;select class&#x3D;&quot;form-control&quot; name&#x3D;&quot;exampleSelect1&quot; id&#x3D;&quot;exampleSelect1&quot;&gt;
+				&lt;option value&#x3D;&quot;1&quot;&gt;Option 1&lt;/option&gt;
+				&lt;option value&#x3D;&quot;2&quot;&gt;Option 2&lt;/option&gt;
+				&lt;option value&#x3D;&quot;3&quot;&gt;Option 3&lt;/option&gt;
+				&lt;option value&#x3D;&quot;4&quot;&gt;Option 4&lt;/option&gt;
+				&lt;option value&#x3D;&quot;5&quot;&gt;Option 5&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+
+	&lt;!-- Secondary, outline button --&gt;
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;
+
+	&lt;!-- Indicates a successful or positive action --&gt;
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+
+	&lt;!-- Contextual button for informational alert messages --&gt;
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+
+	&lt;!-- Indicates caution should be taken with this action --&gt;
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+
+	&lt;!-- Indicates a dangerous or potentially negative action --&gt;
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+
+	&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
+	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;&lt;/form&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-room-navbar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Room Navbar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
+
+		<a class="navbar-brand alv-logo alv-logo--inverse" href="/index.html">
+			<strong class="alv-logo__brand--job-room">Job-Room</strong>
+			<div class="alv-logo__title-small">
+				<strong>alv</strong><span class="title__plus-ch">ch</span>
+			</div>
+		</a>
+
+		<div class="ml-auto">
+			<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+				<div class="drawer-contents">
+					<div class="drawer-heading">
+						<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<a href="/job-room.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Job-Room</a>
+					</div>
+
+					<ul class="navbar-nav">
+						<li class="nav-item d-none d-sm-block">
+							<form class="form-inline">
+								<div class="collapse" id="searchForm">
+									<div class="form-group form-group--navbar">
+										<label for="search" class="sr-only">Wie können wir helfen?</label>
+										<div class="form-group--icon">
+											<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+
+											<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+												<i class="fa fa-times fa-stack-1x"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+							</form>
+						</li>
+						<li class="nav-item megamenu dropdown dropdown--canvas">
+							<a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Job-Room</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<div class="megamenu-menu">
+									<div>
+										<span class="dropdown-title">Stellensuchende</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+									<div>
+										<span class="dropdown-title">Unternehmen</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+									<div>
+										<span class="dropdown-title">Arbeitsvermittler</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/index.html"><span class="d-sm-none">zu</span> work.ch</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/amstat.html"><span class="d-sm-none">zu</span> amstat</a>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<a class="nav-link nav-link--login" href="#" data-toggle="modal" data-target="#loginModal">
+								Login
+							</a>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<ul class="navbar-nav navbar--language-switcher">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">DE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">FR</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">IT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">EN</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="ml-auto d-sm-none">
+			<ul class="navbar-nav mobile-nav">
+				<li class="nav-item">
+					<ul class="navbar-nav navbar--language-switcher" id="mobLanguageSwitcher">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">DE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">FR</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">IT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">EN</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<form class="form-inline">
+						<div class="collapse" id="searchForm">
+							<div class="form-group form-group--navbar">
+								<label for="search" class="sr-only">Wie können wir helfen?</label>
+								<div class="form-group--icon">
+									<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+
+									<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+										<i class="fa fa-times fa-stack-1x"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</form>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+						<i class="fa fa-lg fa-user" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-alv navbar-expand-lg navbar-light bg-faded&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
+			&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+		&lt;/button&gt;
+
+		&lt;a class&#x3D;&quot;navbar-brand alv-logo alv-logo--inverse&quot; href&#x3D;&quot;/index.html&quot;&gt;
+			&lt;strong class&#x3D;&quot;alv-logo__brand--job-room&quot;&gt;Job-Room&lt;/strong&gt;
+			&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
+				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto&quot;&gt;
+			&lt;div id&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;drawer fold&quot; aria-labelledby&#x3D;&quot;drawerExample&quot;&gt;
+				&lt;div class&#x3D;&quot;drawer-contents&quot;&gt;
+					&lt;div class&#x3D;&quot;drawer-heading&quot;&gt;
+						&lt;button data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+							&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+						&lt;/button&gt;
+						&lt;a href&#x3D;&quot;/job-room.html&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lg fa-home&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Job-Room&lt;/a&gt;
+					&lt;/div&gt;
+
+					&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+								&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
+									&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+										&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+										&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+											&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
+
+											&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+												&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+											&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;/form&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item megamenu dropdown dropdown--canvas&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link dropdown-toggle active&quot; id&#x3D;&quot;navbarDropdownMenuLink&quot; data-toggle&#x3D;&quot;dropdown&quot; href&#x3D;&quot;#&quot; role&#x3D;&quot;button&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Job-Room&lt;/a&gt;
+							&lt;div class&#x3D;&quot;dropdown-menu&quot; aria-labelledby&#x3D;&quot;navbarDropdownMenuLink&quot;&gt;
+								&lt;div class&#x3D;&quot;megamenu-menu&quot;&gt;
+									&lt;div&gt;
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Stellensuchende&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div&gt;
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Unternehmen&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div&gt;
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Arbeitsvermittler&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;/index.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; work.ch&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;/amstat.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; amstat&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link nav-link--login&quot; href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#loginModal&quot;&gt;
+								Login
+							&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot;&gt;
+								&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto d-sm-none&quot;&gt;
+			&lt;ul class&#x3D;&quot;navbar-nav mobile-nav&quot;&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot; id&#x3D;&quot;mobLanguageSwitcher&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+						&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
+							&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+								&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+								&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+									&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
+
+									&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+										&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;/form&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#loginModal&quot;&gt;
+						&lt;i class&#x3D;&quot;fa fa-lg fa-user&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+					&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="landingpages">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Landingpages</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="landing-page">
+
+	<div class="landing-page__wide">
+		<div class="landing-page--container process-container bg--additional-amber text--center-align md-whiteframe-1dp">
+			<h2 class="text--light">Arbeitslos - was tun?</h2>
+			<p class="process-container__text">
+				Hier erhalten Sie Hilfe und Ratschläge für Ihre Situation.<br /> In welchem Abschnitt befinden Sie sich?
+			</p>
+			<div class="process">
+				<div class="process__item">
+					<p>Vor der Arbeitslosigkeit</p>
+				</div>
+				<div class="process__item">
+					<p>Ab Beginn der Arbeitslosigkeit</p>
+				</div>
+				<div class="process__item">
+					<p>Aussteuerung beantragen</p>
+				</div>
+				<div class="process__item">
+					<p>Arbeitslosigkeit abmelden</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="landing-page__regular landing-page__regular--media">
+		<div class="landing-page--container md-whiteframe-1dp">
+			REGULAR / VIDEO
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				REGULAR
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				REGULAR
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				REGULAR
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+	<div class="landing-page__half">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				HALF
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+	<div class="landing-page__half">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<div class="landing-page__content">
+				HALF
+			</div>
+			<div class="landing-page__action btn btn-primary btn-block">MOBILE</div>
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;landing-page&quot;&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__wide&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container process-container bg--additional-amber text--center-align md-whiteframe-1dp&quot;&gt;
+			&lt;h2 class&#x3D;&quot;text--light&quot;&gt;Arbeitslos - was tun?&lt;/h2&gt;
+			&lt;p class&#x3D;&quot;process-container__text&quot;&gt;
+				Hier erhalten Sie Hilfe und Ratschläge für Ihre Situation.&lt;br /&gt; In welchem Abschnitt befinden Sie sich?
+			&lt;/p&gt;
+			&lt;div class&#x3D;&quot;process&quot;&gt;
+				&lt;div class&#x3D;&quot;process__item&quot;&gt;
+					&lt;p&gt;Vor der Arbeitslosigkeit&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;process__item&quot;&gt;
+					&lt;p&gt;Ab Beginn der Arbeitslosigkeit&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;process__item&quot;&gt;
+					&lt;p&gt;Aussteuerung beantragen&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;process__item&quot;&gt;
+					&lt;p&gt;Arbeitslosigkeit abmelden&lt;/p&gt;
+				&lt;/div&gt;
+
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular landing-page__regular--media&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container md-whiteframe-1dp&quot;&gt;
+			REGULAR / VIDEO
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container md-whiteframe-1dp&quot;&gt;
+			&lt;div class&#x3D;&quot;landing-page__content&quot;&gt;
+				REGULAR
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;landing-page__action btn btn-primary btn-block&quot;&gt;MOBILE&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container md-whiteframe-1dp&quot;&gt;
+			&lt;div class&#x3D;&quot;landing-page__content&quot;&gt;
+				REGULAR
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;landing-page__action btn btn-primary btn-block&quot;&gt;MOBILE&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container md-whiteframe-1dp&quot;&gt;
+			&lt;div class&#x3D;&quot;landing-page__content&quot;&gt;
+				REGULAR
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;landing-page__action btn btn-primary btn-block&quot;&gt;MOBILE&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__half&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container md-whiteframe-1dp&quot;&gt;
+			&lt;div class&#x3D;&quot;landing-page__content&quot;&gt;
+				HALF
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;landing-page__action btn btn-primary btn-block&quot;&gt;MOBILE&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__half&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container md-whiteframe-1dp&quot;&gt;
+			&lt;div class&#x3D;&quot;landing-page__content&quot;&gt;
+				HALF
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;landing-page__action btn btn-primary btn-block&quot;&gt;MOBILE&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="login">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Login</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<!-- modals -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<ul class="nav nav-tabs nav--login" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#register" role="tab">Registrieren</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content--job-room">
+					<div class="tab-content">
+						<div class="tab-pane active" id="login" role="tabpanel">
+
+							<fieldset class="login">
+								<div class="form-group">
+									<label for="username" class="col-form-label">Benutzername</label>
+									<div>
+										<input class="form-control" type="text" id="username" placeholder="E-Mail, Personennummer, Benutzername" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="password" class="col-form-label">Passwort</label>
+									<div>
+										<input class="form-control" type="password" id="password" placeholder="Passwort" />
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+								<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+							</fieldset>
+
+						</div>
+						<div class="tab-pane" id="register" role="tabpanel">
+
+							<fieldset class="login">
+								<div class="form-group form-group--break">
+									<label for="sort" class="col-form-label">Registrierung als</label>
+									<div>
+										<select class="form-control custom-select" id="sort" required>
+											<option selected>Registrierung als Stellensuchende / -er</option>
+											<option value="1">Registrierung als Unternehmen</option>
+											<option value="2">Registrierung als Arbeitsvermittler</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="name1" class="col-form-label">Nachname</label>
+									<div>
+										<input class="form-control" type="text" id="name1" placeholder="Nachname" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="name2" class="col-form-label">Vorname</label>
+									<div>
+										<input class="form-control" type="text" id="name2" placeholder="Vorname" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="birthday" class="col-form-label">Geburtsdatum</label>
+									<div>
+										<input class="form-control" type="date" id="birthday" required />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email" class="col-form-label">E-Mail</label>
+									<div>
+										<input class="form-control" type="text" id="email" placeholder="E-Mail" required />
+									</div>
+								</div>
+								<div class="form-group form-group--optional form-group--break">
+									<label for="personennummer" class="col-form-label">Personennummer</label>
+									<div>
+										<input class="form-control" type="text" id="personennummer" placeholder="Personennummer gemäss Brief xy" />
+									</div>
+								</div>
+
+
+								<div class="form-group">
+									<label for="password1" class="col-form-label">Passwort</label>
+									<div>
+										<input class="form-control" type="password" id="password1" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="password2" class="col-form-label">Passwort wiederholen</label>
+									<div>
+										<input class="form-control" type="password" id="password2" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+									</div>
+								</div>
+
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Registrieren</button>
+								<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+							</fieldset>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /modals -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- modals --&gt;
+&lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;loginModal&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;loginModalLabel&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+	&lt;div class&#x3D;&quot;modal-dialog modal-xl&quot; role&#x3D;&quot;document&quot;&gt;
+		&lt;div class&#x3D;&quot;modal-content&quot;&gt;
+			&lt;div class&#x3D;&quot;modal-body&quot;&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+					&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+				&lt;/button&gt;
+
+				&lt;ul class&#x3D;&quot;nav nav-tabs nav--login&quot; role&#x3D;&quot;tablist&quot;&gt;
+					&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+						&lt;a class&#x3D;&quot;nav-link active&quot; data-toggle&#x3D;&quot;tab&quot; href&#x3D;&quot;#login&quot; role&#x3D;&quot;tab&quot;&gt;Login&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+						&lt;a class&#x3D;&quot;nav-link&quot; data-toggle&#x3D;&quot;tab&quot; href&#x3D;&quot;#register&quot; role&#x3D;&quot;tab&quot;&gt;Registrieren&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+
+				&lt;!-- Tab panes --&gt;
+				&lt;div class&#x3D;&quot;tab-content--job-room&quot;&gt;
+					&lt;div class&#x3D;&quot;tab-content&quot;&gt;
+						&lt;div class&#x3D;&quot;tab-pane active&quot; id&#x3D;&quot;login&quot; role&#x3D;&quot;tabpanel&quot;&gt;
+
+							&lt;fieldset class&#x3D;&quot;login&quot;&gt;
+								&lt;div class&#x3D;&quot;form-group&quot;&gt;
+									&lt;label for&#x3D;&quot;username&quot; class&#x3D;&quot;col-form-label&quot;&gt;Benutzername&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;username&quot; placeholder&#x3D;&quot;E-Mail, Personennummer, Benutzername&quot; /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class&#x3D;&quot;form-group&quot;&gt;
+									&lt;label for&#x3D;&quot;password&quot; class&#x3D;&quot;col-form-label&quot;&gt;Passwort&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;password&quot; id&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Passwort&quot; /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+
+								&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Login&lt;/button&gt;
+								&lt;a href&#x3D;&quot;#&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Passwort vergessen?&lt;/a&gt;
+							&lt;/fieldset&gt;
+
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;tab-pane&quot; id&#x3D;&quot;register&quot; role&#x3D;&quot;tabpanel&quot;&gt;
+
+							&lt;fieldset class&#x3D;&quot;login&quot;&gt;
+								&lt;div class&#x3D;&quot;form-group form-group--break&quot;&gt;
+									&lt;label for&#x3D;&quot;sort&quot; class&#x3D;&quot;col-form-label&quot;&gt;Registrierung als&lt;/label&gt;
+									&lt;div&gt;
+										&lt;select class&#x3D;&quot;form-control custom-select&quot; id&#x3D;&quot;sort&quot; required&gt;
+											&lt;option selected&gt;Registrierung als Stellensuchende / -er&lt;/option&gt;
+											&lt;option value&#x3D;&quot;1&quot;&gt;Registrierung als Unternehmen&lt;/option&gt;
+											&lt;option value&#x3D;&quot;2&quot;&gt;Registrierung als Arbeitsvermittler&lt;/option&gt;
+										&lt;/select&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+
+								&lt;div class&#x3D;&quot;form-group&quot;&gt;
+									&lt;label for&#x3D;&quot;name1&quot; class&#x3D;&quot;col-form-label&quot;&gt;Nachname&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;name1&quot; placeholder&#x3D;&quot;Nachname&quot; required /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class&#x3D;&quot;form-group&quot;&gt;
+									&lt;label for&#x3D;&quot;name2&quot; class&#x3D;&quot;col-form-label&quot;&gt;Vorname&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;name2&quot; placeholder&#x3D;&quot;Vorname&quot; required /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class&#x3D;&quot;form-group&quot;&gt;
+									&lt;label for&#x3D;&quot;birthday&quot; class&#x3D;&quot;col-form-label&quot;&gt;Geburtsdatum&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;date&quot; id&#x3D;&quot;birthday&quot; required /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class&#x3D;&quot;form-group&quot;&gt;
+									&lt;label for&#x3D;&quot;email&quot; class&#x3D;&quot;col-form-label&quot;&gt;E-Mail&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;email&quot; placeholder&#x3D;&quot;E-Mail&quot; required /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class&#x3D;&quot;form-group form-group--optional form-group--break&quot;&gt;
+									&lt;label for&#x3D;&quot;personennummer&quot; class&#x3D;&quot;col-form-label&quot;&gt;Personennummer&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;personennummer&quot; placeholder&#x3D;&quot;Personennummer gemäss Brief xy&quot; /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+
+
+								&lt;div class&#x3D;&quot;form-group&quot;&gt;
+									&lt;label for&#x3D;&quot;password1&quot; class&#x3D;&quot;col-form-label&quot;&gt;Passwort&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;password&quot; id&#x3D;&quot;password1&quot; placeholder&#x3D;&quot;mind. 6 Zeichen, Buchstaben und Zahlen&quot; /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;div class&#x3D;&quot;form-group&quot;&gt;
+									&lt;label for&#x3D;&quot;password2&quot; class&#x3D;&quot;col-form-label&quot;&gt;Passwort wiederholen&lt;/label&gt;
+									&lt;div&gt;
+										&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;password&quot; id&#x3D;&quot;password2&quot; placeholder&#x3D;&quot;mind. 6 Zeichen, Buchstaben und Zahlen&quot; /&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+
+								&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Registrieren&lt;/button&gt;
+								&lt;a href&#x3D;&quot;#&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Passwort vergessen?&lt;/a&gt;
+							&lt;/fieldset&gt;
+
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- /modals --&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="navbar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Navbar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
+
+		<a class="navbar-brand alv-logo" href="/index.html">
+			<div class="alv-logo__title">
+				<strong>alv</strong><span class="title__plus-ch">ch</span>
+			</div>
+		</a>
+
+		<div class="ml-auto">
+			<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+				<div class="drawer-contents">
+					<div class="drawer-heading">
+						<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<a href="/index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> work.ch</a>
+					</div>
+
+					<ul class="navbar-nav">
+						<li class="nav-item d-none d-sm-block">
+							<form class="form-inline">
+								<div class="collapse" id="searchForm">
+									<div class="form-group form-group--navbar">
+										<label for="search" class="sr-only">Wie können wir helfen?</label>
+										<div class="form-group--icon">
+											<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+
+											<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+												<i class="fa fa-times fa-stack-1x"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+							</form>
+						</li>
+						<li class="nav-item megamenu dropdown dropdown--canvas">
+							<a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Menü</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<div class="megamenu-menu">
+									<div>
+										<span class="dropdown-title">Stellensuchende</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+									<div>
+										<span class="dropdown-title">Unternehmen</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+									<div>
+										<span class="dropdown-title">Arbeitsvermittler</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+									<div>
+										<span class="dropdown-title">Institutionen/Medien</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+									<div>
+										<span class="dropdown-title">Aktuell</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+
+
+										<span class="dropdown-title">Links</span>
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/job-room.html"><span class="d-sm-none">zu</span> Job-Room</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/amstat.html"><span class="d-sm-none">zu</span> amstat</a>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<a class="nav-link nav-link--login" href="#">
+								Login
+							</a>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<ul class="navbar-nav navbar--language-switcher" id="languageSwitcher">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">DE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">FR</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">IT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">EN</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="ml-auto d-sm-none">
+			<ul class="navbar-nav mobile-nav">
+				<li class="nav-item">
+					<ul class="navbar-nav navbar--language-switcher" id="mobLanguageSwitcher">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">DE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">FR</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">IT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">EN</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<form class="form-inline">
+						<div class="collapse" id="searchForm">
+							<div class="form-group form-group--navbar">
+								<label for="search" class="sr-only">Wie können wir helfen?</label>
+								<div class="form-group--icon">
+									<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+
+									<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+										<i class="fa fa-times fa-stack-1x"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</form>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+						<i class="fa fa-lg fa-user" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-alv navbar-expand-lg navbar-light bg-faded&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
+			&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+		&lt;/button&gt;
+
+		&lt;a class&#x3D;&quot;navbar-brand alv-logo&quot; href&#x3D;&quot;/index.html&quot;&gt;
+			&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
+				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto&quot;&gt;
+			&lt;div id&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;drawer fold&quot; aria-labelledby&#x3D;&quot;drawerExample&quot;&gt;
+				&lt;div class&#x3D;&quot;drawer-contents&quot;&gt;
+					&lt;div class&#x3D;&quot;drawer-heading&quot;&gt;
+						&lt;button data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+							&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+						&lt;/button&gt;
+						&lt;a href&#x3D;&quot;/index.html&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lg fa-home&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; work.ch&lt;/a&gt;
+					&lt;/div&gt;
+
+					&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+								&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
+									&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+										&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+										&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+											&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
+
+											&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+												&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+											&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+								&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+							&lt;/form&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item megamenu dropdown dropdown--canvas&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link dropdown-toggle active&quot; id&#x3D;&quot;navbarDropdownMenuLink&quot; data-toggle&#x3D;&quot;dropdown&quot; href&#x3D;&quot;#&quot; role&#x3D;&quot;button&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Menü&lt;/a&gt;
+							&lt;div class&#x3D;&quot;dropdown-menu&quot; aria-labelledby&#x3D;&quot;navbarDropdownMenuLink&quot;&gt;
+								&lt;div class&#x3D;&quot;megamenu-menu&quot;&gt;
+									&lt;div&gt;
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Stellensuchende&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div&gt;
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Unternehmen&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div&gt;
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Arbeitsvermittler&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div&gt;
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Institutionen/Medien&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+									&lt;/div&gt;
+									&lt;div&gt;
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Aktuell&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+
+
+										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Links&lt;/span&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;/job-room.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; Job-Room&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;/amstat.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; amstat&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link nav-link--login&quot; href&#x3D;&quot;#&quot;&gt;
+								Login
+							&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot; id&#x3D;&quot;languageSwitcher&quot;&gt;
+								&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto d-sm-none&quot;&gt;
+			&lt;ul class&#x3D;&quot;navbar-nav mobile-nav&quot;&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot; id&#x3D;&quot;mobLanguageSwitcher&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+						&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
+							&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+								&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+								&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+									&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
+
+									&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+										&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+									&lt;/a&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;/form&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#loginModal&quot;&gt;
+						&lt;i class&#x3D;&quot;fa fa-lg fa-user&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+					&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="navbar-b">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Navbar B</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
+
+		<a class="navbar-brand alv-logo" href="/index.html">
+			<div class="alv-logo__title">
+				<strong>alv</strong><span class="title__plus-ch">ch</span>
+			</div>
+		</a>
+
+		<div class="ml-auto">
+			<ul class="navbar-nav">
+				<li class="nav-item d-none d-sm-block">
+					<form class="form-inline">
+						<div class="form-group form-group--navbar">
+							<label for="search" class="sr-only">Wie können wir helfen?</label>
+							<div class="form-group--icon">
+								<input type="text" class="form-control" id="search" />
+
+								<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+									<i class="fa fa-times fa-stack-1x"></i>
+								</a>
+							</div>
+						</div>
+						<a class="nav-link nav-link--search-left" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</form>
+				</li>
+				<li class="nav-item d-none d-sm-block">
+					<ul class="navbar-nav navbar--language-switcher" id="languageSwitcher">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">DE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">FR</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">IT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">EN</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-alv navbar-expand-lg navbar-light bg-faded&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
+			&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+		&lt;/button&gt;
+
+		&lt;a class&#x3D;&quot;navbar-brand alv-logo&quot; href&#x3D;&quot;/index.html&quot;&gt;
+			&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
+				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto&quot;&gt;
+			&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
+				&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+					&lt;form class&#x3D;&quot;form-inline&quot;&gt;
+						&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
+							&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
+							&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
+								&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;search&quot; /&gt;
+
+								&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
+									&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
+								&lt;/a&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+					&lt;/form&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+					&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot; id&#x3D;&quot;languageSwitcher&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="news">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">News</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="landing-page">
+
+	<div class="landing-page__regular">
+		<div class="landing-page--content">
+			<p>
+				<h3 class="text--light">Über uns</h3>
+				<small>Informieren Sie sich über Ziele, Struktur, Partner
+					und die Arbeitslosenversicherung.</small>
+			</p>
+
+			<a href="#">Mehr erfahren</a>
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--content">
+			<p>
+				<h3 class="text--light">Der Arbeitsmarkt im Mai 2017</h3>
+				<small>Der Arbeitsmarkt profitier kräftig vom
+				saisonbedingten Beschäftigungswachstum.</small>
+			</p>
+
+			<a href="#">Mehr erfahren</a>
+		</div>
+	</div>
+
+	<div class="landing-page__regular">
+		<div class="landing-page--content">
+			<p>
+				<h3 class="text--light">Statistiken</h3>
+				<small>Unsere Statistiken und Berichte geben Ihnen
+				Aufschluss über den Arbeitsmarkt.</small>
+			</p>
+
+			<a href="#">Mehr erfahren</a>
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;landing-page&quot;&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--content&quot;&gt;
+			&lt;p&gt;
+				&lt;h3 class&#x3D;&quot;text--light&quot;&gt;Über uns&lt;/h3&gt;
+				&lt;small&gt;Informieren Sie sich über Ziele, Struktur, Partner
+					und die Arbeitslosenversicherung.&lt;/small&gt;
+			&lt;/p&gt;
+
+			&lt;a href&#x3D;&quot;#&quot;&gt;Mehr erfahren&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--content&quot;&gt;
+			&lt;p&gt;
+				&lt;h3 class&#x3D;&quot;text--light&quot;&gt;Der Arbeitsmarkt im Mai 2017&lt;/h3&gt;
+				&lt;small&gt;Der Arbeitsmarkt profitier kräftig vom
+				saisonbedingten Beschäftigungswachstum.&lt;/small&gt;
+			&lt;/p&gt;
+
+			&lt;a href&#x3D;&quot;#&quot;&gt;Mehr erfahren&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__regular&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--content&quot;&gt;
+			&lt;p&gt;
+				&lt;h3 class&#x3D;&quot;text--light&quot;&gt;Statistiken&lt;/h3&gt;
+				&lt;small&gt;Unsere Statistiken und Berichte geben Ihnen
+				Aufschluss über den Arbeitsmarkt.&lt;/small&gt;
+			&lt;/p&gt;
+
+			&lt;a href&#x3D;&quot;#&quot;&gt;Mehr erfahren&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="search-and-faq">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Search And Faq</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="landing-page">
+
+	<div class="landing-page__half">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<h3 class="text--light">Stichwortsuche</h3>
+		</div>
+	</div>
+
+	<div class="landing-page__half">
+		<div class="landing-page--container md-whiteframe-1dp">
+			<h3 class="text--light">FAQ / Themen</h3>
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;landing-page&quot;&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__half&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container md-whiteframe-1dp&quot;&gt;
+			&lt;h3 class&#x3D;&quot;text--light&quot;&gt;Stichwortsuche&lt;/h3&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;landing-page__half&quot;&gt;
+		&lt;div class&#x3D;&quot;landing-page--container md-whiteframe-1dp&quot;&gt;
+			&lt;h3 class&#x3D;&quot;text--light&quot;&gt;FAQ / Themen&lt;/h3&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="subnavigation">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Subnavigation</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="base">
+
+	<div class="base__subnavbar">
+		<!-- subnavbar -->
+		<ul class="nav subnavbar-nav md-whiteframe-1dp">
+			<li class="nav-title">
+				Subnavbar Title
+				<a href="#" class="nav-link--faq">FAQ</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Active</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+		</ul>
+		<!-- /subnavbar -->
+
+		<!-- subnavbar -->
+		<ul class="nav subnavbar-nav md-whiteframe-1dp">
+			<li class="nav-title">
+				Subnavbar Title
+				<a href="#" class="nav-link--faq">FAQ</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Active</a>
+				<!-- subnav-subnavbar -->
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sub-Subnav</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Sub-Subnav</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sub-Subnav</a>
+					</li>
+				</ul>
+				<!-- /subnav-subnavbar -->
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+		</ul>
+		<!-- /subnavbar -->
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;base&quot;&gt;
+
+	&lt;div class&#x3D;&quot;base__subnavbar&quot;&gt;
+		&lt;!-- subnavbar --&gt;
+		&lt;ul class&#x3D;&quot;nav subnavbar-nav md-whiteframe-1dp&quot;&gt;
+			&lt;li class&#x3D;&quot;nav-title&quot;&gt;
+				Subnavbar Title
+				&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link--faq&quot;&gt;FAQ&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link active&quot; href&#x3D;&quot;#&quot;&gt;Active&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Link&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Link&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link disabled&quot; href&#x3D;&quot;#&quot;&gt;Disabled&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;!-- /subnavbar --&gt;
+
+		&lt;!-- subnavbar --&gt;
+		&lt;ul class&#x3D;&quot;nav subnavbar-nav md-whiteframe-1dp&quot;&gt;
+			&lt;li class&#x3D;&quot;nav-title&quot;&gt;
+				Subnavbar Title
+				&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link--faq&quot;&gt;FAQ&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Active&lt;/a&gt;
+				&lt;!-- subnav-subnavbar --&gt;
+				&lt;ul class&#x3D;&quot;nav flex-column&quot;&gt;
+					&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+						&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Sub-Subnav&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+						&lt;a class&#x3D;&quot;nav-link active&quot; href&#x3D;&quot;#&quot;&gt;Sub-Subnav&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+						&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Sub-Subnav&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;!-- /subnav-subnavbar --&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Link&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Link&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link disabled&quot; href&#x3D;&quot;#&quot;&gt;Disabled&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;!-- /subnavbar --&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="toolbar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Toolbar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="toolbar toolbar--white" id="toolbar">
+	<div class="container">
+		<div class="toolbar-collapse">
+			<ul class="toolbar-nav toolbar-nav--has-icon">
+				<li class="nav-title">
+					<h2 class="light">Unsere Leistungen für</h2>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-binoculars" aria-hidden="true"></i>
+									</span>
+								</span>
+							Stellensuchende
+						</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-building" aria-hidden="true"></i>
+									</span>
+								</span>
+							Unternehmen
+						</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-eye" aria-hidden="true"></i>
+									</span>
+								</span>
+							Arbeitsvermittler
+						</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">
+								<span class="nav-link__icon">
+									<span class="icon__stack">
+										<i class="fa fa-university" aria-hidden="true"></i>
+									</span>
+								</span>
+							Institutionen
+						</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;toolbar toolbar--white&quot; id&#x3D;&quot;toolbar&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;div class&#x3D;&quot;toolbar-collapse&quot;&gt;
+			&lt;ul class&#x3D;&quot;toolbar-nav toolbar-nav--has-icon&quot;&gt;
+				&lt;li class&#x3D;&quot;nav-title&quot;&gt;
+					&lt;h2 class&#x3D;&quot;light&quot;&gt;Unsere Leistungen für&lt;/h2&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link&quot;&gt;
+								&lt;span class&#x3D;&quot;nav-link__icon&quot;&gt;
+									&lt;span class&#x3D;&quot;icon__stack&quot;&gt;
+										&lt;i class&#x3D;&quot;fa fa-binoculars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							Stellensuchende
+						&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link&quot;&gt;
+								&lt;span class&#x3D;&quot;nav-link__icon&quot;&gt;
+									&lt;span class&#x3D;&quot;icon__stack&quot;&gt;
+										&lt;i class&#x3D;&quot;fa fa-building&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							Unternehmen
+						&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link&quot;&gt;
+								&lt;span class&#x3D;&quot;nav-link__icon&quot;&gt;
+									&lt;span class&#x3D;&quot;icon__stack&quot;&gt;
+										&lt;i class&#x3D;&quot;fa fa-eye&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							Arbeitsvermittler
+						&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link&quot;&gt;
+								&lt;span class&#x3D;&quot;nav-link__icon&quot;&gt;
+									&lt;span class&#x3D;&quot;icon__stack&quot;&gt;
+										&lt;i class&#x3D;&quot;fa fa-university&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+									&lt;/span&gt;
+								&lt;/span&gt;
+							Institutionen
+						&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /content -->
+
+	<footer>
+		<div class="container">
+			<h2 class="light">In Zusammenarbeit</h2>
+			<div class="footer--logos">
+				<div class="footer--logos__logo"><img class="cd-bund" src="/assets/styleguide/images/seco-de-neg.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/alv.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/rav.png" /></div>
+				<div class="footer--logos__logo"><img src="/assets/styleguide/images/eures.png" /></div>
+			</div>
+		</div>
+	</footer>
+	<div class="footer--seco">
+		<a href="#">Staatssekretariat für Wirtschaft SECO</a>
+		<a href="#">Rechtliche Grundlagen</a>
+	</div>
+	<!-- /footer -->
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/fabricator/scripts/f.js"></script>
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="/assets/styleguide/scripts/alv-ch.js"></script>
+<script src="/assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:300,400,700:latin']
+    }
+  });
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>

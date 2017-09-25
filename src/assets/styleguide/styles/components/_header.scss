@@ -22,10 +22,15 @@
 		margin-bottom: 4rem;
 
 		&.has-jumbotron,
-		&.has-toolbar {
+		&.has-toolbar,
+		&.has-mainnavigation {
 			margin-bottom: 0;
 		}
 	}
+}
+
+.has-mainnavigation {
+	border-bottom: 1px solid #CFCFCF;
 }
 
 /*------------------------------------*\

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title></title>
+
+	<link rel="stylesheet" href="../assets/fabricator/styles/f.css">
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="../assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+	<div class="header sticky-top has-toolbar">
+		<!-- ALV-HEADER -->
+		<div class="alv-header alv-header--inverse">
+			<span class="alv-header__brand mb-0">
+				<img src="../assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+				Arbeitslosenversicherung ALV
+			</span>
+		</div>
+		<!-- navbar -->
+		<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+		
+				<a class="navbar-brand alv-logo alv-logo--inverse" href="/index.html">
+					<strong class="alv-logo__brand--job-room">Job-Room</strong>
+					<div class="alv-logo__title-small">
+						<strong>alv</strong><span class="title__plus-ch">ch</span>
+					</div>
+				</a>
+		
+				<div class="ml-auto">
+					<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+						<div class="drawer-contents">
+							<div class="drawer-heading">
+								<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<a href="/job-room.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Job-Room</a>
+							</div>
+		
+							<ul class="navbar-nav">
+								<li class="nav-item d-none d-sm-block">
+									<form class="form-inline">
+										<div class="collapse" id="searchForm">
+											<div class="form-group form-group--navbar">
+												<label for="search" class="sr-only">Wie können wir helfen?</label>
+												<div class="form-group--icon">
+													<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+									
+													<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+														<i class="fa fa-times fa-stack-1x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+									</form>						</li>
+								<li class="nav-item megamenu dropdown dropdown--canvas">
+									<a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Job-Room</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<div class="megamenu-menu">
+											<div>
+												<span class="dropdown-title">Stellensuchende</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Unternehmen</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Arbeitsvermittler</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/index.html"><span class="d-sm-none">zu</span> work.ch</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="/amstat.html"><span class="d-sm-none">zu</span> amstat</a>
+								</li>
+								<li class="nav-item d-none d-sm-block">
+									<a class="nav-link nav-link--login" href="#" data-toggle="modal" data-target="#loginModal">
+										Login
+									</a>
+								</li>
+								<li class="nav-item d-none d-sm-block">
+									<ul class="navbar-nav navbar--language-switcher">
+										<li class="nav-item active">
+											<a class="nav-link" href="#">DE</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">FR</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">IT</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">EN</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		
+				<div class="ml-auto d-sm-none">
+					<ul class="navbar-nav mobile-nav">
+						<li class="nav-item">
+							<ul class="navbar-nav navbar--language-switcher" id="mobLanguageSwitcher">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">DE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">FR</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">IT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">EN</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<form class="form-inline">
+								<div class="collapse" id="searchForm">
+									<div class="form-group form-group--navbar">
+										<label for="search" class="sr-only">Wie können wir helfen?</label>
+										<div class="form-group--icon">
+											<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+							
+											<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+												<i class="fa fa-times fa-stack-1x"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+							</form>				</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+								<i class="fa fa-lg fa-user" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>		<!-- /navbar -->
+	</div>
+
+	<!-- content -->
+	<div class="toolbar toolbar--light md-whiteframe-3dp sticked sticked--top">
+		<div class="container">
+			<form class="form-inline toolbar-form job-search__form">
+				<div class="form-group form-group--wide">
+					<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Berufsgruppe, Fähigkeiten</label>
+					<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten" />
+				</div>
+				<div class="form-group form-group--wide form-group--icon">
+					<label for="basic-addon2" class="sr-only">Ort, Region, Kanton</label>
+					<input type="text" class="form-control form-control-lg" placeholder="Ort, Region, Kanton" id="basic-addon2" />
+					<!-- todo refine -->
+					<a href="#" class="fa-stack form-control--icon">
+					  <i class="fa fa-circle fa-stack-2x"></i>
+					  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+					</a>
+				</div>
+				
+				<div class="form-group range-slider">
+					<label for="radius" class="sr-only">Radius</label>
+					<input class="range-slider__range" min="5" max="150" step="5" value="20" type="range" id="radius" />
+					<span class="range-slider__value range-slider__value--unit" data-unit="km">0</span>
+				</div>				<button type="submit" class="btn btn-primary btn-lg">6 Jobs</button>
+			</form>
+
+			<div class="toolbar-form d-sm-block d-md-none">
+				<div class="job-search__filter collapse" id="filter">
+					<p class="text--line-height--h3">Suchergebnisse filtern</p>
+					
+					<div class="form-group">
+						<label for="sort" class="sr-only">Sortierung</label>
+						<select class="form-control form-control-sm custom-select" id="sort">
+							<option selected>Sortiere nach Datum</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="unternehmen" class="small">Name des Unternehmen</label>
+						<input type="text" class="form-control form-control-sm" id="unternehmen" placeholder="Name des Unternehmen">
+					</div>
+					
+					<div class="form-group">
+						<label for="Anstellungsdauer" class="small">Anstellungsdauer</label>
+						<select class="form-control form-control-sm custom-select" id="Anstellungsdauer">
+							<option selected>egal</option>
+							<option value="1">unbefristet</option>
+							<option value="2">befristet</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="workload-to" class="small">Arbeitspensum</label>
+						<div class="form-group__inline">
+							<select class="form-control form-control-sm custom-select" id="workload-from">
+								<option selected>0 %</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+							<select class="form-control form-control-sm custom-select" id="workload-to">
+								<option selected>100%</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group range-slider">
+						<label for="online_since" class="small">Online seit</label>
+						<input class="range-slider__range" min="1" max="60" step="1" value="20" type="range" id="online_since" />
+						<span class="range-slider__value range-slider__value--unit small" data-unit="Tage(n)">0</span>
+					</div>				</div>
+
+				<div class="job-search__filter--toggler" data-toggle="collapse" data-target="#filter">Suchkriterien</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="base">
+
+			<div class="base__subnavbar">
+				<!-- filter -->
+				<div class="job-search__filter d-none d-md-block">
+					<p class="text--line-height--h3">Suchergebnisse filtern</p>
+					
+					<div class="form-group">
+						<label for="sort" class="sr-only">Sortierung</label>
+						<select class="form-control form-control-sm custom-select" id="sort">
+							<option selected>Sortiere nach Datum</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="unternehmen" class="small">Name des Unternehmen</label>
+						<input type="text" class="form-control form-control-sm" id="unternehmen" placeholder="Name des Unternehmen">
+					</div>
+					
+					<div class="form-group">
+						<label for="Anstellungsdauer" class="small">Anstellungsdauer</label>
+						<select class="form-control form-control-sm custom-select" id="Anstellungsdauer">
+							<option selected>egal</option>
+							<option value="1">unbefristet</option>
+							<option value="2">befristet</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="workload-to" class="small">Arbeitspensum</label>
+						<div class="form-group__inline">
+							<select class="form-control form-control-sm custom-select" id="workload-from">
+								<option selected>0 %</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+							<select class="form-control form-control-sm custom-select" id="workload-to">
+								<option selected>100%</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group range-slider">
+						<label for="online_since" class="small">Online seit</label>
+						<input class="range-slider__range" min="1" max="60" step="1" value="20" type="range" id="online_since" />
+						<span class="range-slider__value range-slider__value--unit small" data-unit="Tage(n)">0</span>
+					</div></div>
+				
+				<ul class="nav filter-nav flex-column d-none d-md-block">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Job-Alert erstellen</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-star-o" aria-hidden="true"></i> Suche speichern</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i> Gemerkte Jobs anzeigen</a>
+					</li>
+				</ul>
+				<ul class="nav subnavbar-nav filter-nav md-whiteframe-1dp d-none d-md-block">
+					<li class="nav-title">
+						Job-Alternativen
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Webdesigner m/w</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mediamatiker m/w</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Interaction- / Screendesigner m/w</a>
+					</li>
+				</ul>
+				
+				<ul class="nav subnavbar-nav filter-nav md-whiteframe-1dp  d-none d-md-block">
+					<li class="nav-title">
+						Erweitern Sie den Suchradius
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">17 Jobs + 50 km</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">33 Jobs + 100 km</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">54 Jobs + 150 km</a>
+					</li>
+				</ul>
+				<!-- /filter -->			</div>
+
+			<div class="base__content--wide">
+				
+<h3 class="text--light">6 Grafiker Jobs in Zürich (Kanton)</h3>
+
+<div class="logo-box flex-height result-list__item md-whiteframe-1dp">
+
+	<div class="result-list__item__content d-flex w-100 flex-column flex-sm-row justify-content-between mb-1">
+		<h4 class="text--primary-color order-2 order-sm-1"><a href="job-detail.html">Job Title</a></h4>
+		<div class="order-1 order-sm-2 d-flex d-sm-block w-100 justify-content-between">
+			<small class="d-sm-inline-block result-list__item__date">Date</small>
+			<div class="d-sm-inline-block text--primary-color result-list__item__star">
+				<i class="fa fa-star-o" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<span class="text--primary-color">Company Name</span>
+		<span class="badge badge-primary">Primary</span>
+		<span class="badge badge-success">Success</span>
+		<span class="badge badge-info">Info</span>
+		<span class="badge badge-warning">Warning</span>
+	</div>
+
+	<p>Job Description</p>
+
+</div>
+
+<div class="logo-box flex-height result-list__item md-whiteframe-1dp">
+
+	<div class="result-list__item__content d-flex w-100 flex-column flex-sm-row justify-content-between mb-1">
+		<h4 class="text--primary-color order-2 order-sm-1">Job Title</h4>
+		<div class="order-1 order-sm-2 d-flex d-sm-block w-100 justify-content-between">
+			<small class="d-sm-inline-block result-list__item__date">Date</small>
+			<div class="d-sm-inline-block text--primary-color result-list__item__star">
+				<i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<span class="text--primary-color">Company Name</span>
+		<span class="badge badge-primary">Primary</span>
+		<span class="badge badge-success">Success</span>
+		<span class="badge badge-info">Info</span>
+		<span class="badge badge-warning">Warning</span>
+	</div>
+
+	<p>Job Description</p>
+
+</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /content -->
+
+	<!-- seco-footer -->
+	<div class="footer--seco">
+		<div class="container">
+			<span>Arbeitslosenversicherung / Arbeitsmarkt ALV</span>
+			<a href="#">Rechtliche Hinweise</a>
+			<a href="#">Abkürzungen</a>
+		</div>
+	</div>	<!-- /seco-footer -->
+
+	<!-- modals -->
+	<!-- modals -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+	
+					<ul class="nav nav-tabs nav--login" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#register" role="tab">Registrieren</a>
+						</li>
+					</ul>
+	
+					<!-- Tab panes -->
+					<div class="tab-content--job-room">
+						<div class="tab-content">
+							<div class="tab-pane active" id="login" role="tabpanel">
+	
+								<fieldset class="login">
+									<div class="form-group">
+										<label for="username" class="col-form-label">Benutzername</label>
+										<div>
+											<input class="form-control" type="text" id="username" placeholder="E-Mail, Personennummer, Benutzername" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="password" class="col-form-label">Passwort</label>
+										<div>
+											<input class="form-control" type="password" id="password" placeholder="Passwort" />
+										</div>
+									</div>
+	
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+									<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+								</fieldset>
+	
+							</div>
+							<div class="tab-pane" id="register" role="tabpanel">
+	
+								<fieldset class="login">
+									<div class="form-group form-group--break">
+										<label for="sort" class="col-form-label">Registrierung als</label>
+										<div>
+											<select class="form-control custom-select" id="sort" required>
+												<option selected>Registrierung als Stellensuchende / -er</option>
+												<option value="1">Registrierung als Unternehmen</option>
+												<option value="2">Registrierung als Arbeitsvermittler</option>
+											</select>
+										</div>
+									</div>
+	
+									<div class="form-group">
+										<label for="name1" class="col-form-label">Nachname</label>
+										<div>
+											<input class="form-control" type="text" id="name1" placeholder="Nachname" required />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="name2" class="col-form-label">Vorname</label>
+										<div>
+											<input class="form-control" type="text" id="name2" placeholder="Vorname" required />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="birthday" class="col-form-label">Geburtsdatum</label>
+										<div>
+											<input class="form-control" type="date" id="birthday" required />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="email" class="col-form-label">E-Mail</label>
+										<div>
+											<input class="form-control" type="text" id="email" placeholder="E-Mail" required />
+										</div>
+									</div>
+									<div class="form-group form-group--optional form-group--break">
+										<label for="personennummer" class="col-form-label">Personennummer</label>
+										<div>
+											<input class="form-control" type="text" id="personennummer" placeholder="Personennummer gemäss Brief xy" />
+										</div>
+									</div>
+	
+	
+									<div class="form-group">
+										<label for="password1" class="col-form-label">Passwort</label>
+										<div>
+											<input class="form-control" type="password" id="password1" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="password2" class="col-form-label">Passwort wiederholen</label>
+										<div>
+											<input class="form-control" type="password" id="password2" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+										</div>
+									</div>
+	
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Registrieren</button>
+									<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+								</fieldset>
+	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /modals -->	<!-- /modals -->
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../assets/fabricator/scripts/f.js"></script>
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="../assets/styleguide/scripts/alv-ch.js"></script>
+<script src="../assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:300,400,700:latin']
+    }
+  });
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>
