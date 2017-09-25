@@ -174,7 +174,7 @@ gulp.task('scripts:build', ['scripts'], function () {
 });
 
 // copy dist to docs for github pages
-gulp.task('gh-pages', function() {
+gulp.task('gh-pages', ['styles'], function() {
 	return gulp.src(['dist/**/*']).pipe(gulp.dest(config.ghPages));
 });
 
