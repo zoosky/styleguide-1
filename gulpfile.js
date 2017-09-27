@@ -32,7 +32,8 @@ var config = {
 		scripts: {
 			fabricator: './src/assets/fabricator/scripts/fabricator.js',
 			styleguide: './src/assets/styleguide/scripts/alv-ch.js',
-			drawer: './src/assets/styleguide/scripts/drawer.js'
+			drawer: './src/assets/styleguide/scripts/drawer.js' ,
+			smartbanner: './src/assets/styleguide/scripts/smartbanner.min.js'
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',

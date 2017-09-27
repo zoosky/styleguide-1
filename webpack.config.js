@@ -13,7 +13,8 @@ module.exports = function(fabricatorConfig,build) {
 		entry: {
 			'fabricator/scripts/f': fabricatorConfig.src.scripts.fabricator,
 			'styleguide/scripts/alv-ch': fabricatorConfig.src.scripts.styleguide,
-			'styleguide/scripts/drawer': fabricatorConfig.src.scripts.drawer
+			'styleguide/scripts/drawer': fabricatorConfig.src.scripts.drawer,
+			'styleguide/scripts/smartbanner.min': fabricatorConfig.src.scripts.smartbanner
 		},
 		output: {
 			path: path.resolve(__dirname, dest, 'assets'),
