@@ -118,26 +118,41 @@
 <script>
 	$('#candidates').hide();
 	//$('#jobs').hide();
+
 	$('.show-candidates').click(function () {
 		$('#jobs').hide();
+		$('#candidates').hide();
+
 		$('.show-jobs').removeClass('active');
+		$('.show-job-offers').removeClass('active');
+		$('.show-candidates').removeClass('active');
 
 		$('#candidates').show();
 		$('.show-candidates').addClass('active');
 	});
+
 	$('.show-jobs').click(function () {
+		$('#jobs').hide();
+		$('#candidates').hide();
+
+		$('.show-jobs').removeClass('active');
+		$('.show-job-offers').removeClass('active');
+		$('.show-candidates').removeClass('active');
+
 		$('#jobs').show();
 		$('.show-jobs').addClass('active');
-
-		$('#candidates').hide();
-		$('.show-candidates').removeClass('active');
 	});
-	$('.show-publication').click(function () {
+
+	$('.show-job-offers').click(function () {
 		$('#jobs').hide();
+		$('#candidates').hide();
+
 		$('.show-jobs').removeClass('active');
+		$('.show-job-offers').removeClass('active');
+		$('.show-candidates').removeClass('active');
 
 		$('#candidates').show();
-		$('.show-candidates').addClass('active');
+		$('.show-job-offers').addClass('active');
 	});
 </script>
 <!-- mobile -->

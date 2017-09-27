@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div class="header sticky-top">
+<div class="header sticky-top has-toolbar">
 	<!-- ALV-HEADER -->
 	{{> header}}
 
@@ -26,6 +26,42 @@
 </div>
 
 <!-- content -->
+<div class="toolbar toolbar--light md-whiteframe-3dp sticked sticked--top">
+	<div class="container">
+		<form class="form-inline toolbar-form job-search__form">
+
+			<div class="form-group form-group--wide">
+				<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Fähigkeiten, Skills</label>
+				<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Fähigkeiten, Skills" />
+			</div>
+			<div class="form-group form-group--wide">
+				<label for="basic-addon2" class="sr-only">Wohnort: Kanton</label>
+				<input type="text" class="form-control form-control-lg" placeholder="Wohnort: Kanton" id="basic-addon2" />
+			</div>
+
+			<div class="form-group">
+				<label for="cs-8" class="sr-only">Abschluss</label>
+				<select class="form-control form-control-lg custom-select" id="cs-8">
+					<option selected>keinen Abschluss ausgewählt</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>
+			</div>
+
+			<button type="submit" class="btn btn-primary btn-lg">6 Kandidaten</button>
+		</form>
+
+		<div class="toolbar-form d-sm-block d-md-none">
+			<div class="job-search__filter collapse" id="filter">
+				{{> candidate-filter_filter}}
+			</div>
+
+			<div class="job-search__filter--toggler" data-toggle="collapse" data-target="#filter">Suchkriterien</div>
+		</div>
+	</div>
+</div>
+
 <div class="container">
 
 	<div class="base">

@@ -1,66 +1,7 @@
 <!-- filter -->
 <div class="sticked sticked--top">
 	<div class="job-search__filter d-none d-md-block">
-		<p class="text--line-height--h3">Kandidaten filtern</p>
-
-		<div class="form-group">
-			<label for="occupation" class="small">Ich suche eine/n</label>
-			<input type="text" class="form-control form-control-sm" id="occupation" placeholder="Berufsbezeichnung, Skills, Fähigkeiten">
-		</div>
-
-		<ul>
-			<li>occupation, skills *</li>
-			<li>graduation - related to occupation *</li>
-			<li>experience - related to occupation</li>
-			<li>residence (autocompleter cantons)< *</li>
-			<li>job location (autocompleter location, cantons)</li>
-			<li>verfügbarkeit</li>
-			<li>workload (from/to)</li>
-			<li>languages</li>
-			<li>driving license</li>
-			<li>highest education</li>
-			<li>work form</li>
-		</ul>
-		<p>* = on landingpage</p>
-
-		<div class="form-group">
-			<label for="unternehmen" class="small">Name des Unternehmen</label>
-			<input type="text" class="form-control form-control-sm" id="unternehmen" placeholder="Name des Unternehmen">
-		</div>
-
-		<div class="form-group">
-			<label for="Anstellungsdauer" class="small">Anstellungsdauer</label>
-			<select class="form-control form-control-sm custom-select" id="Anstellungsdauer">
-				<option selected>egal</option>
-				<option value="1">unbefristet</option>
-				<option value="2">befristet</option>
-			</select>
-		</div>
-
-		<div class="form-group">
-			<label for="workload-to" class="small">Arbeitspensum</label>
-			<div class="form-group__inline">
-				<select class="form-control form-control-sm custom-select" id="workload-from">
-					<option selected>0 %</option>
-					<option value="1">One</option>
-					<option value="2">Two</option>
-					<option value="3">Three</option>
-				</select>
-				<select class="form-control form-control-sm custom-select" id="workload-to">
-					<option selected>100%</option>
-					<option value="1">One</option>
-					<option value="2">Two</option>
-					<option value="3">Three</option>
-				</select>
-			</div>
-		</div>
-
-		<div class="form-group range-slider">
-			<label for="online_since" class="small">Online seit</label>
-			<input class="range-slider__range" min="1" max="60" step="1" value="20" type="range" id="online_since" />
-			<span class="range-slider__value range-slider__value--unit small" data-unit="Tage(n)">0</span>
-		</div>
-
+		{{> candidate-filter_filter}}
 	</div>
 
 	<ul class="nav filter-nav flex-column d-none d-md-block">
