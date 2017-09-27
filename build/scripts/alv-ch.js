@@ -18,29 +18,6 @@ $( document ).ready(function() {
 		$('.nav-item.megamenu .dropdown-menu').css('left', diff);
 	}
 
-	/*
-	 * RANGE SLIDER
-	 */
-	var rangeSlider = function(){
-		var slider = $('.range-slider'),
-			range = $('.range-slider__range'),
-			value = $('.range-slider__value');
-
-		slider.each(function(){
-
-			value.each(function(){
-				var value = $(this).prev().attr('value');
-				$(this).html(value);
-			});
-
-			range.on('input', function(){
-				$(this).next(value).html(this.value);
-			});
-		});
-	};
-
-	rangeSlider();
-
 	var md = new MobileDetect(window.navigator.userAgent);
 
 	if (md.mobile()){
