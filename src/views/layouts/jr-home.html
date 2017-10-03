@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
 <div class="header sticky-top has-jumbotron">
 	<!-- ALV-HEADER -->
 	{{> header}}
@@ -27,7 +28,7 @@
 	<!-- /navbar -->
 </div>
 
-<div class="jumbotron jumbotron-fluid jumbotron--has-toolbar jumbotron--job-room" style="background-image: url('./{{baseurl}}/assets/styleguide/images/bg-jobroom.jpg');">
+<div class="jumbotron jumbotron-fluid jumbotron--has-toolbar jumbotron--job-room" style="min-height: 953px; background-image: url('./{{baseurl}}/assets/styleguide/images/bg-jobroom.jpg');">
 
 	<div class="toolbar">
 		<div class="container">
@@ -80,26 +81,15 @@
 			{{> candidate-landingpage}}
 		</div>
 	</div>
-</div>
 
-<!-- content -->
-<div class="container">
-
-	<div class="base">
-
-		<div class="base__content--wide">
-
-			{% body %}
-		</div>
-
+	<div class="container">
+		<p>{% body %}</p>
 	</div>
-
 </div>
-<!-- /content -->
 
-<!-- seco-footer -->
-{{> footer-seco}}
-<!-- /seco-footer -->
+<!-- footer -->
+{{> footer-jobroom}}
+<!-- /footer -->
 
 <!-- modals -->
 {{> login}}

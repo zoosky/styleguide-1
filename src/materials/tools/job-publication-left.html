@@ -1,16 +1,16 @@
-<fieldset class="job-publication--horizontal">
+<fieldset class="job-publication">
 	<legend>Stellenbeschreibung</legend>
 
 	<div class="form-group">
 		<label for="job-title" class="col-form-label">Stellenbezeichnung</label>
 		<div>
-			<input type="text" class="form-control" id="job-title" />
+			<input type="text" class="form-control" placeholder="z.B. Maurer" id="job-title" />
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="occupation" class="col-form-label">Beruf</label>
 		<div>
-			<input type="text" class="form-control" id="occupation" placeholder="z.B. Maurer"  />
+			<input type="text" class="form-control" id="occupation" />
 		</div>
 	</div>
 	<div class="form-group">
@@ -65,15 +65,16 @@
 
 	<div class="form-group">
 		<label class="col-form-label">Stellenantritt</label>
+		<!-- todo all widht 33% -->
 		<div class="form-group__inline">
-			<div class="radio col-form-label">
-				<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" />
+			<div class="radio">
+				<input type="radio" name="optionsRadios" id="optionsRadios4" value="option4" checked="checked" />
 				<label for="optionsRadios4">
 					ab Sofort
 				</label>
 			</div>
 
-			<div class="radio col-form-label">
+			<div class="radio">
 				<input type="radio" name="optionsRadios" id="optionsRadios5" value="option5" />
 				<label for="optionsRadios5">
 					nach Vereinbarung
@@ -91,15 +92,16 @@
 
 	<div class="form-group">
 		<label class="col-form-label">Anstellungsdauer</label>
+		<!-- todo all widht 33% -->
 		<div class="form-group__inline">
-			<div class="radio col-form-label">
+			<div class="radio">
 				<input type="radio" name="optionsRadios2" id="optionsRadios6" value="option6" checked="checked" />
 				<label for="optionsRadios6">
 					unbefristet
 				</label>
 			</div>
 
-			<div class="radio col-form-label">
+			<div class="radio">
 				<input type="radio" name="optionsRadios2" id="optionsRadios7" value="option7" />
 				<label for="optionsRadios7">
 					befristet bis
@@ -140,7 +142,7 @@
 	</div>
 </fieldset>
 
-<fieldset class="job-publication--horizontal">
+<fieldset class="job-publication">
 	<legend>Arbeitsort</legend>
 
 	<div class="form-group">
@@ -170,7 +172,7 @@
 	</div>
 </fieldset>
 
-<fieldset class="job-publication--horizontal">
+<fieldset class="job-publication">
 	<legend>Unternehmen</legend>
 
 	<div class="form-group">
@@ -216,7 +218,7 @@
 	</div>
 </fieldset>
 
-<fieldset class="job-publication--horizontal">
+<fieldset class="job-publication">
 	<legend>Kontaktperson</legend>
 
 	<div class="form-group">
@@ -258,7 +260,7 @@
 
 </fieldset>
 
-<fieldset class="job-publication--horizontal">
+<fieldset class="job-publication">
 	<legend>Bewerbungsformen</legend>
 
 	<div class="checkbox">
@@ -312,7 +314,7 @@
 	</div>
 </fieldset>
 
-<fieldset class="job-publication--horizontal">
+<fieldset class="job-publication">
 	<legend>Publikationsmedien</legend>
 
 	<div class="checkbox">
@@ -332,7 +334,7 @@
 
 <hr />
 
-<fieldset class="job-publication--horizontal">
+<fieldset class="job-publication">
 	<div class="checkbox">
 		<input id="first" type="checkbox" />
 		<label for="first">
@@ -341,9 +343,9 @@
 	</div>
 </fieldset>
 
-<div class="job-publication--horizontal__actions">
+<div class="job-publication__actions">
 	<div class="form__actions">
-		<button class="btn btn-primary btn-lg">Job publizieren</button>
-		<button class="btn btn-secondary btn-lg">Zurücksetzen</button>
+		<button class="btn btn-primary">Job publizieren</button>
+		<button class="btn btn-secondary">Zurücksetzen</button>
 	</div>
 </div>

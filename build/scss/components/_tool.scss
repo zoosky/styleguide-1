@@ -159,6 +159,13 @@
 	}
 }
 
+.job-detail__subtitle {
+	margin-bottom: $margin-x-narrow;
+
+	font-weight: $text-weight-light;
+	font-size: 1.125rem;
+}
+
 .job-detail__content {
 	margin-bottom: $margin-x-general;
 

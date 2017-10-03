@@ -5,8 +5,13 @@
 		z-index: 1000;
 	}
 
-	.sticked--top {
+	.sticked--top,
+	.sticked--top__parent {
 		top: 0;
+	}
+
+	.sticked--bottom {
+		bottom: 0;
 	}
 
 	.base__subnavbar > .sticked--top {

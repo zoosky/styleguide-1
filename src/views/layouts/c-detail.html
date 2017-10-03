@@ -34,46 +34,27 @@
 
 				<div class="sticked sticked--top__parent">
 
-					<ul class="pagination pagination--block pagination-alv  d-none d-md-flex">
+					<ul class="pagination pagination--block pagination-alv d-none d-md-flex">
 						<li class="page-item">
-							<a class="page-link" href="job-result-list.html">Zurück zu den Suchergebnissen</a>
+							<a class="page-link" href="candidate-result-list.html">Zurück zu den Suchergebnissen</a>
 						</li>
 					</ul>
 
-					<div class="job-detail__company alv-logo-box flex-height md-whiteframe-1dp">
-						<div class="job-detail__content">
-							<address>
-								<strong>Adato AG</strong><br />
-								Lagerhausstrasse 10<br />
-								8400 Winterthur<br />
-							</address>
-
-							Telefon 052 269 23 23<br />
-							www.adato.ch<br />
-							www.adato.ch/de_ch/recruiting-app/recruiting/12345/recruiting.html
-						</div>
-
-						<div class="job-detail__content">
-							<strong>Ihre Kontaktperson</strong><br />
-							Reto Keller<br />
-							Personalberater<br />
-							Gewerbe & Handwerk<br />
-							r.keller@adato.ch<br />
-							+41 52 269 23 26<br />
-						</div>
-					</div>
-
 					<div class="job-detail__pes alv-logo-box flex-height md-whiteframe-1dp">
+						<div class="job-detail__subtitle">Weitere Auskünfte erteilt</div>
+
 						<div class="job-detail__content">
 							<p>
-								<strong>Zuständiges RAV</strong><br />
-								RAV Frauenfeld, Frauenfeld Kant. Verwaltung<br />
-								Telefon +41 58 345 55 20<br />
+								<strong>RAV Arbeitsmarktservice</strong><br />
+								Lagerhausweg 10<br />
+								3018 Bern
+							</p>
+							<p>
+								Telefon +41 31 600 00 00<br />
+								E-Mail <a href="mailto:info.ams@vol.be">info.ams@vol.be</a>
 							</p>
 
-							<strong>Stellennummer:</strong><br />
-							AVAM: 00000717982<br />
-							Job-Room: 230194084
+							<strong>STES-ID: AG123456</strong>
 						</div>
 					</div>
 
@@ -95,30 +76,7 @@
 
 					{{> detail-pagination}}
 
-					<button class="btn btn-primary btn-block btn-sm">Jetzt Bewerben</button>
-
-					<!-- btn-default -->
-					<button class="btn btn-secondary btn-block btn-sm">Zum Stelleninserat</button>
-
-					<p></p>
-
-					<ul class="nav filter-nav flex-column">
-						<li class="nav-item">
-							<a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i> Stellenangebot speichern</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link"><i class="fa fa-share" aria-hidden="true"></i> Link kopieren</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link"><i class="fa fa-envelope" aria-hidden="true"></i> Per E-Mail versenden</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link"><i class="fa fa-print" aria-hidden="true"></i> Drucken</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Als PDF speichern</a>
-						</li>
-					</ul>
+					{{> candidate-actions_private}}
 				</div>
 			</div>
 
