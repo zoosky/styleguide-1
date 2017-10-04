@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title></title>
+
+	<link rel="stylesheet" href="./../assets/fabricator/styles/f.css">
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="./../assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+	<div class="header sticky-top">
+		<!-- ALV-HEADER -->
+		<div class="alv-header alv-header--inverse">
+			<span class="alv-header__brand mb-0">
+				<img src="./../assets/styleguide/images/swiss.svg" width="20" height="20" class="d-inline-block" alt="Swiss Confederation">
+				Arbeitslosenversicherung ALV
+			</span>
+		</div>
+		<!-- navbar -->
+		<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+		
+				<a class="navbar-brand alv-logo alv-logo--inverse" href="./../job-room.html">
+					<strong class="alv-logo__brand--job-room">Job-Room</strong>
+					<div class="alv-logo__title-small">
+						<strong>alv</strong><span class="title__plus-ch">ch</span>
+					</div>
+				</a>
+		
+				<div class="ml-auto">
+					<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+						<div class="drawer-contents">
+							<div class="drawer-heading">
+								<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<a href="./../job-room.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> Job-Room</a>
+							</div>
+		
+							<ul class="navbar-nav">
+								<li class="nav-item d-none d-sm-block">
+									<form class="form-inline">
+										<div class="collapse" id="searchForm">
+											<div class="form-group form-group--navbar">
+												<label for="search" class="sr-only">Wie können wir helfen?</label>
+												<div class="form-group--icon">
+													<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+									
+													<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+														<i class="fa fa-times fa-stack-1x"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+										<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+									</form>						</li>
+								<li class="nav-item megamenu dropdown dropdown--canvas">
+									<a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Job-Room</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+										<div class="megamenu-menu">
+											<div>
+												<span class="dropdown-title">Stellensuchende</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Unternehmen</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+											<div>
+												<span class="dropdown-title">Arbeitsvermittler</span>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./../index.html"><span class="d-sm-none">zu</span> work.ch</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./../amstat.html"><span class="d-sm-none">zu</span> amstat</a>
+								</li>
+								<li class="nav-item d-none d-sm-block">
+									<a class="nav-link nav-link--login" href="#" data-toggle="modal" data-target="#loginModal">
+										Login
+									</a>
+								</li>
+								<li class="nav-item d-none d-sm-block">
+									<ul class="navbar-nav navbar--language-switcher">
+										<li class="nav-item active">
+											<a class="nav-link" href="#">DE</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">FR</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">IT</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">EN</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		
+				<div class="ml-auto d-sm-none">
+					<ul class="navbar-nav mobile-nav">
+						<li class="nav-item">
+							<ul class="navbar-nav navbar--language-switcher" id="mobLanguageSwitcher">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">DE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">FR</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">IT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">EN</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<form class="form-inline">
+								<div class="collapse" id="searchForm">
+									<div class="form-group form-group--navbar">
+										<label for="search" class="sr-only">Wie können wir helfen?</label>
+										<div class="form-group--icon">
+											<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
+							
+											<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
+												<i class="fa fa-times fa-stack-1x"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
+							</form>				</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+								<i class="fa fa-lg fa-user" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>		<!-- /navbar -->
+	</div>
+
+	<!-- content -->
+	<div class="container">
+
+		<div class="base">
+
+			<div class="base__subnavbar job-detail__references">
+
+				<div class="sticked sticked--top__parent">
+
+					<ul class="pagination pagination--block pagination-alv d-none d-md-flex">
+						<li class="page-item">
+							<a class="page-link" href="candidate-result-list.html">Zurück zu den Suchergebnissen</a>
+						</li>
+					</ul>
+
+					<div class="job-detail__pes alv-logo-box flex-height md-whiteframe-1dp">
+						<div class="job-detail__subtitle">Weitere Auskünfte erteilt</div>
+
+						<div class="job-detail__content">
+							<p>
+								<strong>RAV Arbeitsmarktservice</strong><br />
+								Lagerhausweg 10<br />
+								3018 Bern
+							</p>
+							<p>
+								Telefon +41 31 600 00 00<br />
+								E-Mail <a href="mailto:info.ams@vol.be">info.ams@vol.be</a>
+							</p>
+
+							<strong>STES-ID: AG123456</strong>
+						</div>
+
+						<button class="btn btn-primary btn-sm btn-block">Nachricht an Kandidat</button>
+						<button class="btn btn-secondary btn-sm btn-block">Zur Bewerbung auffordern</button>
+					</div>
+
+				</div>
+
+				<div class="f-control-bar">
+					<div class="f-control f-menu-toggle">
+						<svg>
+							<use xlink:href="#f-icon-menu" />
+						</svg>
+					</div>
+				</div>
+				<!-- fabricator icons -->
+				<svg style="display: none;">
+					<symbol id="f-icon-code" viewBox="0 0 512 512">
+						<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+					</symbol>
+					<symbol id="f-icon-notes" viewBox="0 0 512 512">
+						<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+					</symbol>
+					<symbol id="f-icon-labels" viewBox="0 0 512 512">
+						<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+					</symbol>
+					<symbol id="f-icon-menu" viewBox="0 0 512 512">
+						<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+					</symbol>
+					<symbol id="f-icon-settings" viewBox="0 0 512 512">
+						<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+					</symbol>
+				</svg>
+				<!-- /fabricator icons -->
+				<!-- fabricator menu -->
+				<div class="f-menu">
+					<div class="f-controls">
+						<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+							<svg>
+								<use xlink:href="#f-icon-labels" />
+							</svg>
+						</div>
+						<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+							<svg>
+								<use xlink:href="#f-icon-notes" />
+							</svg>
+						</div>
+						<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+							<svg>
+								<use xlink:href="#f-icon-code" />
+							</svg>
+						</div>
+					</div>
+				</div>
+				<!-- /fabricator menu -->
+			</div>
+
+			<div class="base__content job-detail__body">
+				
+<div class="job-detail__title">
+	<h2 class="text--light">Zuletzt ausgeübter Beruf (100%) - company</h2>
+</div>
+
+<p></p>
+
+<div class="candidate-detail__content">
+	<span class="badge badge-blue">Residence</span>
+	<span class="badge badge-gray">Workload</span>
+	<span class="badge badge-green">Anstellungsdauer</span>
+	<span class="badge badge-yellow">Verfügbarkeit</span>
+</div>
+
+<!-- bq -->
+<div class="candidate-detail__content candidate-detail--occupation">
+	<h4 class="candidate-detail__content__title">Berufliche Qualifikation</h4>
+	<div class="content__item">
+		<strong>Zuletzt ausgeübter Beruf</strong>
+		<span class="text--bold">Kaufmann</span>
+	</div>
+	<div class="content__item">
+		<strong>Abschluss zum Beruf</strong>
+		<span>CH-Abschluss</span>
+	</div>
+	<div class="content__item">
+		<strong>Erfahrungsjahre auf dem Beruf</strong>
+		<span>mehr als 1 Jahr</span>
+	</div>
+	<div class="content__item">
+		<strong>Kenntnisse, Fähigkeiten, Skills</strong>
+		<span>Erfahrung gesammelt im Personalwesen und in der Buchaltung. Kreditoren & Debitoren. Lohnabrechnungen, Verträge,Telefondienst, Post u.s.w.</span>
+	</div>
+
+</div>
+
+<div class="candidate-detail__content candidate-detail--occupation">
+
+	<div class="content__item">
+		<strong>Berufsbezeichnung</strong>
+		<span class="text--bold">Bürogehilfe</span>
+	</div>
+	<div class="content__item">
+		<strong>Abschluss zum Beruf</strong>
+		<span>CH-Abschluss</span>
+	</div>
+	<div class="content__item">
+		<strong>Erfahrungsjahre auf dem Beruf</strong>
+		<span>mehr als 3 Jahre</span>
+	</div>
+	<div class="content__item">
+		<strong>Kenntnisse, Fähigkeiten, Skills</strong>
+		<span>Kenntnisse, Fähigkeiten, Skills: Gelernter Kaufmann. Versiert im Bereich Buchhaltung und Treuhand. Gutes Zahlenflair vorhanden.</span>
+	</div>
+
+</div>
+
+<div class="candidate-detail__content candidate-detail--occupation">
+
+	<div class="content__item">
+		<strong>Berufsbezeichnung</strong>
+		<span class="text--bold">Disponent (2 Jahre) </span>
+	</div>
+	<div class="content__item">
+		<strong>Erfahrungsjahre auf dem Beruf</strong>
+		<span>weniger als 1 Jahr</span>
+	</div>
+	<div class="content__item">
+		<strong>Kenntnisse, Fähigkeiten, Skills</strong>
+		<span>Versiert in der Verpackung und Bereitstellung von Lieferungen.</span>
+	</div>
+
+</div>
+
+<!-- languages -->
+<div class="candidate-detail__content">
+	<h4 class="candidate-detail__content__title">Sprachkenntnisse</h4>
+	<div class="content__item">
+		<strong>Deutsch</strong>
+		<span>mündlich: sehr gut, schriftlich: sehr gut</span>
+	</div>
+	<div class="content__item">
+		<strong>Englisch</strong>
+		<span>mündlich: gut, schriftlich: Grundkenntnisse</span>
+	</div>
+</div>
+
+<!-- additional information -->
+<div class="candidate-detail__content">
+	<h4 class="candidate-detail__content__title">Weitere Angaben</h4>
+	<div class="content__item">
+		<strong>Arbeitsform</strong>
+		<span>keine Angaben</span>
+	</div>
+	<div class="content__item">
+		<strong>Geschlecht</strong>
+		<span>männlich</span>
+	</div>
+	<!-- NOT DISPLAYED IN PUBLIC MODE --
+	<div class="content__item">
+		<strong>Nationalität</strong>
+		<span>Schweiz</span>
+	</div>
+	-->
+	<div class="content__item">
+		<strong>Höchste Bildungsstufe</strong>
+		<span>Sekundarstufe II - ISCED 3</span>
+	</div>
+	<div class="content__item">
+		<strong>Ausbildung</strong>
+		<span>
+			Sek. II - Berufsmaturität od. äq.<br />
+			Sek. II - Berufliche Grundbildung EFZ od. äq. <br />
+			Sek. I - obligatorische Schule
+		</span>
+	</div>
+	<div class="content__item">
+		<strong>Gesuchte Arbeitsregion/en</strong>
+		<span>
+			Bern<br />
+			Sense/Singine
+		</span>
+	</div>
+	<div class="content__item">
+		<strong>Führerausweiskategorien</strong>
+		<span>A, B, D1</span>
+	</div>
+</div>
+
+<!-- contact -->
+<!-- NOT DISPLAYED IN PUBLIC MODE --
+<div class="candidate-detail__content">
+	<h4 class="candidate-detail__content__title">Personalien / Kontaktdaten des Kandidaten</h4>
+	<div class="content__item">
+		<strong>Name / Vorname</strong>
+		<span>Muster Hans</span>
+	</div>
+	<div class="content__item">
+		<strong>Adresse</strong>
+		<span>Adresse, PLZ</span>
+	</div>
+	<div class="content__item">
+		<strong>Telefon</strong>
+		<span>031 300 01 01</span>
+	</div>
+	<div class="content__item">
+		<strong>Mobile</strong>
+		<span>079 300 01 01</span>
+	</div>
+	<div class="content__item">
+		<strong>E-Mail</strong>
+		<span><a href="mailto:email@provider.ch">email@provider.ch</a></span>
+	</div>
+</div>
+-->
+
+			</div>
+
+			<div class="base__related job-detail__actions">
+				<div class="sticked sticked--top__parent">
+					<ul class="pagination pagination--block pagination-alv  d-none d-md-flex">
+						<li class="page-item">
+							<a class="page-link" href="#" tabindex="-1"><i class="fa fa-chevron-left" aria-hidden="true"></i> Zurück</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">Weiter <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<button class="btn btn-primary btn-block btn-sm">Kandidat als Link versenden</button>
+					
+					<p></p>
+					
+					<ul class="nav filter-nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i> Kandidat speichern</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-share" aria-hidden="true"></i> Link kopieren</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-print" aria-hidden="true"></i> Drucken</a>
+						</li>
+					</ul>				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	<footer class="footer--seco">
+		<div class="container">
+			<span>Arbeitslosenversicherung / Arbeitsmarkt ALV</span>
+			<a href="#">Rechtliche Hinweise</a>
+			<a href="#">Abkürzungen</a>
+		</div>
+	</footer>	<!-- /footer -->
+
+	<!-- modals -->
+	<!-- modals -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+	
+					<ul class="nav nav-tabs nav--login" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#login" role="tab">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#register" role="tab">Registrieren</a>
+						</li>
+					</ul>
+	
+					<!-- Tab panes -->
+					<div class="tab-content--job-room">
+						<div class="tab-content">
+							<div class="tab-pane active" id="login" role="tabpanel">
+	
+								<fieldset class="login">
+									<div class="form-group">
+										<label for="username" class="col-form-label">Benutzername</label>
+										<div>
+											<input class="form-control" type="text" id="username" placeholder="E-Mail, Personennummer, Benutzername" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="password" class="col-form-label">Passwort</label>
+										<div>
+											<input class="form-control" type="password" id="password" placeholder="Passwort" />
+										</div>
+									</div>
+	
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+									<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+								</fieldset>
+	
+							</div>
+							<div class="tab-pane" id="register" role="tabpanel">
+	
+								<fieldset class="login">
+									<div class="form-group form-group--break">
+										<label for="sort" class="col-form-label">Registrierung als</label>
+										<div>
+											<select class="form-control custom-select" id="sort" required>
+												<option selected>Registrierung als Stellensuchende / -er</option>
+												<option value="1">Registrierung als Unternehmen</option>
+												<option value="2">Registrierung als Arbeitsvermittler</option>
+											</select>
+										</div>
+									</div>
+	
+									<div class="form-group">
+										<label for="name1" class="col-form-label">Nachname</label>
+										<div>
+											<input class="form-control" type="text" id="name1" placeholder="Nachname" required />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="name2" class="col-form-label">Vorname</label>
+										<div>
+											<input class="form-control" type="text" id="name2" placeholder="Vorname" required />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="birthday" class="col-form-label">Geburtsdatum</label>
+										<div>
+											<input class="form-control" type="date" id="birthday" required />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="email" class="col-form-label">E-Mail</label>
+										<div>
+											<input class="form-control" type="text" id="email" placeholder="E-Mail" required />
+										</div>
+									</div>
+									<div class="form-group form-group--optional form-group--break">
+										<label for="personennummer" class="col-form-label">Personennummer</label>
+										<div>
+											<input class="form-control" type="text" id="personennummer" placeholder="Personennummer gemäss Brief xy" />
+										</div>
+									</div>
+	
+	
+									<div class="form-group">
+										<label for="password1" class="col-form-label">Passwort</label>
+										<div>
+											<input class="form-control" type="password" id="password1" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="password2" class="col-form-label">Passwort wiederholen</label>
+										<div>
+											<input class="form-control" type="password" id="password2" placeholder="mind. 6 Zeichen, Buchstaben und Zahlen" />
+										</div>
+									</div>
+	
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Registrieren</button>
+									<a href="#" data-dismiss="modal">Passwort vergessen?</a>
+								</fieldset>
+	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /modals -->	<!-- /modals -->
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./../assets/fabricator/scripts/f.js"></script>
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="./../assets/styleguide/scripts/alv-ch.js"></script>
+<script src="./../assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:300,400,700:latin']
+    }
+  });
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>
