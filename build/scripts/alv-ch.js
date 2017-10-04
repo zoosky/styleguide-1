@@ -9,14 +9,13 @@ $( document ).ready(function() {
 	/*
 	 * MEGAMENU
 	 */
-	// todo refactor!
-	if ($('.megamenu').length) {
-		var containerWidth = $('body > .container').outerWidth();
-		var positionLeft = $('.nav-item.megamenu').offset().left;
+	$('.dropdown.yamm-fw').each(function(){
+		var containerWidth = $('.container-main > .container').outerWidth();
+		var positionLeft = $(this).offset().left;
 		var marginMegamenu = ($(document).width() - containerWidth) / 2;
 		var diff = -(positionLeft - marginMegamenu);
-		$('.nav-item.megamenu .dropdown-menu').css('left', diff);
-	}
+		$(this).children('.dropdown-menu').css('left', diff);
+	});
 
 	var md = new MobileDetect(window.navigator.userAgent);
 
