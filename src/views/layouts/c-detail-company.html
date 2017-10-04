@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>{{title}}</title>
+
+	{{#if fabricator}}<link rel="stylesheet" href="./{{baseurl}}/assets/fabricator/styles/f.css">{{/if}}
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="./{{baseurl}}/assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+	<div class="header sticky-top">
+		<!-- ALV-HEADER -->
+		{{> header}}
+
+		<!-- navbar -->
+		{{> job-room-navbar}}
+		<!-- /navbar -->
+	</div>
+
+	<!-- content -->
+	<div class="container">
+
+		<div class="base">
+
+			<div class="base__subnavbar job-detail__references">
+
+				<div class="sticked sticked--top__parent">
+
+					<ul class="pagination pagination--block pagination-alv d-none d-md-flex">
+						<li class="page-item">
+							<a class="page-link" href="candidate-result-list.html">Zurück zu den Suchergebnissen</a>
+						</li>
+					</ul>
+
+					<div class="job-detail__pes alv-logo-box flex-height md-whiteframe-1dp">
+						<div class="job-detail__subtitle">Weitere Auskünfte erteilt</div>
+
+						<div class="job-detail__content">
+							<p>
+								<strong>RAV Arbeitsmarktservice</strong><br />
+								Lagerhausweg 10<br />
+								3018 Bern
+							</p>
+							<p>
+								Telefon +41 31 600 00 00<br />
+								E-Mail <a href="mailto:info.ams@vol.be">info.ams@vol.be</a>
+							</p>
+
+							<strong>STES-ID: AG123456</strong>
+						</div>
+
+						<button class="btn btn-primary btn-sm btn-block">Nachricht an Kandidat</button>
+						<button class="btn btn-secondary btn-sm btn-block">Zur Bewerbung auffordern</button>
+					</div>
+
+				</div>
+
+				{{#if fabricator}}
+				{{> f-control-bar}}
+				{{> f-icons}}
+				{{> f-menu-slim}}
+				{{/if}}
+			</div>
+
+			<div class="base__content job-detail__body">
+				{% body %}
+			</div>
+
+			<div class="base__related job-detail__actions">
+				<div class="sticked sticked--top__parent">
+					{{> detail-pagination}}
+
+					{{> candidate-actions_private}}
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	{{> footer-jobroom}}
+	<!-- /footer -->
+
+	<!-- modals -->
+	{{> login}}
+	<!-- /modals -->
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+{{#if fabricator}}
+<script src="./{{baseurl}}/assets/fabricator/scripts/f.js"></script>
+{{/if}}
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="./{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>
+<script src="./{{baseurl}}/assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:300,400,700:latin']
+    }
+  });
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+// job publication
+.job-publication {
+	width: calc(100% - #{$margin-y-general * 2});
+
+	&:first-child {
+		margin-top: $margin-x-general * 2;
+	}
+
+	margin-right: $margin-y-general;
+	margin-left: $margin-y-general;
+
+	display: inline-block;
+
+	legend {
+		width: calc(75% - #{$margin-y-general});
+		border-bottom: $input-btn-border-width solid $input-border-color;
+		margin-bottom: (2 * $margin-x-general); // todo form-group--break!!
+		font-size: $h4-font-size;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: row;
+
+		label {
+			flex-grow: 0;
+			width: calc(33% - #{$margin-y-general});
+			text-align: right;
+			margin-right: $margin-y-general;
+		}
+
+		div {
+			flex-grow: 0;
+			width: calc(42% - #{$margin-y-general});
+		}
+	}
+
+	.form-group__inline > div {
+		flex-grow: 1;
+		flex-wrap: wrap;
+		width: 50%;
+
+		> div {
+			width: 100%;
+		}
+	}
+
+	.checkbox {
+		margin-left: 33%;
+		width: calc(42% - #{$margin-y-general});
+	}
+}
+
+.job-publication__actions {
+	padding-top: $margin-x-general * 2;
+	padding-bottom: $margin-x-general * 2;
+	margin-right: $margin-y-general;
+	margin-left: $margin-y-general;
+
+	> .form__actions {
+		margin-left: 33%;
+		width: calc(42% - #{$margin-y-general});
+
+		display: flex;
+		flex-direction: row;
+
+		.btn {
+			width: 50%;
+			margin-right: $margin-y-general;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+// horizontal
+// job publication
+.job-publication__form {
+	width: 75%;
+}
+
+.job-publication--horizontal {
+	// todo BREAKPOINTS
+	width: calc(100% - #{$margin-y-general * 4});
+
+	margin-right: $margin-y-general * 2;
+	margin-left: $margin-y-general * 2;
+
+	display: inline-block;
+
+	legend {
+		border-bottom: $input-btn-border-width solid $main-color-gray-light;
+		padding-top: (2 * $margin-x-general); // todo form-group--break!!
+
+		margin-bottom: $margin-x-general;
+
+		font-size: $h2-font-size;
+		font-weight: $text-weight-light;
+	}
+
+	.form-group__inline > div {
+		flex-grow: 1;
+		width: 33%;
+	}
+}
+
+.job-publication--horizontal__actions {
+	padding-top: $margin-x-general;
+	padding-bottom: $margin-x-general * 2;
+
+	margin-right: $margin-y-general * 2;
+	margin-left: $margin-y-general * 2;
+
+	> .form__actions {
+
+		.btn {
+			margin-right: $margin-y-general;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.candidate-radar {
+	padding: $margin-x-narrow;
+	margin: $margin-y-general;
+
+	font-size: $small-font-size;
+	text-align: center;
+	color: $brand-primary;
+
+	&:hover {
+		background: $brand-primary;
+		color: theme-color('light');
+
+		a {
+			color: theme-color('light');
+		}
+
+		.badge-radar {
+			color: $brand-primary;
+
+			@include badge-variant(theme-color('light'));
+		}
+	}
+
+	a {
+		display: block;
+		font-weight: 700;
+		margin-top: $margin-x-narrow;
+		color: transparent;
+	}
+}
+
+
+.badge-radar {
+	font-size: 1em;
+	margin: $margin-x-narrow/2;
+	padding: $margin-x-narrow/2 $margin-y-general;
+	border-radius: 1em;
+
+	@include badge-variant($brand-primary);
+}

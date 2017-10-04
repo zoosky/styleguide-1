@@ -56,6 +56,6 @@
     "bootstrap-drawer": "1.0.6",
     "font-awesome": "4.7.0",
     "jquery": "^3.0.0",
-    "scrolltofixed": "1.0.6"
+    "smartbanner.js": "1.7.0"
   }
 }

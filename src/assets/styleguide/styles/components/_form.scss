@@ -299,3 +299,14 @@ input::-moz-focus-inner,
 input::-moz-focus-outer {
 	border: 0;
 }
+
+/*------------------------------------*\
+  #LABEL - Optional Fields
+\*------------------------------------*/
+label {
+	.optional {
+		font-size: 0.85rem;
+		//font-weight: $text-weight-light;
+		color: $main-color-gray;
+	}
+}

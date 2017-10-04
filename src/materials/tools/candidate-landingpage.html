@@ -3,26 +3,40 @@
 
 		<ul class="nav nav-tabs nav--job-room" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#candidate-search" role="tab">Kandidaten finden</a>
+				<a class="nav-link active" data-toggle="tab" href="#candidate-search" role="tab">Kandidaten finden</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link active" data-toggle="tab" href="#job-publication" role="tab">Job publizieren</a>
+				<a class="nav-link" data-toggle="tab" href="#job-publication" role="tab">Job publizieren</a>
 			</li>
+			<!--<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#job-publication-left" role="tab">Job publizieren (li)</a>
+			</li>-->
 		</ul>
 
 		<!-- Tab panes -->
 		<div class="tab-content--job-room">
 			<div class="tab-content">
-				<div class="tab-pane" id="candidate-search" role="tabpanel">
-					<fieldset class="candidate-search">
-						{{> candidate-search}}
-						<a class="btn btn-primary btn-lg" href="#">Kandidaten anzeigen (1'644)</a>
-					</fieldset>
-
-					{{> candidate-radar}}
+				<div class="tab-pane active" id="candidate-search" role="tabpanel">
+					<h1 class="candidate-search__title">Finden Sie passende Kandidaten</h1>
+					<form class="candidate-search__form">
+						<fieldset>
+							{{> candidate-search}}
+							<a class="btn btn-primary btn-lg" href="job-room/candidate-result-list.html">Kandidaten anzeigen (1'644)</a>
+						</fieldset>
+					</form>
 				</div>
-				<div class="tab-pane active" id="job-publication" role="tabpanel">
-					{{> job-publication}}
+				<div class="tab-pane" id="job-publication" role="tabpanel">
+					<div class="d-flex flex-row">
+						<div class="job-publication__form">
+							{{> job-publication}}
+						</div>
+						<div class="job-publication__radar">
+							{{> candidate-radar}}
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="job-publication-left" role="tabpanel">
+					{{> job-publication-left}}
 
 					{{> candidate-radar}}
 				</div>
