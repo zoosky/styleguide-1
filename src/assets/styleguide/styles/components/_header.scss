@@ -15,6 +15,7 @@
 \*------------------------------------*/
 
 .header {
+
 	margin-bottom: .5rem;
 
 	// todo refactoring!!
@@ -25,6 +26,17 @@
 		&.has-toolbar,
 		&.has-mainnavigation {
 			margin-bottom: 0;
+		}
+	}
+}
+
+.fixed-top {
+
+	@media screen and (min-width: 480px){
+		&.has-toolbar ~ .toolbar {
+			top: 90px;
+			position: fixed;
+			width: 100%;
 		}
 	}
 }

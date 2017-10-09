@@ -42,7 +42,6 @@
 
 }
 .candidate-search__form {
-	// todo BREAKPOINTS
 	width: calc(75% - #{$margin-y-general*2});
 
 	padding: ($margin-y-general*2);
@@ -90,6 +89,19 @@
 				@include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
 			}
 		}
+	}
+
+	.candidate-search__title {
+		font-weight: 400;
+		font-size: $h4-font-size;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	.candidate-search__form {
+		width: 100%;
+
+		padding: 0 ($grid-gutter-width / 2) 1rem ($grid-gutter-width / 2);
 	}
 }
 
