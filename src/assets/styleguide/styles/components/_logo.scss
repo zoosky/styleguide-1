@@ -7,7 +7,7 @@
 	width: 100%;
 
 	background-color: darken($body-bg, 3%);
-	display: inline-block;
+	display: block;
 	overflow-wrap: break-word;
 
 	@include alv-border-radius($alv-box-radius);
