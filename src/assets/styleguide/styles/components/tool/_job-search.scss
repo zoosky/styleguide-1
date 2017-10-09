@@ -192,6 +192,10 @@
 	}
 }
 
+.job-detail__applications  {
+	margin: $margin-x-general 0;
+}
+
 @media screen and (max-width: 479px) {
 
 	.job-detail__references {
