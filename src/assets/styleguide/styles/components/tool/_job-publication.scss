@@ -165,3 +165,43 @@
 
 	@include badge-variant($brand-primary);
 }
+
+@media screen and (max-width: 479px) {
+	.job-publication__form {
+		width: 100%;
+	}
+
+	.job-publication--horizontal {
+		legend {
+			font-weight: 400;
+			font-size: $h4-font-size;
+			padding-top: 1rem;
+		}
+
+		width: calc(100% - #{$grid-gutter-width});
+		margin: 0 ($grid-gutter-width / 2) 1rem ($grid-gutter-width / 2);
+
+
+		.form-group__inline {
+			& > div {
+				width: 100%;
+			}
+		}
+	}
+
+	.job-publication--horizontal__actions {
+		width: calc(100% - #{$grid-gutter-width});
+		margin: 0 ($grid-gutter-width / 2) 1rem ($grid-gutter-width / 2);
+		padding: 0;
+
+		.btn {
+			margin-right: 0;
+			margin-bottom: ($margin-y-general/2);
+			width: 100%;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

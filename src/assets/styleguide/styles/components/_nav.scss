@@ -1,5 +1,4 @@
 .nav--job-room {
-	// todo media! breakpoints!!
 	width: 66%;
 
 	display: flex;
@@ -86,7 +85,8 @@
 		align-items: stretch;
 
 		.nav-item {
-			font-size: inherit;
+			font-size: $small-font-size;
+			font-weight: $text-weight-regular;
 
 			.nav-link {
 				height: 100%;
