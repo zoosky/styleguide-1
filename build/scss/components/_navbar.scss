@@ -451,7 +451,7 @@ jr2-job-search-toolbar {
 		flex-direction: column;
 		justify-content: flex-start;
 
-		margin: 1rem 2rem;
+		margin: 1rem ($grid-gutter-width / 2);
 
 		.form-group,
 		button {
