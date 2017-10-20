@@ -219,6 +219,21 @@
 	}
 }
 
+
+@media screen and (max-width: 479px) {
+	.form-group__inline {
+		flex-direction: column;
+
+		&.sm-inline {
+			flex-direction: row;
+		}
+	}
+}
+
+/*------------------------------------*\
+  #RANGE
+\*------------------------------------*/
+
 .range-slider {
 	width: $range-width;
 }
