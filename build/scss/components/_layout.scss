@@ -82,6 +82,10 @@ html, body {
 			@include make-col(4, 5);
 		}
 
+		.base__content--amstat {
+			overflow: scroll;
+		}
+
 		.base--margin-top {
 			margin-top: (2*$breadcrumb-padding-x + $spacer);
 		}

@@ -1,0 +1,319 @@
+
+/*------------------------------------*\
+  #TOOLBAR
+\*------------------------------------*/
+
+.toolbar {
+	position: relative;
+	background-color: rgba($gray-200, .75);
+	border-bottom: 1px solid $gray-200;
+
+	margin-bottom: $margin-x-filter;
+
+	&.toolbar--light {
+		background-color: rgba($main-color-gray-50, 1.0);
+	}
+
+	&.toolbar--white {
+		background-color: $white;
+		border-bottom: none;
+	}
+
+	&.toolbar--inverse {
+		background: rgba($main-color-gray-50, .25);
+	}
+
+	z-index: 1001 !important;
+}
+
+.toolbar-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+
+	&.center {
+		justify-content: center;
+	}
+
+	.nav-title {
+		padding: $filter-toolbar-title-padding $filter-toolbar-title-padding $filter-toolbar-title-padding 0;
+	}
+
+	.nav-item {
+		font-size: $h4-font-size;
+		cursor: pointer;
+		text-align: center;
+
+		&:hover {
+			background: $main-color-gray-50;
+		}
+
+		&.active > .nav-link {
+			font-weight: 700;
+			color: $brand-inverse;
+		}
+
+		.nav-link {
+			// todo check bootstrap?!
+			padding: $filter-toolbar-title-padding;
+
+			&:hover {
+				color: $brand-primary;
+			}
+
+			&.active {
+				font-weight: 700;
+				color: $brand-inverse;
+			}
+		}
+	}
+}
+
+.jumbotron .toolbar-nav {
+	.nav-item:hover {
+		background: $white;
+	}
+}
+
+.toolbar-nav--has-icon {
+	.nav-item {
+		.nav-link {
+			padding: $filter-toolbar-padding-y $filter-toolbar-padding-x;
+
+			&:hover {
+				color: $brand-primary;
+			}
+
+			&.active {
+				font-weight: 700;
+				color: $brand-inverse;
+			}
+		}
+	}
+}
+
+.toolbar-form {
+	display: flex;
+	flex-direction: row;
+
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+
+	&.center {
+		justify-content: center;
+	}
+
+	.form-group {
+		max-width: 30%;
+		flex-grow: 1;
+
+		margin: $filter-toolbar-title-padding .5rem;
+
+		> input:not(.range-slider__range) {
+			width: 100%;
+		}
+
+		&.form-group--slider {
+			width: auto;
+			flex-grow: 0;
+		}
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	button {
+		margin: $filter-toolbar-title-padding .5rem;
+		width: 200px;
+	}
+}
+
+jr2-job-search-toolbar {
+
+	jr2-typeahead-multiselect {
+		width: 100%;
+
+		input {
+			width: 100%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 479px){
+
+	.toolbar {
+		margin-bottom: 0.25rem;
+
+		&.md-whiteframe-3dp {
+			box-shadow: none;
+		}
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	.toolbar-nav:not(.show) {
+		.nav-item:not(.active) {
+			display: none;
+		}
+	}
+
+	.toolbar-collapse .toolbar-nav {
+		flex-direction: column;
+
+		background-color: rgba($main-color-gray-100, .75);
+		margin-top: .25rem;
+		padding: .5rem;
+
+		.nav-title {
+			padding: 0;
+			text-align: center;
+			cursor: pointer;
+
+			h2 {
+				font-size: .85rem;
+				letter-spacing: inherit;
+				font-weight: 400;
+
+				&:before {
+					display: inline-block;
+					margin-right: .5em;
+					vertical-align: -0.05em;
+
+					font-family: FontAwesome;
+					font-size: 1.125em;
+					content: '\f13a';
+				}
+			}
+		}
+
+		.nav-item {
+			a,
+			.nav-link{
+				padding: 0;
+				font-weight: 300;
+				color: $body-color;
+			}
+
+			&.active a {
+				font-weight: 400;
+			}
+
+			&:hover {
+				background: none;
+			}
+		}
+
+		&.toolbar-nav--has-icon {
+			.nav-link__icon {
+				display: none;
+			}
+		}
+	}
+
+	.toolbar-form {
+		flex-direction: column;
+		justify-content: flex-start;
+
+		margin: 1rem ($grid-gutter-width / 2);
+
+		.form-group,
+		button {
+			margin: .5rem 0;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	jr2-job-search-toolbar {
+
+		jr2-typeahead-multiselect {
+
+			.typeahead-multiselect {
+				width: 100%;
+			}
+		}
+
+	}
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+	.toolbar-nav {
+
+		&.toolbar-nav--has-icon .nav-link {
+			> span:last-of-type {
+				display:block;
+				width:auto;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	.toolbar-nav {
+		flex-wrap: wrap;
+
+		.nav-title {
+			flex-basis: 100%;
+			padding: 0 0 $filter-toolbar-title-padding/2 0;
+
+			h2 {
+				font-size: inherit;
+				font-weight: $text-weight-regular;
+			}
+		}
+
+		.nav-item {
+			flex-basis: 25%;
+
+			font-size: inherit;
+		}
+
+		&.toolbar-nav--has-icon .nav-item .nav-link {
+			padding: 0;
+		}
+
+		.active .nav-link__icon .icon__stack,
+		.active > .nav-link .nav-link__icon .icon__stack,
+		.nav-item:hover .nav-link__icon .icon__stack,
+		.nav-link:hover .nav-link__icon .icon__stack,
+		.nav-link .nav-link__icon .icon__stack {
+			height: 2em;
+			width: 2em;
+			line-height: 2em;
+			font-size: 1em;
+		}
+
+		&.toolbar--job-room {
+
+			padding-top: $filter-toolbar-title-padding;
+			padding-bottom: $filter-toolbar-title-padding/2;
+
+			&.center {
+				text-align: left;
+				justify-content: start;
+			}
+
+			.nav-title {
+				display: none;
+			}
+
+			.nav-item {
+				flex-basis: 33%;
+			}
+		}
+	}
+}

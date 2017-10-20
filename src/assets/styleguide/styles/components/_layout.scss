@@ -82,9 +82,7 @@ html, body {
 			@include make-col(4, 5);
 		}
 
-		.base__content--amstat {
-			overflow: scroll;
-		}
+		.base__content--amstat {}
 
 		.base--margin-top {
 			margin-top: (2*$breadcrumb-padding-x + $spacer);
@@ -174,6 +172,20 @@ html, body {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+		}
+	}
+
+	@media screen and (min-width: 480px) and (max-width: 1024px){
+		.landing-page__regular:not(.landing-page__regular--third) {
+			@include make-col(1, 2);
+		}
+
+		.landing-page__wide {
+			@include make-col(2, 2);
+		}
+
+		.landing-page__half {
+			@include make-col(1, 1);
 		}
 	}
 }
