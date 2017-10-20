@@ -103,6 +103,22 @@ html, body {
 		}
 	}
 
+	@media screen and (min-width: 480px) and (max-width: 768px){
+		.base__subnavbar,
+		.base__related {
+			@include make-col(1, 2);
+			order: 1;
+		}
+
+		.base__content {
+			@include make-col(2, 2);
+			order: 2;
+		}
+		.base__content--wide {
+			@include make-col(2, 2);
+		}
+	}
+
 	@media screen and (max-width: 479px) {
 		display: flex;
 		flex-direction: column;
