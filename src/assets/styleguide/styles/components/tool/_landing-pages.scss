@@ -49,15 +49,18 @@
 	.process__item {
 		flex-grow: 1;
 
+		display: table;
+		width: calc(25% - #{$margin-y-narrow*2});
+
 		background: $white;
 		height: 100%;
 
 		margin-right: 2rem;
 		padding: $margin-x-narrow $margin-y-narrow;
-		position: relative;
 
 		text-align: center;
 		cursor: pointer;
+		hyphens: auto;
 
 		@media screen and (min-width: 480px){
 			&.has-arrow:after {
@@ -92,10 +95,8 @@
 
 		p {
 			margin: 0;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%)
+			display: table-cell;
+			vertical-align: middle;
 		}
 
 
@@ -103,9 +104,16 @@
 			margin: .25rem 0;
 
 			p {
-				position: static;
-				transform: none;
+
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.process {
+		.process__item {
+			width: 100%;
 		}
 	}
 }
@@ -119,6 +127,7 @@
 	.process {
 		.process__item {
 			margin-right: 1rem;
+			padding: ($margin-x-narrow/2) ($margin-y-narrow/2);
 		}
 	}
 }
