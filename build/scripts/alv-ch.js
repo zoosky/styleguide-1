@@ -5,18 +5,6 @@
 'use strict';
 
 $( document ).ready(function() {
-
-	/*
-	 * MEGAMENU
-	 */
-	$('.dropdown.yamm-fw').each(function(){
-		var containerWidth = $('.container-main > .container').outerWidth();
-		var positionLeft = $(this).offset().left;
-		var marginMegamenu = ($(document).width() - containerWidth) / 2;
-		var diff = -(positionLeft - marginMegamenu);
-		$(this).children('.dropdown-menu').css('left', diff);
-	});
-
 	var md = new MobileDetect(window.navigator.userAgent);
 
 	/*
@@ -24,14 +12,14 @@ $( document ).ready(function() {
 	 */
 	$('.header.fixed-top').each(function(){
 		var mt = $(this).outerHeight(true);
-		if ($(this).hasClass('has-toolbar') && !md.mobile()){
+		if ($(this).hasClass('has-toolbar') && !md.phone()){
 			$('.header.fixed-top ~ .toolbar').css('top',mt);
 			mt = mt + $('.header.fixed-top ~ .toolbar').outerHeight(true);
 		}
 		$('body').css('margin-top',mt);
 	});
 
-	if (md.mobile()){
+	if (md.phone()){
 		// toggler toolbars
 		$('.toolbar-nav > .nav-title').click(function(){
 			$(this).parent().toggleClass('show');
@@ -61,6 +49,26 @@ $( document ).ready(function() {
 	}
 	else {
 		/*
+		 * MEGAMENU
+		 */
+		$('.dropdown.megamenu').each(function(){
+			var containerWidth = $('body > .container').outerWidth();
+			var positionLeft = $(this).offset().left;
+			var marginMegamenu = ($(document).width() - containerWidth) / 2;
+			var diff = -(positionLeft - marginMegamenu);
+			$(this).children('.dropdown-menu').css('left', diff);
+		});
+
+		$(window).resize(function() {
+			$('.dropdown.megamenu').each(function(){
+				var containerWidth = $('body > .container').outerWidth();
+				var positionLeft = $(this).offset().left;
+				var marginMegamenu = ($(document).width() - containerWidth) / 2;
+				var diff = -(positionLeft - marginMegamenu);
+				$(this).children('.dropdown-menu').css('left', diff);
+			});
+		});
+		/*
 		 * STICKIES:
 		 * .sticked--top = fixed dom top
 		 * .sticked--top__parent = fixed parent-dom top
@@ -74,6 +82,5 @@ $( document ).ready(function() {
 			$(this).css('top',$(this).parent().offset().top);
 		});
 	}
-
 });
 
