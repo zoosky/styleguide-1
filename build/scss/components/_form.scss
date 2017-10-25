@@ -138,9 +138,7 @@
 		padding-right: 2.5em;  // from font-awesome!!
 
 		~ .form-control--icon {
-			top: .5em;
-			right: .5em;
-			font-size: 1em;
+			font-size: 1em !important;
 		}
 	}
 }
