@@ -139,6 +139,10 @@
 
 		~ .form-control--icon {
 			font-size: 1em !important;
+
+			@media screen and (max-width: 1024px){
+				font-size: 0.85em !important;
+			}
 		}
 	}
 }
