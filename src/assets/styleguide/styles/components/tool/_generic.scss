@@ -1,0 +1,41 @@
+// Badges
+.badge-yellow,
+.badge-green,
+.badge-blue,
+.badge-gray {
+	color: $body-color;
+	font-weight: 400;
+}
+
+.badge-blue {
+	@include badge-variant($main-accent-color-100);
+}
+.badge-gray {
+	@include badge-variant($main-color-gray-100);
+}
+.badge-green {
+	@include badge-variant($additional-accent-green-100);
+}
+.badge-yellow {
+	@include badge-variant($additional-accent-amber-100);
+}
+
+// Detailpage
+
+.detail-page__title {
+	h2 {
+		height: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.detail-page__date {
+		margin-left: $margin-y-general;
+	}
+}
+
+.detail-page__subtitle {
+	margin-bottom: $margin-x-narrow;
+
+	font-weight: $text-weight-light;
+	font-size: 1.125rem;
+}
