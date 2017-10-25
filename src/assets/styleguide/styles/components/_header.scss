@@ -14,8 +14,24 @@
   #HEADER
 \*------------------------------------*/
 
-.header {
+body {
+	margin-top: calc(90px + .5rem); // alv-header 30px, navbar 60px
 
+	@media screen and (min-width: 480px){
+		margin-top: calc(90px + 4rem); // alv-header 30px, navbar 60px
+
+		&.has-jumbotron {
+			margin-top: 90px; // alv-header 30px, navbar 60px NO toolbar!
+		}
+
+		&.has-toolbar {
+			margin-top: 223px; // alv-header 30px, navbar 60px + toolbar 133px
+		}
+	}
+}
+
+.header {
+	/*
 	margin-bottom: .5rem;
 
 	// todo refactoring!!
@@ -24,16 +40,26 @@
 
 		&.has-jumbotron,
 		&.has-toolbar,
-		&.has-mainnavigation {
+		&.has-mainnavigation,
+		&.fixed-top {
 			margin-bottom: 0;
 		}
+
+
+		&:not(.has-jumbotron) + .jumbotron:not(.sticked),
+		&:not(.has-toolbar) + .toolbar:not(.sticked) {
+			margin-top: -4rem;
+		}
+
 	}
+*/
 }
 
 .fixed-top {
 
 	@media screen and (min-width: 480px){
-		&.has-toolbar ~ .toolbar {
+		&.has-toolbar ~ .toolbar,
+		~ .toolbar{
 			top: 90px;
 			position: fixed;
 			width: 100%;
