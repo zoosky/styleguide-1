@@ -4,3 +4,4 @@
 *.iml
 dist/
 node_modules/
+/dist/
