@@ -10,6 +10,7 @@ $( document ).ready(function() {
 	/*
 	 * FIXED-TOP
 	 */
+	/*
 	$('.header.fixed-top').each(function(){
 		var mt = $(this).outerHeight(true);
 		if ($(this).hasClass('has-toolbar') && !md.phone()){
@@ -18,6 +19,7 @@ $( document ).ready(function() {
 		}
 		$('body').css('margin-top',mt);
 	});
+	*/
 
 	if (md.phone()){
 		// toggler toolbars
