@@ -51,10 +51,6 @@ Font: Open Sans
 * Margin-Bottom: 8px
 * Colors: white, black, blue
 
-## Font-Awesome
-
-tbd: copy of fonts!!
-
 ## CDN
 
 Idea:
