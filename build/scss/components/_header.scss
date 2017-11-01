@@ -14,18 +14,22 @@
   #HEADER
 \*------------------------------------*/
 
-.header {
+body {
+	margin-top: calc(#{$header-alv-height + $header-navbar-height} + #{$header-mobile-margin}); // alv-header 30px, navbar 60px
 
-	margin-bottom: .5rem;
-
-	// todo refactoring!!
 	@media screen and (min-width: 480px){
-		margin-bottom: 4rem;
+		margin-top: calc(#{$header-alv-height + $header-navbar-height} + #{$header-margin}); // alv-header 30px, navbar 60px
 
-		&.has-jumbotron,
-		&.has-toolbar,
-		&.has-mainnavigation {
-			margin-bottom: 0;
+		&.has-jumbotron {
+			margin-top: ($header-alv-height + $header-navbar-height); // alv-header 30px, navbar 60px NO toolbar!
+		}
+
+		&.has-toolbar {
+			margin-top: calc(#{$header-alv-height + $header-navbar-height + $toolbar-height} + #{$toolbar-margin-bottom}); // alv-header 30px, navbar 60px + toolbar 110px + margin 24px
+		}
+
+		&:not(.has-jumbotron) .jumbotron {
+			margin-top: -($header-margin);
 		}
 	}
 }
@@ -33,8 +37,9 @@
 .fixed-top {
 
 	@media screen and (min-width: 480px){
-		&.has-toolbar ~ .toolbar {
-			top: 90px;
+		&.has-toolbar ~ .toolbar,
+		~ .toolbar{
+			top: #{$header-alv-height + $header-navbar-height};
 			position: fixed;
 			width: 100%;
 		}
@@ -53,8 +58,9 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	// todo: vars
 	padding: 0 10px;
+
+	max-height: $header-alv-height;
 }
 
 /**
@@ -62,7 +68,6 @@
  */
 
 .alv-header__brand {
-	// todo vars
 	display: inline-block;
 	padding-top: .25rem;
 	padding-bottom: .25rem;
