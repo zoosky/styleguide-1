@@ -27,6 +27,10 @@ body {
 		&.has-toolbar {
 			margin-top: calc(#{$header-alv-height + $header-navbar-height + $toolbar-height} + #{$toolbar-margin-bottom}); // alv-header 30px, navbar 60px + toolbar 110px + margin 24px
 		}
+
+		&:not(.has-jumbotron) .jumbotron {
+			margin-top: -($header-margin);
+		}
 	}
 }
 
