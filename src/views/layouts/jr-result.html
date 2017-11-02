@@ -28,11 +28,14 @@
 	<!-- content -->
 	<div class="toolbar toolbar--light md-whiteframe-3dp sticked sticked--top">
 		<div class="container">
-			<form class="form-inline toolbar-form job-search__form">
+			<div class="form-inline toolbar-form job-search__form">
 				{{> job-search}}
-				<button type="submit" class="btn btn-primary btn-lg">6 Jobs</button>
+				<button class="btn btn-primary btn-lg" id="search-button">
+					<div class="await await--inverse d-none"></div>
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
 				<a href="#" class="btn-lg">Zurücksetzen</a>
-			</form>
+			</div>
 
 			<div class="toolbar-form d-sm-block d-md-none">
 				<div class="job-search__filter collapse" id="filter">
@@ -97,6 +100,12 @@
       families: ['Open+Sans:300,400,700:latin']
     }
   });
+
+  $('#search-button').click(function(){
+  	$(this).children('.await').toggleClass('d-none');
+	  $(this).children('.fa').toggleClass('d-none');
+  });
+
 </script>
 <!-- /JavaScript -->
 

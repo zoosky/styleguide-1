@@ -9,7 +9,7 @@
 	text-align: center;
 
 	background-color: rgba($main-color-gray,.15);
-	//@include alv-border-radius(($alv-box-radius/2));
+	@include alv-border-radius(($alv-box-radius/2));
 
 	&:hover {
 		background: $main-accent-color-100;
