@@ -110,7 +110,6 @@ $text-weight-bold: 700;
 $text-weight-regular: 400;
 $text-weight-light: 300;
 
-
 // Logo
 $logo-height: 90px;
 $logo-size: 1.5rem;
@@ -165,6 +164,15 @@ $filter-toolbar-title-paddings:(
 	xxl: 2.5rem,
 	xxxl: 2.5rem
 );
+
+// Header + Toolbar
+$header-margin: 4rem;
+$header-mobile-margin: .5rem;
+$header-alv-height: 30px;
+$header-navbar-height: 60px;
+
+$toolbar-height: 110px;
+$toolbar-margin-bottom: $margin-x-filter;
 
 // Job-Room
 // Job search typeaheads

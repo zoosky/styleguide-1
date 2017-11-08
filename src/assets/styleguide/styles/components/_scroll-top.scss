@@ -1,0 +1,32 @@
+.scroll-top {
+	// todo vars
+	display: block;
+
+	position: fixed;
+	bottom: 5rem;
+	right: 2rem;
+
+	text-align: center;
+
+	background-color: rgba($main-color-gray,.15);
+	@include alv-border-radius(($alv-box-radius/2));
+
+	&:hover {
+		background: $main-accent-color-100;
+		cursor: pointer;
+	}
+
+	i {
+		margin: 1rem;
+	}
+
+	@media screen and (min-width: 480px) and (max-width: 1024px){
+		right: 1rem;
+		bottom: 1rem;
+	}
+
+	@media screen and (max-width: 479px) {
+		right: .5rem;
+		bottom: .5rem;
+	}
+}
