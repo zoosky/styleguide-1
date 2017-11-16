@@ -81,6 +81,12 @@
 	width: 75%;
 }
 
+.job-publication__radar {
+	position: sticky;
+	top: (#{$header-alv-height + $header-navbar-height});
+	z-index: 1000;
+}
+
 .job-publication--horizontal {
 	// todo BREAKPOINTS
 	width: calc(100% - #{$margin-y-general * 4});

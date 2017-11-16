@@ -59,8 +59,8 @@
 .alv-logo__brand--job-room {
 	font-size: $logo-brand-size;
 	letter-spacing: $logo-brand-spacing;
-	// todo: check!!
-	// display: block;
+
+	display: block;
 	text-align: right;
 
 	~.alv-logo__title-small {
@@ -86,7 +86,6 @@
 
 .alv-logo__brand--amstat {
 	letter-spacing: initial;
-	display: block;
 
 	@media screen and (max-width: 479px){
 		color: $main-color-gray-dark;
@@ -168,7 +167,3 @@
 		}
 	}
 }
-
-
-// CD-BUND AEM
-
