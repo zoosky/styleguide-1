@@ -112,7 +112,7 @@ $text-weight-light: 300;
 
 // Logo
 $logo-height: 90px;
-$logo-size: 1.5rem;
+$logo-size: 1.3rem; // todo check sizes in other logos...
 $logo-spacing: $text-h2-spacing;
 
 $logo-brand-size: $logo-size;
@@ -205,3 +205,6 @@ $range-track-height: .5rem !default;
 
 $range-label-color: $shade-10 !default;
 $range-label-width: 60px !default;
+
+// Smartbanner
+$smartbanner-height: 84px;

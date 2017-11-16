@@ -73,13 +73,7 @@
 		letter-spacing: initial;
 
 		~.alv-logo__title-small {
-			font-size: $logo-brand-size;
-			float: right;
-			line-height: inherit;
-
-			strong {
-				display: none;
-			}
+			display: none;
 		}
 	}
 }

@@ -177,6 +177,7 @@ jr2-job-search-toolbar {
 
 	.toolbar {
 		margin-bottom: 0.25rem;
+		min-height: unset;
 
 		&.md-whiteframe-3dp {
 			box-shadow: none;
@@ -195,6 +196,7 @@ jr2-job-search-toolbar {
 
 	.toolbar-collapse .toolbar-nav {
 		flex-direction: column;
+		align-items: center;
 
 		background-color: rgba($main-color-gray-100, .75);
 		margin-top: .25rem;
