@@ -35,7 +35,7 @@ body {
 
 	@media screen and (max-width: 479px) {
 		&.has-smartbanner {
-			margin-top: $smartbanner-height;
+			margin-top: 0;
 
 			.header {
 				margin-bottom: $header-mobile-margin;
