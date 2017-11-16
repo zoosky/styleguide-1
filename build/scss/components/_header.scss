@@ -32,6 +32,20 @@ body {
 			margin-top: -($header-margin);
 		}
 	}
+
+	@media screen and (max-width: 479px) {
+		&.has-smartbanner {
+			margin-top: $smartbanner-height;
+
+			.header {
+				margin-bottom: $header-mobile-margin;
+			}
+
+			.fixed-top {
+				position: sticky;
+			}
+		}
+	}
 }
 
 .fixed-top {

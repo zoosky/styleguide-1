@@ -34,7 +34,7 @@
 				<a class="navbar-brand alv-logo alv-logo--inverse" href="./../job-room.html">
 					<strong class="alv-logo__brand--job-room">Job-Room</strong>
 					<div class="alv-logo__title-small">
-						<strong>alv</strong><span class="title__plus-ch">ch</span>
+						<strong>arbeit</strong><span class="title__plus-ch">swiss</span>
 					</div>
 				</a>
 		
@@ -91,7 +91,7 @@
 									</div>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="./../index.html"><span class="d-sm-none">zu</span> work.ch</a>
+									<a class="nav-link" href="./../index.html"><span class="d-sm-none">zu</span> work.swiss</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="./../amstat.html"><span class="d-sm-none">zu</span> amstat</a>
@@ -170,7 +170,7 @@
 	<!-- content -->
 	<div class="toolbar toolbar--light md-whiteframe-3dp sticked sticked--top">
 		<div class="container">
-			<form class="form-inline toolbar-form job-search__form">
+			<div class="form-inline toolbar-form job-search__form">
 				<div class="form-group form-group--wide">
 					<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Berufsgruppe, Fähigkeiten</label>
 					<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten" />
@@ -189,9 +189,12 @@
 					<label for="radius" class="sr-only">Radius</label>
 					<input class="range-slider__range" min="5" max="150" step="5" value="20" type="range" id="radius" />
 					<span class="range-slider__value range-slider__value--unit" data-unit="km">0</span>
-				</div>				<button type="submit" class="btn btn-primary btn-lg">6 Jobs</button>
+				</div>				<button class="btn btn-primary btn-lg" id="search-button">
+					<div class="await await--inverse d-none"></div>
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
 				<a href="#" class="btn-lg">Zurücksetzen</a>
-			</form>
+			</div>
 
 			<div class="toolbar-form d-sm-block d-md-none">
 				<div class="job-search__filter collapse" id="filter">
@@ -1125,6 +1128,12 @@
       families: ['Open+Sans:300,400,700:latin']
     }
   });
+
+  $('#search-button').click(function(){
+  	$(this).children('.await').toggleClass('d-none');
+	  $(this).children('.fa').toggleClass('d-none');
+  });
+
 </script>
 <!-- /JavaScript -->
 
