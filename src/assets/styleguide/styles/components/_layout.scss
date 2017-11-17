@@ -115,6 +115,7 @@ html, body {
 		}
 		.base__content--wide {
 			@include make-col(2, 2);
+			// todo order: 2;
 		}
 	}
 

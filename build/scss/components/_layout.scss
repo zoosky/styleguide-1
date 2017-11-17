@@ -61,6 +61,7 @@ html, body {
 		.base__subnavbar,
 		.base__content,
 		.base__content--wide,
+		.base__content--amstat,
 		.base__related	{
 			position: relative;
 			width: 100%;
@@ -114,16 +115,17 @@ html, body {
 		}
 		.base__content--wide {
 			@include make-col(2, 2);
+			// todo order: 2;
 		}
 	}
 
 	@media screen and (max-width: 479px) {
 		display: flex;
 		flex-direction: column;
+	}
 
-		.base__content--amstat {
-			overflow-y: scroll;
-		}
+	.base__content--amstat {
+		overflow-y: scroll;
 	}
 }
 
