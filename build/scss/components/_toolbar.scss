@@ -36,6 +36,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: flex-start;
 
 	padding-left: 0;
 	margin-bottom: 0;
@@ -52,7 +53,6 @@
 	.nav-item {
 		font-size: $h4-font-size;
 		cursor: pointer;
-		text-align: center;
 
 		&:hover {
 			background: $main-color-gray-50;
@@ -74,6 +74,16 @@
 			&.active {
 				font-weight: 700;
 				color: $brand-inverse;
+			}
+		}
+
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			> span:last-of-type {
+				margin-left: 0.5rem;
 			}
 		}
 	}
@@ -146,7 +156,8 @@
 
 	button {
 		margin: 0 .5rem;
-		width: 200px;
+		width: 60px;
+		height: 48px;
 	}
 }
 
@@ -166,6 +177,7 @@ jr2-job-search-toolbar {
 
 	.toolbar {
 		margin-bottom: 0.25rem;
+		min-height: unset;
 
 		&.md-whiteframe-3dp {
 			box-shadow: none;
@@ -184,6 +196,7 @@ jr2-job-search-toolbar {
 
 	.toolbar-collapse .toolbar-nav {
 		flex-direction: column;
+		align-items: center;
 
 		background-color: rgba($main-color-gray-100, .75);
 		margin-top: .25rem;
@@ -305,7 +318,6 @@ jr2-job-search-toolbar {
 
 		.nav-item {
 			flex-basis: 25%;
-
 			font-size: inherit;
 		}
 
@@ -316,7 +328,8 @@ jr2-job-search-toolbar {
 		}
 
 		&.toolbar-nav--has-icon .nav-item .nav-link {
-			padding: 0;
+			padding-right: 0;
+			padding-left: 0;
 		}
 
 		.active .nav-link__icon .icon__stack,
@@ -372,5 +385,12 @@ jr2-job-search-toolbar {
 			margin: 0 .25rem;
 			width: 150px;
 		}
+	}
+}
+
+@media screen and (max-width: get-breakpoint('xxl')){
+	.toolbar-nav .nav-item a {
+		flex-direction: column;
+		text-align: center;
 	}
 }

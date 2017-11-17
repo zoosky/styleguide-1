@@ -4,25 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- SMART APP BANNER iOS -->
-	<meta name="apple-itunes-app" content="app-id=771099137, app-argument=http://www.amstat.ch">
-
-	<!-- Start SmartBanner configuration -->
-	<meta name="smartbanner:title" content="Amstat">
-	<meta name="smartbanner:author" content="Schweizerische Arbeitslosenversicherung">
-	<meta name="smartbanner:price" content="FREE">
-	<meta name="smartbanner:price-suffix-google" content=" - In Google Play">
-	<meta name="smartbanner:price-suffix-apple" content=" - On the App Store">
-	<meta name="smartbanner:icon-apple" content="http://is2.mzstatic.com/image/thumb/Purple118/v4/37/d3/72/37d3728a-53f0-1806-04ac-e4fd24632ee6/source/175x175bb.jpg">
-	<meta name="smartbanner:icon-google" content="https://lh3.googleusercontent.com/mLFrRpc4nFHY5hb64c3wvHa-9Ml-DfDlamYjV6TdhIP9onUWVAhiHtMQoCKr6DUQFQCt=w300-rw">
-	<meta name="smartbanner:button" content="VIEW">
-	<meta name="smartbanner:button-url-apple" content="https://itunes.apple.com/ch/app/amstat/id771099137?mt=8">
-	<meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=amstat.mobile.ch">
-	<meta name="smartbanner:enabled-platforms" content="android">
-	<!-- End SmartBanner configuration -->
-
-
 	<title>{{title}}</title>
+
+	{{#if fabricator}}
+	<link rel="stylesheet" href="./{{baseurl}}/assets/fabricator/styles/f.css">
+	{{/if}}
 
 	<!-- styleguide styles -->
 	<link rel="stylesheet" href="./{{baseurl}}/assets/styleguide/styles/alv-ch.css">
@@ -31,37 +17,24 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
 </head>
 
-<body class="has-smartbanner">
+<body>
+
 <div class="header fixed-top">
 	<!-- ALV-HEADER -->
 	{{> header}}
 
 	<!-- navbar -->
-	{{> amstat-navbar}}
+	{{> job-room-navbar}}
 	<!-- /navbar -->
 </div>
 
-<!-- content -->
 <div class="container">
-
-	<div class="base">
-
-		<div class="base__content--amstat">
-			{% body %}
-		</div>
-
-	</div>
-
+	{% body %}
 </div>
-<!-- /content -->
 
 <!-- footer -->
-{{> footer}}
-<!-- footer -->
-
-<!-- seco-footer -->
-{{> footer-seco}}
-<!-- /seco-footer -->
+{{> footer-jobroom}}
+<!-- /footer -->
 
 <!-- modals -->
 {{> login}}
@@ -81,7 +54,6 @@
 <!-- core ALV-CH -->
 <script src="./{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>
 <script src="./{{baseurl}}/assets/styleguide/scripts/drawer.js"></script>
-<script src="./{{baseurl}}/assets/styleguide/scripts/smartbanner.min.js"></script>
 <!-- WebFontLoader -->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>

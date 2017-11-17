@@ -7,20 +7,6 @@
 $( document ).ready(function() {
 	var md = new MobileDetect(window.navigator.userAgent);
 
-	/*
-	 * FIXED-TOP
-	 */
-	/*
-	$('.header.fixed-top').each(function(){
-		var mt = $(this).outerHeight(true);
-		if ($(this).hasClass('has-toolbar') && !md.phone()){
-			$('.header.fixed-top ~ .toolbar').css('top',mt);
-			mt = mt + $('.header.fixed-top ~ .toolbar').outerHeight(true);
-		}
-		$('body').css('margin-top',mt);
-	});
-	*/
-
 	if (md.phone()){
 		// toggler toolbars
 		$('.toolbar-nav > .nav-title').click(function(){

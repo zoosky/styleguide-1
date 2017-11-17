@@ -4,7 +4,7 @@
 	padding-bottom: $alv-box-radius;
 	margin-bottom: $margin-x-general;
 
-	background: $main-color-gray-50;
+	background: $main-color-gray-lightest;
 	@include alv-border-radius($alv-box-radius);
 
 	.nav-title {
@@ -180,6 +180,16 @@
 
 }
 
+.subnavigation {
+
+	&.navbar-light {
+		background: $white;
+	}
+
+	.navbar-nav {
+		margin-left: calc(#{$logo-height} * #{$phi} + #{$navbar-padding-x});
+		font-size: $small-font-size;
 
 
-
+	}
+}

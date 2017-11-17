@@ -1,0 +1,9 @@
+@mixin p-subtitle($name) {
+
+	.#{$name}__subtitle {
+		margin-bottom: $margin-x-narrow;
+
+		font-weight: $text-weight-light;
+		font-size: 1.125rem;
+	}
+}

@@ -247,6 +247,9 @@
 									<a class="nav-link" href="structures.html#amstat-navbar">Amstat Navbar</a>
 								</li>
 								<li class="nav-item">
+									<a class="nav-link" href="structures.html#amstat-subnavbar">Amstat Subnavbar</a>
+								</li>
+								<li class="nav-item">
 									<a class="nav-link" href="structures.html#amstat-subnavigation">Amstat Subnavigation</a>
 								</li>
 								<li class="nav-item">
@@ -391,6 +394,9 @@
 								<li class="nav-item">
 									<a class="nav-link" href="job-room/job-result-list.html">Job Result List</a>
 								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="job-room/pea-dashboard.html">Pea Dashboard</a>
+								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -437,16 +443,16 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<nav class="navbar navbar-alv navbar-expand-lg navbar-light bg-faded">
+	<nav class="navbar navbar-alv navbar-expand-sm navbar-light bg-faded">
 	<div class="container">
 		<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
 			<i class="fa fa-bars" aria-hidden="true"></i>
 		</button>
 
-		<a class="navbar-brand alv-logo alv-logo--dark" href="/amstat.html">
+		<a class="navbar-brand alv-logo alv-logo--dark" href=".//amstat.html">
 			<strong class="alv-logo__brand--amstat">amstat</strong>
 			<div class="alv-logo__title-small">
-				<strong>alv</strong><span class="title__plus-ch">ch</span>
+				<strong>arbeit</strong><span class="title__plus-ch">swiss</span>
 			</div>
 		</a>
 
@@ -457,43 +463,26 @@
 						<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<a href="/amstat.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> amstat</a>
+						<a href=".//amstat.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> amstat</a>
 					</div>
 
 					<ul class="navbar-nav">
-						<li class="nav-item d-none d-sm-block">
-							<form class="form-inline">
-								<div class="collapse" id="searchForm">
-									<div class="form-group form-group--navbar">
-										<label for="search" class="sr-only">Wie können wir helfen?</label>
-										<div class="form-group--icon">
-											<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
-
-											<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
-												<i class="fa fa-times fa-stack-1x"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
-							</form>
-						</li>
-						<li class="nav-item d-none d-sm-block">
-							<a class="nav-link active" href="/amstat.html">amstat</a>
+						<li class="nav-item megamenu dropdown dropdown--canvas">
+							<span class="nav-link active">amstat</span>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/index.html"><span class="d-sm-none">zu</span> work.ch</a>
+							<a class="nav-link" href=".//index.html"><span class="d-sm-none">zu</span> arbeit.swiss</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/job-room.html"><span class="d-sm-none">zu</span> Job-Room</a>
+							<a class="nav-link" href=".//job-room.html"><span class="d-sm-none">zu</span> Job-Room</a>
 						</li>
 						<li class="nav-item d-none d-sm-block">
-							<a class="nav-link nav-link--login" href="#">
+							<a class="nav-link nav-link--login" href="#" data-toggle="modal" data-target="#loginModal">
 								Login
 							</a>
 						</li>
 						<li class="nav-item d-none d-sm-block">
-							<ul class="navbar-nav navbar--language-switcher" id="languageSwitcher">
+							<ul class="navbar-nav navbar--language-switcher">
 								<li class="nav-item active">
 									<a class="nav-link" href="#">DE</a>
 								</li>
@@ -532,23 +521,6 @@
 					</ul>
 				</li>
 				<li class="nav-item">
-					<form class="form-inline">
-						<div class="collapse" id="searchForm">
-							<div class="form-group form-group--navbar">
-								<label for="search" class="sr-only">Wie können wir helfen?</label>
-								<div class="form-group--icon">
-									<input type="text" class="form-control" placeholder="Wie können wir helfen?" id="search" />
-
-									<a data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm" class="fa-stack form-control--icon">
-										<i class="fa fa-times fa-stack-1x"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
-					</form>
-				</li>
-				<li class="nav-item">
 					<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
 						<i class="fa fa-lg fa-user" aria-hidden="true"></i>
 					</a>
@@ -557,18 +529,37 @@
 		</div>
 	</div>
 </nav>
+<!-- /subnavigatio - font-size small -->
+<div class="subnavigation navbar navbar-light navbar-expand-sm">
+	<div class="container">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Definitionen</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Veröffentlichungsdaten</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Literatur</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">FAQ</a>
+			</li>
+		</ul>
+	</div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-alv navbar-expand-lg navbar-light bg-faded&quot;&gt;
+	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-alv navbar-expand-sm navbar-light bg-faded&quot;&gt;
 	&lt;div class&#x3D;&quot;container&quot;&gt;
 		&lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
 			&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
 		&lt;/button&gt;
 
-		&lt;a class&#x3D;&quot;navbar-brand alv-logo alv-logo--dark&quot; href&#x3D;&quot;/amstat.html&quot;&gt;
+		&lt;a class&#x3D;&quot;navbar-brand alv-logo alv-logo--dark&quot; href&#x3D;&quot;.//amstat.html&quot;&gt;
 			&lt;strong class&#x3D;&quot;alv-logo__brand--amstat&quot;&gt;amstat&lt;/strong&gt;
 			&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
-				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+				&lt;strong&gt;arbeit&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;swiss&lt;/span&gt;
 			&lt;/div&gt;
 		&lt;/a&gt;
 
@@ -579,43 +570,26 @@
 						&lt;button data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
 							&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
 						&lt;/button&gt;
-						&lt;a href&#x3D;&quot;/amstat.html&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lg fa-home&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; amstat&lt;/a&gt;
+						&lt;a href&#x3D;&quot;.//amstat.html&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lg fa-home&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; amstat&lt;/a&gt;
 					&lt;/div&gt;
 
 					&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
-						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
-							&lt;form class&#x3D;&quot;form-inline&quot;&gt;
-								&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
-									&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
-										&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
-										&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
-											&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
-
-											&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
-												&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
-											&lt;/a&gt;
-										&lt;/div&gt;
-									&lt;/div&gt;
-								&lt;/div&gt;
-								&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-							&lt;/form&gt;
-						&lt;/li&gt;
-						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
-							&lt;a class&#x3D;&quot;nav-link active&quot; href&#x3D;&quot;/amstat.html&quot;&gt;amstat&lt;/a&gt;
+						&lt;li class&#x3D;&quot;nav-item megamenu dropdown dropdown--canvas&quot;&gt;
+							&lt;span class&#x3D;&quot;nav-link active&quot;&gt;amstat&lt;/span&gt;
 						&lt;/li&gt;
 						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
-							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;/index.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; work.ch&lt;/a&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;.//index.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; arbeit.swiss&lt;/a&gt;
 						&lt;/li&gt;
 						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
-							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;/job-room.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; Job-Room&lt;/a&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;.//job-room.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; Job-Room&lt;/a&gt;
 						&lt;/li&gt;
 						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
-							&lt;a class&#x3D;&quot;nav-link nav-link--login&quot; href&#x3D;&quot;#&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link nav-link--login&quot; href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#loginModal&quot;&gt;
 								Login
 							&lt;/a&gt;
 						&lt;/li&gt;
 						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
-							&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot; id&#x3D;&quot;languageSwitcher&quot;&gt;
+							&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot;&gt;
 								&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
 									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
 								&lt;/li&gt;
@@ -654,21 +628,220 @@
 					&lt;/ul&gt;
 				&lt;/li&gt;
 				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
-					&lt;form class&#x3D;&quot;form-inline&quot;&gt;
-						&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;searchForm&quot;&gt;
-							&lt;div class&#x3D;&quot;form-group form-group--navbar&quot;&gt;
-								&lt;label for&#x3D;&quot;search&quot; class&#x3D;&quot;sr-only&quot;&gt;Wie können wir helfen?&lt;/label&gt;
-								&lt;div class&#x3D;&quot;form-group--icon&quot;&gt;
-									&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Wie können wir helfen?&quot; id&#x3D;&quot;search&quot; /&gt;
+					&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#loginModal&quot;&gt;
+						&lt;i class&#x3D;&quot;fa fa-lg fa-user&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+					&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;
+&lt;!-- /subnavigatio - font-size small --&gt;
+&lt;div class&#x3D;&quot;subnavigation navbar navbar-light navbar-expand-sm&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Definitionen&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Veröffentlichungsdaten&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Literatur&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FAQ&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
 
-									&lt;a data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot; class&#x3D;&quot;fa-stack form-control--icon&quot;&gt;
-										&lt;i class&#x3D;&quot;fa fa-times fa-stack-1x&quot;&gt;&lt;/i&gt;
-									&lt;/a&gt;
-								&lt;/div&gt;
-							&lt;/div&gt;
-						&lt;/div&gt;
-						&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-					&lt;/form&gt;
+
+</div>
+
+
+<div class="f-item-group" id="amstat-subnavbar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Amstat Subnavbar</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<nav class="navbar navbar-alv navbar-expand-sm navbar-light bg-faded">
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
+
+		<a class="navbar-brand alv-logo alv-logo--dark" href=".//amstat.html">
+			<strong class="alv-logo__brand--amstat">amstat</strong>
+			<div class="alv-logo__title-small">
+				<strong>arbeit</strong><span class="title__plus-ch">swiss</span>
+			</div>
+		</a>
+
+		<div class="ml-auto">
+			<div id="drawerExample" class="drawer fold" aria-labelledby="drawerExample">
+				<div class="drawer-contents">
+					<div class="drawer-heading">
+						<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<a href=".//amstat.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> amstat</a>
+					</div>
+
+					<ul class="navbar-nav">
+						<li class="nav-item megamenu dropdown dropdown--canvas">
+							<span class="nav-link active">amstat</span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href=".//index.html"><span class="d-sm-none">zu</span> arbeit.swiss</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href=".//job-room.html"><span class="d-sm-none">zu</span> Job-Room</a>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<a class="nav-link nav-link--login" href="#" data-toggle="modal" data-target="#loginModal">
+								Login
+							</a>
+						</li>
+						<li class="nav-item d-none d-sm-block">
+							<ul class="navbar-nav navbar--language-switcher">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">DE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">FR</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">IT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">EN</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="ml-auto d-sm-none">
+			<ul class="navbar-nav mobile-nav">
+				<li class="nav-item">
+					<ul class="navbar-nav navbar--language-switcher" id="mobLanguageSwitcher">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">DE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">FR</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">IT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">EN</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+						<i class="fa fa-lg fa-user" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div>
+	SUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBAR
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-alv navbar-expand-sm navbar-light bg-faded&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;button class&#x3D;&quot;navbar-toggler&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;Toggle navigation&quot;&gt;
+			&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
+		&lt;/button&gt;
+
+		&lt;a class&#x3D;&quot;navbar-brand alv-logo alv-logo--dark&quot; href&#x3D;&quot;.//amstat.html&quot;&gt;
+			&lt;strong class&#x3D;&quot;alv-logo__brand--amstat&quot;&gt;amstat&lt;/strong&gt;
+			&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
+				&lt;strong&gt;arbeit&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;swiss&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto&quot;&gt;
+			&lt;div id&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;drawer fold&quot; aria-labelledby&#x3D;&quot;drawerExample&quot;&gt;
+				&lt;div class&#x3D;&quot;drawer-contents&quot;&gt;
+					&lt;div class&#x3D;&quot;drawer-heading&quot;&gt;
+						&lt;button data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+							&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+						&lt;/button&gt;
+						&lt;a href&#x3D;&quot;.//amstat.html&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lg fa-home&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; amstat&lt;/a&gt;
+					&lt;/div&gt;
+
+					&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item megamenu dropdown dropdown--canvas&quot;&gt;
+							&lt;span class&#x3D;&quot;nav-link active&quot;&gt;amstat&lt;/span&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;.//index.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; arbeit.swiss&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;.//job-room.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; Job-Room&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link nav-link--login&quot; href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#loginModal&quot;&gt;
+								Login
+							&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item d-none d-sm-block&quot;&gt;
+							&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot;&gt;
+								&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+									&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;ml-auto d-sm-none&quot;&gt;
+			&lt;ul class&#x3D;&quot;navbar-nav mobile-nav&quot;&gt;
+				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+					&lt;ul class&#x3D;&quot;navbar-nav navbar--language-switcher&quot; id&#x3D;&quot;mobLanguageSwitcher&quot;&gt;
+						&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;DE&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;FR&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;IT&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;EN&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
 				&lt;/li&gt;
 				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
 					&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#loginModal&quot;&gt;
@@ -678,7 +851,10 @@
 			&lt;/ul&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-&lt;/nav&gt;</code></pre>
+&lt;/nav&gt;
+&lt;div&gt;
+	SUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBARSUBNAVBAR
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -1324,7 +1500,7 @@
 		<a class="navbar-brand alv-logo alv-logo--inverse" href=".//job-room.html">
 			<strong class="alv-logo__brand--job-room">Job-Room</strong>
 			<div class="alv-logo__title-small">
-				<strong>alv</strong><span class="title__plus-ch">ch</span>
+				<strong>arbeit</strong><span class="title__plus-ch">swiss</span>
 			</div>
 		</a>
 
@@ -1356,33 +1532,11 @@
 								<a class="nav-link nav-link--search-left" data-toggle="collapse" href="#searchForm" aria-expanded="false" aria-controls="searchForm"><i class="fa fa-search" aria-hidden="true"></i></a>
 							</form>
 						</li>
-						<li class="nav-item megamenu dropdown dropdown--canvas">
-							<a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i> Job-Room</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<div class="megamenu-menu">
-									<div>
-										<span class="dropdown-title">Stellensuchende</span>
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-									<div>
-										<span class="dropdown-title">Unternehmen</span>
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-									<div>
-										<span class="dropdown-title">Arbeitsvermittler</span>
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-								</div>
-							</div>
+						<li class="nav-item">
+							<span class="nav-link active">Job-Room</span>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href=".//index.html"><span class="d-sm-none">zu</span> work.ch</a>
+							<a class="nav-link" href=".//index.html"><span class="d-sm-none">zu</span> work.swiss</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href=".//amstat.html"><span class="d-sm-none">zu</span> amstat</a>
@@ -1468,7 +1622,7 @@
 		&lt;a class&#x3D;&quot;navbar-brand alv-logo alv-logo--inverse&quot; href&#x3D;&quot;.//job-room.html&quot;&gt;
 			&lt;strong class&#x3D;&quot;alv-logo__brand--job-room&quot;&gt;Job-Room&lt;/strong&gt;
 			&lt;div class&#x3D;&quot;alv-logo__title-small&quot;&gt;
-				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+				&lt;strong&gt;arbeit&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;swiss&lt;/span&gt;
 			&lt;/div&gt;
 		&lt;/a&gt;
 
@@ -1500,33 +1654,11 @@
 								&lt;a class&#x3D;&quot;nav-link nav-link--search-left&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#searchForm&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;searchForm&quot;&gt;&lt;i class&#x3D;&quot;fa fa-search&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 							&lt;/form&gt;
 						&lt;/li&gt;
-						&lt;li class&#x3D;&quot;nav-item megamenu dropdown dropdown--canvas&quot;&gt;
-							&lt;a class&#x3D;&quot;nav-link dropdown-toggle active&quot; id&#x3D;&quot;navbarDropdownMenuLink&quot; data-toggle&#x3D;&quot;dropdown&quot; href&#x3D;&quot;#&quot; role&#x3D;&quot;button&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;&lt;i class&#x3D;&quot;fa fa-bars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Job-Room&lt;/a&gt;
-							&lt;div class&#x3D;&quot;dropdown-menu&quot; aria-labelledby&#x3D;&quot;navbarDropdownMenuLink&quot;&gt;
-								&lt;div class&#x3D;&quot;megamenu-menu&quot;&gt;
-									&lt;div&gt;
-										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Stellensuchende&lt;/span&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
-									&lt;/div&gt;
-									&lt;div&gt;
-										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Unternehmen&lt;/span&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
-									&lt;/div&gt;
-									&lt;div&gt;
-										&lt;span class&#x3D;&quot;dropdown-title&quot;&gt;Arbeitsvermittler&lt;/span&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
-										&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
-									&lt;/div&gt;
-								&lt;/div&gt;
-							&lt;/div&gt;
+						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+							&lt;span class&#x3D;&quot;nav-link active&quot;&gt;Job-Room&lt;/span&gt;
 						&lt;/li&gt;
 						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
-							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;.//index.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; work.ch&lt;/a&gt;
+							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;.//index.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; work.swiss&lt;/a&gt;
 						&lt;/li&gt;
 						&lt;li class&#x3D;&quot;nav-item&quot;&gt;
 							&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;.//amstat.html&quot;&gt;&lt;span class&#x3D;&quot;d-sm-none&quot;&gt;zu&lt;/span&gt; amstat&lt;/a&gt;
@@ -2055,7 +2187,7 @@
 
 		<a class="navbar-brand alv-logo" href=".//index.html">
 			<div class="alv-logo__title">
-				<strong>alv</strong><span class="title__plus-ch">ch</span>
+				<strong>arbeit</strong><span class="title__plus-ch">swiss</span>
 			</div>
 		</a>
 
@@ -2066,7 +2198,7 @@
 						<button data-toggle="drawer" data-target="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="close" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<a href=".//index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> work.ch</a>
+						<a href=".//index.html"><i class="fa fa-lg fa-home" aria-hidden="true"></i> work.swiss</a>
 					</div>
 
 					<ul class="navbar-nav">
@@ -2219,7 +2351,7 @@
 
 		&lt;a class&#x3D;&quot;navbar-brand alv-logo&quot; href&#x3D;&quot;.//index.html&quot;&gt;
 			&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
-				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+				&lt;strong&gt;arbeit&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;swiss&lt;/span&gt;
 			&lt;/div&gt;
 		&lt;/a&gt;
 
@@ -2230,7 +2362,7 @@
 						&lt;button data-toggle&#x3D;&quot;drawer&quot; data-target&#x3D;&quot;#drawerExample&quot; aria-foldedopen&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;drawerExample&quot; class&#x3D;&quot;close&quot; aria-label&#x3D;&quot;Close&quot;&gt;
 							&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
 						&lt;/button&gt;
-						&lt;a href&#x3D;&quot;.//index.html&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lg fa-home&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; work.ch&lt;/a&gt;
+						&lt;a href&#x3D;&quot;.//index.html&quot;&gt;&lt;i class&#x3D;&quot;fa fa-lg fa-home&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; work.swiss&lt;/a&gt;
 					&lt;/div&gt;
 
 					&lt;ul class&#x3D;&quot;navbar-nav&quot;&gt;
@@ -2401,7 +2533,7 @@
 
 		<a class="navbar-brand alv-logo" href=".//index.html">
 			<div class="alv-logo__title">
-				<strong>alv</strong><span class="title__plus-ch">ch</span>
+				<strong>alv</strong><span class="title__plus-ch">swiss</span>
 			</div>
 		</a>
 
@@ -2452,7 +2584,7 @@
 
 		&lt;a class&#x3D;&quot;navbar-brand alv-logo&quot; href&#x3D;&quot;.//index.html&quot;&gt;
 			&lt;div class&#x3D;&quot;alv-logo__title&quot;&gt;
-				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;ch&lt;/span&gt;
+				&lt;strong&gt;alv&lt;/strong&gt;&lt;span class&#x3D;&quot;title__plus-ch&quot;&gt;swiss&lt;/span&gt;
 			&lt;/div&gt;
 		&lt;/a&gt;
 
@@ -2816,41 +2948,49 @@
 				</li>
 				<li class="nav-item active">
 					<a href="#" class="nav-link">
+							<span>
 								<span class="nav-link__icon">
 									<span class="icon__stack">
 										<i class="fa fa-binoculars" aria-hidden="true"></i>
 									</span>
 								</span>
+							</span>
 							<span>Stellensuchende</span>
 						</a>
 				</li>
 				<li class="nav-item">
 					<a href="#" class="nav-link">
+							<span>
 								<span class="nav-link__icon">
 									<span class="icon__stack">
 										<i class="fa fa-building" aria-hidden="true"></i>
 									</span>
 								</span>
+							</span>
 							<span>Unternehmen</span>
 						</a>
 				</li>
 				<li class="nav-item">
 					<a href="#" class="nav-link">
+							<span>
 								<span class="nav-link__icon">
 									<span class="icon__stack">
 										<i class="fa fa-eye" aria-hidden="true"></i>
 									</span>
 								</span>
+							</span>
 							<span>Arbeitsvermittler</span>
 						</a>
 				</li>
 				<li class="nav-item">
 					<a href="#" class="nav-link">
+							<span>
 								<span class="nav-link__icon">
 									<span class="icon__stack">
 										<i class="fa fa-university" aria-hidden="true"></i>
 									</span>
 								</span>
+							</span>
 							<span>Institutionen</span>
 						</a>
 				</li>
@@ -2869,41 +3009,49 @@
 				&lt;/li&gt;
 				&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
 					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link&quot;&gt;
+							&lt;span&gt;
 								&lt;span class&#x3D;&quot;nav-link__icon&quot;&gt;
 									&lt;span class&#x3D;&quot;icon__stack&quot;&gt;
 										&lt;i class&#x3D;&quot;fa fa-binoculars&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
 									&lt;/span&gt;
 								&lt;/span&gt;
+							&lt;/span&gt;
 							&lt;span&gt;Stellensuchende&lt;/span&gt;
 						&lt;/a&gt;
 				&lt;/li&gt;
 				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
 					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link&quot;&gt;
+							&lt;span&gt;
 								&lt;span class&#x3D;&quot;nav-link__icon&quot;&gt;
 									&lt;span class&#x3D;&quot;icon__stack&quot;&gt;
 										&lt;i class&#x3D;&quot;fa fa-building&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
 									&lt;/span&gt;
 								&lt;/span&gt;
+							&lt;/span&gt;
 							&lt;span&gt;Unternehmen&lt;/span&gt;
 						&lt;/a&gt;
 				&lt;/li&gt;
 				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
 					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link&quot;&gt;
+							&lt;span&gt;
 								&lt;span class&#x3D;&quot;nav-link__icon&quot;&gt;
 									&lt;span class&#x3D;&quot;icon__stack&quot;&gt;
 										&lt;i class&#x3D;&quot;fa fa-eye&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
 									&lt;/span&gt;
 								&lt;/span&gt;
+							&lt;/span&gt;
 							&lt;span&gt;Arbeitsvermittler&lt;/span&gt;
 						&lt;/a&gt;
 				&lt;/li&gt;
 				&lt;li class&#x3D;&quot;nav-item&quot;&gt;
 					&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nav-link&quot;&gt;
+							&lt;span&gt;
 								&lt;span class&#x3D;&quot;nav-link__icon&quot;&gt;
 									&lt;span class&#x3D;&quot;icon__stack&quot;&gt;
 										&lt;i class&#x3D;&quot;fa fa-university&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt;
 									&lt;/span&gt;
 								&lt;/span&gt;
+							&lt;/span&gt;
 							&lt;span&gt;Institutionen&lt;/span&gt;
 						&lt;/a&gt;
 				&lt;/li&gt;
