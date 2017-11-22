@@ -37,7 +37,8 @@ var config = {
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-			styleguide: 'src/assets/styleguide/styles/alv-ch.scss'
+			styleguide: 'src/assets/styleguide/styles/alv-ch.scss',
+			compatibility: 'src/assets/styleguide/styles/alv-ch_ie.scss'
 		},
 		sass: 'src/assets/styleguide/styles/**/*',
 		js: 'src/assets/styleguide/scripts/**/*',
@@ -51,7 +52,6 @@ var config = {
 
 };
 
-
 // webpack
 var webpackConfig = require('./webpack.config')(config);
 var webpackCompiler = webpack(webpackConfig);
@@ -60,8 +60,6 @@ var webpackCompiler = webpack(webpackConfig);
 gulp.task('clean', function (cb) {
 	del([config.dest], cb);
 });
-
-
 // styles
 gulp.task('styles:fabricator', function () {
 	gulp.src(config.src.styles.fabricator)
@@ -86,7 +84,18 @@ gulp.task('styles:styleguide', function () {
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task('styles', ['styles:fabricator', 'styles:styleguide']);
+gulp.task('styles:compatibility', function () {
+	gulp.src(config.src.styles.compatibility)
+		.pipe(sourcemaps.init())
+		.pipe(sass(options).on('error', sass.logError))
+		.pipe(prefix('last 1 version'))
+		.pipe(gulpif(!config.dev, csso()))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest(config.dest + '/assets/styleguide/styles'))
+		.pipe(gulpif(config.dev, reload({stream:true})));
+});
+
+gulp.task('styles', ['styles:fabricator', 'styles:styleguide', 'styles:compatibility']);
 
 // scripts
 gulp.task('scripts', function (done) {
@@ -103,15 +112,12 @@ gulp.task('scripts', function (done) {
 		done();
 	});
 });
-
-
 // images
 gulp.task('images', ['favicon', 'fonts'], function () {
 	return gulp.src(config.src.images)
 		.pipe(imagemin())
 		.pipe(gulp.dest(config.dest + '/assets/styleguide/images'));
 });
-
 // fonts
 gulp.task('fonts', function () {
 	return gulp.src(config.src.fonts)
@@ -122,8 +128,6 @@ gulp.task('favicon', function () {
 	return gulp.src('./src/favicon.ico')
 		.pipe(gulp.dest(config.dest));
 });
-
-
 // assemble
 gulp.task('assemble', function (done) {
 	assemble({
@@ -131,8 +135,6 @@ gulp.task('assemble', function (done) {
 	});
 	done();
 });
-
-
 // clean:build
 gulp.task('clean:build', function (cb) {
 	del([config.build], cb);
@@ -140,6 +142,15 @@ gulp.task('clean:build', function (cb) {
 // build
 gulp.task('styles:build', function () {
 	gulp.src(config.src.styles.styleguide)
+		.pipe(sourcemaps.init())
+		.pipe(sass(options).on('error', sass.logError))
+		.pipe(prefix('last 1 version'))
+		.pipe(gulpif(!config.dev, csso()))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest(config.build + '/css'))
+		.pipe(gulpif(config.dev, reload({stream:true})));
+
+	gulp.src(config.src.styles.compatibility)
 		.pipe(sourcemaps.init())
 		.pipe(sass(options).on('error', sass.logError))
 		.pipe(prefix('last 1 version'))
@@ -178,7 +189,6 @@ gulp.task('scripts:build', ['scripts'], function () {
 gulp.task('gh-pages', ['styles'], function() {
 	return gulp.src(['dist/**/*']).pipe(gulp.dest(config.ghPages));
 });
-
 
 // server
 gulp.task('serve', function () {

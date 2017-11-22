@@ -1,0 +1,89 @@
+// Dashboard
+.dashboard {
+
+	.base__related {
+		margin-bottom: $margin-x-general;
+	}
+
+	.actions {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s linear 300ms, opacity 300ms;
+	}
+
+	.table-hover tbody tr:hover {
+		background-color: rgba($brand-primary,.25);
+		.actions {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0s linear 0s, opacity 300ms;
+		}
+	}
+}
+
+@include p-subtitle('dashboard');
+
+.dashboard__icon {
+	color: $main-color-gray-light;
+	margin-right: $margin-x-narrow;
+}
+
+.dashboard__actions {
+	margin: $margin-x-general 0 $margin-x-narrow 0;
+
+	.form-inline {
+		.form-group {
+			margin-right: $margin-x-general;
+		}
+
+		.form-control--icon {
+			color: $brand-primary;
+		}
+
+		label {
+			margin-right: $margin-x-narrow;
+		}
+	}
+}
+
+.dashboard__content--table {
+	overflow-y: scroll;
+}
+
+@media screen and (max-width: 479px) {
+	.dashboard {
+		.base__content--wide {
+			order: 2;
+		}
+
+		.alv-logo-box {
+			border-radius: 0 !important;
+			padding: 0;
+			background: transparent;
+		}
+
+		.md-whiteframe-1dp {
+			box-shadow: none;
+		}
+
+		.dashboard__actions {
+			.form-group {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+	.dashboard {
+		.base__content--wide {
+			@include make-col(4, 4);
+			order: 2;
+		}
+
+		.table {
+			font-size: $small-font-size;
+		}
+	}
+}

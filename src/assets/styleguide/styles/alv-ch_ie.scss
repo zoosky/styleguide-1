@@ -1,0 +1,30 @@
+// IE
+/* ==========================================================
+ * alv-ch_ie.scss
+ * IE Compatibility
+ *
+ * Author: Thomas D'Ascoli, thomas@dasco.li
+ * Date:   2017-11-22 15:38
+ *
+ * Copyright 2017 alv-ch
+ * Licensed under MIT
+ =========================================================== */
+
+/**
+ * CONTENTS
+ *
+ * CORE
+ * Utilites
+ * Mixins
+ * Variables
+ *
+ * COMPONENTS
+ *
+ */
+
+@import 'alv-ch_utilities';
+@import 'alv-ch_mixins';
+@import 'alv-ch_variables';
+
+// components
+@import 'compatibility/ie';

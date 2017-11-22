@@ -1,7 +1,5 @@
 /* ==========================================================
  * alv-ch.scss
- * ((text))
- *
  *
  * Author: Thomas D'Ascoli, thomas@dasco.li
  * Date:   2017-05-25 18:00
@@ -13,20 +11,19 @@
 /**
  * CONTENTS
  *
+ * FONT
+ * OpenSans
+ *
  * CORE
- * Utilites.............(()).
- * Mixins...............(()).
- * Variables............(()).
+ * Utilites
+ * Mixins
+ * Variables
  *
  * 3RD-PARTY
- * Bootstrap 4..........(()).
- * Font-Awesome 4.7.0...(()).
+ * Bootstrap 4-beta
+ * Font-Awesome 4.7.0
  *
  * COMPONENTS
- * alv-header
- * alv-logo
- * navbar
- * Logo.................(()).
  *
  */
 
@@ -59,7 +56,6 @@
 @import 'components/breadcrumb';
 @import 'components/tool';
 @import 'components/color';
-@import 'components/slider';
 @import 'components/login';
 @import 'components/modal';
 @import 'components/button';

@@ -62,10 +62,6 @@ $( document ).ready(function() {
 		 * .sticked--top__parent = fixed parent-dom top
 		 *
 		 */
-		$('.sticked--top').each(function(){
-			$(this).css('top',$(this).offset().top);
-		});
-
 		$('.sticked--top__parent').each(function(){
 			$(this).css('top',$(this).parent().offset().top);
 		});

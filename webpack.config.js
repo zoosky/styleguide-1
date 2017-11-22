@@ -41,8 +41,7 @@ module.exports = function(fabricatorConfig,build) {
 
 	if (dest!=='dist') {
 		config.entry = {
-				'scripts/alv-ch': fabricatorConfig.src.scripts.styleguide,
-				'scripts/alv-ch_reset': fabricatorConfig.src.scripts.reset
+				'scripts/alv-ch': fabricatorConfig.src.scripts.styleguide
 		};
 		config.output.path = path.resolve(__dirname, dest);
 	}
