@@ -1,15 +1,16 @@
 // Sticky
 @media screen and (min-width: 769px){
-
-	.sticked--top.toolbar {
-		margin-top: 4rem;
-
-		.container {
-			position: fixed;
-			width: 100%;
-			top: ($header-alv-height + $header-navbar-height) !important;
-		}
+	.sticked {
+		position: fixed;
 	}
 
+	.sticked--top.toolbar {
+		margin-top: 0;
+		width: 100%;
+		top: ($header-alv-height + $header-navbar-height) !important;
+	}
 
+	jr2-job-search-toolbar + .container {
+		margin-top: 4rem;
+	}
 }
