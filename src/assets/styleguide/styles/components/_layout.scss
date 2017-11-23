@@ -44,19 +44,18 @@ html, body {
 \*------------------------------------*/
 
 /**
- * Common page Layout:	| subnavbar:1/5 | content:3/5 | related:1/5 | OR
- 						| subnavbar:1/5 | content-wide:4/5 |
+ * Common page Layout:	| subnavbar:1/4 | content:2/4 | related:1/4 | OR
+ 						| subnavbar:1/4 | content-wide:3/4 |
  */
 
 // todo
 .base {
 	margin-bottom: $margin-x-general;
 
+	// Desktop
 	@media screen and (min-width: 480px){
 
 		@include make-row();
-
-		// todo: margin-bottom?!
 
 		.base__subnavbar,
 		.base__content,
@@ -73,24 +72,6 @@ html, body {
 
 		.base__subnavbar,
 		.base__related {
-			@include make-col(1, 5);
-		}
-
-		.base__content {
-			@include make-col(3, 5);
-		}
-		.base__content--wide {
-			@include make-col(4, 5);
-		}
-
-		.base--margin-top {
-			margin-top: (2*$breadcrumb-padding-x + $spacer);
-		}
-	}
-
-	@media screen and (min-width: 480px) and (max-width: 1024px){
-		.base__subnavbar,
-		.base__related {
 			@include make-col(1, 4);
 		}
 
@@ -99,6 +80,24 @@ html, body {
 		}
 		.base__content--wide {
 			@include make-col(3, 4);
+		}
+
+		.base--margin-top {
+			margin-top: (2*$breadcrumb-padding-x + $spacer);
+		}
+	}
+	// XXL Desktop
+	@media screen and (min-width: get-breakpoint('xxl')){
+		.base__subnavbar,
+		.base__related {
+			@include make-col(1, 5);
+		}
+
+		.base__content {
+			@include make-col(3, 5);
+		}
+		.base__content--wide {
+			@include make-col(4, 5);
 		}
 	}
 
@@ -119,6 +118,7 @@ html, body {
 		}
 	}
 
+	// Smartphone
 	@media screen and (max-width: 479px) {
 		display: flex;
 		flex-direction: column;

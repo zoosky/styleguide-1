@@ -34,7 +34,7 @@
 }
 
 .alv-logo {
-	@media screen and (min-width: 480px){
+	@media screen and (min-width: get-breakpoint('sm')){
 		// todo: navbar height * 30px!!
 		height: $logo-height;
 		width: calc(#{$logo-height} * #{$phi});
@@ -68,7 +68,7 @@
 		line-height: .5;
 	}
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: get-max-breakpoint('sm')){
 		color: $brand-primary;
 		letter-spacing: initial;
 
@@ -81,7 +81,7 @@
 .alv-logo__brand--amstat {
 	letter-spacing: initial;
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: get-max-breakpoint('sm')){
 		color: $main-color-gray-dark;
 		display: inline;
 	}
@@ -97,7 +97,7 @@
 		color: $main-color-gray;
 	}
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: get-max-breakpoint('sm')){
 		color: $additional-accent-amber;
 	}
 }
@@ -135,7 +135,7 @@
 
 
 .alv-logo--inverse {
-	@media screen and (min-width: 480px){
+	@media screen and (min-width: get-breakpoint('sm')){
 		background: $brand-primary;
 		color: $white !important;
 
@@ -149,7 +149,7 @@
 }
 
 .alv-logo--dark {
-	@media screen and (min-width: 480px){
+	@media screen and (min-width: get-breakpoint('sm')){
 		background: $main-color-gray-dark;
 		color: $white !important;
 

@@ -73,7 +73,7 @@ body.has-drawer {
 // --------------------------------------------------
 
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: get-breakpoint('sm')){
 	.drawer-controls,
 	.drawer-heading,
 	.drawer-body,
@@ -83,7 +83,7 @@ body.has-drawer {
 }
 
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: get-max-breakpoint('sm')) {
 	.drawer {
 		display: block;
 		background-color: $drawer-bg;

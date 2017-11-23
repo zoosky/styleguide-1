@@ -1,3 +1,7 @@
 @function get-breakpoint($breakpoint: "lg") {
 	@return map-get($grid-breakpoints, $breakpoint);
 }
+
+@function get-max-breakpoint($breakpoint: "lg") {
+	@return map-get($grid-breakpoints, $breakpoint)-1;
+}

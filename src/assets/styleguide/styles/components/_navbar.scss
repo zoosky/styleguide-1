@@ -5,7 +5,7 @@
 
 	max-height: $header-navbar-height;
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: get-max-breakpoint('sm')){
 		justify-content: flex-start;
 
 		>.container {
@@ -30,7 +30,7 @@
 }
 
 .navbar-brand {
-	@media screen and (min-width: 480px){
+	@media screen and (min-width: get-breakpoint('sm')){
 		&.alv-logo {
 			position: absolute;
 			top: 0;
@@ -78,7 +78,7 @@
 		 	display: none;
 		}
 
-		@media screen and (max-width: 479px){
+		@media screen and (max-width: get-max-breakpoint('sm')){
 			.nav-link--login__icon {
 				display: inline-block;
 			}
@@ -89,7 +89,7 @@
 		}
 	}
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: get-max-breakpoint('sm')){
 		&.navbar-nav--alv {
 			display: inline-flex;
 			flex-direction: row;
@@ -185,7 +185,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: get-max-breakpoint('sm')){
 		.navbar--language-switcher {
 			display: none;
 		}
@@ -196,7 +196,7 @@
 	}
 }
 
-@media screen and (max-width: 479px){
+@media screen and (max-width: get-max-breakpoint('sm')){
 	.navbar-nav {
 
 		.nav-link {
@@ -227,7 +227,7 @@
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: get-breakpoint('sm')) and (max-width: 1024px) {
 	.navbar-nav {
 
 		.nav-link {

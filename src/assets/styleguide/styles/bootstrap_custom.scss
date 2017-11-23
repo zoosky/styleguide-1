@@ -98,11 +98,13 @@ $link-hover-color:      $main-accent-color-hover; // before: amber!
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-	xs: 0,
-	sm: 576px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px,
+	xxxs: 0,
+	xxs: 600px,
+	xs: 720px,
+	sm: 840px,
+	md: 960px,
+	lg: 1024px,
+	xl: 1280px,
 	xxl: 1440px,
 	xxxl: 1600px
 );
@@ -112,10 +114,12 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-	xl: 1140px,
+	xxs: 580px,
+	xs: 680px,
+	sm: 780px,
+	md: 900px,
+	lg: 980px,
+	xl: 1220px,
 	xxl: 1380px,
 	xxxl: 1540px
 );
