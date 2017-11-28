@@ -37,8 +37,7 @@ var config = {
 		},
 		styles: {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-			styleguide: 'src/assets/styleguide/styles/alv-ch.scss',
-			compatibility: 'src/assets/styleguide/styles/alv-ch_ie.scss'
+			styleguide: 'src/assets/styleguide/styles/alv-ch.scss'
 		},
 		sass: 'src/assets/styleguide/styles/**/*',
 		js: 'src/assets/styleguide/scripts/**/*',
@@ -84,18 +83,7 @@ gulp.task('styles:styleguide', function () {
 		.pipe(gulpif(config.dev, reload({stream:true})));
 });
 
-gulp.task('styles:compatibility', function () {
-	gulp.src(config.src.styles.compatibility)
-		.pipe(sourcemaps.init())
-		.pipe(sass(options).on('error', sass.logError))
-		.pipe(prefix('last 1 version'))
-		.pipe(gulpif(!config.dev, csso()))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest(config.dest + '/assets/styleguide/styles'))
-		.pipe(gulpif(config.dev, reload({stream:true})));
-});
-
-gulp.task('styles', ['styles:fabricator', 'styles:styleguide', 'styles:compatibility']);
+gulp.task('styles', ['styles:fabricator', 'styles:styleguide']);
 
 // scripts
 gulp.task('scripts', function (done) {
@@ -142,15 +130,6 @@ gulp.task('clean:build', function (cb) {
 // build
 gulp.task('styles:build', function () {
 	gulp.src(config.src.styles.styleguide)
-		.pipe(sourcemaps.init())
-		.pipe(sass(options).on('error', sass.logError))
-		.pipe(prefix('last 1 version'))
-		.pipe(gulpif(!config.dev, csso()))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest(config.build + '/css'))
-		.pipe(gulpif(config.dev, reload({stream:true})));
-
-	gulp.src(config.src.styles.compatibility)
 		.pipe(sourcemaps.init())
 		.pipe(sass(options).on('error', sass.logError))
 		.pipe(prefix('last 1 version'))
