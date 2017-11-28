@@ -51,7 +51,6 @@ var config = {
 
 };
 
-
 // webpack
 var webpackConfig = require('./webpack.config')(config);
 var webpackCompiler = webpack(webpackConfig);
@@ -60,8 +59,6 @@ var webpackCompiler = webpack(webpackConfig);
 gulp.task('clean', function (cb) {
 	del([config.dest], cb);
 });
-
-
 // styles
 gulp.task('styles:fabricator', function () {
 	gulp.src(config.src.styles.fabricator)
@@ -103,15 +100,12 @@ gulp.task('scripts', function (done) {
 		done();
 	});
 });
-
-
 // images
 gulp.task('images', ['favicon', 'fonts'], function () {
 	return gulp.src(config.src.images)
 		.pipe(imagemin())
 		.pipe(gulp.dest(config.dest + '/assets/styleguide/images'));
 });
-
 // fonts
 gulp.task('fonts', function () {
 	return gulp.src(config.src.fonts)
@@ -122,8 +116,6 @@ gulp.task('favicon', function () {
 	return gulp.src('./src/favicon.ico')
 		.pipe(gulp.dest(config.dest));
 });
-
-
 // assemble
 gulp.task('assemble', function (done) {
 	assemble({
@@ -131,8 +123,6 @@ gulp.task('assemble', function (done) {
 	});
 	done();
 });
-
-
 // clean:build
 gulp.task('clean:build', function (cb) {
 	del([config.build], cb);
@@ -178,7 +168,6 @@ gulp.task('scripts:build', ['scripts'], function () {
 gulp.task('gh-pages', ['styles'], function() {
 	return gulp.src(['dist/**/*']).pipe(gulp.dest(config.ghPages));
 });
-
 
 // server
 gulp.task('serve', function () {

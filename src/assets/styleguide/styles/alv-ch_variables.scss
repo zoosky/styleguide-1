@@ -1,7 +1,5 @@
 /* ==========================================================
  * alv-ch-variables.scss
- * ((text))
- *
  *
  * Author: Thomas D'Ascoli, thomas@dasco.li
  * Date:   2017-05-25 21:22
@@ -9,12 +7,6 @@
  * Copyright 2017 alv-ch
  * Licensed under MIT
  =========================================================== */
-
-/**
- * CONTENTS
- * Logo.................(()).
- *
- */
 
 // Colors
 $main-color-black: 			#333333;
@@ -136,11 +128,6 @@ $alv-box-padding: $alv-box-radius * .75; // ~5px
 // Subnavbar
 $subnav-link-active-border: 4px;
 
-// Navs
-/*
-$nav-link-padding-y: .5em;
-$nav-link-padding-x: 1em;
-*/
 // Filter
 $margin-x-general: 1.5rem;
 $margin-x-filter: $margin-x-general;

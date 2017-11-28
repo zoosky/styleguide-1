@@ -1,11 +1,17 @@
-<h1 class="tool__heading">Finden Sie jetzt Ihren Traumjob!</h1>
-
 <div class="row">
-	<div class="col-md-9 col-xl-6 col-xxl-5">
-		<form class="job-search__form">
-			{{> job-search}}
+	<div class="col-xs-12 col-sm-10 col-xxl-8">
+		<h1 class="tool__heading">Finden Sie jetzt Ihren Traumjob!</h1>
 
-			<a class="btn btn-primary btn-lg btn-block" href="job-room/job-result-list.html">Traumjob finden!</a>
-		</form>
+		<div class="d-flex flex-row">
+			<div class="job-search__form">
+				<form>
+					{{> job-search}}
+
+					<a class="btn btn-primary btn-lg btn-block" href="job-room/job-result-list.html">Traumjob finden!</a>
+				</form>
+			</div>
+
+			{{> job-radar}}
+		</div>
 	</div>
 </div>

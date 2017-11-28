@@ -1,8 +1,7 @@
 @media screen and (min-width: 769px){
 	.sticked {
-		position: -webkit-sticky;
 		position: sticky;
-		z-index: 1000;
+		z-index: 100;
 	}
 
 	.sticked--top,
@@ -15,6 +14,8 @@
 	}
 
 	.base__subnavbar > .sticked--top {
-		top: 155px;
+		top: calc(#{$header-alv-height + $header-navbar-height + $toolbar-height} + #{$toolbar-margin-bottom});
+		overflow-y: auto;
+		height: calc(100vh - (#{$header-alv-height + $header-navbar-height + $toolbar-height} + #{$toolbar-margin-bottom}));
 	}
 }
