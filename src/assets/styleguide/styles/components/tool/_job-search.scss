@@ -1,5 +1,7 @@
 // Job-Room job-search
 .job-search__form {
+	width: calc(75% - #{$margin-y-general*2});
+	padding-right: ($margin-y-general*2);
 
 	@media screen and (max-width: 479px) {
 		.form-control-lg {
@@ -13,6 +15,40 @@
 			line-height: $input-btn-line-height;
 			@include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
 		}
+	}
+}
+
+.job-search__radar {
+	width: 25%;
+}
+.job-radar {
+	padding: $margin-x-narrow;
+	margin: 0 $margin-y-general;
+
+	font-size: $small-font-size;
+	text-align: center;
+	color: $brand-primary;
+
+	&:hover {
+		background: $brand-primary;
+		color: theme-color('light');
+
+		a {
+			color: theme-color('light');
+		}
+
+		.badge-radar {
+			color: $brand-primary;
+
+			@include badge-variant(theme-color('light'));
+		}
+	}
+
+	a {
+		display: block;
+		font-weight: 700;
+		margin-top: $margin-x-narrow;
+		color: transparent;
 	}
 }
 
