@@ -133,7 +133,7 @@
 
 .candidate-radar {
 	padding: $margin-x-narrow;
-	margin: $margin-y-general;
+	margin: ($margin-y-general*2) 0;
 
 	font-size: $small-font-size;
 	text-align: center;
