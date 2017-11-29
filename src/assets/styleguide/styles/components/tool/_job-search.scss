@@ -1,7 +1,13 @@
 // Job-Room job-search
+.content--job-search {
+	position: relative;
+	background: rgba($main-color-gray-light-50,0.5);
+	margin-top: 52px;
+}
+
 .job-search__form {
 	width: calc(75% - #{$margin-y-general*2});
-	padding-right: ($margin-y-general*2);
+	padding: ($margin-y-general*2);
 
 	@media screen and (max-width: 479px) {
 		.form-control-lg {
@@ -20,6 +26,7 @@
 
 .job-search__radar {
 	width: 25%;
+	margin: ($margin-y-general*2) 0;
 }
 .job-radar {
 	padding: $margin-x-narrow;

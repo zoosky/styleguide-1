@@ -4,8 +4,7 @@
 	letter-spacing: $text-base-spacing;
 
 	@media screen and (min-width: 480px){
-		margin-top: 2em;
-		margin-bottom: .75em;
+		padding: ($margin-y-general * 2) 0 0 ($margin-y-general * 2);
 	}
 
 	@media screen and (max-width: 479px){
@@ -22,6 +21,14 @@
 }
 .jumbotron--landingpage .tool__heading {
 	margin-top: .75em;
+}
+
+.background--job-room {
+	background: url(../images/bg-jobroom.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 // Process

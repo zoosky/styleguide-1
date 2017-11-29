@@ -19,19 +19,19 @@
 		border: none;
 
 		&.active {
-			background: rgba($main-color-gray-light-50,0.75);
+			background: rgba($main-color-gray-light-50,0.5);
 		}
 
 		&:hover {
 			color: $link-color;
-			background: rgba($main-color-gray-light-50,0.5);
+			background: rgba($main-color-gray-light-50,0.75);
 		}
 	}
 }
 
 .tab-content--job-room {
 	position: relative;
-	background: rgba($main-color-gray-light-50,0.75);
+	background: rgba($main-color-gray-light-50,0.5);
 }
 
 .nav--login {
@@ -87,6 +87,7 @@
 		.nav-item {
 			font-size: $small-font-size;
 			font-weight: $text-weight-regular;
+			height: 52px;
 
 			.nav-link {
 				height: 100%;

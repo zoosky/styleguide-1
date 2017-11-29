@@ -146,7 +146,7 @@
 	</nav>	<!-- /navbar -->
 </div>
 
-<div class="jumbotron jumbotron-fluid jumbotron--has-toolbar jumbotron--job-room">
+<div class="jumbotron jumbotron-fluid jumbotron--has-toolbar jumbotron--job-room background--job-room">
 
 	<div class="toolbar">
 		<div class="container">
@@ -200,42 +200,44 @@
 		<div id="jobs">
 			<div class="row">
 				<div class="col-xs-12 col-sm-10 col-xxl-8">
-					<h1 class="tool__heading">Finden Sie jetzt Ihren Traumjob!</h1>
+					<div class="content--job-search">
+						<h1 class="tool__heading">Finden Sie jetzt Ihren Traumjob!</h1>
 			
-					<div class="d-flex flex-row">
-						<div class="job-search__form">
-							<form>
-								<div class="form-group form-group--wide">
-									<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Berufsgruppe, Fähigkeiten</label>
-									<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten" />
-								</div>
-								<div class="form-group form-group--wide form-group--icon">
-									<label for="basic-addon2" class="sr-only">Ort, Region, Kanton</label>
-									<input type="text" class="form-control form-control-lg" placeholder="Ort, Region, Kanton" id="basic-addon2" />
-									<!-- todo refine -->
-									<a href="#" class="fa-stack form-control--icon">
-									  <i class="fa fa-circle fa-stack-2x"></i>
-									  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
-									</a>
-								</div>
-								
-								<div class="form-group range-slider">
-									<label for="radius" class="sr-only">Radius</label>
-									<input class="range-slider__range" min="5" max="150" step="5" value="20" type="range" id="radius" />
-									<span class="range-slider__value range-slider__value--unit" data-unit="km">0</span>
-								</div>
-								<a class="btn btn-primary btn-lg btn-block" href="job-room/job-result-list.html">Traumjob finden!</a>
-							</form>
-						</div>
-			
-						<div class="job-search__radar">
-							<div class="job-radar d-none d-md-inline-block">
-								Diesem Job-Profil entsprechen bereits<br />
-								<span class="badge badge-radar">1'644</span><br />
-								Jobs
-								<a href="job-room/job-result-list.html">Jetzt anzeigen!</a>
+						<div class="d-flex flex-row">
+							<div class="job-search__form">
+								<form>
+									<div class="form-group form-group--wide">
+										<label for="formGroupExampleInput" class="sr-only">Berufsbezeichnung, Berufsgruppe, Fähigkeiten</label>
+										<input type="text" class="form-control form-control-lg" id="formGroupExampleInput" placeholder="Berufsbezeichnung, Berufsgruppe, Fähigkeiten" />
+									</div>
+									<div class="form-group form-group--wide form-group--icon">
+										<label for="basic-addon2" class="sr-only">Ort, Region, Kanton</label>
+										<input type="text" class="form-control form-control-lg" placeholder="Ort, Region, Kanton" id="basic-addon2" />
+										<!-- todo refine -->
+										<a href="#" class="fa-stack form-control--icon">
+										  <i class="fa fa-circle fa-stack-2x"></i>
+										  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+										</a>
+									</div>
+									
+									<div class="form-group range-slider">
+										<label for="radius" class="sr-only">Radius</label>
+										<input class="range-slider__range" min="5" max="150" step="5" value="20" type="range" id="radius" />
+										<span class="range-slider__value range-slider__value--unit" data-unit="km">0</span>
+									</div>
+									<a class="btn btn-primary btn-lg btn-block" href="job-room/job-result-list.html">Traumjob finden!</a>
+								</form>
 							</div>
-						</div>		</div>
+			
+							<div class="job-search__radar">
+								<div class="job-radar d-none d-md-inline-block">
+									Diesem Job-Profil entsprechen bereits<br />
+									<span class="badge badge-radar">1'644</span><br />
+									Jobs
+									<a href="job-room/job-result-list.html">Jetzt anzeigen!</a>
+								</div>
+							</div>			</div>
+					</div>
 				</div>
 			</div>		</div>
 
@@ -260,35 +262,51 @@
 						<div class="tab-content">
 							<div class="tab-pane active" id="candidate-search" role="tabpanel">
 								<h1 class="candidate-search__title">Finden Sie passende Kandidaten</h1>
-								<form class="candidate-search__form">
-									<fieldset>
-											<div class="form-group">
-												<label for="example-text-input" class="sr-only">Ich suche eine/n</label>
-												<div>
-													<input class="form-control" type="text" id="example-text-input" placeholder="Berufsbezeichung, Kenntnisse, Skills" />
+								<div class="d-flex flex-row">
+									<form class="candidate-search__form">
+										<fieldset>
+												<div class="form-group">
+													<label for="example-text-input" class="sr-only">Ich suche eine/n</label>
+													<div>
+														<input class="form-control" type="text" id="example-text-input" placeholder="Berufsbezeichung, Kenntnisse, Skills" />
+													</div>
 												</div>
-											</div>
+											
+												<div class="form-group">
+													<label for="cs-3" class="sr-only">Wohnort</label>
+													<div>
+														<input class="form-control" type="text" id="cs-3" placeholder="Wohnort" />
+													</div>
+												</div>
+											
+												<div class="form-group">
+													<label for="cs-8" class="sr-only">Abschluss</label>
+													<div>
+														<select class="form-control custom-select" id="cs-8">
+															<option selected>Abschluss auswählen</option>
+															<option value="1">One</option>
+															<option value="2">Two</option>
+															<option value="3">Three</option>
+														</select>
+													</div>
+												</div>								<a class="btn btn-primary btn-lg" href="job-room/candidate-result-list.html">Kandidaten anzeigen (1'644)</a>
+										</fieldset>
+									</form>
+									<div class="job-publication__radar">
+										<div class="candidate-radar d-none d-md-inline-block">
+											<!--
+											<button type="button" class="close" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											-->
 										
-											<div class="form-group">
-												<label for="cs-3" class="sr-only">Wohnort</label>
-												<div>
-													<input class="form-control" type="text" id="cs-3" placeholder="Wohnort" />
-												</div>
-											</div>
-										
-											<div class="form-group">
-												<label for="cs-8" class="sr-only">Abschluss</label>
-												<div>
-													<select class="form-control custom-select" id="cs-8">
-														<option selected>Abschluss auswählen</option>
-														<option value="1">One</option>
-														<option value="2">Two</option>
-														<option value="3">Three</option>
-													</select>
-												</div>
-											</div>							<a class="btn btn-primary btn-lg" href="job-room/candidate-result-list.html">Kandidaten anzeigen (1'644)</a>
-									</fieldset>
-								</form>
+											Diesem Job-Profil enstprechen bereits<br />
+											<span class="badge badge-radar">1'644</span><br />
+											Stellensuchenden
+											<a href="job-room/candidate-result-list.html">Jetzt anzeigen!</a>
+										</div>						</div>
+								</div>
+			
 							</div>
 							<div class="tab-pane" id="job-publication" role="tabpanel">
 								<div class="d-flex flex-row">
