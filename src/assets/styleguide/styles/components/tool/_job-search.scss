@@ -1,8 +1,13 @@
 // Job-Room job-search
+// todo vars
 .content--job-search {
 	position: relative;
 	background: rgba($main-color-gray-light-50,0.5);
 	margin-top: 52px;
+
+	@media screen and (max-width: 767px) {
+		margin-top: 36px;
+	}
 }
 
 .job-search__form {
@@ -27,6 +32,10 @@
 .job-search__radar {
 	width: 25%;
 	margin: ($margin-y-general*2) 0;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 .job-radar {
 	padding: $margin-x-narrow;
@@ -239,7 +248,13 @@
 	margin: $margin-x-general 0;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
+
+	.job-search__form {
+		width: 100%;
+
+		padding: 0 ($grid-gutter-width / 2) 1rem ($grid-gutter-width / 2);
+	}
 
 	.job-detail__references {
 		order: 1;

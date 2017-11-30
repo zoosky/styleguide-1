@@ -67,7 +67,7 @@
 	}
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
 	.drawer .navbar-nav {
 		font-size: $font-size-base;
 
@@ -87,7 +87,6 @@
 		.nav-item {
 			font-size: $small-font-size;
 			font-weight: $text-weight-regular;
-			height: 52px;
 
 			.nav-link {
 				height: 100%;
