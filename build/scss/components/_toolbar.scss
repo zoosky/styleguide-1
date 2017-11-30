@@ -280,7 +280,15 @@ jr2-job-search-toolbar {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px){
+	.toolbar {
+		margin-bottom: $toolbar-margin-bottom/2;
+	}
 	.toolbar-nav {
+
+		&.toolbar--job-room {
+			padding-top: $filter-toolbar-title-padding/2 !important;
+			padding-bottom: 0 !important;
+		}
 
 		&.toolbar-nav--has-icon .nav-link {
 			> span:last-of-type {
@@ -350,7 +358,7 @@ jr2-job-search-toolbar {
 
 			&.center {
 				text-align: left;
-				justify-content: start;
+				justify-content: space-around;
 			}
 
 			.nav-title {

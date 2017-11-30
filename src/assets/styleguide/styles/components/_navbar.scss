@@ -5,7 +5,7 @@
 
 	max-height: $header-navbar-height;
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: 767px){
 		justify-content: flex-start;
 
 		>.container {
@@ -30,7 +30,7 @@
 }
 
 .navbar-brand {
-	@media screen and (min-width: 480px){
+	@media screen and (min-width: 768px){
 		&.alv-logo {
 			position: absolute;
 			top: 0;
@@ -185,7 +185,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 479px){
+	@media screen and (max-width: 767px){
 		.navbar--language-switcher {
 			display: none;
 		}
@@ -196,7 +196,7 @@
 	}
 }
 
-@media screen and (max-width: 479px){
+@media screen and (max-width: 767px){
 	.navbar-nav {
 
 		.nav-link {

@@ -51,9 +51,8 @@
 	}
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
 	.candidate-search {
-		// todo media breakpoints!
 		width: calc(100% - #{$margin-y-narrow * 2});
 
 		margin: $margin-x-narrow $margin-y-narrow;
