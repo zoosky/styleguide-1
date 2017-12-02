@@ -24,6 +24,8 @@
 }
 
 .background--job-room {
+	min-height: 100vh;
+
 	background: url(../images/bg-jobroom.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

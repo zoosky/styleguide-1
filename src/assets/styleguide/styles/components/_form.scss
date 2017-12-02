@@ -132,6 +132,10 @@
 		top: .25em;
 		right: .25em;
 		font-size: .95em;
+
+		@media screen and (max-width: 479px){
+			top: 0.5em !important;
+		}
 	}
 
 	.form-control-lg {
@@ -139,10 +143,6 @@
 
 		~ .form-control--icon {
 			font-size: 1em !important;
-
-			@media screen and (max-width: 1024px){
-				font-size: 0.85em !important;
-			}
 		}
 	}
 }
