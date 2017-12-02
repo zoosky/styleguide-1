@@ -3,7 +3,7 @@
 	border: none;
 	border-bottom: 1px solid $main-color-gray-100;
 
-	max-height: $header-navbar-height;
+	height: $header-navbar-height;
 
 	@media screen and (max-width: 767px){
 		justify-content: flex-start;

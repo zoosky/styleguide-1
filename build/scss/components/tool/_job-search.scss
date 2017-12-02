@@ -75,7 +75,7 @@
 }
 
 
-.job-search__filter--toggler {
+.job-search__--toggler {
 	font-size: 0.85rem;
 	color: $main-accent-color;
 	text-align: center;
@@ -105,8 +105,11 @@
 }
 
 
-
 // Job-Room-result
+.result-list__title {
+	font-weight: $text-weight-light;
+}
+
 .result-list__item {
 	padding: $alv-box-radius;
 	margin-bottom: $margin-x-narrow;
@@ -136,7 +139,22 @@
 	}
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
+	.filter__title,
+	.result-list__title {
+		text-align: center;
+
+		font-weight: $text-weight-regular;
+		font-size: $text-base-size;
+
+		margin: $margin-y-general $margin-x-narrow;
+
+	}
+
+	.filter__title {
+		margin: $margin-x-narrow;
+	}
+
 	.result-list__item {
 		padding: $margin-x-narrow;
 		margin-bottom: $margin-x-narrow;

@@ -288,6 +288,19 @@ jr2-job-search-toolbar {
 	.toolbar {
 		margin-bottom: $toolbar-margin-bottom/2;
 	}
+
+	.toolbar-form {
+		margin: 1rem .5rem !important;
+
+		.form-group {
+			max-width: 20%;
+		}
+
+		.btn-lg{
+			width: auto;
+		}
+	}
+
 	.toolbar-nav {
 
 		&.toolbar--job-room {
