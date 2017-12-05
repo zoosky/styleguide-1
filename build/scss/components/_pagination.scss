@@ -46,6 +46,23 @@
 }
 
 
+.pagination-alv__table {
+	.page-link {
+		padding: ($margin-y-narrow/2) $margin-x-narrow;
+		color: $link-color;
+		border: none;
+
+		&:hover,
+		&:active {
+			background: $main-color-gray-lighter !important;
+		}
+	}
+
+	.active .page-link {
+		background: $main-color-gray-light !important;
+	}
+}
+
 .subnavbar__back {
 	padding: $breadcrumb-padding-y $breadcrumb-padding-x;
 	margin-bottom: $spacer;
