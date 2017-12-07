@@ -114,6 +114,8 @@
 	padding: $alv-box-radius;
 	margin-bottom: $margin-x-narrow;
 
+	cursor: pointer;
+
 	&:hover {
 		background: $main-accent-color-50;
 	}
