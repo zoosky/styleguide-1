@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>{{title}}</title>
+
+	{{#if fabricator}}<link rel="stylesheet" href="./{{baseurl}}/assets/fabricator/styles/f.css">{{/if}}
+
+	<!-- styleguide styles -->
+	<link rel="stylesheet" href="./{{baseurl}}/assets/styleguide/styles/alv-ch.css">
+	<!-- /styleguide styles -->
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com/">
+</head>
+
+<body>
+	<div class="header fixed-top">
+		<!-- ALV-HEADER -->
+		{{> header}}
+
+		<!-- navbar -->
+		{{> job-room-navbar}}
+		<!-- /navbar -->
+	</div>
+
+	<!-- content -->
+	<div class="container">
+
+		<div class="base">
+
+			<div class="base__subnavbar job-detail__references">
+
+				<div class="sticked sticked--top__parent">
+
+					<ul class="d-none d-md-flex flex-column nav filter-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-toggle="modal" data-target="#jobDeactivationModal"><span class="fa fa-fw fa-trash-o" aria-hidden="true"></span> Stelle abmelden</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/job-room.html"><span class="fa fa-fw fa-clone" aria-hidden="true"></span> Stelle duplizieren</a>
+						</li>
+					</ul>
+
+					<div class="job-detail__company alv-logo-box flex-height md-whiteframe-1dp">
+						<div class="job-detail__content">
+							<address>
+								<strong>Adato AG</strong><br />
+								Lagerhausstrasse 10<br />
+								8400 Winterthur<br />
+							</address>
+
+							Telefon 052 269 23 23<br />
+							www.adato.ch
+						</div>
+
+						<div class="job-detail__content">
+							<strong>Ihre Kontaktperson</strong><br />
+							Reto Keller<br />
+							Personalberater<br />
+							Gewerbe & Handwerk<br />
+							r.keller@adato.ch<br />
+							+41 52 269 23 26<br />
+						</div>
+					</div>
+
+					<div class="job-detail__pes alv-logo-box flex-height md-whiteframe-1dp">
+						<div class="job-detail__content">
+							<p>
+								<strong>Zuständiges RAV</strong><br />
+								RAV Frauenfeld, Frauenfeld Kant. Verwaltung<br />
+								Telefon +41 58 345 55 20<br />
+							</p>
+
+							<strong>Stellennummer:</strong><br />
+							AVAM: 00000717982<br />
+							Job-Room: 230194084
+						</div>
+					</div>
+
+				</div>
+
+				{{#if fabricator}}
+				{{> f-control-bar}}
+				{{> f-icons}}
+				{{> f-menu-slim}}
+				{{/if}}
+			</div>
+
+			<div class="base__content job-detail__body">
+				{% body %}
+			</div>
+
+			<div class="base__related job-detail__actions">
+				<div class="sticked sticked--top__parent">
+
+					<!-- bewerbungsformen -->
+					<ul class="nav filter-nav flex-column job-detail__applications">
+						<li class="nav-item">
+							<span class="nav-title">Weitere Bewerbungsformen</span>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link">E-Mail: <a href="#">email@bewerbung</a></span>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link">Post: an Adresse des Unternehmens</span>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link">Telefonisch: +41 33 300 01 01</span>
+						</li>
+						<li class="nav-item">
+							<span class="nav-link">Ergänzende Angaben: Bewerbungen gerne per Mail oder per Telefon oder per Post oder per Online Formular</span>
+						</li>
+					</ul>
+
+					<ul class="nav filter-nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i> Stellenangebot speichern</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-share" aria-hidden="true"></i> Link kopieren</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-envelope" aria-hidden="true"></i> Per E-Mail versenden</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-print" aria-hidden="true"></i> Drucken</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Als PDF speichern</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- /content -->
+
+	<!-- footer -->
+	{{> footer-jobroom}}
+	<!-- /footer -->
+
+	<!-- modals -->
+	{{> login}}
+	{{> job-deactivation}}
+	<!-- /modals -->
+
+
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+{{#if fabricator}}
+<script src="./{{baseurl}}/assets/fabricator/scripts/f.js"></script>
+{{/if}}
+<!-- core Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<!-- mobile -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+<!-- core ALV-CH -->
+<script src="./{{baseurl}}/assets/styleguide/scripts/alv-ch.js"></script>
+<script src="./{{baseurl}}/assets/styleguide/scripts/drawer.js"></script>
+<!-- WebFontLoader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:300,400,700:latin']
+    }
+  });
+</script>
+<!-- /JavaScript -->
+
+</body>
+</html>

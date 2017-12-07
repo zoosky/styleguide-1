@@ -271,6 +271,9 @@
 									<a class="nav-link" href="structures.html#form">Form</a>
 								</li>
 								<li class="nav-item">
+									<a class="nav-link" href="structures.html#job-deactivation">Job Deactivation</a>
+								</li>
+								<li class="nav-item">
 									<a class="nav-link" href="structures.html#job-room-navbar">Job Room Navbar</a>
 								</li>
 								<li class="nav-item">
@@ -387,6 +390,9 @@
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="job-room/candidate-result-list.html">Candidate Result List</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="job-room/job-detail_deactivation.html">Job Detail Deactivation</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="job-room/job-detail_external.html">Job Detail External</a>
@@ -1474,6 +1480,144 @@
 
 	&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
 	&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;&lt;/form&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="job-deactivation">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Job Deactivation</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<!-- modals -->
+<div class="modal fade" id="jobDeactivationModal" aria-labelledby="jobDeactivationModalLabel" aria-hidden="true" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-xl" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Stelle abmelden</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="alert alert-info" role="alert">
+					Bitte füllen Sie die Abmeldeinformationen aus und bestätigen Sie die Abmeldung des Stellenangebots.
+				</div>
+
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+						Sie konnten die Stelle besetzen:
+					</label>
+				</div>
+				<div class="ml-3">
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="1">
+							in Zusammenarbeit mit der regionalen Arbeitsvermittlung (RAV)
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="2">
+							in Zusammenarbeit mit der privaten Arbeitsvermittlung (pAV)
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="3">
+							Sie konnten die Stelle selber besetzen
+						</label>
+					</div>
+				</div>
+
+				<div class="form-check">
+					<label class="form-check-label">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+						Sie konnten die Stelle nicht besetzen
+					</label>
+				</div>
+
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Abmeldung bestätigen</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Abbrechen</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /modals -->
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!-- modals --&gt;
+&lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;jobDeactivationModal&quot; aria-labelledby&#x3D;&quot;jobDeactivationModalLabel&quot; aria-hidden&#x3D;&quot;true&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot;&gt;
+	&lt;div class&#x3D;&quot;modal-dialog modal-xl&quot; role&#x3D;&quot;document&quot;&gt;
+		&lt;div class&#x3D;&quot;modal-content&quot;&gt;
+			&lt;div class&#x3D;&quot;modal-header&quot;&gt;
+				&lt;h5 class&#x3D;&quot;modal-title&quot;&gt;Stelle abmelden&lt;/h5&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+					&lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+				&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;modal-body&quot;&gt;
+				&lt;div class&#x3D;&quot;alert alert-info&quot; role&#x3D;&quot;alert&quot;&gt;
+					Bitte füllen Sie die Abmeldeinformationen aus und bestätigen Sie die Abmeldung des Stellenangebots.
+				&lt;/div&gt;
+
+				&lt;div class&#x3D;&quot;form-check&quot;&gt;
+					&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+						&lt;input class&#x3D;&quot;form-check-input&quot; type&#x3D;&quot;radio&quot; name&#x3D;&quot;exampleRadios&quot; id&#x3D;&quot;exampleRadios1&quot; value&#x3D;&quot;option1&quot; checked&gt;
+						Sie konnten die Stelle besetzen:
+					&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;ml-3&quot;&gt;
+					&lt;div class&#x3D;&quot;form-check&quot;&gt;
+						&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+							&lt;input class&#x3D;&quot;form-check-input&quot; type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;1&quot;&gt;
+							in Zusammenarbeit mit der regionalen Arbeitsvermittlung (RAV)
+						&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;form-check&quot;&gt;
+						&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+							&lt;input class&#x3D;&quot;form-check-input&quot; type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;2&quot;&gt;
+							in Zusammenarbeit mit der privaten Arbeitsvermittlung (pAV)
+						&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;form-check&quot;&gt;
+						&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+							&lt;input class&#x3D;&quot;form-check-input&quot; type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;3&quot;&gt;
+							Sie konnten die Stelle selber besetzen
+						&lt;/label&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+
+				&lt;div class&#x3D;&quot;form-check&quot;&gt;
+					&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+						&lt;input class&#x3D;&quot;form-check-input&quot; type&#x3D;&quot;radio&quot; name&#x3D;&quot;exampleRadios&quot; id&#x3D;&quot;exampleRadios2&quot; value&#x3D;&quot;option2&quot;&gt;
+						Sie konnten die Stelle nicht besetzen
+					&lt;/label&gt;
+				&lt;/div&gt;
+
+
+				&lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+					&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Abmeldung bestätigen&lt;/button&gt;
+					&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; data-dismiss&#x3D;&quot;modal&quot;&gt;Abbrechen&lt;/button&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /modals --&gt;</code></pre>
 </div>
 
 
