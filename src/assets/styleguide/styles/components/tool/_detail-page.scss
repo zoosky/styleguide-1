@@ -57,6 +57,7 @@
 	> .detail__content__title {
 		padding: .25rem .125rem;
 		background: $main-color-gray-100;
+		margin-bottom: 0;
 	}
 
 	.content__item {
@@ -112,6 +113,12 @@
 }
 
 @media screen and (max-width: 767px) {
+
+	.detail__title {
+		h2 {
+			height: auto;
+		}
+	}
 
 	.detail__references {
 		order: 1;
@@ -174,6 +181,3 @@
 		}
 	}
 }
-
-
-// BREAKPOINT 992px!!! SEE BREKAKPOINTS!!!!
