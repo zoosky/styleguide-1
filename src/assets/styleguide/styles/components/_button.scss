@@ -2,6 +2,10 @@
 
 .btn {
 	font-family: $font-family-base;
+	// some Browsers has default rounded corners
+	@if $enable-rounded == false {
+		border-radius: 0;
+	}
 }
 
 .btn-primary:hover {
