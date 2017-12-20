@@ -187,9 +187,7 @@
 	}
 
 	.navbar-nav {
-		margin-left: calc(#{$logo-height} * #{$phi} + #{$navbar-padding-x});
+		margin-left: calc(#{$logo-width} + #{$navbar-padding-x});
 		font-size: $small-font-size;
-
-
 	}
 }

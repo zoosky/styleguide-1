@@ -6,7 +6,7 @@
 	height: 100%;
 	width: 100%;
 
-	background-color: darken($body-bg, 3%);
+	background-color: $main-color-gray-100;
 	display: block;
 	overflow-wrap: break-word;
 
@@ -157,6 +157,43 @@
 		.title__plus-ch,
 		.title__plus-ch:before {
 			color: $white;
+		}
+	}
+}
+
+// portal-logo
+/*
+	<a class="navbar-brand alv-logo" href="./{{baseurl}}/index.html">
+		<div class="alv-logo__title">
+			<strong>arbeit</strong><span class="title__plus-ch">swiss</span>
+		</div>
+	</a>
+ */
+
+.navbar-brand.portal-logo {
+	@media screen and (min-width: 768px){
+		position: absolute;
+		top: 0;
+		z-index: $logo-zIndex;
+
+		height: $logo-height;
+		width: $logo-width;
+
+		font-weight: 300;
+
+		background: $white;
+		color: $black;
+		display: inline-block;
+
+		@include alv-border-radius($alv-box-radius);
+
+		padding: 0 $alv-box-padding;
+
+		box-shadow: $whiteframe-shadow-1dp;
+
+		.portal-logo__image {
+			height: 100%;
+			width: 100%;
 		}
 	}
 }

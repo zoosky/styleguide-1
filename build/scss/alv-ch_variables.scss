@@ -9,22 +9,23 @@
  =========================================================== */
 
 // Colors
-$main-color-black: 			#333333;
+$main-color-black: 			#504d48;
 $main-color-gray-dark: 		#636363; //darken($main-color-gray, 13%);
 $main-color-gray: 			#808080;
-$main-color-gray-light: 	#CFCFCF;
-$main-color-gray-lighter: 	#F1F1F1;
-$main-color-gray-lightest: 	#F8F8F8;
+$main-color-gray-light: 	#c1c0c0;
+$main-color-gray-lighter: 	#f2efe8;
+$main-color-gray-lightest: 	lighten($main-color-gray-lighter, 3%);
 $main-color-white: 			#FFFFFF;
 
-$main-accent-color: 		#017AB1;
-$main-accent-color-hover:	#008CBD;
+$other-colors-red:    		#C73734;
+
+$main-accent-color: 		$other-colors-red;  				// #017AB1;
+$main-accent-color-hover:	lighten($main-accent-color, 10%); 	// #008CBD;
 
 $additional-accent-amber: 	#ffc501;
 $additional-accent-yellow: 	#ffb120;
 $additional-accent-green: 	#64b500;
 
-$other-colors-red:    		#F7001D;
 
 // Main Color Swatches
 //
@@ -50,11 +51,12 @@ $main-color-gray-light-300: #e5e5e5; // lighten 11%
 $main-color-gray-light-400: #d7d7d7; // lighten 5.5%
 
 // Main Accent Color Swatches
-$main-accent-color-50:  #f2f8fb;
-$main-accent-color-100: #d9ebf5;
-$main-accent-color-200: #add4e6;
-$main-accent-color-300: #85bfda;
-$main-accent-color-400: #439cc5;
+// http://www.color-hex.com/color/c73734
+$main-accent-color-50:  #f9ebea;
+$main-accent-color-100: #f3d7d6;
+$main-accent-color-200: #e8afad;
+$main-accent-color-300: #e39b99;
+$main-accent-color-400: #d77370;
 
 // Additional Accent Color Swatches
 //
@@ -104,7 +106,8 @@ $text-weight-light: 300;
 
 // Logo
 $logo-height: 90px;
-$logo-size: 1.3rem; // todo check sizes in other logos...
+$logo-width: $logo-height * 2.5;
+$logo-size: 1.3rem;
 $logo-spacing: $text-h2-spacing;
 
 $logo-brand-size: $logo-size;
