@@ -106,7 +106,8 @@ $text-weight-light: 300;
 
 // Logo
 $logo-height: 90px;
-$logo-size: 1.3rem; // todo check sizes in other logos...
+$logo-width: $logo-height * 2.5;
+$logo-size: 1.3rem;
 $logo-spacing: $text-h2-spacing;
 
 $logo-brand-size: $logo-size;
