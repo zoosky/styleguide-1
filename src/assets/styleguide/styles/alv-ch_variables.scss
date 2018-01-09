@@ -20,7 +20,8 @@ $main-color-white: 			#FFFFFF;
 $other-colors-red:    		#C73734;
 
 $main-accent-color: 		$other-colors-red;  				// #017AB1;
-$main-accent-color-hover:	lighten($main-accent-color, 10%); 	// #008CBD;
+$main-accent-color-hover:	lighten($main-accent-color, 20%); 	// #008CBD;
+$main-accent-color-dark:	darken($main-accent-color, 20%);
 
 $additional-accent-amber: 	#ffc501;
 $additional-accent-yellow: 	#ffb120;
@@ -158,7 +159,6 @@ $filter-toolbar-title-paddings:(
 // Header + Toolbar
 $header-margin: 4rem;
 $header-mobile-margin: .5rem;
-$header-alv-height: 30px;
 $header-navbar-height: 60px;
 
 $toolbar-height: 110px;

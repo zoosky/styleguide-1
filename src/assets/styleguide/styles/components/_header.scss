@@ -15,17 +15,17 @@
 \*------------------------------------*/
 
 body {
-	margin-top: calc(#{$header-alv-height + $header-navbar-height} + #{$header-mobile-margin}); // alv-header 30px, navbar 60px
+	margin-top: calc(#{$header-navbar-height} + #{$header-mobile-margin}); // alv-header 30px, navbar 60px
 
 	@media screen and (min-width: 480px){
-		margin-top: calc(#{$header-alv-height + $header-navbar-height} + #{$header-margin}); // alv-header 30px, navbar 60px
+		margin-top: calc(#{$header-navbar-height} + #{$header-margin}); // alv-header 30px, navbar 60px
 
 		&.has-jumbotron {
-			margin-top: ($header-alv-height + $header-navbar-height); // alv-header 30px, navbar 60px NO toolbar!
+			margin-top: ($header-navbar-height); // alv-header 30px, navbar 60px NO toolbar!
 		}
 
 		&.has-toolbar {
-			margin-top: calc(#{$header-alv-height + $header-navbar-height + $toolbar-height} + #{$toolbar-margin-bottom}); // alv-header 30px, navbar 60px + toolbar 110px + margin 24px
+			margin-top: calc(#{$header-navbar-height + $toolbar-height} + #{$toolbar-margin-bottom}); // alv-header 30px, navbar 60px + toolbar 110px + margin 24px
 		}
 
 		&:not(.has-jumbotron) .jumbotron {
@@ -53,7 +53,7 @@ body {
 	@media screen and (min-width: 480px){
 		&.has-toolbar ~ .toolbar,
 		~ .toolbar{
-			top: #{$header-alv-height + $header-navbar-height};
+			top: #{$header-navbar-height};
 			position: fixed;
 			width: 100%;
 		}
@@ -62,37 +62,6 @@ body {
 
 .has-mainnavigation {
 	border-bottom: 1px solid #CFCFCF;
-}
-
-/*------------------------------------*\
-  #ALV-HEADER
-\*------------------------------------*/
-
-.alv-header {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	padding: 0 10px;
-
-	max-height: $header-alv-height;
-}
-
-/**
- * Used for brand, project, or site names.
- */
-
-.alv-header__brand {
-	display: inline-block;
-	padding-top: .25rem;
-	padding-bottom: .25rem;
-	margin-right: $navbar-padding-x;
-	font-size: $small-font-size;
-	line-height: inherit;
-	white-space: nowrap;
-
-	@media screen and (max-width: 479px){
-		font-size: 12px !important;
-	}
 }
 
 /**
