@@ -17,20 +17,10 @@
 
 .jumbotron--job-room {
 	background-repeat: no-repeat !important;
-	background: $main-color-gray-100;
+	background: transparent;
 }
 .jumbotron--landingpage .tool__heading {
 	margin-top: .75em;
-}
-
-.background--job-room {
-	min-height: 100vh;
-
-	background: url(../images/bg-jobroom.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 
 // Process
