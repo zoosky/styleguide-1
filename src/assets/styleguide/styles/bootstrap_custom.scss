@@ -89,9 +89,13 @@ $body-color:    $main-color-black;
 // Links
 //
 // Style anchor elements.
-
+/*
 $link-color:            $main-accent-color;
 $link-hover-color:      $main-accent-color-hover; // before: amber!
+*/
+
+$link-color:            $alv-link-color;
+$link-hover-color:      $alv-link-color-hover; // before: amber!
 
 // Grid breakpoints
 //

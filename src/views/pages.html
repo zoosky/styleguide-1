@@ -7,12 +7,12 @@ fabricator: true
 
 <div class="landing-page">
 
-	{{#each views.pages.items}}
 	<div class="landing-page__regular">
 		<div class="landing-page--container md-whiteframe-1dp">
-			<a class="nav-link" href="/pages/{{@key}}.html">{{name}}</a>
+		{{#each views.pages.items}}
+				<a class="nav-link" href="/pages/{{@key}}.html">{{name}}</a>
+		{{/each}}
 		</div>
 	</div>
-	{{/each}}
 
 </div>
