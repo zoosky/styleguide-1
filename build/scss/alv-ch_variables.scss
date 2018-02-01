@@ -17,7 +17,7 @@ $main-color-gray-lighter: 	#f2efe8;
 $main-color-gray-lightest: 	lighten($main-color-gray-lighter, 3%);
 $main-color-white: 			#FFFFFF;
 
-$other-colors-red:    		#C73734;
+$other-colors-red:    		#9D0E06; //#C73734;
 
 $main-accent-color: 		$other-colors-red;  				// #017AB1;
 $main-accent-color-hover:	darken($main-accent-color, 20%); 	// #008CBD;
@@ -26,6 +26,10 @@ $main-accent-color-dark:	$main-accent-color-hover;
 $additional-accent-amber: 	#ffc501;
 $additional-accent-yellow: 	#ffb120;
 $additional-accent-green: 	#64b500;
+
+// todo define correct link color
+$alv-link-color: #9D0E06;
+$alv-link-color-hover: darken($alv-link-color, 20%);
 
 
 // Main Color Swatches
