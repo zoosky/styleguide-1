@@ -140,6 +140,10 @@
 	}
 }
 
+.result-list__item--visited {
+	background: $main-accent-color-100;
+}
+
 @media screen and (max-width: 767px) {
 	.filter__title,
 	.result-list__title {
